@@ -1,0 +1,12 @@
+*.tgz filter=lfs diff=lfs merge=lfs -text
+*.tar.gz filter=lfs diff=lfs merge=lfs -text
+*eqtl.txt.gz filter=lfs diff=lfs merge=lfs -text
+*eqtl.tsv.gz filter=lfs diff=lfs merge=lfs -text
+*eqtl.csv.gz filter=lfs diff=lfs merge=lfs -text
+*eqtl.prn.gz filter=lfs diff=lfs merge=lfs -text
+*gwas.txt.gz filter=lfs diff=lfs merge=lfs -text
+*gwas.tsv.gz filter=lfs diff=lfs merge=lfs -text
+*gwas.csv.gz filter=lfs diff=lfs merge=lfs -text
+*gwas.prn.gz filter=lfs diff=lfs merge=lfs -text
+submitted_data/gwas/*txt.gz filter=lfs diff=lfs merge=lfs -text
+processed_data/gwas/*txt.gz filter=lfs diff=lfs merge=lfs -text

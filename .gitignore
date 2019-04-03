@@ -1,0 +1,57 @@
+#temp
+reference_data/
+
+# byte-compiled
+__pycache__/
+*.py[ocd]
+
+# emacs
+.venv
+
+# vscode
+.vscode
+
+# distributions
+.eggs/
+eggs/
+lib/
+lib64/
+*.egg-info/
+*.egg
+build/
+dist/
+
+# tests
+*.pytest_cache/
+.cache
+test/
+test/*
+outdir/
+
+# cimr 
+cimr/
+
+# sphinx
+doc/source/vbench
+doc/source/vbench.rst
+doc/source/savefig/
+
+# oauth token
+.httr-oauth
+
+# tox
+.tox
+
+# notebook cache
+*.ipynb_checkpoints/
+
+# rmarkdown
+*.utf8.md
+*.knit.md
+
+# os
+.DS_Store
+Icon?
+Thumbs.db
+.directory
+

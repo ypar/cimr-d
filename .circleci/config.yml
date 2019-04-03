@@ -1,0 +1,26 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/python:3.6.8
+
+    working_directory: ~/cimr-d
+
+    steps:
+      - checkout
+
+      - run:
+          name: install dependencies
+          command: |
+            .travis/install_cimr.sh
+      
+      - run:
+          name: process new pr
+          command: | 
+            python3 .travis/process_submitted_data.py
+            
+      - run:
+          name: push output
+          command: |
+            .travis/push_processed_data.sh
+
