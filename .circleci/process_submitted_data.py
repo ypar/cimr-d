@@ -41,7 +41,7 @@ for submitted_file in submitted_file_split:
                     genome_build='b38', 
                     update_rsid=False, 
                     outfile=str(outfile),
-                    chunksize=500000
+                    chunksize=700000
                 )
                 infile.read_file()
 
