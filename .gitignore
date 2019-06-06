@@ -6,6 +6,7 @@ __pycache__/
 *.py[ocd]
 
 # emacs
+*~
 .venv
 
 # vscode
@@ -28,7 +29,7 @@ test/
 test/*
 outdir/
 
-# cimr 
+# cimr
 cimr/
 
 # sphinx
@@ -54,4 +55,3 @@ doc/source/savefig/
 Icon?
 Thumbs.db
 .directory
-
