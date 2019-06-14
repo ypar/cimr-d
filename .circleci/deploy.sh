@@ -19,6 +19,6 @@ aws s3 sync ~/cimr-d/submitted_data s3://cimr-root
 aws s3 sync ~/cimr-d/processed_data s3://cimr-d
 
 # Remove submitted_data from git and commit w/o CircleCI
-git rm -r submitted_data/*
+git rm -rf submitted_data/*
 git commit -m "CircleCI: clear submitted_data [skip ci]"
 git push --force --quiet origin master
