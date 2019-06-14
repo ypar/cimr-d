@@ -9,3 +9,8 @@ mkdir -p git-lfs
 cd git-lfs
 tar xzf ../git-lfs-linux-386-v2.7.2.tar.gz
 sudo ./install.sh
+
+# Pull files in cimr-d
+cd ~/cimr-d
+git lfs install
+git lfs pull

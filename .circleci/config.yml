@@ -1,23 +1,25 @@
 version: 2.1
 jobs:
-  build:
+  crunch:
     docker:
       - image: circleci/python:3.6.8
     working_directory: ~/cimr-d
     resource_class: xlarge
     steps:
       - checkout
-      - run: bash .circleci/git_lfs.sh
-      - run: git lfs install && git lfs pull
+      - run:
+          name: Install git-lfs
+          command: |
+            bash .circleci/git_lfs.sh
       - add_ssh_keys:
           fingerprints:
             - "2e:fb:e9:d5:94:c6:f4:75:2c:cb:66:71:a9:af:93:8a"
       - run:
-          name: Install cimr + dependencies
+          name: Install cimr and its dependencies
           command: |
             bash .circleci/install_cimr.sh
       - run:
-          name: Process new PR
+          name: Process submitted data
           command: |
             python3 .circleci/process_submitted_data.py
       - persist_to_workspace:
@@ -25,6 +27,7 @@ jobs:
           paths:
             - .git
             - .circleci
+            - submitted_data
             - processed_data
 
   deploy:
@@ -37,18 +40,18 @@ jobs:
           fingerprints:
             - "60:6d:08:51:d2:1b:3d:5c:af:f8:e1:b5:41:d0:7e:20"
       - run:
-          name: Commit processed data
+          name: Save submitted and processed data
           command: |
-            bash .circleci/push_processed_data.sh
+            bash .circleci/deploy.sh
 
 workflows:
   version: 2
   build-deploy:
     jobs:
-      - build
+      - crunch
       - deploy:
           requires:
-            - build
+            - crunch
           filters:
             branches:
               only: master
