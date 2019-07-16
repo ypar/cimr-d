@@ -20,6 +20,9 @@ jobs:
           command: |
             bash .circleci/install_cimr.sh
       - run:
+          name: Check and download data if a yaml file is submitted
+          command: python3 .circleci/parse_yaml.py
+      - run:
           name: Process submitted data
           command: |
             python3 .circleci/process_submitted_data.py
