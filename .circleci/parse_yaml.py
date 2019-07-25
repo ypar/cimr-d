@@ -2,8 +2,8 @@
 """Reading and parsing through the contributor's yaml file.
 (c) YoSon Park
 
-This is the default uploading skim for single and bulk files 
-using zenodo. For PR-based file uploader, check .circleci/deploy.sh 
+This is the default uploading skim for single and bulk files
+using zenodo. For PR-based file uploader, check .circleci/deploy.sh
 and .circleci/process_submitted_data.py
 """
 
@@ -21,13 +21,14 @@ CONFIG_FILE_EXTENSION = ('yml', 'yaml')
 COMPRESSION_EXTENSION = ('gz', 'bz2', 'xz')
 BULK_EXTENSION = ('tgz', 'tar.gz', 'tar.bz2', 'tar.xz')
 FILE_EXTENSION = ('txt', 'tsv', 'txt.gz', 'tsv.gz')
+REQUEST_DIR = 'submitted/'
 
 logging.basicConfig(level='INFO')
 
 
 def check_yaml_before_commit():
-    """A git-status-dependent function used when locally applying 
-    parse_yaml.py. It searches for a new or modified yml/yaml file and 
+    """A git-status-dependent function used when locally applying
+    parse_yaml.py. It searches for a new or modified yml/yaml file and
     returns its pathlib path.
     """
     import subprocess
@@ -42,13 +43,13 @@ def check_yaml_before_commit():
 
     for job in jobsplit:
         if job.endswith(CONFIG_FILE_EXTENSION):
-            yaml_file = pathlib.Path('.cimr-d/' + job.split('/')[-1])
+            yaml_file = pathlib.Path(REQUEST_DIR + job.split('/')[-1])
 
     return yaml_file
 
 
 def check_yaml_in_ci():
-    """A git-status-dependent function used during ci processing. It 
+    """A git-status-dependent function used during ci processing. It
     searches for a new or modified yml/yaml file from a new pr"""
     import subprocess
 
@@ -62,9 +63,28 @@ def check_yaml_in_ci():
 
     for job in jobsplit:
         if job.endswith(CONFIG_FILE_EXTENSION):
-            yaml_file = pathlib.Path('.cimr-d/' + job.split('/')[-1])
+            yaml_file = pathlib.Path(REQUEST_DIR + job.split('/')[-1])
 
     return yaml_file
+
+
+def get_submitted_yaml():
+    """A function that returns all yaml files in "submitted/" subdir."""
+    # https://stackoverflow.com/questions/3207219/how-do-i-list-all-files-of-a-directory
+
+    import os
+    submitted_files = os.listdir('submitted')
+    submitted_yaml_files = []
+    for filename in submitted_files:
+        # Ignore the dummy placeholder file
+        if filename == '.place_holder':
+            continue
+        if filename.endswith(".yml") or filename.endswith(".yaml"):
+            submitted_yaml_files.append('submitted/' + filename)
+        else:
+            raise Exception(f'Submitted file not acceptable: {filename}')
+
+    return submitted_yaml_files
 
 
 def predefine_yaml():
@@ -115,25 +135,25 @@ def download_file(path, outdir='./'):
     from tqdm import tqdm
     import requests
     import math
-    
+
     r = requests.get(path, stream=True)
     total_size = int(r.headers.get('content-length', 0))
     block_size = 1024
     wrote = 0
     file_name = path.split('/')[-1]
     file_path = outdir + file_name
-    
+
     with open(file_path, 'wb') as f:
-        for data in tqdm(r.iter_content(block_size), 
-                         total=math.ceil(total_size//block_size), 
-                         unit='KB', 
+        for data in tqdm(r.iter_content(block_size),
+                         total=math.ceil(total_size//block_size),
+                         unit='KB',
                          leave=True,
                          ncols=42,
                          unit_scale=True,
                          unit_divisor=1024):
             wrote = wrote + len(data)
             f.write(data)
-    
+
     if total_size != 0 and wrote != total_size:
         logging.error(f' check the file link and try again.')
         sys.exit(1)
@@ -144,14 +164,14 @@ def validate_hash(path, hash):
     import hashlib
 
     md5 = hashlib.md5()
-    
+
     with open(path, 'rb') as f:
         while True:
             chunk = f.read(10000000)
             if not chunk:
                 break
             md5.update(chunk)
-    
+
     return md5.hexdigest() == hash
 
 
@@ -189,7 +209,7 @@ class Yamler:
 
 
     def download(self):
-        """Check if provided weblink to the file exists. 
+        """Check if provided weblink to the file exists.
         Download if verified.
         """
         path = self.yaml_data['data_file']['location']['url']
@@ -209,27 +229,6 @@ class Yamler:
             logging.error(f' file unavailable')
             sys.exit(1)
 
-
-    def bulk_download(self):
-        """Bulk download option assumes one of the following file types:
-        ['tgz', 'tar.gz', 'tar.bz2', 'tar.xz']
-        """
-        import os
-        import tarfile
-
-        self.download()
-
-        if tarfile.is_tarfile(self.downloaded_file):
-            tarred_data = tarfile.open(
-                self.downloaded_file, 
-                mode='r:*'
-            )
-            for member in tarred_data.getmembers():
-                if member.isreg():
-                    member.name = os.path.basename(member.name)
-                    tarred_data.extract(member, path=self.outdir)
-    
-
     def check_hash(self):
         """Compare md5 of the downloaded file to the provided value"""
         if validate_hash(self.downloaded_file, self.hash):
@@ -237,22 +236,47 @@ class Yamler:
         else:
             raise ValueError(' provided md5 hash didn\'t match.')
 
+    def extract_bulk(self):
+        """Extract donwloaded bulk file."""
+        import os
+        import tarfile
+
+        if tarfile.is_tarfile(self.downloaded_file):
+            tarred_data = tarfile.open(
+                self.downloaded_file,
+                mode='r:*'
+            )
+            for member in tarred_data.getmembers():
+                if member.isreg():
+                    member.name = os.path.basename(member.name)
+                    tarred_data.extract(member, path=self.outdir)
+        else:  # Raise exception for invalid archive file
+            raise Exception(' invalid archive file for upload_bulk.')
+
+        # Move the downloaded archivefile to "downloaded_archive" sub-dir
+        # to avoid it being processed later.
+        tarfile_subdir = 'submitted_data/downloaded_archive/'
+        pathlib.Path(tarfile_subdir).mkdir()
+        new_downloaded_path = tarfile_subdir + self.downloaded_file.split('/')[-1]
+        os.rename(
+            self.downloaded_file,
+            tarfile_subdir + self.downloaded_file.split('/')[-1]
+        )
+        self.downloaded_file = new_downloaded_path
+
 
     def check_defined(self):
-        import os
-
         """Check whether the submitted data is a single file"""
-        if self.yaml_data['defined_as'] == 'upload':
+        if self.yaml_data['defined_as'] in ['upload', 'upload_bulk']:
             self.download()
-            self.check_hash()
-        elif self.yaml_data['defined_as'] == 'upload_bulk':
-            self.bulk_download()
-            if self.check_hash():
-                os.remove(self.outdir + self.downloaded_file)
         else:
             logging.error(f' accepted \'defined_as\' variables are \'upload\' and \'upload_bulk\'.')
             sys.exit(1)
 
+        self.check_hash()
+
+        if self.yaml_data['defined_as'] == 'upload_bulk':
+            self.extract_bulk()
 
     def check_data_file(self):
         """Standard set of Yamler functions to check information on the
@@ -264,20 +288,22 @@ class Yamler:
 
 if __name__ == '__main__':
 
-    if len(sys.argv) == 1:
-        yaml_file = predefine_yaml()
-    else:
-        yaml_file = pathlib.Path(sys.argv[1])
+    #if len(sys.argv) == 1:
+    #    yaml_file = check_yaml_in_ci()
+    #else:
+    #    yaml_file = pathlib.Path(sys.argv[1])
 
-    try:
-        yaml_file_path = yaml_file.resolve(strict=True)
-    except FileNotFoundError:
-        logging.info(f' no new yaml file found to process.')
-        sys.exit(0)
+    #try:
+    #    yaml_file_path = yaml_file.resolve(strict=True)
+    #except FileNotFoundError:
+    #    logging.info(f' no new yaml file found to process.')
+    #    sys.exit(0)
 
-    logging.info(f' processing metadata {yaml_file_path}.')
-    yaml_data = load_yaml(yaml_file)
-    print(yaml_data)
-    y = Yamler(yaml_data)
-    y.check_data_file()
-
+    submitted_yaml_files = get_submitted_yaml()
+    for yaml_file in submitted_yaml_files:
+        #logging.info(f' processing metadata {yaml_file_path}.')
+        logging.info(f' processing metadata {yaml_file}.')
+        yaml_data = load_yaml(yaml_file)
+        print(yaml_data)
+        y = Yamler(yaml_data)
+        y.check_data_file()

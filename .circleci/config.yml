@@ -20,22 +20,22 @@ jobs:
           command: |
             bash .circleci/install_cimr.sh
       - run:
-          name: Check and download data if a yaml file is submitted
-          command: python3 .circleci/parse_yaml.py
-      - run:
-          name: Process submitted data
+          name: Handle user request
           command: |
-            python3 .circleci/process_submitted_data.py
+            bash .circleci/handle_request.sh
       - persist_to_workspace:
           root: ~/cimr-d
           paths:
             - .git
             - .circleci
+            - submitted
+            - processed
             - submitted_data
             - processed_data
 
   deploy:
-    machine: true
+    docker:
+      - image: circleci/python:3.6.8
     working_directory: ~/cimr-d
     steps:
       - attach_workspace:
