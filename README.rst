@@ -42,7 +42,12 @@ regarding the data to be added to `cimr citations`_.
 Contributing data
 =================
 
-cimr 
+cimr-d is built to be a community resource and benefits greatly 
+by contributors of all levels, from research data to development. 
+For details regarding how to contribute data to cimr-d, please see
+the `cimr-d contributions`_ doc.
+
+.. _cimr-d contributions: https://github.com/greenelab/cimr-d/blob/master/doc/contributing.md
 
 
 =========

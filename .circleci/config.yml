@@ -23,6 +23,7 @@ jobs:
           name: Handle user request
           command: |
             bash .circleci/handle_request.sh
+          no_output_timeout: 2h
       - persist_to_workspace:
           root: ~/cimr-d
           paths:
