@@ -7,11 +7,6 @@ jobs:
     resource_class: xlarge
     steps:
       - checkout
-      - run:
-          name: Install git-lfs
-          command: |
-            bash .circleci/git_lfs.sh
-            git lfs install && git lfs pull
       - add_ssh_keys:
           fingerprints:
             - "2e:fb:e9:d5:94:c6:f4:75:2c:cb:66:71:a9:af:93:8a"
@@ -33,6 +28,7 @@ jobs:
             - processed
             - submitted_data
             - processed_data
+            - cimr-d_catalog.txt
 
   deploy:
     docker:
@@ -47,7 +43,6 @@ jobs:
       - run:
           name: Save submitted and processed data
           command: |
-            bash .circleci/git_lfs.sh
             bash .circleci/deploy.sh
 
 workflows:
