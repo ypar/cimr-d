@@ -27,6 +27,9 @@ if [ -f cimr-d_catalog.txt ]; then
     MD5_IN_CATALOG=$(awk -F'\t' '{ if (NR > 1) print $7 }' cimr-d_catalog.txt)
 fi
 
+# Use the latest "pip"
+sudo pip install --upgrade pip
+
 # Install "shyaml" to parse yaml files in shell ("yq" is another alternative).
 sudo pip install shyaml
 
@@ -37,7 +40,7 @@ for f in ${yml_files[*]}; do
     f_md5=$(cat $f | shyaml get-value data_file.location.md5)
 
     unset MD5_NOT_FOUND
-    echo ${MD5_IN_CATALOG} | grep --quiet "^${f_md5}$" || MD5_NOT_FOUND=true
+    echo ${MD5_IN_CATALOG} | grep --quiet "${f_md5}" || MD5_NOT_FOUND=true
 
     if [ -z "${MD5_NOT_FOUND}" ]; then
 	echo "Error in $f: ${f_url} has already been processed!"

@@ -41,6 +41,9 @@ if [ ! -f ${INDICATOR_FIELNAME} ]; then
     exit 0
 fi
 
+# Use the latest "pip"
+sudo pip install --upgrade pip
+
 # Install awscli to make "aws" command available
 sudo pip install awscli
 
