@@ -45,8 +45,8 @@ fi
 sudo pip install awscli
 
 # Move files in S3 buckets from temporary to permanent locations.
-aws s3 sync submitted_data/  s3://cimr-root/PR-${PR_NUMBER}/
-aws s3 sync processed_data/  s3://cimr-d/  --exclude "request.handled"
+aws s3 sync submitted_data/  s3://cimr-root/PR-${PR_NUMBER}/ --exclude "request.handled"
+aws s3 sync processed_data/  s3://cimr-d/
 
 # Move submitted YAML files to "processed/" sub-dir
 mkdir -p processed/PR-${PR_NUMBER}/
