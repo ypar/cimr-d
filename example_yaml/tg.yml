@@ -1,28 +1,22 @@
 data_file:
     description: >-
-        Global Lipid Genetics Consortium GWAS results for high-density 
-        cholesterol levels
+        Global Lipid Genetics Consortium GWAS results for triglyceride 
+        levels
     location:
-        url: https://zenodo.org/record/3338180/files/HDL_Cholesterol.txt.gz
-        md5: 2b28816a0a363db1a09ad9a6ba1a6620
+        url: https://drive.google.com/file/d/1dpCqxjZRZtWmiq_6GalCLTweFd15y09n/view?usp=sharing
+        md5: 9935f0422c52f32946629dd1f965af51
+    input_name: glgc_triglycerides.txt.gz
     columns:
         variant_id: panel_variant_id
         variant_chrom: chromosome
         variant_pos: position
         rsnum: variant_id
-        effect_allele: effect_allele
-        non_effect_allele: non_effect_allele
-        effect_size: effect_size
-        standard_error: standard_error
-        zscore: zscore
-        pvalue: pvalue
-        imputation_status: imputation_status
 
 data_info:
     citation: 10.1038/ng.2797
     data_source: http://lipidgenetics.org/
     data_type: gwas
-    context: hdl cholesterol
+    context: triglyceride
     build: b38
     sample_size: 187167
     n_cases: na

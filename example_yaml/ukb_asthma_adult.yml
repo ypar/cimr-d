@@ -24,6 +24,7 @@ data_info:
     citation: 10.1016/S2213-2600(19)30055-4
     data_source: https://zenodo.org/record/3248979
     data_type: gwas
+    context: asthma
     build: b37
     sample_size: 356083
     n_cases: 37846

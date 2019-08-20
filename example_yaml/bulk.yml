@@ -35,6 +35,7 @@ data_info:
     citation: 10.1038/ng.2797
     data_source: http://lipidgenetics.org/
     data_type: gwas
+    context: hdl cholesterol; ldl cholesterol
     build: b38
     sample_size: 187167
     n_cases: na
