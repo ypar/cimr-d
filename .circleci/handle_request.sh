@@ -37,7 +37,7 @@ for f in ${yml_files[*]}; do
     f_md5=$(cat $f | shyaml get-value data_file.location.md5)
 
     unset MD5_NOT_FOUND
-    echo ${MD5_IN_CATALOG} | grep --quiet ${f_md5} || MD5_NOT_FOUND=true
+    echo ${MD5_IN_CATALOG} | grep --quiet "^${f_md5}$" || MD5_NOT_FOUND=true
 
     if [ -z "${MD5_NOT_FOUND}" ]; then
 	echo "Error in $f: ${f_url} has already been processed!"
