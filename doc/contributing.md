@@ -38,9 +38,9 @@
 # Contributing data with a yaml file
 
 
-_cimr-d_ uses a version control system, [git](https://github.com), to 
-track different versions of code and data. Experienced git users 
-may skip the following section and just move on to the 
+_cimr-d_ uses a version control system, [git](https://github.com), to
+track different versions of code and data. Experienced git users
+may skip the following section and just move on to the
 [example yaml files](#examples).
 
 In order to contribute new data to _cimr-d_, please follow these steps:
@@ -49,22 +49,22 @@ In order to contribute new data to _cimr-d_, please follow these steps:
 
 ### 0. Make a github account.
 
-Create a GitHub [account](https://github.com), GitHub allows 
-unlimited public repositories, and also offers 
+Create a GitHub [account](https://github.com), GitHub allows
+unlimited public repositories, and also offers
 [discounts for academics](https://education.github.com/discount_requests/new).
 
-If you need more detailed guides, here is 
+If you need more detailed guides, here is
 [a tutorial on using git and github for revision control](https://www.melbournebioinformatics.org.au/tutorials/tutorials/using_git/Using_Git/).
 
-In order to contribute data to cimr-d, you also need a local 
-installation of git. 
+In order to contribute data to cimr-d, you also need a local
+installation of git.
 [Here is a guideline for installing git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
 
 
 ### 1. Prepare data
 
-Details are in the following 
+Details are in the following
 [section](#preparing-a-file-for-data-contribution).
 
 Here is an example GWAS file:
@@ -74,14 +74,14 @@ rsnum	variant_id	pvalue	effect_size	odds_ratio	standard_error	zscore	tss_distanc
 rs12565286	chr1_785910_G_C_b38	0.06295	-0.03250	NA	0.01940	-1.85954	NA	C	G	0.05628	original	54632	NA	b38
 ```
 
-Any variant-based association files can be similarly formatted. 
-The file must be tab-delimited. Accepted file extensions included 
+Any variant-based association files can be similarly formatted.
+The file must be tab-delimited. Accepted file extensions included
 `tsv.gz` and `txt.gz`.
 
-The absolute minimum requirement for _cimr-d_ to accept the 
+The absolute minimum requirement for _cimr-d_ to accept the
 contributed data are following columns:
 
-* variant_id 
+* variant_id
   (in the format of chrom_position_ref-allele_alt-allele_genome-build)
 * pvalue
 * effect_size
@@ -92,36 +92,36 @@ contributed data are following columns:
 * build (in the yaml file)
 
 
-We strongly recommend that the file(s) be uploaded to an archive 
-service such as [Zenodo](https://zenodo.org). This ensures that all 
-steps involving processing and remapping of the files are reproducible 
-by others. In rare cases, we may accept Google Drive share links, 
-provided that the cimr-d processed outputs can be publicly shared. 
+We strongly recommend that the file(s) be uploaded to an archive
+service such as [Zenodo](https://zenodo.org). This ensures that all
+steps involving processing and remapping of the files are reproducible
+by others. In rare cases, we may accept Google Drive share links,
+provided that the cimr-d processed outputs can be publicly shared.
 
 
 
 ### 2. Prepare the contributor yaml file
 
-Some more details are provided 
-[below](#writing-a-yaml-file-for-data-contribution). 
+Some more details are provided
+[below](#writing-a-yaml-file-for-data-contribution).
 
-You may write your own yaml files or copy a 
-[template](#template-yaml-file) and fill in values. 
+You may write your own yaml files or copy a
+[template](#template-yaml-file) and fill in values.
 
-Recommended indentation for yaml files are 4-spaces per level. 
-While most other columns in the example files are not required, 
-it is highly recommended that the contributor provide as much 
-information as they have available to maximize the usage of 
-contributed data. 
+Recommended indentation for yaml files are 4-spaces per level.
+While most other columns in the example files are not required,
+it is highly recommended that the contributor provide as much
+information as they have available to maximize the usage of
+contributed data.
 
-Find the hyperlink to the file uploaded in [step 1](#prepare-data) 
+Find the hyperlink to the file uploaded in [step 1](#prepare-data)
 and paste in `url` field of the yaml file.
 
 
 
 ### 3. Fork cimr-d repository.
 
-Here is 
+Here is
 [a help article](https://help.github.com/en/articles/fork-a-repo).
 
 
@@ -134,7 +134,7 @@ Once the repository has been forked, clone the repository.
 git clone git@github.com:${your-github-user-name-or-organization}/cimr-d.git
 ```
 
-Then place the prepared yaml file from 
+Then place the prepared yaml file from
 [step 3](#fork-cimr-d-repository) in the `submitted` dir.
 
 ```bash
@@ -142,7 +142,7 @@ cd cimr-d
 cp ${path-to-the-prepared-yaml-file} submitted/
 ```
 
-Next, add and commit the file. 
+Next, add and commit the file.
 
 ```bash
 git add submitted/${yaml-file-name}
@@ -155,17 +155,17 @@ Now the file is ready to be submitted to cimr-d.
 
 ### 5. Create a pull request from the forked repository
 
-Here is 
+Here is
 [a help article](https://help.github.com/en/articles/creating-a-pull-request-from-a-fork).
 
-Each yaml file may refer to one compressed text file or multiple 
-compressed text files in a tar archive. For one yaml file to 
-be used to submit multiple data files, the information in the 
-yaml file must be representative of all submitted files. 
+Each yaml file may refer to one compressed text file or multiple
+compressed text files in a tar archive. For one yaml file to
+be used to submit multiple data files, the information in the
+yaml file must be representative of all submitted files.
 
-Alternatively, one cimr-d pull request may be filed with multiple 
-yaml files at once; i.e. one or more appropriately formatted 
-yaml files can be placed in the `submitted` directory 
+Alternatively, one cimr-d pull request may be filed with multiple
+yaml files at once; i.e. one or more appropriately formatted
+yaml files can be placed in the `submitted` directory
 as described in [step4](#commit-yaml-file) for one pull request.
 
 
@@ -175,11 +175,11 @@ as described in [step4](#commit-yaml-file) for one pull request.
 
 ## File formatting
 
-Currently _cimr-d_ expects tab-delimited plain text files that 
-are compressed by gzip. Column headings may differ from the 
-default _cimr-d_ example files. However, in such cases, 
-column heading changes must be noted in the 
-[yaml file](#conditionally-required-fields). 
+Currently _cimr-d_ expects tab-delimited plain text files that
+are compressed by gzip. Column headings may differ from the
+default _cimr-d_ example files. However, in such cases,
+column heading changes must be noted in the
+[yaml file](#conditionally-required-fields).
 
 
 
@@ -188,14 +188,14 @@ column heading changes must be noted in the
 
 ## Accepted weblinks
 
-_cimr-d_ accepts data previously uploaded to public archives such as 
-[zenodo](https://zenodo.org/) and [figshare](https://figshare.com/). 
-_cimr-d_ will work as long as the linked data contains all required 
+_cimr-d_ accepts data previously uploaded to public archives such as
+[zenodo](https://zenodo.org/) and [figshare](https://figshare.com/).
+_cimr-d_ will work as long as the linked data contains all required
 columns and properly formatted yaml pointing to it.
 
-However, we strongly recommend archive services in place of e.g. 
-personal storage drive or box accounts, due to various reasons 
-including long-term reproducibility and contributor acknowledgement. 
+However, we strongly recommend archive services in place of e.g.
+personal storage drive or box accounts, due to various reasons
+including long-term reproducibility and contributor acknowledgement.
 
 
 
@@ -229,7 +229,7 @@ method:
 
 ## Conditionally required fields
 
-`columns` fields in `data_file` are required if the submitted data 
+`columns` fields in `data_file` are required if the submitted data
 contains column names different from the default _cimr_ variables.
 See [data_file section](#data_file) for available options.
 
@@ -237,40 +237,40 @@ See [data_file section](#data_file) for available options.
 
 ## Optional fields
 
-For most non-required fields [as seen in examples below](#examples), 
-`na` (as in `not available`) is an acceptable value. Alternatively, 
-if there's no information available for a given non-required field, 
+For most non-required fields [as seen in examples below](#examples),
+`na` (as in `not available`) is an acceptable value. Alternatively,
+if there's no information available for a given non-required field,
 such variables may be omitted.
 
 
 ## Basics on yaml file formatting
 
-Example cimr submission files are provided [below](#examples). 
-[YAML refers to a human friendly data serialization standard](https://yaml.org/). 
-Detailed documentation can be found 
-[here](https://yaml.org/spec/1.2/spec.html). 
+Example cimr submission files are provided [below](#examples).
+[YAML refers to a human friendly data serialization standard](https://yaml.org/).
+Detailed documentation can be found
+[here](https://yaml.org/spec/1.2/spec.html).
 
 YAML uses strict syntactically significant newlines and indentations.
-In case of cimr data-submission yaml form, most fields expect values 
-of one word or a short string (such as a website link). However, for 
-longer lines as in `data_file: description`, multi-line strings can be 
-indicated with `>-` next to the key as shown in 
+In case of cimr data-submission yaml form, most fields expect values
+of one word or a short string (such as a website link). However, for
+longer lines as in `data_file: description`, multi-line strings can be
+indicated with `>-` next to the key as shown in
 [an example](#gwas-upload-yaml-file-example).
 
 
 
 ## Missing values
 
-Missing values in the yaml file may be indicated by `na` or by 
+Missing values in the yaml file may be indicated by `na` or by
 deleting the key from the yaml file.
 
 
 
 ## Listing multiple values
 
-Multiple values may be listed for keys in `data_info` and `method` 
-sections. These values can be separated using a `;` (semicolon) between 
-values. 
+Multiple values may be listed for keys in `data_info` and `method`
+sections. These values can be separated using a `;` (semicolon) between
+values.
 
 
 
@@ -281,14 +281,14 @@ values.
 
 ## data_file
 
-`data_file` key is a superset of keys describing the dataset. 
-Both of the `location` keys are required to contribute data to 
+`data_file` key is a superset of keys describing the dataset.
+Both of the `location` keys are required to contribute data to
 _cimr-d_.
 
 
 | argument                   | description                               |
 |----------------------------|-------------------------------------------|
-| description                | a brief description of data.              | 
+| description                | a brief description of data.              |
 | location: url              | link to data.                             |
 | location: md5              | md5 sum hash to verify the file size.     |
 | input_name                 | name of the submitted file,               |
@@ -325,9 +325,9 @@ _cimr-d_.
 
 
 
-## data_info 
+## data_info
 
-Data information provided in `data_info` is used to generate citation 
+Data information provided in `data_info` is used to generate citation
 and metadata information used for analyses and acknowledgements.
 
 
@@ -345,11 +345,11 @@ and metadata information used for analyses and acknowledgements.
 
 ### citation
 
-While not required, citation information ensures that data contributed 
-to _cimr-d_ are acknowledged and cited properly as they are used in 
-other research studies. DOI numbers can be provided from published paper 
-describing the data or from zenodo and other data archive services. 
-Multiple doi's may be listed with `;` delimiter. e.g. 
+While not required, citation information ensures that data contributed
+to _cimr-d_ are acknowledged and cited properly as they are used in
+other research studies. DOI numbers can be provided from published paper
+describing the data or from zenodo and other data archive services.
+Multiple doi's may be listed with `;` delimiter. e.g.
 
 ```yaml
 data_info:
@@ -359,33 +359,33 @@ data_info:
 
 ### context
 
-`context` in `data_info` refer to the context of the contributed data 
-in the biological sense. For instance, for `gwas` `data_type`, `context` 
-will mean complex traits or diseases used in the study. Recommended 
-`context` values include terms searchable in 
-[Human Disease Ontology](http://www.obofoundry.org/ontology/doid.html) 
-such as terms from the 
-[NCI Thesaurus](https://ncit.nci.nih.gov/ncitbrowser/). An example 
-`context` for `gwas` would be 
+`context` in `data_info` refer to the context of the contributed data
+in the biological sense. For instance, for `gwas` `data_type`, `context`
+will mean complex traits or diseases used in the study. Recommended
+`context` values include terms searchable in
+[Human Disease Ontology](http://www.obofoundry.org/ontology/doid.html)
+such as terms from the
+[NCI Thesaurus](https://ncit.nci.nih.gov/ncitbrowser/). An example
+`context` for `gwas` would be
 [coronary artery disease](http://www.ontobee.org/ontology/DOID?iri=http://purl.obolibrary.org/obo/DOID_3393).
 
-For `eqtl`, the `context` may be the tissue or cell type within 
-which the eqtl effect has been measured. Recommended `context` values 
-include terms from the 
-[Uber-anatomy ontology](https://www.ebi.ac.uk/ols/ontologies/uberon). 
-For the GTEx example [provided below](#eqtl-upload-yaml-file-example), 
-the `context` is `whole blood`, which is a synonym with `blood` 
+For `eqtl`, the `context` may be the tissue or cell type within
+which the eqtl effect has been measured. Recommended `context` values
+include terms from the
+[Uber-anatomy ontology](https://www.ebi.ac.uk/ols/ontologies/uberon).
+For the GTEx example [provided below](#eqtl-upload-yaml-file-example),
+the `context` is `whole blood`, which is a synonym with `blood`
 in [uberon](https://www.ebi.ac.uk/ols/ontologies/uberon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_0000178).
 
-This information is used to assess compatibility between datasets for 
-meta-analysis and other downstream applications. Values in `context` 
-will be changed to all lower case letters and an `_` (underscore) will 
-be inserted in place of spaces for consistency in the 
+This information is used to assess compatibility between datasets for
+meta-analysis and other downstream applications. Values in `context`
+will be changed to all lower case letters and an `_` (underscore) will
+be inserted in place of spaces for consistency in the
 [cimr-d_catalog.txt](https://github.com/greenelab/cimr-d/blob/master/cimr-d_catalog.txt).
 
 
 
-## method 
+## method
 
 Method details can be listed here.
 
@@ -395,7 +395,7 @@ Method details can be listed here.
 | tool      | name of the tool used             |
 | website   | website link(s) for the tool used |
 
-If multiple methods and tools are used to generate data, they 
+If multiple methods and tools are used to generate data, they
 may be listed, separated by a `;` (semicolon).
 
 ```yaml
@@ -422,9 +422,17 @@ Contributor information is optional but recommended.
 
 # Examples
 
+
+The latest set of examples can be found in the
+[example_yaml dir](https://github.com/greenelab/cimr-d/tree/master/example_yaml).
+Yaml files submitted and processed are located in the
+[processed dir](https://github.com/greenelab/cimr-d/tree/master/processed).
+
+
+
 ## Template yaml file
 
-This is an example yml configuration with all required and 
+This is an example yml configuration with all required and
 optional keys for a successful _cimr-d_ processing:
 
 
@@ -433,50 +441,50 @@ data_file:
     description:
     location:
         url:
-        md5: 
+        md5:
     columns:
-        variant_id: 
-        variant_chrom: 
-        variant_pos: 
-        rsnum: 
-        ref: 
-        alt: 
-        effect_allele: 
-        non_effect_allele: 
-        inc_allele: 
-        inc_afrq: 
+        variant_id:
+        variant_chrom:
+        variant_pos:
+        rsnum:
+        ref:
+        alt:
+        effect_allele:
+        non_effect_allele:
+        inc_allele:
+        inc_afrq:
         effect_size:
-        standard_error: 
+        standard_error:
         zscore:
-        pvalue: 
+        pvalue:
         feature_id:
         feature_chrom:
-        feature_start: 
+        feature_start:
         feature_stop:
         imputation_status:
         frequency:
         tss_distance:
         ma_samples:
         maf:
-        
+
 data_info:
-    citation: 
-    data_source: 
+    citation:
+    data_source:
     data_type:
     context:
-    build: 
+    build:
     sample_size:
-    n_cases: 
+    n_cases:
     can_be_public: true
 
 method:
-    name: 
-    tool: 
-    website: 
+    name:
+    tool:
+    website:
 
 contributor:
     name:
-    github: 
+    github:
     email:
 ```
 
@@ -489,7 +497,7 @@ This is an example yml configuration to upload GWAS data to cimr-d:
 ```yaml
 data_file:
     description: >-
-        Global Lipid Genetics Consortium GWAS results for high-density 
+        Global Lipid Genetics Consortium GWAS results for high-density
         cholesterol levels
     location:
         url: https://zenodo.org/record/3338180/files/HDL_Cholesterol.txt.gz
@@ -514,7 +522,7 @@ method:
     name: linear regression
     tool: PLINK;SNPTEST;EMMAX;Merlin;GENABEL;MMAP
     website: >-
-        http://zzz.bwh.harvard.edu/plink/download.shtml; 
+        http://zzz.bwh.harvard.edu/plink/download.shtml;
         https://mathgen.stats.ox.ac.uk/genetics_software/snptest/snptest.html;
         https://genome.sph.umich.edu/wiki/EMMAX;
         https://csg.sph.umich.edu/abecasis/Merlin/tour/assoc.html;
@@ -532,18 +540,18 @@ contributor:
 ## eQTL upload yaml file example
 
 
-Here is an example yaml file for eQTL data submission. It 
-refers to a file linked on a website, GTEx Portal. Since the file 
-contains all required columns for _cimr-d_ but has different 
-column names, this information has been noted in the `data_file` 
-section of the yaml file. 
+Here is an example yaml file for eQTL data submission. It
+refers to a file linked on a website, GTEx Portal. Since the file
+contains all required columns for _cimr-d_ but has different
+column names, this information has been noted in the `data_file`
+section of the yaml file.
 
 
 
 ```yaml
 data_file:
     description: >-
-        Genotype-Tissue Expression (GTEx) consortium v7 data release 
+        Genotype-Tissue Expression (GTEx) consortium v7 data release
         for genome-wide expression quantitative trait loci (eQTL) scans
     location:
         url: https://storage.googleapis.com/gtex_analysis_v7/single_tissue_eqtl_data/all_snp_gene_associations/Whole_Blood.allpairs.txt.gz
@@ -580,22 +588,22 @@ contributor:
 
 ## GWAS bulk upload yaml file example
 
-_cimr-d_ allows bulk uploads, if all data contributed share metadata. 
-Specifically, compressed tarfiles are accepted. Bulk file extensions 
+_cimr-d_ allows bulk uploads, if all data contributed share metadata.
+Specifically, compressed tarfiles are accepted. Bulk file extensions
 can be: 'tar.gz', 'tgz', 'tar.bz2', or 'tar.xz'.
 
-For instance, two different traits, low-density lipid cholesterol and 
-high-density lipid cholesterol, have been measured in the same 
-cohort of people and analyzed using the same method in the below 
-example. In this case, two compressed tab-delimited files may be 
-prepared as one tarfile and submitted with one yaml file. 
+For instance, two different traits, low-density lipid cholesterol and
+high-density lipid cholesterol, have been measured in the same
+cohort of people and analyzed using the same method in the below
+example. In this case, two compressed tab-delimited files may be
+prepared as one tarfile and submitted with one yaml file.
 
 
 
 ```yaml
 data_file:
     description: >-
-        Global Lipid Genetics Consortium GWAS results for high-density 
+        Global Lipid Genetics Consortium GWAS results for high-density
         cholesterol levels
     location:
         url: https://zenodo.org/record/3345991/files/gwas_hdl_ldl.tar.gz
@@ -605,7 +613,7 @@ data_file:
         variant_chrom: chromosome
         variant_pos: position
         rsnum: variant_id
-        
+
 data_info:
     citation: 10.1038/ng.2797
     data_source: http://lipidgenetics.org/
@@ -620,7 +628,7 @@ method:
     name: linear regression
     tool: PLINK; SNPTEST; EMMAX; Merlin; GENABEL; MMAP
     website: >-
-        http://zzz.bwh.harvard.edu/plink/download.shtml; 
+        http://zzz.bwh.harvard.edu/plink/download.shtml;
         https://mathgen.stats.ox.ac.uk/genetics_software/snptest/snptest.html;
         https://genome.sph.umich.edu/wiki/EMMAX;
         https://csg.sph.umich.edu/abecasis/Merlin/tour/assoc.html;
@@ -637,10 +645,10 @@ contributor:
 ## GWAS upload yaml file example using a Google Drive link
 
 
-For single compressed text files submissions, _cimr-d_ will accept 
-a Google Drive link in place of an archive service such as 
-[Zenodo](https://zenodo.org). Additional requirement for a Google 
-Drive link is an pre-defined file name `input_name` field in the 
+For single compressed text files submissions, _cimr-d_ will accept
+a Google Drive link in place of an archive service such as
+[Zenodo](https://zenodo.org). Additional requirement for a Google
+Drive link is an pre-defined file name `input_name` field in the
 `data_file` section to overwrite the hashed file path.
 
 An example yaml file is provided below:
@@ -649,7 +657,7 @@ An example yaml file is provided below:
 ```yaml
 data_file:
     description: >-
-        Global Lipid Genetics Consortium GWAS results for triglyceride 
+        Global Lipid Genetics Consortium GWAS results for triglyceride
         levels
     location:
         url: https://drive.google.com/file/d/1dpCqxjZRZtWmiq_6GalCLTweFd15y09n/view?usp=sharing
@@ -682,7 +690,7 @@ method:
     name: linear regression
     tool: PLINK; SNPTEST; EMMAX; Merlin; GENABEL; MMAP
     website: >-
-        http://zzz.bwh.harvard.edu/plink/download.shtml; 
+        http://zzz.bwh.harvard.edu/plink/download.shtml;
         https://mathgen.stats.ox.ac.uk/genetics_software/snptest/snptest.html;
         https://genome.sph.umich.edu/wiki/EMMAX;
         https://csg.sph.umich.edu/abecasis/Merlin/tour/assoc.html;
@@ -702,42 +710,42 @@ contributor:
 
 ## Where did my data go after submission to cimr-d?
 
-Successfully processed data will be relocated to a publicly 
-accesible S3 bucket in Amazon Web Services (AWS). 
-[The list is maintained in the cimr-d github repository](https://github.com/greenelab/cimr-d/blob/master/processed/README.md) 
-for convenient review and download. Periodically, data will 
-undergo additional review to be released on an archive service 
-such as [zenodo](https://zenodo.org) to allow bulk downloads. 
+Successfully processed data will be relocated to a publicly
+accesible S3 bucket in Amazon Web Services (AWS).
+[The list is maintained in the cimr-d github repository](https://github.com/greenelab/cimr-d/blob/master/processed/README.md)
+for convenient review and download. Periodically, data will
+undergo additional review to be released on an archive service
+such as [zenodo](https://zenodo.org) to allow bulk downloads.
 
 
 ## What happens after I submit a pull request with new data?
 
-_cimr-d_ is based on a continuous integration service, 
-[CircleCI](https://circleci.com). Once a pull request with a 
-new yaml file is opened, it will go through the cimr-d pipeline for 
-automated file checking, processing and ID harmonizations before 
-data is accepted for storage in _cimr-d_. One may check the status 
-of the automated steps by the colored dots next to the PR commit 
-history in the GitHub. Orange means the PR has been submitted and 
-is pending processing. Green means the PR has passed all 
-pre-requisites to proceed into the _cimr-d_ AWS S3 bucket for 
-public downloads. Once the PR has been checked, both the submitted 
-and processed data are manually reviewed before the PR is approved. 
-Subsequently, data merged into the master branch will be relocated 
+_cimr-d_ is based on a continuous integration service,
+[CircleCI](https://circleci.com). Once a pull request with a
+new yaml file is opened, it will go through the cimr-d pipeline for
+automated file checking, processing and ID harmonizations before
+data is accepted for storage in _cimr-d_. One may check the status
+of the automated steps by the colored dots next to the PR commit
+history in the GitHub. Orange means the PR has been submitted and
+is pending processing. Green means the PR has passed all
+pre-requisites to proceed into the _cimr-d_ AWS S3 bucket for
+public downloads. Once the PR has been checked, both the submitted
+and processed data are manually reviewed before the PR is approved.
+Subsequently, data merged into the master branch will be relocated
 to a designated S3 bucket for public downloads.
 
 
 ## How long does it take for the PR to be approved?
 
-_cimr-d_ processing depends on the size of the data. A typical data 
-containing $\leq$ 10 million lines would take a few minutes or less. 
-Larger files (e.g. $\geq$ 150 million lines) may take a significantly 
-longer time due to I/O limits. An example eqtl scan results file from the 
+_cimr-d_ processing depends on the size of the data. A typical data
+containing $\leq$ 10 million lines would take a few minutes or less.
+Larger files (e.g. $\geq$ 150 million lines) may take a significantly
+longer time due to I/O limits. An example eqtl scan results file from the
 Genotype-Tissue Expression (GTEx), for instance, may take about an hour.
 
-Additionally, in order to make sure all data processed are suitable for 
-_cimr-d_ release, the resulting processed dataset(s) are manually reviewed 
-before the PR is approved. We try to provide feedback for changes or 
+Additionally, in order to make sure all data processed are suitable for
+_cimr-d_ release, the resulting processed dataset(s) are manually reviewed
+before the PR is approved. We try to provide feedback for changes or
 approve the PR within one or two business days.
 
 
@@ -748,35 +756,35 @@ Troubleshooting cimr-d processing based on error messages:
 
 
 `data type is not recognized`
-* Currently _cimr-d_ expects variant-based association data. 
-  These can be genome-wide association study (gwas) results or 
-  expression-, splicing-, protein-, and other quantitative trait 
-  loci (eqtl, sqtl, pqtl, etc.). These data types should be 
-  indicated by the `data_type` field in the 
+* Currently _cimr-d_ expects variant-based association data.
+  These can be genome-wide association study (gwas) results or
+  expression-, splicing-, protein-, and other quantitative trait
+  loci (eqtl, sqtl, pqtl, etc.). These data types should be
+  indicated by the `data_type` field in the
   [yaml file data_info section](#data_info).
 
 
 `%s rows in %s are non-numeric' % (numcol, col,)`
-* variant_pos, inc_Afrq, effect_size, standard_error, zscore, 
-  pvalues, frequency, ma_samples, maf and tss_distance columns 
+* variant_pos, inc_Afrq, effect_size, standard_error, zscore,
+  pvalues, frequency, ma_samples, maf and tss_distance columns
   are expected to only contain numeric values.
-* By default the following values are interpreted as NaN: ‘’, 
-  ‘#N/A’, ‘#N/A N/A’, ‘#NA’, ‘-1.#IND’, ‘-1.#QNAN’, ‘-NaN’, 
-  ‘-nan’, ‘1.#IND’, ‘1.#QNAN’, ‘N/A’, ‘NA’, ‘NULL’, ‘NaN’, 
+* By default the following values are interpreted as NaN: ‘’,
+  ‘#N/A’, ‘#N/A N/A’, ‘#NA’, ‘-1.#IND’, ‘-1.#QNAN’, ‘-NaN’,
+  ‘-nan’, ‘1.#IND’, ‘1.#QNAN’, ‘N/A’, ‘NA’, ‘NULL’, ‘NaN’,
   ‘n/a’, ‘nan’, ‘null’.
 
 
 `the format of %s is not testable.' % (col,)`
-* cimr will try to test whether above mentioned numeric columns 
-  containing non-numeric values can be converted into numeric. 
+* cimr will try to test whether above mentioned numeric columns
+  containing non-numeric values can be converted into numeric.
   If this test fails, it will cause a format error.
 
 
 `unknown delimiter used in variant_id`
 * Expected variant_id format is:
   chromosome_genomicposition_referenceallele_alternateallele_genomebuild
-  with underscores. cimr-d will accept ":" and "-" delimiters and 
-  convert them to underscores while processing. Any other delimiters or 
+  with underscores. cimr-d will accept ":" and "-" delimiters and
+  convert them to underscores while processing. Any other delimiters or
   missing information may cause an error.
 
 
@@ -787,8 +795,8 @@ Troubleshooting cimr-d processing based on error messages:
 
 
 `there are no matching rs ids`
-* By default a random subset of variants are selected to check against 
-  the reference genomic position - rs id pairs. If this test fails, 
+* By default a random subset of variants are selected to check against
+  the reference genomic position - rs id pairs. If this test fails,
   cimr-d will cause an error.
 
 
@@ -797,23 +805,23 @@ Troubleshooting cimr-d processing based on error messages:
 
 
 `feature_id column is not provided`
-* eqtl, sqtl, pqtl, etc. datasets must contain a column specifying the 
+* eqtl, sqtl, pqtl, etc. datasets must contain a column specifying the
   tested feature for each variant.
 
 
 `variant_id column is not provided`
-* variant_id column should contain unique variant ids in the format 
+* variant_id column should contain unique variant ids in the format
   of chrom_pos_refallele_altallele_genomebuild.
   e.g. chr1_13417_C_CGAGA_b37
 
 
 `rsnum column is not provided`
-* rsnum column is recommended but _cimr_ will still run as long as 
+* rsnum column is recommended but _cimr_ will still run as long as
   `variant_id` and other required columns are provided.
 
 
 `effect_size column is not provided`
-* effect size (beta coefficient, regression coefficient, etc.) values 
+* effect size (beta coefficient, regression coefficient, etc.) values
   are required to submit data to _cimr_.
 
 
@@ -826,7 +834,7 @@ Troubleshooting cimr-d processing based on error messages:
 
 
 `file {self.outfile} cannot be written`
-* The output file could not be written. It likely is caused by 
+* The output file could not be written. It likely is caused by
   directory permission issues.
 
 
@@ -843,7 +851,7 @@ Troubleshooting cimr-d processing based on error messages:
 
 
 `data_type not indicated in dir tree`
-* For `data_type` == `multiple`, the dir tree must reflect the 
+* For `data_type` == `multiple`, the dir tree must reflect the
   `data_type` of compressed tsv files in each dir.
 
 
