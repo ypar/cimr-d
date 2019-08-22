@@ -1,0 +1,34 @@
+data_file:
+    description: >-
+        Shared and distinct genetic risk factors for childhood-onset 
+        and adult-onset asthma; genome-wide association study
+    location:
+        url: https://zenodo.org/record/3248979/files/asthma_children.logistic.assoc.tsv.gz
+        md5: f2c14860cadfb8ee5686b4d7395f364b
+    columns:
+        variant_id: variant
+        variant_chrom: chr
+        variant_pos: pos
+        rsnum: rsid
+        ref: ref
+        alt: alt
+        effect_size: beta
+        standard_error: se
+        zscore: zstat
+        pvalue: pval
+        comment_0: converged
+
+data_info:
+    citation: 10.1016/S2213-2600(19)30055-4
+    data_source: https://zenodo.org/record/3248979
+    data_type: gwas
+    context: asthma
+    build: b37
+    sample_size: 356083
+    n_cases: 37846
+    can_be_public: true
+
+method:
+    name: logistic regression
+    tool: hail
+    website: https://github.com/hail-is/hail
