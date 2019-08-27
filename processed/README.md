@@ -2,6 +2,7 @@ List of processed files (with links to AWS S3 bucket):
 ----
   * eqtl
     * [Artery_Aorta.allpairs-PR-39.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Artery_Aorta.allpairs-PR-39.txt.gz): 3.2 GiB (updated on *2019-08-27 00:28:45*)
+    * [Artery_Coronary.allpairs-PR-42.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Artery_Coronary.allpairs-PR-42.txt.gz): 3.1 GiB (updated on *2019-08-27 19:08:50*)
   * gwas
     * [HDL_Cholesterol-PR-34.txt.gz](https://cimr-d.s3.amazonaws.com/gwas/HDL_Cholesterol-PR-34.txt.gz): 57.6 MiB (updated on *2019-08-22 16:40:09*)
     * [LDL_Cholesterol-PR-34.txt.gz](https://cimr-d.s3.amazonaws.com/gwas/LDL_Cholesterol-PR-34.txt.gz): 57.5 MiB (updated on *2019-08-22 16:40:08*)
