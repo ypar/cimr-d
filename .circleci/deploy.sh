@@ -98,6 +98,6 @@ git add processed/README.md
 git add cimr-d_catalog.txt
 
 # Commit changes and push them to remote "master" branch
-git commit -m "CircleCI: Save processed requests [skip ci]"
+git commit -m "CircleCI: Save processed request ${PR_STR} [skip ci]"
 ssh-keyscan github.com >> ~/.ssh/known_hosts
 git push --force --quiet origin master
