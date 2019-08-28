@@ -1,0 +1,32 @@
+data_file:
+    description: >-
+        eQTL scan in The Cancer Genome Atlas (TCGA) data
+    location:
+        url: https://drive.google.com/file/d/1D5zK_1IP_5HvSZJDJ9PmRPV0r2oWLzlr/view?usp=sharing
+        md5: cade6350546c7e36b7629b9cb60022c8
+    input_name: pancanqtl_ciseqtl_lgg.tsv.gz
+    columns:
+        effect_allele: a2
+        non_effect_allele: a1
+        effect_size: beta
+        pvalue: p-value
+
+data_info:
+    citation: 10.1093/nar/gkx861
+    data_source: http://bioinfo.life.hust.edu.cn/PancanQTL/
+    data_type: eqtl
+    context: lower grade glioma
+    build: b37
+    sample_size: 515
+    n_cases: na
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: matrixeqtl
+    website: http://www.bios.unc.edu/research/genomic_software/Matrix_eQTL/
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com
