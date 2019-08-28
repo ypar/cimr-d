@@ -94,8 +94,8 @@ aws s3 ls cimr-d --recursive --human-readable > processed/s3_list.txt
 python3 .circleci/txt2md.py
 git add processed/README.md
 
-# Update "cimr-d_catalog.txt"
-git add cimr-d_catalog.txt
+# Update "catalog.txt"
+git add catalog.txt
 
 # Commit changes and push them to remote "master" branch
 git commit -m "CircleCI: Save processed request ${PR_STR} [skip ci]"

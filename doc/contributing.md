@@ -381,7 +381,7 @@ This information is used to assess compatibility between datasets for
 meta-analysis and other downstream applications. Values in `context`
 will be changed to all lower case letters and an `_` (underscore) will
 be inserted in place of spaces for consistency in the
-[cimr-d_catalog.txt](https://github.com/greenelab/cimr-d/blob/master/cimr-d_catalog.txt).
+[catalog.txt](https://github.com/greenelab/cimr-d/blob/master/catalog.txt).
 
 
 
@@ -861,6 +861,3 @@ Troubleshooting cimr-d processing based on error messages:
 
 `there is no data_type indicated`
 * `data_type` field is empty.
-
-
-

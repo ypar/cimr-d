@@ -28,7 +28,7 @@ jobs:
             - processed
             - submitted_data
             - processed_data
-            - cimr-d_catalog.txt
+            - catalog.txt
 
   deploy:
     docker:

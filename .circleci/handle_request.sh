@@ -20,11 +20,11 @@ if [ ${#yml_files[@]} -eq 0 ]; then
     exit 0
 fi
 
-# Extract all values in 7th column ("submitted_data_md5") from cimr-d_catalog.txt
+# Extract all values in 7th column ("submitted_data_md5") from catalog.txt
 # (The first line is skipped because it is the header.)
 MD5_IN_CATALOG=""
-if [ -f cimr-d_catalog.txt ]; then
-    MD5_IN_CATALOG=$(awk -F'\t' '{ if (NR > 1) print $7 }' cimr-d_catalog.txt)
+if [ -f catalog.txt ]; then
+    MD5_IN_CATALOG=$(awk -F'\t' '{ if (NR > 1) print $7 }' catalog.txt)
 fi
 
 # Use the latest "pip"
