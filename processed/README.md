@@ -4,6 +4,7 @@ List of processed files (with links to AWS S3 bucket):
     * [Artery_Aorta.allpairs-PR-39.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Artery_Aorta.allpairs-PR-39.txt.gz): 3.2 GiB (updated on *2019-08-27 00:28:45*)
     * [Artery_Coronary.allpairs-PR-42.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Artery_Coronary.allpairs-PR-42.txt.gz): 3.1 GiB (updated on *2019-08-27 19:08:50*)
     * [pancanqtl_ciseqtl_brca-PR-46.tsv.gz](https://cimr-d.s3.amazonaws.com/eqtl/pancanqtl_ciseqtl_brca-PR-46.tsv.gz): 13.4 MiB (updated on *2019-08-28 23:24:54*)
+    * [pancanqtl_ciseqtl_kirc-PR-51.tsv.gz](https://cimr-d.s3.amazonaws.com/eqtl/pancanqtl_ciseqtl_kirc-PR-51.tsv.gz): 15.5 MiB (updated on *2019-08-30 14:50:15*)
     * [pancanqtl_ciseqtl_lgg-PR-48.tsv.gz](https://cimr-d.s3.amazonaws.com/eqtl/pancanqtl_ciseqtl_lgg-PR-48.tsv.gz): 16.8 MiB (updated on *2019-08-28 23:55:44*)
   * gwas
     * [Bmi.giant-ukbb.meta-analysis.combined.23May2018.HapMap2_only-PR-45.txt.gz](https://cimr-d.s3.amazonaws.com/gwas/Bmi.giant-ukbb.meta-analysis.combined.23May2018.HapMap2_only-PR-45.txt.gz): 58.0 MiB (updated on *2019-08-28 20:46:40*)
