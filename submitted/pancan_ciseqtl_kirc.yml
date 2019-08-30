@@ -1,0 +1,32 @@
+data_file:
+    description: >-
+        eQTL scan in The Cancer Genome Atlas (TCGA) data
+    location:
+        url: https://drive.google.com/file/d/15uXU5TITrgDRM7tlJPlP1cbuPb_gNDkZ/view?usp=sharing
+        md5: f31005ed60b761bb437037a1f503a066
+    input_name: pancanqtl_ciseqtl_kirc.tsv.gz
+    columns:
+        effect_allele: a2
+        non_effect_allele: a1
+        effect_size: beta
+        pvalue: p-value
+
+data_info:
+    citation: 10.1093/nar/gkx861
+    data_source: http://bioinfo.life.hust.edu.cn/PancanQTL/
+    data_type: eqtl
+    context: kidney renal clear cell carcinoma
+    build: b37
+    sample_size: 527
+    n_cases: na
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: matrixeqtl
+    website: http://www.bios.unc.edu/research/genomic_software/Matrix_eQTL/
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com
