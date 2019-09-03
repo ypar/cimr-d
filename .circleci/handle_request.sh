@@ -5,11 +5,16 @@
 
 set -e -x
 
-# Error if any change in "processed/" directory is detected.
-git diff origin/master --name-only | grep "^processed/" || PROCESSED_UNCHANGED=true
-if [ -z "$PROCESSED_UNCHANGED" ]; then
-    echo "Error: Commits in 'processed' directory not allowed!"
-    exit 1
+# Error if the PR includes any files in "processed/" directory.
+if [ -n "${CIRCLE_PULL_REQUEST}" ]; then
+    PR_NUMBER=$(echo ${CIRCLE_PULL_REQUEST} | awk -F'/cimr-d/pull/' '{print $2}')
+    GH_PR_API="https://api.github.com/repos/greenelab/cimr-d/pulls/${PR_NUMBER}/files"
+    PR_FILES=$(curl -s ${GH_PR_API} | jq '.[].filename')
+    echo "${PR_FILES}" | grep "^\"processed/" || PROCESSED_UNCHANGED=true
+    if [ -z "${PROCESSED_UNCHANGED}" ]; then
+	echo "Error: Changes in 'processed' directory not allowed!"
+	exit 1
+    fi
 fi
 
 # Exit if no yaml files in "submitted/" directory
