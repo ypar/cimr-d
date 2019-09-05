@@ -1,0 +1,33 @@
+data_file:
+    description: >-
+        UK Biobank GWAS for self-reported type 1 diabetes (20002_1222)
+        in male only dataset.
+    location:
+        url: https://www.dropbox.com/s/ib02ohskte1kvut/20002_1222.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 82de42d1ff3449a4d116752c2985ebe9
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: type 1 diabetes (self-reported)
+    build: b37
+    sample_size: 361141
+    n_cases: 318
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com
