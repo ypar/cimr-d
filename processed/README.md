@@ -2,8 +2,6 @@ List of processed files (with links to AWS S3 bucket):
 ----
   * eqtl
     * [Adipose_Subcutaneous.allpairs-PR-57.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Adipose_Subcutaneous.allpairs-PR-57.txt.gz): 3.5 GiB (updated on *2019-09-05 23:17:14*)
-    * [Adipose_Subcutaneous.allpairs-PR-58.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Adipose_Subcutaneous.allpairs-PR-58.txt.gz): 3.5 GiB (updated on *2019-09-06 01:15:41*)
-    * [Adipose_Subcutaneous.allpairs-PR-61.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Adipose_Subcutaneous.allpairs-PR-61.txt.gz): 3.5 GiB (updated on *2019-09-06 05:41:00*)
     * [Artery_Aorta.allpairs-PR-39.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Artery_Aorta.allpairs-PR-39.txt.gz): 3.2 GiB (updated on *2019-08-27 00:28:45*)
     * [Artery_Coronary.allpairs-PR-42.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Artery_Coronary.allpairs-PR-42.txt.gz): 3.1 GiB (updated on *2019-08-27 19:08:50*)
     * [Liver.allpairs-PR-55.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Liver.allpairs-PR-55.txt.gz): 2.9 GiB (updated on *2019-09-05 16:06:16*)
