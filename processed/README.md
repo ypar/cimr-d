@@ -1,6 +1,7 @@
 List of processed files (with links to AWS S3 bucket):
 ----
   * eqtl
+    * [Adipose_Subcutaneous.allpairs-PR-57.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Adipose_Subcutaneous.allpairs-PR-57.txt.gz): 3.5 GiB (updated on *2019-09-05 23:17:14*)
     * [Artery_Aorta.allpairs-PR-39.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Artery_Aorta.allpairs-PR-39.txt.gz): 3.2 GiB (updated on *2019-08-27 00:28:45*)
     * [Artery_Coronary.allpairs-PR-42.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Artery_Coronary.allpairs-PR-42.txt.gz): 3.1 GiB (updated on *2019-08-27 19:08:50*)
     * [Liver.allpairs-PR-55.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Liver.allpairs-PR-55.txt.gz): 2.9 GiB (updated on *2019-09-05 16:06:16*)
@@ -16,6 +17,7 @@ List of processed files (with links to AWS S3 bucket):
     * [20002_1223.gwas.imputed_v3.female-PR-56.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/20002_1223.gwas.imputed_v3.female-PR-56.tsv.gz): 429.3 MiB (updated on *2019-09-05 17:38:26*)
     * [20002_1223.gwas.imputed_v3.male-PR-56.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/20002_1223.gwas.imputed_v3.male-PR-56.tsv.gz): 434.1 MiB (updated on *2019-09-05 17:38:18*)
     * [Bmi.giant-ukbb.meta-analysis.combined.23May2018.HapMap2_only-PR-45.txt.gz](https://cimr-d.s3.amazonaws.com/gwas/Bmi.giant-ukbb.meta-analysis.combined.23May2018.HapMap2_only-PR-45.txt.gz): 58.0 MiB (updated on *2019-08-28 20:46:40*)
+    * [Fall_gwas_results_any_chd_tab-PR-59.txt.gz](https://cimr-d.s3.amazonaws.com/gwas/Fall_gwas_results_any_chd_tab-PR-59.txt.gz): 207.6 MiB (updated on *2019-09-06 00:36:27*)
     * [HDL_Cholesterol-PR-34.txt.gz](https://cimr-d.s3.amazonaws.com/gwas/HDL_Cholesterol-PR-34.txt.gz): 57.6 MiB (updated on *2019-08-22 16:40:09*)
     * [LDL_Cholesterol-PR-34.txt.gz](https://cimr-d.s3.amazonaws.com/gwas/LDL_Cholesterol-PR-34.txt.gz): 57.5 MiB (updated on *2019-08-22 16:40:08*)
     * [asthma_adults.logistic.assoc-PR-36.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/asthma_adults.logistic.assoc-PR-36.tsv.gz): 233.3 MiB (updated on *2019-08-22 19:07:21*)
