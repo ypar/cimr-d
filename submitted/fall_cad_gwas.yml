@@ -1,0 +1,38 @@
+data_file:
+    description: >-
+        Data description is found [here](https://grasp.nhlbi.nih.gov/downloads/ResultsMarch2019/2018_Fall/Description_GWAS_Fall.pdf).
+        GWAS of coronary artery disease among probable diabetes
+        patients in the UK Biobank.
+    location:
+        url: https://grasp.nhlbi.nih.gov/downloads/ResultsMarch2019/2018_Fall/Fall_gwas_results_any_chd_tab.txt.gz
+        md5: 910e71de35a792da1027db853a4a4dcc
+    columns:
+        variant_chrom: chr
+        variant_pos: pos
+        v1: variant_id
+        non_effect_allele: other_allele
+        inc_afrq: eaf
+        sample_size: ntotal
+        effect_size: beta
+        standard_error: se
+        pvalue: p_value
+
+data_info:
+    citation: 10.1007/s00125-018-4686-z
+    data_source: https://grasp.nhlbi.nih.gov/FullResults.aspx
+    data_type: gwas
+    context: coronary artery disease
+    build: b37
+    sample_size: 15666
+    n_cases: 3968
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: plink
+    website: https://www.cog-genomics.org/plink/2.0/
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com
