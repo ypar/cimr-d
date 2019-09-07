@@ -1,0 +1,44 @@
+data_file:
+    description: >-
+        Trans-ancestry meta-analysis of own birth weight in up to
+        321,223 individuals from (1) 80,745 individuals from the
+        European ancestry component within the EGG consortium;
+        (2) 12,948 individuals from nine studies within the EGG
+        consortium from diverse ancestry groups - African American,
+        Afro-Caribbean, Mexican, Chinese, Thai, Filipino, Surinamese,
+        Turkish and Moroccan; and (3) 227,530 individuals of
+        all ancestries from the UK Biobank
+    location:
+        url: http://mccarthy.well.ox.ac.uk/publications/2019/EggBirthWeight_NatureGenetics/Fetal_BW_transethnic_meta.NG2019.txt.gz
+        md5: a5ad577cdd7a729fd8360a8e6a4e3c21
+    columns:
+        variant_chrom: chr
+        variant_pos: pos
+        effect_allele: ea
+        non_effect_allele: nea
+        inc_afrq: eaf
+        effect_size: beta
+        standard_error: se
+        pvalue: p
+        sample_size: n
+        rsnum: rsid
+
+data_info:
+    citation: 10.1038/s41588-019-0403-1
+    data_source: https://www.egg-consortium.org/birth-weight-2019.html
+    data_type: gwas
+    context: birth weight
+    build: b37
+    sample_size: 321223
+    n_cases: na
+    can_be_public: true
+
+method:
+    name: meta-analysis
+    tool: gwama
+    website: http://www.well.ox.ac.uk/GWAMA
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com

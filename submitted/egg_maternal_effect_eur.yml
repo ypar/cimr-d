@@ -1,0 +1,40 @@
+data_file:
+    description: >-
+        European-only meta-analysis of the maternal effect in up to
+        264,498 individuals with their own birth weight and
+        179,360 individuals with offspring birth weight
+    location:
+        url: http://mccarthy.well.ox.ac.uk/publications/2019/EggBirthWeight_NatureGenetics/Maternal_Effect_European_meta_NG2019.txt.gz
+        md5: 7100022899c1539b72ec085ce7a4d10e
+    columns:
+        variant_id: SNPID
+        variant_chrom: chr
+        variant_pos: pos
+        effect_allele: ea
+        non_effect_allele: nea
+        inc_afrq: eaf
+        effect_size: beta
+        standard_error: se
+        pvalue: p
+        sample_size: n
+        rsnum: RSID
+
+data_info:
+    citation: 10.1038/s41588-019-0403-1
+    data_source: https://www.egg-consortium.org/birth-weight-2019.html
+    data_type: gwas
+    context: maternal effect on birth weight
+    build: b37
+    sample_size: 264498
+    n_cases: na
+    can_be_public: true
+
+method:
+    name: structural equation modelling (sem)
+    tool: R
+    website: https://academic.oup.com/ije/article/47/4/1229/4855879
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com

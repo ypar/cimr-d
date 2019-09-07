@@ -1,0 +1,41 @@
+data_file:
+    description: >-
+        European-only meta-analysis of own birth weight in up to
+        298,142 individuals from (1) 80,745 individuals from 35
+        studies participating in the EGG Consortium from Europe,
+        the United States and Australia; and (2) 217,397 individuals
+        of white European origin from the UK Biobank
+    location:
+        url: http://mccarthy.well.ox.ac.uk/publications/2019/EggBirthWeight_NatureGenetics/Fetal_BW_European_meta.NG2019.txt.gz
+        md5: 03526287dedb0557c9f9a46575cc256a
+    columns:
+        variant_chrom: chr
+        variant_pos: pos
+        effect_allele: ea
+        non_effect_allele: nea
+        inc_afrq: eaf
+        effect_size: beta
+        standard_error: se
+        pvalue: p
+        sample_size: n
+        rsnum: rsid
+
+data_info:
+    citation: 10.1038/s41588-019-0403-1
+    data_source: https://www.egg-consortium.org/birth-weight-2019.html
+    data_type: gwas
+    context: birth weight
+    build: b37
+    sample_size: 298142
+    n_cases: na
+    can_be_public: true
+
+method:
+    name: meta-analysis
+    tool: gwama
+    website: http://www.well.ox.ac.uk/GWAMA
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com
