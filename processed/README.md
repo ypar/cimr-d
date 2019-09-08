@@ -4,6 +4,7 @@ List of processed files (with links to AWS S3 bucket):
     * [Adipose_Subcutaneous.allpairs-PR-57.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Adipose_Subcutaneous.allpairs-PR-57.txt.gz): 3.5 GiB (updated on *2019-09-05 23:17:14*)
     * [Artery_Aorta.allpairs-PR-39.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Artery_Aorta.allpairs-PR-39.txt.gz): 3.2 GiB (updated on *2019-08-27 00:28:45*)
     * [Artery_Coronary.allpairs-PR-42.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Artery_Coronary.allpairs-PR-42.txt.gz): 3.1 GiB (updated on *2019-08-27 19:08:50*)
+    * [Artery_Tibial.allpairs-PR-74.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Artery_Tibial.allpairs-PR-74.txt.gz): 3.6 GiB (updated on *2019-09-08 04:54:46*)
     * [Brain_Amygdala.allpairs-PR-63.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Brain_Amygdala.allpairs-PR-63.txt.gz): 2.8 GiB (updated on *2019-09-06 16:40:42*)
     * [Brain_Spinal_cord_cervical_c-1.allpairs-PR-75.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Brain_Spinal_cord_cervical_c-1.allpairs-PR-75.txt.gz): 3.0 GiB (updated on *2019-09-08 01:11:41*)
     * [Breast_Mammary_Tissue.allpairs-PR-94.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Breast_Mammary_Tissue.allpairs-PR-94.txt.gz): 3.8 GiB (updated on *2019-09-07 18:47:06*)
