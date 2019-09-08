@@ -6,6 +6,7 @@ List of processed files (with links to AWS S3 bucket):
     * [Artery_Coronary.allpairs-PR-42.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Artery_Coronary.allpairs-PR-42.txt.gz): 3.1 GiB (updated on *2019-08-27 19:08:50*)
     * [Artery_Tibial.allpairs-PR-74.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Artery_Tibial.allpairs-PR-74.txt.gz): 3.6 GiB (updated on *2019-09-08 04:54:46*)
     * [Brain_Amygdala.allpairs-PR-63.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Brain_Amygdala.allpairs-PR-63.txt.gz): 2.8 GiB (updated on *2019-09-06 16:40:42*)
+    * [Brain_Anterior_cingulate_cortex_BA24.allpairs-PR-73.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Brain_Anterior_cingulate_cortex_BA24.allpairs-PR-73.txt.gz): 3.1 GiB (updated on *2019-09-08 10:43:37*)
     * [Brain_Spinal_cord_cervical_c-1.allpairs-PR-75.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Brain_Spinal_cord_cervical_c-1.allpairs-PR-75.txt.gz): 3.0 GiB (updated on *2019-09-08 01:11:41*)
     * [Breast_Mammary_Tissue.allpairs-PR-94.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Breast_Mammary_Tissue.allpairs-PR-94.txt.gz): 3.8 GiB (updated on *2019-09-07 18:47:06*)
     * [Cells_EBV-transformed_lymphocytes.allpairs-PR-105.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Cells_EBV-transformed_lymphocytes.allpairs-PR-105.txt.gz): 3.0 GiB (updated on *2019-09-07 08:36:42*)
