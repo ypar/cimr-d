@@ -15,6 +15,7 @@ List of processed files (with links to AWS S3 bucket):
     * [Cells_Transformed_fibroblasts.allpairs-PR-66.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Cells_Transformed_fibroblasts.allpairs-PR-66.txt.gz): 3.3 GiB (updated on *2019-09-08 17:25:30*)
     * [Heart_Atrial_Appendage.allpairs-PR-65.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Heart_Atrial_Appendage.allpairs-PR-65.txt.gz): 3.4 GiB (updated on *2019-09-08 14:55:07*)
     * [Liver.allpairs-PR-55.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Liver.allpairs-PR-55.txt.gz): 2.9 GiB (updated on *2019-09-05 16:06:16*)
+    * [Pancreas.allpairs-PR-69.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Pancreas.allpairs-PR-69.txt.gz): 3.3 GiB (updated on *2019-09-09 00:35:59*)
     * [Skin_Not_Sun_Exposed_Suprapubic.allpairs-PR-101.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Skin_Not_Sun_Exposed_Suprapubic.allpairs-PR-101.txt.gz): 3.6 GiB (updated on *2019-09-06 19:24:17*)
     * [Skin_Sun_Exposed_Lower_leg.allpairs-PR-87.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Skin_Sun_Exposed_Lower_leg.allpairs-PR-87.txt.gz): 3.9 GiB (updated on *2019-09-07 23:07:24*)
     * [Testis.allpairs-PR-104.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Testis.allpairs-PR-104.txt.gz): 4.6 GiB (updated on *2019-09-06 22:52:55*)
