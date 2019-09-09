@@ -15,6 +15,7 @@ List of processed files (with links to AWS S3 bucket):
     * [Cells_EBV-transformed_lymphocytes.allpairs-PR-105.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Cells_EBV-transformed_lymphocytes.allpairs-PR-105.txt.gz): 3.0 GiB (updated on *2019-09-07 08:36:42*)
     * [Cells_Transformed_fibroblasts.allpairs-PR-66.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Cells_Transformed_fibroblasts.allpairs-PR-66.txt.gz): 3.3 GiB (updated on *2019-09-08 17:25:30*)
     * [Colon_Transverse.allpairs-PR-100.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Colon_Transverse.allpairs-PR-100.txt.gz): 3.7 GiB (updated on *2019-09-09 16:33:55*)
+    * [Esophagus_Mucosa.allpairs-PR-99.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Esophagus_Mucosa.allpairs-PR-99.txt.gz): 3.6 GiB (updated on *2019-09-09 20:08:22*)
     * [Esophagus_Muscularis.allpairs-PR-70.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Esophagus_Muscularis.allpairs-PR-70.txt.gz): 3.6 GiB (updated on *2019-09-09 03:38:58*)
     * [Heart_Atrial_Appendage.allpairs-PR-65.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Heart_Atrial_Appendage.allpairs-PR-65.txt.gz): 3.4 GiB (updated on *2019-09-08 14:55:07*)
     * [Liver.allpairs-PR-55.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Liver.allpairs-PR-55.txt.gz): 2.9 GiB (updated on *2019-09-05 16:06:16*)
