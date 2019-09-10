@@ -11,6 +11,7 @@ List of processed files (with links to AWS S3 bucket):
     * [Brain_Caudate_basal_ganglia.allpairs-PR-97.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Brain_Caudate_basal_ganglia.allpairs-PR-97.txt.gz): 3.3 GiB (updated on *2019-09-10 04:24:53*)
     * [Brain_Cerebellum.allpairs-PR-96.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Brain_Cerebellum.allpairs-PR-96.txt.gz): 3.4 GiB (updated on *2019-09-10 09:12:54*)
     * [Brain_Hippocampus.allpairs-PR-68.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Brain_Hippocampus.allpairs-PR-68.txt.gz): 3.1 GiB (updated on *2019-09-08 21:44:16*)
+    * [Brain_Nucleus_accumbens_basal_ganglia.allpairs-PR-95.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Brain_Nucleus_accumbens_basal_ganglia.allpairs-PR-95.txt.gz): 3.3 GiB (updated on *2019-09-10 11:57:11*)
     * [Brain_Spinal_cord_cervical_c-1.allpairs-PR-75.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Brain_Spinal_cord_cervical_c-1.allpairs-PR-75.txt.gz): 3.0 GiB (updated on *2019-09-08 01:11:41*)
     * [Brain_Substantia_nigra.allpairs-PR-103.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Brain_Substantia_nigra.allpairs-PR-103.txt.gz): 3.0 GiB (updated on *2019-09-09 07:10:35*)
     * [Breast_Mammary_Tissue.allpairs-PR-94.txt.gz](https://cimr-d.s3.amazonaws.com/eqtl/Breast_Mammary_Tissue.allpairs-PR-94.txt.gz): 3.8 GiB (updated on *2019-09-07 18:47:06*)
