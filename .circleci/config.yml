@@ -29,6 +29,7 @@ jobs:
             - submitted_data
             - processed_data
             - catalog.txt
+            - PR_catalog.txt
 
   deploy:
     docker:

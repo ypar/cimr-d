@@ -20,6 +20,9 @@ git config --global user.email "cimrroot@gmail.com"
 git config --global user.name "cimrroot"
 git config --global push.default simple
 
+# Add ssh keys to enable "git pull/push" commands
+ssh-keyscan github.com >> ~/.ssh/known_hosts
+
 cd ~/cimr-d/
 
 # Find the PR number of the latest commit
@@ -85,9 +88,19 @@ done
 # Copy "submitted_data" to "cimr-root" bucket (private)
 aws s3 sync submitted_data/ s3://cimr-root/${PR_STR}/ --exclude "request.handled"
 
+# Update the repo
+git pull
+
 # Move submitted YAML files to "processed/" sub-dir
+SUBMITTED_FILES=$(curl -s ${GH_PR_API} | jq -r '.[].filename' | grep "^submitted/") || true
+if [ -z "${SUBMITTED_FILES}" ]; then
+    exit 0
+fi
+
 mkdir -p processed/${PR_STR}/
-git mv -k submitted/*.yml submitted/*.yaml processed/${PR_STR}/
+for f in ${SUBMITTED_FILES}; do
+    git mv $f processed/${PR_STR}/
+done
 
 # Update "processed/README.md", which lists all files in "cimr-d" S3 bucket
 aws s3 ls cimr-d --recursive --human-readable > processed/s3_list.txt
@@ -95,9 +108,9 @@ python3 .circleci/txt2md.py
 git add processed/README.md
 
 # Update "catalog.txt"
+awk -F'\t' '{ if (NR > 1) print $0 }' PR_catalog.txt >> catalog.txt
 git add catalog.txt
 
 # Commit changes and push them to remote "master" branch
 git commit -m "CircleCI: Save processed request ${PR_STR} [skip ci]"
-ssh-keyscan github.com >> ~/.ssh/known_hosts
-git push --force --quiet origin master
+git push
