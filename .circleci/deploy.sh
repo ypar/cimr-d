@@ -92,6 +92,7 @@ aws s3 sync submitted_data/ s3://cimr-root/${PR_STR}/ --exclude "request.handled
 git pull
 
 # Move submitted YAML files to "processed/" sub-dir
+GH_PR_API="https://api.github.com/repos/greenelab/cimr-d/pulls/${PR_NUMBER}/files"
 SUBMITTED_FILES=$(curl -s ${GH_PR_API} | jq -r '.[].filename' | grep "^submitted/") || true
 if [ -z "${SUBMITTED_FILES}" ]; then
     exit 0
