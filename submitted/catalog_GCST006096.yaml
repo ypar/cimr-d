@@ -1,0 +1,41 @@
+
+data_file:
+    description: >-
+        Genome-wide association study in Japanese females identifies fifteen novel skin-related trait associations; 3,815 Japanese ancestry female cases, 7,438 Japanese ancestry female controls
+    location:
+        url: ftp://ftp.ebi.ac.uk:21/pub/databases/gwas/summary_statistics/EndoC_29895819_GCST006096/harmonised/29895819-GCST006096-EFO_0007850.h.tsv.gz
+        md5: 5a0f5b5c747c9c9d0426231102945d81
+    columns:
+        variant_id: hm_variant_id
+        original_variant_id: variant_id
+        rsnum: hm_rsid
+        variant_chrom: hm_chrom
+        variant_pos: hm_pos
+        non_effect_allele: hm_other_allele
+        effect_allele: hm_effect_allele
+        effect_size: hm_beta
+        effect_allele: original_effect_allele
+        standard_error: standard_error
+        pvalue: p_value
+
+data_info:
+    citation: 10.1038/s41598-018-27145-2
+    data_source: https://www.ebi.ac.uk/gwas/
+    data_type: gwas
+    context: solar lentigines measurement
+    context_id: EFO_0007850
+    build: b38
+    sample_size: 11253.0
+    n_cases: NA
+    can_be_public: true
+
+method:
+    name: NA
+    tool: NA
+    website: www.ncbi.nlm.nih.gov/pubmed/29895819
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com
+
