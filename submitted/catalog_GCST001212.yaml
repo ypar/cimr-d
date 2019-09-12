@@ -1,0 +1,41 @@
+
+data_file:
+    description: >-
+        Genome-Wide Association Identifies Nine Common Variants Associated With Fasting Proinsulin Levels and Provides New Insights Into the Pathophysiology of Type 2 Diabetes; 10,701 European ancestry individuals;16,378 European ancestry individuals
+    location:
+        url: ftp://ftp.ebi.ac.uk:21/pub/databases/gwas/summary_statistics/StrawbridgeRJ_21873549_GCST001212/harmonised/21873549-GCST001212-EFO_0004467.h.tsv.gz
+        md5: 0d831c74a876e246e5bab293d662e24e
+    columns:
+        variant_id: hm_variant_id
+        original_variant_id: variant_id
+        rsnum: hm_rsid
+        variant_chrom: hm_chrom
+        variant_pos: hm_pos
+        non_effect_allele: hm_other_allele
+        effect_allele: hm_effect_allele
+        effect_size: hm_beta
+        effect_allele: original_effect_allele
+        standard_error: standard_error
+        pvalue: p_value
+
+data_info:
+    citation: 10.2337/db11-0415
+    data_source: https://www.ebi.ac.uk/gwas/
+    data_type: gwas
+    context: insulin measurement
+    context_id: EFO_0004467
+    build: b38
+    sample_size: 27079.0
+    n_cases: NA
+    can_be_public: true
+
+method:
+    name: NA
+    tool: NA
+    website: www.ncbi.nlm.nih.gov/pubmed/21873549
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com
+
