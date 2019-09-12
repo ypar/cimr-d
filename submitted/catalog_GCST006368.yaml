@@ -1,0 +1,41 @@
+
+data_file:
+    description: >-
+        A Large Multiethnic Genome-Wide Association Study of Adult Body Mass Index Identifies Novel Loci; 315,347 European ancestry individuals, 8,322 Hispanic/Latino individuals, 7,290 East Asian ancestry individuals, 3,069 African American individuals, 459 South Asian ancestry individuals;431,743 European ancestry individuals, 9,275 South Asian ancestry individuals, 8,261 African British individuals, 1,822 East Asian ancestry individuals, 7,620 individuals
+    location:
+        url: ftp://ftp.ebi.ac.uk:21/pub/databases/gwas/summary_statistics/HoffmannTJ_30108127_GCST006368/harmonised/30108127-GCST006368-EFO_0004340.h.tsv.gz
+        md5: 783c5a3b9dc11201a3444b43ead8d0b2
+    columns:
+        variant_id: hm_variant_id
+        original_variant_id: variant_id
+        rsnum: hm_rsid
+        variant_chrom: hm_chrom
+        variant_pos: hm_pos
+        non_effect_allele: hm_other_allele
+        effect_allele: hm_effect_allele
+        effect_size: hm_beta
+        effect_allele: original_effect_allele
+        standard_error: standard_error
+        pvalue: p_value
+
+data_info:
+    citation: 10.1534/genetics.118.301479
+    data_source: https://www.ebi.ac.uk/gwas/
+    data_type: gwas
+    context: body mass index
+    context_id: EFO_0004340
+    build: b38
+    sample_size: 793208.0
+    n_cases: NA
+    can_be_public: true
+
+method:
+    name: NA
+    tool: NA
+    website: www.ncbi.nlm.nih.gov/pubmed/30108127
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com
+
