@@ -1,0 +1,41 @@
+
+data_file:
+    description: >-
+        Large-scale analyses of common and rare variants identify 12 new loci associated with atrial fibrillation; 15,979 European ancestry cases, 102,776 European ancestry controls, 641 African American cases, 5,234 African American controls, 837 Japanese ancestry cases, 3,293 Japanese controls, 277 Hispanic cases, 3,081 Hispanic controls, 197 Brazilian ancestry cases, 758 Brazilian ancestry controls.;3,666 cases, 139,852 controls
+    location:
+        url: ftp://ftp.ebi.ac.uk:21/pub/databases/gwas/summary_statistics/ChristophersenIE_28416818_GCST004296/harmonised/28416818-GCST004296-EFO_0000275.h.tsv.gz
+        md5: f8a6fb43eb9c8c515e7a77f1578b64fa
+    columns:
+        variant_id: hm_variant_id
+        original_variant_id: variant_id
+        rsnum: hm_rsid
+        variant_chrom: hm_chrom
+        variant_pos: hm_pos
+        non_effect_allele: hm_other_allele
+        effect_allele: hm_effect_allele
+        effect_size: hm_beta
+        effect_allele: original_effect_allele
+        standard_error: standard_error
+        pvalue: p_value
+
+data_info:
+    citation: 10.1038/ng.3843
+    data_source: https://www.ebi.ac.uk/gwas/
+    data_type: gwas
+    context: atrial fibrillation
+    context_id: EFO_0000275
+    build: b38
+    sample_size: 276591.0
+    n_cases: NA
+    can_be_public: true
+
+method:
+    name: NA
+    tool: NA
+    website: www.ncbi.nlm.nih.gov/pubmed/28416818
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com
+
