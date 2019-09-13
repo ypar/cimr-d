@@ -1,0 +1,41 @@
+
+data_file:
+    description: >-
+        The genetics of blood pressure regulation and its target organs from association studies in 342,415 individuals; up to 201,529 European ancestry individuals;up to 140,886 European ancestry individuals
+    location:
+        url: ftp://ftp.ebi.ac.uk:21/pub/databases/gwas/summary_statistics/EhretGB_27618452_GCST006258/harmonised/27618452-GCST006258-EFO_0006336.h.tsv.gz
+        md5: 5589bcec744e4e3c6e0a2ad05651efe8
+    columns:
+        variant_id: hm_variant_id
+        original_variant_id: variant_id
+        rsnum: hm_rsid
+        variant_chrom: hm_chrom
+        variant_pos: hm_pos
+        non_effect_allele: hm_other_allele
+        effect_allele: hm_effect_allele
+        effect_size: hm_beta
+        effect_allele: original_effect_allele
+        standard_error: standard_error
+        pvalue: p_value
+
+data_info:
+    citation: 10.1038/ng.3667
+    data_source: https://www.ebi.ac.uk/gwas/
+    data_type: gwas
+    context: diastolic blood pressure
+    context_id: EFO_0006336
+    build: b38
+    sample_size: 342415.0
+    n_cases: NA
+    can_be_public: true
+
+method:
+    name: NA
+    tool: NA
+    website: www.ncbi.nlm.nih.gov/pubmed/27618452
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com
+
