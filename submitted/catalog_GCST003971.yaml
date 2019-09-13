@@ -1,0 +1,41 @@
+
+data_file:
+    description: >-
+        Multiethnic genome-wide meta-analysis of ectopic fat depots identifies loci associated with adipocyte development and differentiation; 3,684 European ancestry women, 3,640 European ancestry men, 1,284 African American women, 877 African American men, 746 Hispanic Ancestry women, 699 Hispanic ancestry men, 390 Asian ancestry women, 378 Asian ancestry men,  294 Old Order Amish (founder/genetic isolate) women, 248 Old Order Amish (founder/genetic isolate) men.
+    location:
+        url: ftp://ftp.ebi.ac.uk:21/pub/databases/gwas/summary_statistics/ChuAY_27918534_GCST003971/harmonised/27918534-GCST003971-EFO_0007890.h.tsv.gz
+        md5: 76390e708ed2c5a2fc5acb2940975799
+    columns:
+        variant_id: hm_variant_id
+        original_variant_id: variant_id
+        rsnum: hm_rsid
+        variant_chrom: hm_chrom
+        variant_pos: hm_pos
+        non_effect_allele: hm_other_allele
+        effect_allele: hm_effect_allele
+        effect_size: hm_beta
+        effect_allele: original_effect_allele
+        standard_error: standard_error
+        pvalue: p_value
+
+data_info:
+    citation: 10.1038/ng.3738
+    data_source: https://www.ebi.ac.uk/gwas/
+    data_type: gwas
+    context: pericardial adipose tissue measurement
+    context_id: EFO_0007890
+    build: b38
+    sample_size: 12240.0
+    n_cases: NA
+    can_be_public: true
+
+method:
+    name: NA
+    tool: NA
+    website: www.ncbi.nlm.nih.gov/pubmed/27918534
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,41 @@
+
+data_file:
+    description: >-
+        Association analyses identify 38 susceptibility loci for inflammatory bowel disease and highlight shared genetic risk across populations; 5,956 European ancestry cases, 14,927 European ancestry controls;14,594 European ancestry cases, 26,715 European ancestry controls, 151 Iranian ancestry cases, 342 Iranian ancestry controls, 184 Indian ancestry cases, 990 Indian ancestry controls, 1,690 East Asian ancestry cases, 3,719 East Asian ancestry controls
+    location:
+        url: ftp://ftp.ebi.ac.uk:21/pub/databases/gwas/summary_statistics/LiuJZ_26192919_GCST003044/harmonised/26192919-GCST003044-EFO_0000384.h.tsv.gz
+        md5: 2d9503aa7ea82f5cb901f69449070f6b
+    columns:
+        variant_id: hm_variant_id
+        original_variant_id: variant_id
+        rsnum: hm_rsid
+        variant_chrom: hm_chrom
+        variant_pos: hm_pos
+        non_effect_allele: hm_other_allele
+        effect_allele: hm_effect_allele
+        effect_size: hm_beta
+        effect_allele: original_effect_allele
+        standard_error: standard_error
+        pvalue: p_value
+
+data_info:
+    citation: 10.1038/ng.3359
+    data_source: https://www.ebi.ac.uk/gwas/
+    data_type: gwas
+    context: Crohn's disease
+    context_id: EFO_0000384
+    build: b38
+    sample_size: 69268.0
+    n_cases: NA
+    can_be_public: true
+
+method:
+    name: NA
+    tool: NA
+    website: www.ncbi.nlm.nih.gov/pubmed/26192919
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com
+
