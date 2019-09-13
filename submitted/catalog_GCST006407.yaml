@@ -1,0 +1,41 @@
+
+data_file:
+    description: >-
+        Investigating the shared genetics of non-syndromic cleft lip/palate and facial morphology; 6,136 European ancestry individuals
+    location:
+        url: ftp://ftp.ebi.ac.uk:21/pub/databases/gwas/summary_statistics/HoweLJ_30067744_GCST006407/harmonised/30067744-GCST006407-EFO_0007845.h.tsv.gz
+        md5: 0745b0504ef78ea0b4b4189bd32dd9a5
+    columns:
+        variant_id: hm_variant_id
+        original_variant_id: variant_id
+        rsnum: hm_rsid
+        variant_chrom: hm_chrom
+        variant_pos: hm_pos
+        non_effect_allele: hm_other_allele
+        effect_allele: hm_effect_allele
+        effect_size: hm_beta
+        effect_allele: original_effect_allele
+        standard_error: standard_error
+        pvalue: p_value
+
+data_info:
+    citation: 10.1371/journal.pgen.1007501
+    data_source: https://www.ebi.ac.uk/gwas/
+    data_type: gwas
+    context: lip morphology measurement
+    context_id: EFO_0007845
+    build: b38
+    sample_size: 6136.0
+    n_cases: NA
+    can_be_public: true
+
+method:
+    name: NA
+    tool: NA
+    website: www.ncbi.nlm.nih.gov/pubmed/30067744
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com
+
