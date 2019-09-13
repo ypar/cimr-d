@@ -1,0 +1,41 @@
+
+data_file:
+    description: >-
+        Integrative network analysis highlights biological processes underlying GLP-1 stimulated insulin secretion: A DIRECT study; 33 monozygotic twin pairs, 14 dizygotic twin pairs, 32 individuals;100 European ancestry individuals
+    location:
+        url: ftp://ftp.ebi.ac.uk:21/pub/databases/gwas/summary_statistics/GudmundsdottirV_29293525_GCST005353/harmonised/29293525-GCST005353-EFO_0008531.h.tsv.gz
+        md5: 7f29da243142f25211421e282b318b2c
+    columns:
+        variant_id: hm_variant_id
+        original_variant_id: variant_id
+        rsnum: hm_rsid
+        variant_chrom: hm_chrom
+        variant_pos: hm_pos
+        non_effect_allele: hm_other_allele
+        effect_allele: hm_effect_allele
+        effect_size: hm_beta
+        effect_allele: original_effect_allele
+        standard_error: standard_error
+        pvalue: p_value
+
+data_info:
+    citation: 10.1371/journal.pone.0189886
+    data_source: https://www.ebi.ac.uk/gwas/
+    data_type: gwas
+    context: GLP-1-stimulated insulin response
+    context_id: EFO_0008531
+    build: b38
+    sample_size: 179.0
+    n_cases: NA
+    can_be_public: true
+
+method:
+    name: NA
+    tool: NA
+    website: www.ncbi.nlm.nih.gov/pubmed/29293525
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com
+
