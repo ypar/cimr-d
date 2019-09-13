@@ -1,0 +1,41 @@
+
+data_file:
+    description: >-
+        Large-scale association analysis provides insights into the genetic architecture and pathophysiology of type 2 diabetes; 6,377 European ancestry male cases, 5,794 European ancestry female cases, 22,243 European ancestry male controls, 34,619 European ancestry female controls;12,938 European ancestry male cases, 8,553 European ancestry female cases, 904 Pakistani ancestry male cases, 274 Pakistani ancestry female cases, 30,273 European ancestry male controls, 25,374 European ancestry female controls, 2,088 Pakistani ancestry male controls, 384 Pakistani ancestry female controls
+    location:
+        url: ftp://ftp.ebi.ac.uk:21/pub/databases/gwas/summary_statistics/MorrisAP_22885922_GCST005047/harmonised/22885922-GCST005047-EFO_0001360.h.tsv.gz
+        md5: c3cde1dcdf3b3564e0489fa0f272c67a
+    columns:
+        variant_id: hm_variant_id
+        original_variant_id: variant_id
+        rsnum: hm_rsid
+        variant_chrom: hm_chrom
+        variant_pos: hm_pos
+        non_effect_allele: hm_other_allele
+        effect_allele: hm_effect_allele
+        effect_size: hm_beta
+        effect_allele: original_effect_allele
+        standard_error: standard_error
+        pvalue: p_value
+
+data_info:
+    citation: 10.1038/ng.2383
+    data_source: https://www.ebi.ac.uk/gwas/
+    data_type: gwas
+    context: type II diabetes mellitus
+    context_id: EFO_0001360
+    build: b38
+    sample_size: 149821.0
+    n_cases: NA
+    can_be_public: true
+
+method:
+    name: NA
+    tool: NA
+    website: www.ncbi.nlm.nih.gov/pubmed/22885922
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com
+
