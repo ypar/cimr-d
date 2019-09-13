@@ -1,0 +1,41 @@
+
+data_file:
+    description: >-
+        Genome-wide association analysis of more than 120,000 individuals identifies 15 new susceptibility loci for breast cancer; 46,785 European ancestry cases, 42,892 European ancestry controls
+    location:
+        url: ftp://ftp.ebi.ac.uk:21/pub/databases/gwas/summary_statistics/MichailidouK_25751625_GCST007236/harmonised/25751625-GCST007236-EFO_0000305.h.tsv.gz
+        md5: 79201df44533c59f0d4532ca08056cbd
+    columns:
+        variant_id: hm_variant_id
+        original_variant_id: variant_id
+        rsnum: hm_rsid
+        variant_chrom: hm_chrom
+        variant_pos: hm_pos
+        non_effect_allele: hm_other_allele
+        effect_allele: hm_effect_allele
+        effect_size: hm_beta
+        effect_allele: original_effect_allele
+        standard_error: standard_error
+        pvalue: p_value
+
+data_info:
+    citation: 10.1038/ng.3242
+    data_source: https://www.ebi.ac.uk/gwas/
+    data_type: gwas
+    context: breast carcinoma
+    context_id: EFO_0000305
+    build: b38
+    sample_size: 89677.0
+    n_cases: NA
+    can_be_public: true
+
+method:
+    name: NA
+    tool: NA
+    website: www.ncbi.nlm.nih.gov/pubmed/25751625
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com
+
