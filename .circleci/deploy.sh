@@ -8,10 +8,11 @@
 set -e -x
 
 function delete_requests() {
+    git pull
     if [ -f submitted/*.yml ] || [ -f submitted/*.yaml ]; then
 	git rm --ignore-unmatch submitted/*.yml submitted/*.yaml
 	git commit -m "CircleCI: Delete requests in submitted/ dir [skip ci]"
-	git push --force --quiet origin master
+	git push
     fi
 }
 
@@ -33,6 +34,13 @@ PR_NUMBER=$(curl -s $GITHUB_SEARCH_URL | jq '.items[0].number')
 # If we're not merging a PR, clean up "submitted/" dir and exit.
 if [ $PR_NUMBER == 'null' ]; then
     delete_requests
+    exit 0
+fi
+
+# Find submitted files in the PR
+GH_PR_API="https://api.github.com/repos/greenelab/cimr-d/pulls/${PR_NUMBER}/files"
+SUBMITTED_FILES=$(curl -s ${GH_PR_API} | jq -r '.[].filename' | grep "^submitted/") || true
+if [ -z "${SUBMITTED_FILES}" ]; then
     exit 0
 fi
 
@@ -88,30 +96,49 @@ done
 # Copy "submitted_data" to "cimr-root" bucket (private)
 aws s3 sync submitted_data/ s3://cimr-root/${PR_STR}/ --exclude "request.handled"
 
-# Update the repo
-git pull
+function git_commit() {
+    # Move submitted files in the PR to "processed/"
+    mkdir -p processed/${PR_STR}/
+    for f in ${SUBMITTED_FILES}; do
+	git mv $f processed/${PR_STR}/
+    done
 
-# Move submitted YAML files to "processed/" sub-dir
-GH_PR_API="https://api.github.com/repos/greenelab/cimr-d/pulls/${PR_NUMBER}/files"
-SUBMITTED_FILES=$(curl -s ${GH_PR_API} | jq -r '.[].filename' | grep "^submitted/") || true
-if [ -z "${SUBMITTED_FILES}" ]; then
-    exit 0
-fi
+    # Update "processed/README.md", which lists all files in "cimr-d" S3 bucket
+    aws s3 ls cimr-d --recursive --human-readable > processed/s3_list.txt
+    python3 .circleci/txt2md.py
+    git add processed/README.md
 
-mkdir -p processed/${PR_STR}/
-for f in ${SUBMITTED_FILES}; do
-    git mv $f processed/${PR_STR}/
+    # Update "catalog.txt"
+    awk -F'\t' '{ if (NR > 1) print $0 }' PR_catalog.txt >> catalog.txt
+    git add catalog.txt
+
+    # Customize commit message
+    if [ $# -gt 0 ]; then
+	COMMIT_MSG="CircleCI (attempt #$1): Save ${PR_STR} [skip ci]"
+    else
+	COMMIT_MSG="CircleCI: Save ${PR_STR} [skip ci]"
+    fi
+    # Commit changes
+    git commit -m "${COMMIT_MSG}"
+}
+
+# Try "git push" commands at most 5 times
+RANDOM=$$              # random seed: current process ID
+for i in $(seq 5); do
+    git pull           # pull latest changes from remote repo to local repo
+    git_commit $i      # commit all changes to local repo
+
+    # Try to push changes from local repo to remote repo
+    GH_UPDATED=true
+    git push || GH_UPDATED=false
+
+    # If "git push" succeeds, get out of "for" loop
+    if [ ${GH_UPDATED} == true ]; then
+	break
+    fi
+
+    # If "git push" fails, reset the commit, wait for some random time (at most
+    # 90 seconds) and try again.
+    git reset --hard HEAD~1
+    sleep $((RANDOM % 10 * 10))
 done
-
-# Update "processed/README.md", which lists all files in "cimr-d" S3 bucket
-aws s3 ls cimr-d --recursive --human-readable > processed/s3_list.txt
-python3 .circleci/txt2md.py
-git add processed/README.md
-
-# Update "catalog.txt"
-awk -F'\t' '{ if (NR > 1) print $0 }' PR_catalog.txt >> catalog.txt
-git add catalog.txt
-
-# Commit changes and push them to remote "master" branch
-git commit -m "CircleCI: Save processed request ${PR_STR} [skip ci]"
-git push
