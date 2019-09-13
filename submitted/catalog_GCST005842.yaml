@@ -1,0 +1,41 @@
+
+data_file:
+    description: >-
+        Multiancestry genome-wide association study of 520,000 subjects identifies 32 loci associated with stroke and stroke subtypes; 7,193 European ancestry cases, 406,111 European ancestry controls, 847 East Asian ancestry cases, 28,195 East Asian ancestry controls, 422 South Asian ancestry cases, 6,707 South Asian ancestry controls, 414 African American cases, 15,146 African American controls, 31 Asian ancestry cases, 333 Asian ancestry controls, 99 Latin American cases, 692 Latin American controls
+    location:
+        url: ftp://ftp.ebi.ac.uk:21/pub/databases/gwas/summary_statistics/MalikR_29531354_GCST005842/harmonised/29531354-GCST005842-EFO_1001976.h.tsv.gz
+        md5: f69388901ca611ccc766d33bf8e10639
+    columns:
+        variant_id: hm_variant_id
+        original_variant_id: variant_id
+        rsnum: hm_rsid
+        variant_chrom: hm_chrom
+        variant_pos: hm_pos
+        non_effect_allele: hm_other_allele
+        effect_allele: hm_effect_allele
+        effect_size: hm_beta
+        effect_allele: original_effect_allele
+        standard_error: standard_error
+        pvalue: p_value
+
+data_info:
+    citation: 10.1038/s41588-018-0058-3
+    data_source: https://www.ebi.ac.uk/gwas/
+    data_type: gwas
+    context: cardioembolic stroke
+    context_id: EFO_1001976
+    build: b38
+    sample_size: 466190.0
+    n_cases: NA
+    can_be_public: true
+
+method:
+    name: NA
+    tool: NA
+    website: www.ncbi.nlm.nih.gov/pubmed/29531354
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com
+
