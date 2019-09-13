@@ -1,0 +1,41 @@
+
+data_file:
+    description: >-
+        Genome-Wide Association Study of the Modified Stumvoll Insulin Sensitivity Index Identifies <i>BCL2</i> and <i>FAM19A2</i> as Novel Insulin Sensitivity Loci; 16,753 European ancestry individuals;13,354 European ancestry individuals
+    location:
+        url: ftp://ftp.ebi.ac.uk:21/pub/databases/gwas/summary_statistics/WalfordGA_27416945_GCST005178/harmonised/27416945-GCST005178-EFO_0004471.h.tsv.gz
+        md5: 2a92bc77e6dda87fcd09d25c9fd6a1b1
+    columns:
+        variant_id: hm_variant_id
+        original_variant_id: variant_id
+        rsnum: hm_rsid
+        variant_chrom: hm_chrom
+        variant_pos: hm_pos
+        non_effect_allele: hm_other_allele
+        effect_allele: hm_effect_allele
+        effect_size: hm_beta
+        effect_allele: original_effect_allele
+        standard_error: standard_error
+        pvalue: p_value
+
+data_info:
+    citation: 10.2337/db16-0199
+    data_source: https://www.ebi.ac.uk/gwas/
+    data_type: gwas
+    context: insulin sensitivity measurement
+    context_id: EFO_0004471
+    build: b38
+    sample_size: 30107.0
+    n_cases: NA
+    can_be_public: true
+
+method:
+    name: NA
+    tool: NA
+    website: www.ncbi.nlm.nih.gov/pubmed/27416945
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com
+
