@@ -1,0 +1,41 @@
+
+data_file:
+    description: >-
+        Genetic contributions to self-reported tiredness; 108,976 British ancestry individuals
+    location:
+        url: ftp://ftp.ebi.ac.uk:21/pub/databases/gwas/summary_statistics/DearyV_28194004_GCST004158/harmonised/28194004-GCST004158-EFO_0007946.h.tsv.gz
+        md5: 1dab31c8c2d9618ef0734f887d1fe01d
+    columns:
+        variant_id: hm_variant_id
+        original_variant_id: variant_id
+        rsnum: hm_rsid
+        variant_chrom: hm_chrom
+        variant_pos: hm_pos
+        non_effect_allele: hm_other_allele
+        effect_allele: hm_effect_allele
+        effect_size: hm_beta
+        effect_allele: original_effect_allele
+        standard_error: standard_error
+        pvalue: p_value
+
+data_info:
+    citation: 10.1038/mp.2017.5
+    data_source: https://www.ebi.ac.uk/gwas/
+    data_type: gwas
+    context: tiredness measurement
+    context_id: EFO_0007946
+    build: b38
+    sample_size: 108976.0
+    n_cases: NA
+    can_be_public: true
+
+method:
+    name: NA
+    tool: NA
+    website: www.ncbi.nlm.nih.gov/pubmed/28194004
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com
+
