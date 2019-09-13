@@ -1,0 +1,41 @@
+
+data_file:
+    description: >-
+        Association analysis identifies 65 new breast cancer risk loci; 76,192 European ancestry cases, 63,082 European ancestry controls;46,785 European ancestry cases, 42,892 European ancestry controls, 14,068 East Asian ancestry cases, 13,104 East Asian ancestry controls
+    location:
+        url: ftp://ftp.ebi.ac.uk:21/pub/databases/gwas/summary_statistics/MichailidouK_29059683_GCST004988/harmonised/29059683-GCST004988-EFO_0000305.h.tsv.gz
+        md5: a739c7e4563010e37167c033a5c074c0
+    columns:
+        variant_id: hm_variant_id
+        original_variant_id: variant_id
+        rsnum: hm_rsid
+        variant_chrom: hm_chrom
+        variant_pos: hm_pos
+        non_effect_allele: hm_other_allele
+        effect_allele: hm_effect_allele
+        effect_size: hm_beta
+        effect_allele: original_effect_allele
+        standard_error: standard_error
+        pvalue: p_value
+
+data_info:
+    citation: 10.1038/nature24284
+    data_source: https://www.ebi.ac.uk/gwas/
+    data_type: gwas
+    context: breast carcinoma
+    context_id: EFO_0000305
+    build: b38
+    sample_size: 256123.0
+    n_cases: NA
+    can_be_public: true
+
+method:
+    name: NA
+    tool: NA
+    website: www.ncbi.nlm.nih.gov/pubmed/29059683
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com
+
