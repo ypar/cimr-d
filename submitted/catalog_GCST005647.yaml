@@ -1,0 +1,41 @@
+
+data_file:
+    description: >-
+        Genome-wide Analyses Identify KIF5A as a Novel ALS Gene; 20,806 European ancestry cases, 59,804 European ancestry controls;4,159 cases, 18,650 controls
+    location:
+        url: ftp://ftp.ebi.ac.uk:21/pub/databases/gwas/summary_statistics/NicolasA_29566793_GCST005647/harmonised/29566793-GCST005647-EFO_0000253.h.tsv.gz
+        md5: 1c059a101bf084aa1dc4134f06f90ac9
+    columns:
+        variant_id: hm_variant_id
+        original_variant_id: variant_id
+        rsnum: hm_rsid
+        variant_chrom: hm_chrom
+        variant_pos: hm_pos
+        non_effect_allele: hm_other_allele
+        effect_allele: hm_effect_allele
+        effect_size: hm_beta
+        effect_allele: original_effect_allele
+        standard_error: standard_error
+        pvalue: p_value
+
+data_info:
+    citation: 10.1016/j.neuron.2018.02.027
+    data_source: https://www.ebi.ac.uk/gwas/
+    data_type: gwas
+    context: amyotrophic lateral sclerosis
+    context_id: EFO_0000253
+    build: b38
+    sample_size: 103419.0
+    n_cases: NA
+    can_be_public: true
+
+method:
+    name: NA
+    tool: NA
+    website: www.ncbi.nlm.nih.gov/pubmed/29566793
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com
+
