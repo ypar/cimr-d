@@ -84,6 +84,7 @@ List of processed files (with links to AWS S3 bucket):
     * [25751624-GCST005536-EFO_0001359.h-PR-189.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/25751624-GCST005536-EFO_0001359.h-PR-189.tsv.gz): 4.2 MiB (updated on *2019-09-13 12:29:43*)
     * [25993607-GCST002920-EFO_0007660.h-PR-110.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/25993607-GCST002920-EFO_0007660.h-PR-110.tsv.gz): 185.7 MiB (updated on *2019-09-12 23:17:24*)
     * [26651848-GCST005540-EFO_0009466.h-PR-190.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/26651848-GCST005540-EFO_0009466.h-PR-190.tsv.gz): 3.5 MiB (updated on *2019-09-13 12:27:18*)
+    * [27416945-GCST005178-EFO_0004471.h-PR-178.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/27416945-GCST005178-EFO_0004471.h-PR-178.tsv.gz): 61.3 MiB (updated on *2019-09-13 12:43:29*)
     * [27798627-GCST006044-EFO_0009101.h-PR-112.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/27798627-GCST006044-EFO_0009101.h-PR-112.tsv.gz): 58.6 MiB (updated on *2019-09-12 22:25:56*)
     * [27798627-GCST006045-EFO_0009101.h-PR-112.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/27798627-GCST006045-EFO_0009101.h-PR-112.tsv.gz): 58.8 MiB (updated on *2019-09-12 22:26:20*)
     * [27989323-GCST004420-EFO_0008082.h-PR-109.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/27989323-GCST004420-EFO_0008082.h-PR-109.tsv.gz): 278.9 MiB (updated on *2019-09-12 20:15:56*)
