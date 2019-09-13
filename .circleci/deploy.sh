@@ -114,7 +114,7 @@ function git_commit() {
 
     # Customize commit message
     if [ $# -gt 0 ]; then
-	COMMIT_MSG="CircleCI (attempt #$1): Save ${PR_STR} [skip ci]"
+	COMMIT_MSG="CircleCI (attempt $1): Save ${PR_STR} [skip ci]"
     else
 	COMMIT_MSG="CircleCI: Save ${PR_STR} [skip ci]"
     fi
