@@ -1,0 +1,41 @@
+
+data_file:
+    description: >-
+        Re-analysis of public genetic data reveals a rare X-chromosomal variant associated with type 2 diabetes; 5,277 European ancestry cases, 15,702 European ancestry controls;9,253 European ancestry cases and controls, 3,490 Hispanic case and controls, 174,532 cases and controls
+    location:
+        url: ftp://ftp.ebi.ac.uk:21/pub/databases/gwas/summary_statistics/Bonas-GuarchS_29358691_GCST005898/harmonised/29358691-GCST005898-EFO_0001360.h.tsv.gz
+        md5: 3be4a7423c4c121b2147e47681e72a2d
+    columns:
+        variant_id: hm_variant_id
+        original_variant_id: variant_id
+        rsnum: hm_rsid
+        variant_chrom: hm_chrom
+        variant_pos: hm_pos
+        non_effect_allele: hm_other_allele
+        effect_allele: hm_effect_allele
+        effect_size: hm_beta
+        effect_allele: original_effect_allele
+        standard_error: standard_error
+        pvalue: p_value
+
+data_info:
+    citation: 10.1038/s41467-017-02380-9
+    data_source: https://www.ebi.ac.uk/gwas/
+    data_type: gwas
+    context: type II diabetes mellitus
+    context_id: EFO_0001360
+    build: b38
+    sample_size: 208254.0
+    n_cases: NA
+    can_be_public: true
+
+method:
+    name: NA
+    tool: NA
+    website: www.ncbi.nlm.nih.gov/pubmed/29358691
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com
+
