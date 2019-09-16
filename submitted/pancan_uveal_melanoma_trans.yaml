@@ -1,0 +1,34 @@
+
+data_file:
+    description: >-
+        Uveal Melanoma;80 TCGA samples
+    location:
+        url: https://drive.google.com/file/d/1aKk-JKpQDefY4nPUMQMYqxNdgTaYJh7C/view?usp=sharing
+        md5: 844d89044a99a5c3c271c7f4ab00dfba
+    input_name: pancan_transeqtl_UVM.tsv.gz
+    columns:
+        effect_size: beta
+        effect_allele: a2
+        non_effect_allele: a1
+        pvalue: p-value
+
+data_info:
+    citation: 10.1093/nar/gkx861
+    data_source: http://bioinfo.life.hust.edu.cn/PancanQTL/
+    data_type: eqtl
+    context: uveal_melanoma_(trans)
+    build: b37
+    sample_size: 80
+    n_cases: NA
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: matrixeqtl
+    website: https://www.bios.unc.edu/research/genomic_software/Matrix_eQTL/
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com
+
