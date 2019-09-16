@@ -1,0 +1,34 @@
+
+data_file:
+    description: >-
+        Lung squamous cell carcinoma;500 TCGA samples
+    location:
+        url: https://drive.google.com/file/d/1gB4UShGlEtg-QYU6u9IflDX91KAX_Qn3/view?usp=sharing
+        md5: 04abbced9e7fd6f0938f7c59f7fcc123
+    input_name: pancan_transeqtl_LUSC.tsv.gz
+    columns:
+        effect_size: beta
+        effect_allele: a2
+        non_effect_allele: a1
+        pvalue: p-value
+
+data_info:
+    citation: 10.1093/nar/gkx861
+    data_source: http://bioinfo.life.hust.edu.cn/PancanQTL/
+    data_type: eqtl
+    context: lung_squamous_cell_carcinoma_(trans)
+    build: b37
+    sample_size: 500
+    n_cases: NA
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: matrixeqtl
+    website: https://www.bios.unc.edu/research/genomic_software/Matrix_eQTL/
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com
+
