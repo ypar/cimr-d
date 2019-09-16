@@ -38,7 +38,7 @@ if [ $PR_NUMBER == 'null' ]; then
 fi
 
 # Find submitted files in the PR
-GH_PR_API="https://api.github.com/repos/greenelab/cimr-d/pulls/${PR_NUMBER}/files"
+GH_PR_API="https://api.github.com/repos/greenelab/cimr-d/pulls/${PR_NUMBER}/files?per_page=100"
 SUBMITTED_FILES=$(curl -s ${GH_PR_API} | jq -r '.[].filename' | grep "^submitted/") || true
 if [ -z "${SUBMITTED_FILES}" ]; then
     exit 0

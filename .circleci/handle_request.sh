@@ -25,9 +25,16 @@ if [ -z "$PR_NUMBER" ] || [ $PR_NUMBER == 'null' ]; then
     exit 0
 fi
 
-GH_PR_API="https://api.github.com/repos/greenelab/cimr-d/pulls/${PR_NUMBER}/files"
+GH_PR_API="https://api.github.com/repos/greenelab/cimr-d/pulls/${PR_NUMBER}/files?per_page=100"
 PR_FILES=$(curl -s ${GH_PR_API} | jq -r '.[].filename')
+
+###########################################################
+# Disable "-x" option in shell here
+###########################################################
+set +x
+
 echo "${PR_FILES}" | grep "^processed/" || PROCESSED_UNCHANGED=true
+set -x
 if [ -z "${PROCESSED_UNCHANGED}" ]; then
     echo "Error: Changes in 'processed' directory not allowed!"
     exit 1
@@ -68,6 +75,11 @@ for f in ${SUBMITTED_YAMLS}; do
 	exit 1
     fi
 done
+
+###########################################################
+# Enable "-x" option in shell again
+###########################################################
+set -x
 
 # Name of flag file, whose existence indicates that request has been handled correctly.
 INDICATOR_FILENAME="submitted_data/request.handled"
