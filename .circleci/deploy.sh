@@ -122,9 +122,9 @@ function git_commit() {
     git commit -m "${COMMIT_MSG}"
 }
 
-# Try "git push" commands at most 5 times
+# Try "git push" commands at most 9 times
 RANDOM=$$              # random seed: current process ID
-for i in $(seq 5); do
+for i in $(seq 9); do
     git pull           # pull latest changes from remote repo to local repo
     git_commit $i      # commit all changes to local repo
 
