@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20548_5; Manifestations of mania or irritability: I needed less sleep than usual; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/zm77i5v8grarnv8/20548_5.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: d16d42cd8fa2b2c326d9a235afb6090f
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20548_5
+    build: b37
+    sample_size: 63899
+    n_cases: 2048.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
