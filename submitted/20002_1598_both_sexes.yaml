@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20002_1598; Non-cancer illness code, self-reported: tonsiltis; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/a4inhh1hubmfx5z/20002_1598.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: b9a5e6126b829d9ed3b9eeb671f756f3
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20002_1598
+    build: b37
+    sample_size: 361141
+    n_cases: 2569.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
