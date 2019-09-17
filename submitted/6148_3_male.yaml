@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6148_3; Eye problems/disorders: Injury or trauma resulting in loss of vision; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/4o66e8oz1ipi3j4/6148_3.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: a72f061b55d80595ac39dd19aa519e43
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6148_3
+    build: b37
+    sample_size: 54561
+    n_cases: 1349.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
