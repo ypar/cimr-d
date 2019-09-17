@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20405_0; Ever had known person concerned about, or recommend reduction of, alcohol consumption: No; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/oay6r3cjk4nzjpe/20405_0.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 4434e91b113e22a4810a419a6e8287d4
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20405_0
+    build: b37
+    sample_size: 51850
+    n_cases: 44798.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
