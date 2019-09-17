@@ -610,6 +610,7 @@ List of processed files (with links to AWS S3 bucket):
     * [21833088-GCST001198-EFO_0003885.h-PR-113.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/21833088-GCST001198-EFO_0003885.h-PR-113.tsv.gz): 20.1 MiB (updated on *2019-09-12 21:53:22*)
     * [21873549-GCST001212-EFO_0004467.h-PR-113.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/21873549-GCST001212-EFO_0004467.h-PR-113.tsv.gz): 72.8 MiB (updated on *2019-09-12 21:53:20*)
     * [22057235-GCST005523-EFO_0001060.h-PR-185.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/22057235-GCST005523-EFO_0001060.h-PR-185.tsv.gz): 6.2 MiB (updated on *2019-09-13 12:34:02*)
+    * [2257.gwas.imputed_v3.male-PR-597.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/2257.gwas.imputed_v3.male-PR-597.tsv.gz): 498.5 MiB (updated on *2019-09-17 15:14:16*)
     * [22601_11222591.gwas.imputed_v3.both_sexes-PR-598.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/22601_11222591.gwas.imputed_v3.both_sexes-PR-598.tsv.gz): 482.2 MiB (updated on *2019-09-17 15:12:28*)
     * [22601_11323222.gwas.imputed_v3.both_sexes-PR-598.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/22601_11323222.gwas.imputed_v3.both_sexes-PR-598.tsv.gz): 487.7 MiB (updated on *2019-09-17 15:12:48*)
     * [22601_11323222.gwas.imputed_v3.male-PR-598.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/22601_11323222.gwas.imputed_v3.male-PR-598.tsv.gz): 490.1 MiB (updated on *2019-09-17 15:13:19*)
