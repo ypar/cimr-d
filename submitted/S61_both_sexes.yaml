@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: S61; Diagnoses - main ICD10: S61 Open wound of wrist and hand; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/pzkmiiz5wh3pwgx/S61.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 514e5630704d5042c376226ce967a74d
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: S61
+    build: b37
+    sample_size: 361194
+    n_cases: 1865.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

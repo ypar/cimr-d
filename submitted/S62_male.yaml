@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: S62; Diagnoses - main ICD10: S62 Fracture at wrist and hand level; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/8o5uo5u9y8ccsvl/S62.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 1853d69db2a1238058689928091156c9
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: S62
+    build: b37
+    sample_size: 167020
+    n_cases: 1122.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
