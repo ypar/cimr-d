@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: Z53; Diagnoses - main ICD10: Z53 Persons encountering health services for specifie procedures, not carried out; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/x6ub52jt0z5phfj/Z53.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: de348c654eed1a6b973774a2e290f48a
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: Z53
+    build: b37
+    sample_size: 361194
+    n_cases: 1754.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
