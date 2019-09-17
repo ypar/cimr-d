@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20003_1193; Treatment/medication code: omega-3/fish oil supplement; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/lttbr9xx9zsy7hp/20003_1193.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: eb9f4a93da0c7e3500bb2b6b4c02d761
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20003_1193
+    build: b37
+    sample_size: 166988
+    n_cases: 5108.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
