@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6016; Chest pain felt outside physical activity; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/lzo57iqjovc7fbf/6016.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: d5fdae0cf8c855ca4e670481156d0809
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6016
+    build: b37
+    sample_size: 54416
+    n_cases: 52754.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
