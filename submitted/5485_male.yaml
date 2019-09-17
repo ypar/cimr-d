@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 5485; Leg pain when walking normally; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/sbh0z08u3zn9rme/5485.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 0af94590d4218e8053cef0cd8aaf9444
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 5485
+    build: b37
+    sample_size: 11823
+    n_cases: 6620.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

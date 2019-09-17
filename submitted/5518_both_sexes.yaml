@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 5518; Leg pain on walking : effect of standing still; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/soj9u4y9s9i3p4x/5518.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 959131f1153972ddcdc84a0cf894afcf
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 5518
+    build: b37
+    sample_size: 22495
+    n_cases: 8800.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
