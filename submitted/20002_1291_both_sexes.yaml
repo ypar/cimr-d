@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20002_1291; Non-cancer illness code, self-reported: mania/bipolar disorder/manic depression; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/b6nbozuljjl4lmh/20002_1291.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 7dfa42714dc70e32012149753a9b87f2
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20002_1291
+    build: b37
+    sample_size: 361141
+    n_cases: 1008.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
