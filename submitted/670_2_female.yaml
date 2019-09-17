@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 670_2; Type of accommodation lived in: A flat, maisonette or apartment; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/gemg9i8gs2dqzsv/670_2.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: adf478f10291fe1f7ccb2e3cf5f250f4
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 670_2
+    build: b37
+    sample_size: 193588
+    n_cases: 15936.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
