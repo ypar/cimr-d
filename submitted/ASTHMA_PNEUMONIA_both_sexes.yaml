@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: ASTHMA_PNEUMONIA; Asthma-related pneumonia; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/cichvyb7y62wda7/ASTHMA_PNEUMONIA.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: e3314015a3c1c067c5add8e4dd36ab8a
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: ASTHMA_PNEUMONIA
+    build: b37
+    sample_size: 361194
+    n_cases: 5900.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

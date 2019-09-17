@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: ASTHMA_MEDICATIO_COMORB; Medication related adverse effects; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/7lij6q5xq6vcams/ASTHMA_MEDICATIO_COMORB.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 4bf2c362b045ed0611dcb557e097f39c
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: ASTHMA_MEDICATIO_COMORB
+    build: b37
+    sample_size: 194174
+    n_cases: 10462.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

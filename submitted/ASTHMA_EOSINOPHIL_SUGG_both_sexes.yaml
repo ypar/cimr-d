@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: ASTHMA_EOSINOPHIL_SUGG; Suggestive for eosinophilic asthma; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/q09fiu0hx367d93/ASTHMA_EOSINOPHIL_SUGG.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 04b832c4936d7f550f2087664767e356
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: ASTHMA_EOSINOPHIL_SUGG
+    build: b37
+    sample_size: 361194
+    n_cases: 2302.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
