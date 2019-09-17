@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22601_41123205; Job coding: civil service administrative officer or assistant or clerk, tax collector, prison service clerk, law courts clerk; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/1o1kp98fxagpii0/22601_41123205.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: ef160e02d7d2f710da5eac9ad83e747b
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22601_41123205
+    build: b37
+    sample_size: 89866
+    n_cases: 4036.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

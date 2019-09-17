@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22601_41143216; Job coding: officer of ngo, trade union organiser/official, charity administrator, secretary of research or charity or political or professional or trade association or trade union; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/v0emfx3vl6uu6rb/22601_41143216.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 4e55c023a3fd5604dce3bbe207f89318
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22601_41143216
+    build: b37
+    sample_size: 49711
+    n_cases: 1054.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

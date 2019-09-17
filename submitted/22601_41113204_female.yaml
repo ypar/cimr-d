@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22601_41113204; Job coding: civil service executive officer, revenue/tax executive or officer, fraud inspector or officer, job centre adviser; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/0xwb4q1f8s73e8x/22601_41113204.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 1aaf4cf3ddd68d0ef79321157981832e
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22601_41113204
+    build: b37
+    sample_size: 49711
+    n_cases: 2200.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
