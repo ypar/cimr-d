@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20089_464; Type of meals eaten: Ready meals; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/nbgaat1r3s78uxe/20089_464.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 36e0484838cc090fc012eee2bc3728cc
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20089_464
+    build: b37
+    sample_size: 27958
+    n_cases: 2143.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
