@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: K85; Diagnoses - main ICD10: K85 Acute pancreatitis; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/nap6s5mr3u24k35/K85.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: a3278aba1f5734c5497345590b2e3281
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: K85
+    build: b37
+    sample_size: 361194
+    n_cases: 1292.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
