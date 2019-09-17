@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 5610_1; Which eye(s) affected by presbyopia: Right eye; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/hudp3xtumo69bw0/5610_1.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: b45aabc070d43edbcea6ca39a2ed9135
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 5610_1
+    build: b37
+    sample_size: 31494
+    n_cases: 1735.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
