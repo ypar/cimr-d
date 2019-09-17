@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20429; Easily tired during worst period of anxiety; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/fw86418ethuvmj3/20429.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: a8d1a1395b79fa3dc74d4b8374ccea08
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20429
+    build: b37
+    sample_size: 34121
+    n_cases: 24544.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

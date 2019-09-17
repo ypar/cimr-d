@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20428; Professional informed about anxiety; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/9ettsjft9ehrxbw/20428.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 1b326a0d90aea5918fc79633bf5cb344
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20428
+    build: b37
+    sample_size: 13062
+    n_cases: 7479.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
