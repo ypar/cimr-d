@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: K52; Diagnoses - main ICD10: K52 Other non-infective gastro-enteritis and colitis; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/qtefwc3e6fe5oa6/K52.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 6ff253a86188c99797ee468133624f5a
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: K52
+    build: b37
+    sample_size: 167020
+    n_cases: 3422.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: K56; Diagnoses - main ICD10: K56 Paralytic ileus and intestinal obstruction without hernia; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/4a50r8156rn5y3b/K56.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: ca651bfdf313ed9e2c5be95beabb1873
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: K56
+    build: b37
+    sample_size: 194174
+    n_cases: 1053.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
