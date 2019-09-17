@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 2907; Ever stopped smoking for 6+ months; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/1a7le6hp39skzq3/2907.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 99f6c604876526aec4cd49df6cacc6d6
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 2907
+    build: b37
+    sample_size: 87937
+    n_cases: 37903.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
