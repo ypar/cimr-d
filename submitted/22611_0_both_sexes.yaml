@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22611_0; Workplace had a lot of cigarette smoke from other people smoking: Rarely/never; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/bzxlgh6k91bh9ne/22611_0.gwas.imputed_v3.both_sexes.v2.tsv.bgz?dl=0
+        md5: 54a8819a26b82343fe4a315afec4371e
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22611_0
+    build: b37
+    sample_size: 90716
+    n_cases: 77294.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
