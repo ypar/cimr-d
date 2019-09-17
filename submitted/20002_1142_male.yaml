@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20002_1142; Non-cancer illness code, self-reported: gastric/stomach ulcers; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/pc45twn09vasa37/20002_1142.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 623b97f420e0681c12f79df40f5b7dc2
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20002_1142
+    build: b37
+    sample_size: 166988
+    n_cases: 1496.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

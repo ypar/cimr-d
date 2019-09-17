@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20002_1125; Non-cancer illness code, self-reported: pleurisy; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/3mw2vzal8s7gbdn/20002_1125.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 07259df544655c4d64d90258d710d49d
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20002_1125
+    build: b37
+    sample_size: 361141
+    n_cases: 1220.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
