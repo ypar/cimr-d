@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: ICDMAIN_ANY_ENTRY; Any ICDMAIN event in hilmo or causes of death; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/2iawx9wdeuy4dxr/ICDMAIN_ANY_ENTRY.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 2764a6e965d473133f383c49bc48feaa
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: ICDMAIN_ANY_ENTRY
+    build: b37
+    sample_size: 167020
+    n_cases: 128063.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

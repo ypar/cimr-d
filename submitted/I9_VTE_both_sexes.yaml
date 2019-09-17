@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: I9_VTE; Venous thromboembolism; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/b7vd8jq216yfvsr/I9_VTE.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: e94b7a0b825961fe26b95eba46a90f42
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: I9_VTE
+    build: b37
+    sample_size: 361194
+    n_cases: 4620.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
