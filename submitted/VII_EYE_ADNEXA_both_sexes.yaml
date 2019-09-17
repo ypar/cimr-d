@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: VII_EYE_ADNEXA; Diseases of the eye and adnexa; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/agwac6q9eiigh3c/VII_EYE_ADNEXA.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: bb866ac21aabf9b98ba32070bd5c2853
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: VII_EYE_ADNEXA
+    build: b37
+    sample_size: 361194
+    n_cases: 29878.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
