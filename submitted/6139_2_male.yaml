@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6139_2; Gas or solid-fuel cooking/heating: A gas fire that you use regularly in winter time; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/l8j653eltuokzg0/6139_2.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 9eb50995f4d2845d66b24b3909d28e38
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6139_2
+    build: b37
+    sample_size: 166427
+    n_cases: 67847.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
