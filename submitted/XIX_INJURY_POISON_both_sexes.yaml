@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: XIX_INJURY_POISON; Injury, poisoning and certain other consequences of external causes; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/ytn8hzv8txkjv7u/XIX_INJURY_POISON.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 5a627347bd711953089304b0d96e0749
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: XIX_INJURY_POISON
+    build: b37
+    sample_size: 361194
+    n_cases: 44796.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
