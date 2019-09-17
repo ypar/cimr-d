@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20111_3; Illnesses of siblings: Lung cancer; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/w9bs84y1fzpd4iq/20111_3.gwas.imputed_v3.female.v2.tsv.bgz?dl=0
+        md5: 0a4446f74c826d16129db88cdb2f2696
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20111_3
+    build: b37
+    sample_size: 154267
+    n_cases: 3391.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
