@@ -2264,6 +2264,8 @@ List of processed files (with links to AWS S3 bucket):
     * [5324_0.gwas.imputed_v3.male-PR-653.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/5324_0.gwas.imputed_v3.male-PR-653.tsv.gz): 492.0 MiB (updated on *2019-09-17 17:25:35*)
     * [5325_0.gwas.imputed_v3.both_sexes-PR-653.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/5325_0.gwas.imputed_v3.both_sexes-PR-653.tsv.gz): 497.1 MiB (updated on *2019-09-17 17:25:27*)
     * [6139_3.gwas.imputed_v3.female-PR-665.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/6139_3.gwas.imputed_v3.female-PR-665.tsv.gz): 494.1 MiB (updated on *2019-09-17 17:41:23*)
+    * [6140_1.gwas.imputed_v3.both_sexes-PR-665.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/6140_1.gwas.imputed_v3.both_sexes-PR-665.tsv.gz): 495.0 MiB (updated on *2019-09-17 17:41:39*)
+    * [6140_1.gwas.imputed_v3.male-PR-665.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/6140_1.gwas.imputed_v3.male-PR-665.tsv.gz): 496.7 MiB (updated on *2019-09-17 17:41:33*)
     * [6140_100.gwas.imputed_v3.both_sexes-PR-665.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/6140_100.gwas.imputed_v3.both_sexes-PR-665.tsv.gz): 486.8 MiB (updated on *2019-09-17 17:40:26*)
     * [6140_100.gwas.imputed_v3.female-PR-665.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/6140_100.gwas.imputed_v3.female-PR-665.tsv.gz): 485.3 MiB (updated on *2019-09-17 17:41:09*)
     * [6140_2.gwas.imputed_v3.male-PR-665.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/6140_2.gwas.imputed_v3.male-PR-665.tsv.gz): 489.8 MiB (updated on *2019-09-17 17:40:51*)
