@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20117_2; Alcohol drinker status: Current; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/e3asqp6e85cfm2x/20117_2.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 45abef91fba7e4fbe7f011a8dd92ffa8
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20117_2
+    build: b37
+    sample_size: 360726
+    n_cases: 336919.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
