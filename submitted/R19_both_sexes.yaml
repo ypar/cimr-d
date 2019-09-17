@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: R19; Diagnoses - main ICD10: R19 Other symptoms and signs involving the digestive system and abdomen; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/r121bj67ruphn4v/R19.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 881689eba5d9ecd2fe85ef16abac9ca9
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: R19
+    build: b37
+    sample_size: 361194
+    n_cases: 8796.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: R35; Diagnoses - main ICD10: R35 Polyuria; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/anarh33dp0bv6an/R35.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 547720d5936d80f4121aac94b930133a
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: R35
+    build: b37
+    sample_size: 167020
+    n_cases: 1116.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
