@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: J10_ASTHMA_MAIN; Asthma; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/9fo51y4uaho1i7y/J10_ASTHMA_MAIN.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: e76e3915cc32e4c5cbcfb0e4d52bc5f7
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: J10_ASTHMA_MAIN
+    build: b37
+    sample_size: 361194
+    n_cases: 1993.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

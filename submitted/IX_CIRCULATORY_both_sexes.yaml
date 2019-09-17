@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: IX_CIRCULATORY; Diseases of the circulatory system; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/pw1fljmpd3izrye/IX_CIRCULATORY.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: ef3651349daff3f2caec90012e0a232d
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: IX_CIRCULATORY
+    build: b37
+    sample_size: 361194
+    n_cases: 60504.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
