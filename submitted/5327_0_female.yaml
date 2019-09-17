@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 5327_0; Ever had laser treatment for glaucoma or high eye pressure: No; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/3k8b3l4ngqjom8g/5327_0.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: e709d2589a88592ee32ebbbd61c3e81c
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 5327_0
+    build: b37
+    sample_size: 3071
+    n_cases: 2960.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
