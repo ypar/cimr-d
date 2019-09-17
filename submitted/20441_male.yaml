@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20441; Ever had prolonged loss of interest in normal activities; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/h2290l7zlnk39c6/20441.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 86d1699c1e665c51f81b329e5e5e07d8
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20441
+    build: b37
+    sample_size: 51829
+    n_cases: 16430.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
