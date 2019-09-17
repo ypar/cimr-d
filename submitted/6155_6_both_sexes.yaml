@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6155_6; Vitamin and mineral supplements: Folic acid or Folate (Vit B9); variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/gdqa2xhu5j6a80v/6155_6.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: e371e466bbdf51402bc4eeb04194c0e6
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6155_6
+    build: b37
+    sample_size: 359245
+    n_cases: 7603.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
