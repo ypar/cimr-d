@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20536_2; Weight change during worst episode of depression: Lost weight; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/ghd9cycfez1e8fw/20536_2.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 6989ba5ff9f93de0c45b08b0af7b309d
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20536_2
+    build: b37
+    sample_size: 19996
+    n_cases: 5016.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
