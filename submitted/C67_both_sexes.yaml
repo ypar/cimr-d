@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: C67; Diagnoses - main ICD10: C67 Malignant neoplasm of bladder; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/3zcgacq7cfrek7r/C67.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 24a0f43b23cbab587bf7d00bc43aa783
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: C67
+    build: b37
+    sample_size: 361194
+    n_cases: 1554.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
