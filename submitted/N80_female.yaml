@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: N80; Diagnoses - main ICD10: N80 Endometriosis; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/ffy2jso3zf3m0q0/N80.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 234787b8a22a1dd28098c3a15591f6e1
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: N80
+    build: b37
+    sample_size: 194174
+    n_cases: 1496.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
