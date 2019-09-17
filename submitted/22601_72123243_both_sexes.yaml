@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22601_72123243; Job coding: customer care adviser/officer/assistant, store guide, customer relations officer/representative; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/3h4k3hjd89uyc3r/22601_72123243.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 74fd2977424f1dee96988c6245731786
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22601_72123243
+    build: b37
+    sample_size: 89866
+    n_cases: 1213.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
