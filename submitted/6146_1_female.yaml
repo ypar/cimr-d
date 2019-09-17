@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6146_1; Attendance/disability/mobility allowance: Attendance allowance; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/kwd2rcdfllgwsco/6146_1.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 6c53c4804def435a8e3f511fba1c1493
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6146_1
+    build: b37
+    sample_size: 192987
+    n_cases: 1189.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
