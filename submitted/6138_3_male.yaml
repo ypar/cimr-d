@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6138_3; Qualifications: O levels/GCSEs or equivalent; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/xpv1i2o349anfgk/6138_3.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 98caeec37a167603d1c616f40004e410
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6138_3
+    build: b37
+    sample_size: 165249
+    n_cases: 73083.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
