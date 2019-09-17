@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 2227; Other eye problems; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/d17lcbnag1vypwr/2227.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: e9be31cca5fa5d8187a269afc8b33c32
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 2227
+    build: b37
+    sample_size: 166496
+    n_cases: 23747.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
