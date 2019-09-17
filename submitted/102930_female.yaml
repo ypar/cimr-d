@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 102930; Egg consumers; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/ii1a73zvoqk8e7m/102930.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 18543369a19a8d615f0dbb337f22f4c2
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 102930
+    build: b37
+    sample_size: 27958
+    n_cases: 5691.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
