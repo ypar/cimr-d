@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6164_3; Types of physical activity in last 4 weeks: Strenuous sports; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/k5yxlds4zv7acwb/6164_3.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 4f0397a5c95f7ec586bbafde96131595
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6164_3
+    build: b37
+    sample_size: 193096
+    n_cases: 13677.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
