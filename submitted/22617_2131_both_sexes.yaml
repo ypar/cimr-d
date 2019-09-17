@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22617_2131; Job SOC coding: IT strategy and planning professionals; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/34czitx0ui92azz/22617_2131.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 48b646a860b0e0dac188bf868fdc2148
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22617_2131
+    build: b37
+    sample_size: 91149
+    n_cases: 1863.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
