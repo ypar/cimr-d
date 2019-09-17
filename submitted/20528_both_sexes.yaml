@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20528; Diagnosed with life-threatening illness; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/37sqh9drvanetim/20528.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: e4bc873fea3b0ef7fd730a4318a3b086
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20528
+    build: b37
+    sample_size: 117617
+    n_cases: 19291.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
