@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20447; Depression possibly related to stressful or traumatic event; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/2c6ubrnqgfb6b43/20447.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 407a34c244b4ffed3294c2c117f1d8c7
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20447
+    build: b37
+    sample_size: 24112
+    n_cases: 15428.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
