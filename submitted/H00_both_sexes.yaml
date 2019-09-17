@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: H00; Diagnoses - main ICD10: H00 Hordeolum and chalazion; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/329at9iruny02ly/H00.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: c0edcc6eb5eda5b8715bd6e7649ec826
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: H00
+    build: b37
+    sample_size: 361194
+    n_cases: 1467.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
