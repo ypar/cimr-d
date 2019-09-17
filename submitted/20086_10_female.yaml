@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20086_10; Type of special diet followed: Low calorie; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/g1cgjdgx8swu9zj/20086_10.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: e88e955852829cfc231dd5c1b4b9aba7
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20086_10
+    build: b37
+    sample_size: 27958
+    n_cases: 4574.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

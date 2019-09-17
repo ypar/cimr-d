@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20084_488; Vitamin and/or mineral supplement use: Other vitamin; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/65nhihl7uo4sbgv/20084_488.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 789c8bc2d650f9da5d9c511b27d75a6f
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20084_488
+    build: b37
+    sample_size: 51427
+    n_cases: 1937.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
