@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22604_1; Work hours - lumped category: 15 to less-than-20 hours; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/esb2y1bgffz8f7j/22604_1.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 391cae6e0376d003369cad01862f406f
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22604_1
+    build: b37
+    sample_size: 32286
+    n_cases: 1525.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
