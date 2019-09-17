@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: XVII_MALFORMAT_ABNORMAL; Congenital malformations, deformations and chromosomal abnormalities; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/2249rcfhosz3ipq/XVII_MALFORMAT_ABNORMAL.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 9c77ee32b90936952328d6332a9b7798
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: XVII_MALFORMAT_ABNORMAL
+    build: b37
+    sample_size: 361194
+    n_cases: 2121.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
