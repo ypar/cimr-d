@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 1418_4; Milk type used: Soya; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/ro5ivdwvoefka85/1418_4.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 734e98dc0bd79b5ca5c72d55402f56c2
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 1418_4
+    build: b37
+    sample_size: 166780
+    n_cases: 3839.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
