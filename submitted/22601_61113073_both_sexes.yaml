@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22601_61113073; Job coding: nursing auxiliary or assistant, steriliser of medical equipment, occupational therapy assistant, phlebotomist, physiotherapy assistant, ward orderly, ward assistant; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/73zzws69vin3mxr/22601_61113073.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: d00eaa7f9c08cc5a2666338d79261f81
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22601_61113073
+    build: b37
+    sample_size: 89866
+    n_cases: 1272.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
