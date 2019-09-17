@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22601_32113072; Job coding: nurse (of any kind, at any level); variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/ri7131u5fyh15nv/22601_32113072.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 12163140c2a99bf6bec4212f1a38dca4
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22601_32113072
+    build: b37
+    sample_size: 49711
+    n_cases: 4515.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

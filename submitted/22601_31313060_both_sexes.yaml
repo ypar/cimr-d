@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22601_31313060; Job coding: it operations technician, computer operator or technician, database manager, network or web technician, web master, systems administrator or officer; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/9uu2po6tq8al0v1/22601_31313060.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 34cc9b96f06f89b311d9ce97bf91ee26
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22601_31313060
+    build: b37
+    sample_size: 89866
+    n_cases: 1071.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

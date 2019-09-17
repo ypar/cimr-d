@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22601_31113033; Job coding: laboratory technician, scientific assistant, cytology screener; hospital, medical or health technician; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/4ig23iurr4bc9a3/22601_31113033.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 7d6e70788acfdc9801587ff487145777
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22601_31113033
+    build: b37
+    sample_size: 89866
+    n_cases: 2162.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
