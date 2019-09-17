@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: C_OTHER_SKIN; Other malignant neoplasms of skin; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/s7r9bk0z0yx595m/C_OTHER_SKIN.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 8820f0fa704c2287b65e51b3b79e9c00
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: C_OTHER_SKIN
+    build: b37
+    sample_size: 194174
+    n_cases: 6835.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
