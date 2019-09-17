@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: K11_OTHDISOES; Other diseases of oesophagus; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/wgbmxtanzfz1xet/K11_OTHDISOES.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: e7056667a1aa8002063d093409d1ea37
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: K11_OTHDISOES
+    build: b37
+    sample_size: 361194
+    n_cases: 1185.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

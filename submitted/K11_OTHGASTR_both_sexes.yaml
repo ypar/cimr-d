@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: K11_OTHGASTR; Other gastritis (incl. Duodenitis); variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/83rm3r2vv2xjgz3/K11_OTHGASTR.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 2cb35cff8d30e49a3c845e7277cd301d
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: K11_OTHGASTR
+    build: b37
+    sample_size: 361194
+    n_cases: 10518.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
