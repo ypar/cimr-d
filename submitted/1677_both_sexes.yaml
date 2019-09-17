@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 1677; Breastfed as a baby; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/lst51uuh78vrv1x/1677.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 8e8d2610be126759b4461f10131aaaaa
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 1677
+    build: b37
+    sample_size: 273743
+    n_cases: 193838.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

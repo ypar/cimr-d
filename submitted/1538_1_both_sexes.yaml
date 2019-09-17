@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 1538_1; Major dietary changes in the last 5 years: Yes, because of illness; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/ngtsjk1knk273qk/1538_1.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 442e1079a9c78552e293954a0766f0ab
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 1538_1
+    build: b37
+    sample_size: 360294
+    n_cases: 38051.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
