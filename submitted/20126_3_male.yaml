@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20126_3; Bipolar and major depression status: Probable Recurrent major depression (severe); variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/3uq18h7m56y47mg/20126_3.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: e10779b74c6a70c45c7abffa7943ea65
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20126_3
+    build: b37
+    sample_size: 41187
+    n_cases: 2687.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
