@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: M13_TRIGGERFINGER; Trigger finger; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/jxokpnbzfw0fs2t/M13_TRIGGERFINGER.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 0f08c8114319bfd88ae56afcf1788583
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: M13_TRIGGERFINGER
+    build: b37
+    sample_size: 361194
+    n_cases: 1999.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
