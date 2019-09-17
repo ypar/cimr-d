@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20096_2; Size of red wine glass drunk: medium (175ml); variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/3a62ys12rhb8ho7/20096_2.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 079e6be2c2cd799493f63bd521f71fce
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20096_2
+    build: b37
+    sample_size: 27958
+    n_cases: 2267.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
