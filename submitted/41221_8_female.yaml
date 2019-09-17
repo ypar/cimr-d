@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 41221_8; Delivery methods: Emergency caesarean section; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/4osg1575ypnwqwg/41221_8.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: a6f8228ad200c2faf16ea713708739ee
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 41221_8
+    build: b37
+    sample_size: 8019
+    n_cases: 1158.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
