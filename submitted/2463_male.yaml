@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 2463; Fractured/broken bones in last 5 years; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/z5uou6p27gwspaa/2463.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 31203b92d1a493d0e029111da6c33688
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 2463
+    build: b37
+    sample_size: 165950
+    n_cases: 14538.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
