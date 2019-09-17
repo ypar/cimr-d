@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20002_1471; Non-cancer illness code, self-reported: atrial fibrillation; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/ywblctpg0vl2i9m/20002_1471.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 0c97027fd91fc216e94061f2308aefac
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20002_1471
+    build: b37
+    sample_size: 361141
+    n_cases: 2828.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

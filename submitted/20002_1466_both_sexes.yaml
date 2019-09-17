@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20002_1466; Non-cancer illness code, self-reported: gout; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/r8d8jqwqm2oubqq/20002_1466.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 52891e28c702669b9e3a8804230cf160
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20002_1466
+    build: b37
+    sample_size: 361141
+    n_cases: 5174.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
