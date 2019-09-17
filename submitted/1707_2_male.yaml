@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 1707_2; Handedness (chirality/laterality): Left-handed; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/gg66k1ujxq16gsc/1707_2.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 14d0d0983116cbd81e0a2ece4a927640
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 1707_2
+    build: b37
+    sample_size: 166874
+    n_cases: 17739.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
