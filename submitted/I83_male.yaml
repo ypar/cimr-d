@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: I83; Diagnoses - main ICD10: I83 Varicose veins of lower extremities; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/knd9jqmdgdyqkhd/I83.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 5b173a96055ee87ac6dd6fd8fe1a8855
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: I83
+    build: b37
+    sample_size: 167020
+    n_cases: 2867.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
