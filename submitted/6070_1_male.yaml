@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6070_1; OCT measured (right): Measurable; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/2rw0977ygempjdl/6070_1.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 0f3173ba5c820f9d87d031caf703c439
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6070_1
+    build: b37
+    sample_size: 25462
+    n_cases: 22015.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
