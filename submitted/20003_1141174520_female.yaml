@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20003_1141174520; Treatment/medication code: symbicort 100/6 turbohaler; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/0jmgrehwtyou4n1/20003_1141174520.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: f2435461886361288777bccf66ad29d0
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20003_1141174520
+    build: b37
+    sample_size: 194153
+    n_cases: 1317.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

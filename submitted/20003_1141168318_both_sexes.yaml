@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20003_1141168318; Treatment/medication code: clopidogrel; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/m8g0lm1apwm2uoj/20003_1141168318.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: b78f0db40e245944eada0285b47ff24a
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20003_1141168318
+    build: b37
+    sample_size: 361141
+    n_cases: 2290.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
