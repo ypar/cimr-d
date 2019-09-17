@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 102250; Sweet snack consumers; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/bbwfjs1mvtd76bk/102250.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 039872f6052edcf79a26efd2047c7695
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 102250
+    build: b37
+    sample_size: 27958
+    n_cases: 15432.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
