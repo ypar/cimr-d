@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22616_1; Breathing problems during period of job: Yes; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/4y68tocb2are5m4/22616_1.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: d6a6f4ff3da8a6da0e3d81b410991a0b
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22616_1
+    build: b37
+    sample_size: 91149
+    n_cases: 6697.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
