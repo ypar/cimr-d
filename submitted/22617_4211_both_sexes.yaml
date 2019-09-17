@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22617_4211; Job SOC coding: Medical secretaries; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/wopd5tbdsgul0e6/22617_4211.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 5d5bc5b3c08a39c541778313c08ae929
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22617_4211
+    build: b37
+    sample_size: 91149
+    n_cases: 1040.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
