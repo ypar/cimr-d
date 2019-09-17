@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: C_RESPIRATORY_INTRATHORACIC; nan; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/h1njl5j5qucnxuy/C_RESPIRATORY_INTRATHORACIC.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: b2e567c8ba5f2f92110f8ac3a35cc2df
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: C_RESPIRATORY_INTRATHORACIC
+    build: b37
+    sample_size: 361194
+    n_cases: 1944.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
