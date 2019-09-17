@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22601_11363057; Job coding: ict or it manager, systems/data processing manager, telecom manager; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/lhnmfp40rrqvffu/22601_11363057.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: c2e8f8eda275d9efa4f907d188f827fe
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22601_11363057
+    build: b37
+    sample_size: 89866
+    n_cases: 1596.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
