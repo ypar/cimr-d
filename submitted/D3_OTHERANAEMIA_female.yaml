@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: D3_OTHERANAEMIA; Other anaemias; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/ny7uabxxwgsayh7/D3_OTHERANAEMIA.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 80f87e126aaf476b52632e054287ec70
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: D3_OTHERANAEMIA
+    build: b37
+    sample_size: 194174
+    n_cases: 2440.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
