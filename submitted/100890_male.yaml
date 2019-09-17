@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 100890; Milk added to cereal; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/w7atyn5oocvasii/100890.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: c71d72ad185cfaad8f762867d5bdc2b0
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 100890
+    build: b37
+    sample_size: 23469
+    n_cases: 10045.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
