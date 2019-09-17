@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20493; Severity of problems due to mania or irritability; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/sxabhmsc4nohndi/20493.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 7f14baf2fdf157c59708b0694ff68472
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20493
+    build: b37
+    sample_size: 26655
+    n_cases: 7988.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
