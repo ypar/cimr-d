@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22607_1; Workplace very cold: Sometimes; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/9ducxd58lgemt0f/22607_1.gwas.imputed_v3.male.v2.tsv.bgz?dl=0
+        md5: 411d1caa3883c2b8293750722f06f26f
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22607_1
+    build: b37
+    sample_size: 40727
+    n_cases: 20325.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
