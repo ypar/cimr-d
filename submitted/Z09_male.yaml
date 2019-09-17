@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: Z09; Diagnoses - main ICD10: Z09 Follow-up examination after treatment for conditions other than malignant neoplasms; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/vt19wme5pfpv1b6/Z09.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 562d56a5d3a89996a5665792e05a65ce
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: Z09
+    build: b37
+    sample_size: 167020
+    n_cases: 4225.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: Z01; Diagnoses - main ICD10: Z01 Other special examinations and investigations of persons without complaint or reported diagnosis; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/7oq38i4a9dp5sw0/Z01.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: f56788129970669d49529ad68559f428
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: Z01
+    build: b37
+    sample_size: 361194
+    n_cases: 1370.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
