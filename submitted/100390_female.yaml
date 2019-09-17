@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 100390; Tea consumed; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/5jlto1ryo9jvh9l/100390.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 71b66004daf494a48964bf684e91e18a
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 100390
+    build: b37
+    sample_size: 27958
+    n_cases: 22517.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
