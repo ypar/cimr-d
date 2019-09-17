@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22613_1; Worked with paints, thinners or glues: Sometimes; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/998hx49u8o7e6uj/22613_1.gwas.imputed_v3.both_sexes.v2.tsv.bgz?dl=0
+        md5: 040809e385401f09eef45ff83b2c8fce
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22613_1
+    build: b37
+    sample_size: 89003
+    n_cases: 14095.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
