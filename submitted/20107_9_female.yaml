@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20107_9; Illnesses of father: Diabetes; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/fvsizucyrk2piun/20107_9.gwas.imputed_v3.female.v2.tsv.bgz?dl=0
+        md5: 22c0b9a8ea5a3424ec96a01da475ca3f
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20107_9
+    build: b37
+    sample_size: 171094
+    n_cases: 16719.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

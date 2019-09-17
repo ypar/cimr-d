@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20107_6; Illnesses of father: Chronic bronchitis/emphysema; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/j3h2ynn6esy1jhu/20107_6.gwas.imputed_v3.male.v2.tsv.bgz?dl=0
+        md5: bdf858a5bad62132d5bbcf54f67df54c
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20107_6
+    build: b37
+    sample_size: 142856
+    n_cases: 15475.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
