@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22630_9; Day shifts worked: This type of shift pattern was not worked during job; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/m4x1lcpapp5xs7i/22630_9.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 7637b319a0103a8fcdcb7b8807d5b843
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22630_9
+    build: b37
+    sample_size: 25697
+    n_cases: 20690.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

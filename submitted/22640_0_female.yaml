@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22640_0; Mixture of day and night shifts worked: Shift pattern was worked for some (but not all) of job; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/yvg7nhmv0a1qp9f/22640_0.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 8653a9a5d5f468072dd0ee45e5285139
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22640_0
+    build: b37
+    sample_size: 11800
+    n_cases: 3408.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
