@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20003_99999; Treatment/medication code: Free-text entry, unable to be coded; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/fymyq6p2fkm343c/20003_99999.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 7fcdb8a9c02b5a74ef676967ce220832
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20003_99999
+    build: b37
+    sample_size: 166988
+    n_cases: 4309.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
