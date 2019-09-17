@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6020_1; Completion status of test: Fully completed; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/gdzg837rvhaipty/6020_1.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: ddcff12fdf8795a9203cb75f0981ab60
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6020_1
+    build: b37
+    sample_size: 54007
+    n_cases: 50215.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
