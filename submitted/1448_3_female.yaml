@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 1448_3; Bread type: Wholemeal or wholegrain; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/0hpccmvla9cyj2p/1448_3.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 9e143b1c596aacd6e8f5981ae29cb929
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 1448_3
+    build: b37
+    sample_size: 184832
+    n_cases: 117091.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
