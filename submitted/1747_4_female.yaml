@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 1747_4; Hair colour (natural, before greying): Dark brown; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/kg1ojb1kfpix480/1747_4.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 500a3faaeeaeb4c037fa524ac67b069e
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 1747_4
+    build: b37
+    sample_size: 193913
+    n_cases: 72453.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
