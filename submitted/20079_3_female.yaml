@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20079_3; Day-of-week questionnaire completion requested: Wednesday; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/3h7vv2mfwskl7h3/20079_3.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 8e31f6d0793b9c4452876c7c890b20b2
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20079_3
+    build: b37
+    sample_size: 27958
+    n_cases: 4677.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
