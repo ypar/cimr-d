@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6150_100; Vascular/heart problems diagnosed by doctor: None of the above; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/xe77j48a9ox49op/6150_100.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: d4471f0ac264e4d0db58f17dfc80e175
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6150_100
+    build: b37
+    sample_size: 166663
+    n_cases: 109148.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
