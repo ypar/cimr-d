@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: V_MENTAL_BEHAV; Mental and behavioural disorders; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/vf504v4bj6zaetv/V_MENTAL_BEHAV.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: bcf5283b6048afe83480efc9c436fef0
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: V_MENTAL_BEHAV
+    build: b37
+    sample_size: 167020
+    n_cases: 2301.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

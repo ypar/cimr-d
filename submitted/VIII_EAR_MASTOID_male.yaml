@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: VIII_EAR_MASTOID; Diseases of the ear and mastoid process; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/a4oa301hphu884v/VIII_EAR_MASTOID.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 285a3be647483259902c6b3d918e7f94
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: VIII_EAR_MASTOID
+    build: b37
+    sample_size: 167020
+    n_cases: 2533.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
