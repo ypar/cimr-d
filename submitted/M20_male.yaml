@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: M20; Diagnoses - main ICD10: M20 Acquired deformities of fingers and toes; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/oqqbud1vluv4or5/M20.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 504f6f3e0721513cfecdb0cb6f6cf629
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: M20
+    build: b37
+    sample_size: 167020
+    n_cases: 1160.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
