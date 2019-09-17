@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 1418_1; Milk type used: Full cream; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/1x9d8v7ue7rntvq/1418_1.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: e71f145a62d9c8e4bd2a73043f49dd1a
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 1418_1
+    build: b37
+    sample_size: 360806
+    n_cases: 22902.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
