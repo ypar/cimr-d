@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20114_101; Illnesses of adopted siblings: None of the above (group 2); variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/cihncj2ztf3gn11/20114_101.gwas.imputed_v3.both_sexes.v2.tsv.bgz?dl=0
+        md5: d48a078e4cc0085dfd4b37b0f0a03795
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20114_101
+    build: b37
+    sample_size: 1869
+    n_cases: 1577.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
