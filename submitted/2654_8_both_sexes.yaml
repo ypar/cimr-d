@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 2654_8; Non-butter spread type details: Other low or reduced fat spread; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/gfwfj44us46pd61/2654_8.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: dda3ebb493e47cf8921f995f78d002ae
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 2654_8
+    build: b37
+    sample_size: 190094
+    n_cases: 19035.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
