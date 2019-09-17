@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: M84; Diagnoses - main ICD10: M84 Disorders of continuity of bone; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/yq6o0kurfga0jvb/M84.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 54a729e1dc169bf8a42f7e8c7d2537aa
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: M84
+    build: b37
+    sample_size: 361194
+    n_cases: 1065.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
