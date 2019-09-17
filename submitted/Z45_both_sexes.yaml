@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: Z45; Diagnoses - main ICD10: Z45 Adjustment and management of implanted device; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/wkpntiju01g2nct/Z45.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 283ee05fb4aa3be242f74ceb88a92549
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: Z45
+    build: b37
+    sample_size: 361194
+    n_cases: 2209.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
