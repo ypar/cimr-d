@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20090_353; Type of fat/oil used in cooking: Olive oil; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/f8syavp97u5lt1q/20090_353.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 8dbdf4c75e142500fd830ae82e5ddcd6
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20090_353
+    build: b37
+    sample_size: 27958
+    n_cases: 10409.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
