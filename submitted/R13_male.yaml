@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: R13; Diagnoses - main ICD10: R13 Dysphagia; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/d4dumlzjo03kp2a/R13.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 44643b709eeba9ffe8519fd56b6f2e77
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: R13
+    build: b37
+    sample_size: 167020
+    n_cases: 1455.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
