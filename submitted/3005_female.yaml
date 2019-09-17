@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 3005; Fracture resulting from simple fall; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/zx1hnav58re1whw/3005.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 28f32c4e55d2df1e15adbd5d482d2485
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 3005
+    build: b37
+    sample_size: 19982
+    n_cases: 14076.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
