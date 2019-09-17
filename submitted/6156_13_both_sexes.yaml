@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6156_13; Manic/hyper symptoms: I needed less sleep than usual; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/em3j66dihv3xwxk/6156_13.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 11281ec3b7473f409bc9283f43563652
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6156_13
+    build: b37
+    sample_size: 24049
+    n_cases: 3259.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
