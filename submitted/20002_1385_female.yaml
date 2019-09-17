@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20002_1385; Non-cancer illness code, self-reported: allergy or anaphylactic reaction to food; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/h85r67nzcizaaff/20002_1385.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: af0c078bc11ba90a91027627cdab44ac
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20002_1385
+    build: b37
+    sample_size: 194153
+    n_cases: 1080.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
