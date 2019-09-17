@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 2814; Ever used hormone-replacement therapy (HRT); variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/b43sni59abeix2o/2814.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 640df30c7f792742883b744e171af828
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 2814
+    build: b37
+    sample_size: 193604
+    n_cases: 76177.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

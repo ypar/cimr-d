@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 2784; Ever taken oral contraceptive pill; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/v414gyn4wbcczlf/2784.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: abdb5f555465209ba103d6ade8f328d4
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 2784
+    build: b37
+    sample_size: 193713
+    n_cases: 159724.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
