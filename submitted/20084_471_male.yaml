@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20084_471; Vitamin and/or mineral supplement use: Multivitamin with multimineral; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/4dygtob3169wgge/20084_471.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: efea812b22d3de7fc1a5d9db1b90eccb
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20084_471
+    build: b37
+    sample_size: 23469
+    n_cases: 1064.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

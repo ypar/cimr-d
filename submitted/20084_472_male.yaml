@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20084_472; Vitamin and/or mineral supplement use: Fish oil; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/ofn7u3b1f12hnbo/20084_472.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: a2ff243637a563ec03610383427ce42a
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20084_472
+    build: b37
+    sample_size: 23469
+    n_cases: 5241.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
