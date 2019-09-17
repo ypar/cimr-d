@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: K26; Diagnoses - main ICD10: K26 Duodenal ulcer; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/6xxymem0j2i1uau/K26.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 17b9cc41608371c9fd033fc4b0860a1a
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: K26
+    build: b37
+    sample_size: 361194
+    n_cases: 1291.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
