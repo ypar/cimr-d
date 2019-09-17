@@ -49,7 +49,6 @@ PR_FILES=$(curl -s "${GH_PR_FILES_API}" | jq -r '.[].filename')
 set +x
 
 echo "${PR_FILES}" | grep "^processed/" || PROCESSED_UNCHANGED=true
-set -x
 if [ -z "${PROCESSED_UNCHANGED}" ]; then
     echo "Error: Changes in 'processed' directory not allowed!"
     exit 1
