@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20003_1140884444; Treatment/medication code: codeine; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/hdswu2yi8kka1zz/20003_1140884444.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: a01559385ff7438801bb8771ab61bd56
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20003_1140884444
+    build: b37
+    sample_size: 194153
+    n_cases: 1130.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
