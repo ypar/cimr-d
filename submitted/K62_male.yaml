@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: K62; Diagnoses - main ICD10: K62 Other diseases of anus and rectum; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/7eqflrnqh8quigl/K62.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: b2743cf83539cb0bb5aef2bd3e7920bb
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: K62
+    build: b37
+    sample_size: 167020
+    n_cases: 6696.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
