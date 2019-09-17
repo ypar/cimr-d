@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: N50; Diagnoses - main ICD10: N50 Other disorders of male genital organs; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/qldeacg0vuz05m4/N50.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 2b20a50de38ba6c9eb791fda94b5575f
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: N50
+    build: b37
+    sample_size: 167020
+    n_cases: 1829.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
