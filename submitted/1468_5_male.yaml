@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 1468_5; Cereal type: Other (e.g. Cornflakes, Frosties); variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/muumd1nase0rrz4/1468_5.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 946b70c14891ab9711aee8ef444e387f
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 1468_5
+    build: b37
+    sample_size: 137558
+    n_cases: 32107.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

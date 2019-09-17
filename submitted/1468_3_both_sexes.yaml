@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 1468_3; Cereal type: Oat cereal (e.g. Ready Brek, porridge); variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/rlvvaxa3mcnjg8p/1468_3.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 5cb489b666fe99acd37657591cb355c7
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 1468_3
+    build: b37
+    sample_size: 299898
+    n_cases: 76351.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 1508_1; Coffee type: Decaffeinated coffee (any type); variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/mx2rqvifue9vvac/1508_1.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: ef28b2de49cf08a8e497f0a6d613a808
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 1508_1
+    build: b37
+    sample_size: 149448
+    n_cases: 34638.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
