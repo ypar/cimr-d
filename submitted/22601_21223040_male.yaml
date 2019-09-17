@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22601_21223040; Job coding: mechanical engineer, automobile engineer, aeronautical engineer, locomotive or marine engineer, welding engineer; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/55vsud9iiqjuwtq/22601_21223040.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 836c61af0b1b7e8c12e7338858fd63f4
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22601_21223040
+    build: b37
+    sample_size: 40155
+    n_cases: 1098.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
