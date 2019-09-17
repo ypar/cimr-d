@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22601_23173422; Job coding: registrar or senior administrator of educational establishment, bursar, registrar, university administrator; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/fmqjmcaifw76aji/22601_23173422.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 71c3321485f2d55c673e636bf8f3d484
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22601_23173422
+    build: b37
+    sample_size: 89866
+    n_cases: 1425.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
