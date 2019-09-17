@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 680_4; Own or rent accommodation lived in: Rent - from private landlord or letting agency; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/gctjvxlkshhjigl/680_4.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 302b47257bf71f2e09a0f839f011361e
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 680_4
+    build: b37
+    sample_size: 191729
+    n_cases: 4426.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
