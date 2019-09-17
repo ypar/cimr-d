@@ -2707,6 +2707,8 @@ List of processed files (with links to AWS S3 bucket):
     * [6162_2.gwas.imputed_v3.male-PR-715.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/6162_2.gwas.imputed_v3.male-PR-715.tsv.gz): 498.7 MiB (updated on *2019-09-17 18:10:41*)
     * [6162_3.gwas.imputed_v3.both_sexes-PR-715.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/6162_3.gwas.imputed_v3.both_sexes-PR-715.tsv.gz): 495.3 MiB (updated on *2019-09-17 18:08:16*)
     * [6162_3.gwas.imputed_v3.female-PR-715.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/6162_3.gwas.imputed_v3.female-PR-715.tsv.gz): 497.6 MiB (updated on *2019-09-17 18:11:31*)
+    * [AB1_INFECTIONS.gwas.imputed_v3.both_sexes-PR-722.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/AB1_INFECTIONS.gwas.imputed_v3.both_sexes-PR-722.tsv.gz): 485.9 MiB (updated on *2019-09-17 18:23:04*)
+    * [AB1_OTHER_VIRAL.gwas.imputed_v3.both_sexes-PR-722.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/AB1_OTHER_VIRAL.gwas.imputed_v3.both_sexes-PR-722.tsv.gz): 473.7 MiB (updated on *2019-09-17 18:22:47*)
     * [Bmi.giant-ukbb.meta-analysis.combined.23May2018.HapMap2_only-PR-45.txt.gz](https://cimr-d.s3.amazonaws.com/gwas/Bmi.giant-ukbb.meta-analysis.combined.23May2018.HapMap2_only-PR-45.txt.gz): 58.0 MiB (updated on *2019-08-28 20:46:40*)
     * [Fall_gwas_results_any_chd_tab-PR-59.txt.gz](https://cimr-d.s3.amazonaws.com/gwas/Fall_gwas_results_any_chd_tab-PR-59.txt.gz): 207.6 MiB (updated on *2019-09-06 00:36:27*)
     * [Fetal_BW_European_meta.NG2019-PR-106.txt.gz](https://cimr-d.s3.amazonaws.com/gwas/Fetal_BW_European_meta.NG2019-PR-106.txt.gz): 438.6 MiB (updated on *2019-09-07 02:28:55*)
