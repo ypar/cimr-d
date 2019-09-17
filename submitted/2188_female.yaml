@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 2188; Long-standing illness, disability or infirmity; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/2cr1ct4yeje0dia/2188.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 3c3d831584ff3f29d7b229373890a09e
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 2188
+    build: b37
+    sample_size: 189271
+    n_cases: 56574.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

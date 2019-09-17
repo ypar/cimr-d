@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 2129; Answered sexual history questions; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/u7upd811vpirgfk/2129.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 89c7b919717828518dbbb8c22cba9f05
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 2129
+    build: b37
+    sample_size: 194078
+    n_cases: 176718.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

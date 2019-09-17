@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 2100; Seen a psychiatrist for nerves, anxiety, tension or depression; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/bvewou419u199ca/2100.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 0f0a8b6d8bb52fbe0d07a61a3604316a
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 2100
+    build: b37
+    sample_size: 166291
+    n_cases: 17258.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
