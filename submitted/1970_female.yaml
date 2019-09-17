@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 1970; Nervous feelings; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/kxlnsymi2xu167j/1970.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 7a1a8a64eb8c43035fdb569fc9db73ff
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 1970
+    build: b37
+    sample_size: 188370
+    n_cases: 51146.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
