@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20003_1140923346; Treatment/medication code: co-codamol; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/do24jpg9ny94602/20003_1140923346.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: e7799a2e38fb709e26424b6dcd752f24
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20003_1140923346
+    build: b37
+    sample_size: 194153
+    n_cases: 5092.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

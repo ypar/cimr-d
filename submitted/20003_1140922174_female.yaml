@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20003_1140922174; Treatment/medication code: alendronate sodium; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/kdmimac036faqes/20003_1140922174.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 65d2637c78e048dbe5bd3182081f8e2e
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20003_1140922174
+    build: b37
+    sample_size: 194153
+    n_cases: 3454.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

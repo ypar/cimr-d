@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20003_1140916682; Treatment/medication code: evening primrose oil; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/2xt85akp8rlijx6/20003_1140916682.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 694f68f8b57897bc7c09f299dfa9741c
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20003_1140916682
+    build: b37
+    sample_size: 361141
+    n_cases: 5730.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
