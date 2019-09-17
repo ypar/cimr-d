@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6141_8; How are people in household related to participant: Other unrelated; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/ykctcijp7rdezdn/6141_8.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: e6d4f9c5b41da7178f6fb9fb84fa6ba4
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6141_8
+    build: b37
+    sample_size: 165906
+    n_cases: 2946.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
