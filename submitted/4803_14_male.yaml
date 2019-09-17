@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 4803_14; Tinnitus: Yes, but not now, but have in the past; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/k666nouitb1zbpq/4803_14.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 00fba004f7b1f9afe1d2c02f011f3800
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 4803_14
+    build: b37
+    sample_size: 54702
+    n_cases: 6107.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
