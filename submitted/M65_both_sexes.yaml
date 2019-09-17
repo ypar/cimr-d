@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: M65; Diagnoses - main ICD10: M65 Synovitis and tenosynovitis; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/jc1a5z12e2t8vok/M65.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 3f4317e43e7d0224b47728c7d7f4235c
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: M65
+    build: b37
+    sample_size: 361194
+    n_cases: 2812.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
