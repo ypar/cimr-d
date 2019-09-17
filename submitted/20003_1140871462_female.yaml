@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20003_1140871462; Treatment/medication code: naproxen; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/42r9c94fe1zofx7/20003_1140871462.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 40ad86b906ed15f7a2b34acf865281c7
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20003_1140871462
+    build: b37
+    sample_size: 194153
+    n_cases: 1289.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
