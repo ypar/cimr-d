@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6150_4; Vascular/heart problems diagnosed by doctor: High blood pressure; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/i33502ldvszcj4v/6150_4.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 0c70faf842ea008e20a94275749f0fac
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6150_4
+    build: b37
+    sample_size: 193757
+    n_cases: 46281.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
