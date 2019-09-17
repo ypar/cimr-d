@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 3859_1; Reason former drinker stopped drinking alcohol: Illness or ill health; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/q02zg1dnrxuc4dj/3859_1.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: ad2d2b653fcfe53aeda6a52adee829a5
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 3859_1
+    build: b37
+    sample_size: 6716
+    n_cases: 1758.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
