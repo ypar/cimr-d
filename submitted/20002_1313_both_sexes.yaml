@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20002_1313; Non-cancer illness code, self-reported: ankylosing spondylitis; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/rtsnaiy850iw5j7/20002_1313.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 5c351f133b03f27b90be06086b0ce764
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20002_1313
+    build: b37
+    sample_size: 361141
+    n_cases: 1038.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
