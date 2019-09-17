@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: M13_SOFTTISSUENAS; Other specified/unspecified soft tissue disorders; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/trh8ehduh3i6cx9/M13_SOFTTISSUENAS.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 158383d486087e072dd6519a3ee09817
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: M13_SOFTTISSUENAS
+    build: b37
+    sample_size: 194174
+    n_cases: 1587.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
