@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 110001; Invitation to complete online 24-hour recall dietary questionnaire, acceptance; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/cuz53r1peg0lbtw/110001.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 702abaec8b7dcf37ae464f7494e2eeda
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 110001
+    build: b37
+    sample_size: 115087
+    n_cases: 76972.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 1150_1; Usual side of head for mobile phone use: Left; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/49bq2pmrbmnc3p1/1150_1.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: d28231894a0c4571a07343b458dd9e81
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 1150_1
+    build: b37
+    sample_size: 139181
+    n_cases: 49265.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
