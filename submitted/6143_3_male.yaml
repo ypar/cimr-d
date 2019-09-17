@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6143_3; Transport type for commuting to job workplace: Public transport; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/vns30t1picclkxz/6143_3.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 2464047029a246df82a898e2605bf145
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6143_3
+    build: b37
+    sample_size: 92011
+    n_cases: 18256.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
