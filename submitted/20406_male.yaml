@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20406; Ever addicted to alcohol; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/jlxujw37snqvpdq/20406.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 0bd0afeb831229de52aea3e1fbe99852
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20406
+    build: b37
+    sample_size: 3406
+    n_cases: 1603.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
