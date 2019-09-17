@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: K35; Diagnoses - main ICD10: K35 Acute appendicitis; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/btn8m17582ru9m7/K35.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 39341cd702b1f3d6b083a7ade617fef8
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: K35
+    build: b37
+    sample_size: 167020
+    n_cases: 1200.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
