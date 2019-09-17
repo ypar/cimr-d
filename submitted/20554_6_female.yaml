@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20554_6; Actions taken following self-harm: Receive help from friends / family / neighbours; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/gwfzi8xq189jf1n/20554_6.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: d3ff0c5084a291429a74b863ce0ed500
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20554_6
+    build: b37
+    sample_size: 65877
+    n_cases: 1016.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

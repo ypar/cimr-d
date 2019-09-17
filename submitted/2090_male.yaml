@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 2090; Seen doctor (GP) for nerves, anxiety, tension or depression; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/0wwz8gwnylctub2/2090.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 917f0c3f7e17dc37526f865a2f2fc0a1
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 2090
+    build: b37
+    sample_size: 166013
+    n_cases: 43552.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
