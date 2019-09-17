@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: N92; Diagnoses - main ICD10: N92 Excessive, frequent and irregular menstruation; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/a9ihlzuisldvo1p/N92.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 2a4b7354bcf50f45da023ebca911748f
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: N92
+    build: b37
+    sample_size: 361194
+    n_cases: 8475.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
