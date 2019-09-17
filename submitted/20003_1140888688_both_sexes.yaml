@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20003_1140888688; Treatment/medication code: betahistine; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/crlrr6turjj5emc/20003_1140888688.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 7f919764befb4c590214b8eb4b646baf
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20003_1140888688
+    build: b37
+    sample_size: 361141
+    n_cases: 1067.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
