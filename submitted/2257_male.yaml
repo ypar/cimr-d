@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 2257; Hearing difficulty/problems with background noise; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/xmj9z00ar4ydpjt/2257.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 116c0ef55b644cf8e7d0d3305bb10958
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 2257
+    build: b37
+    sample_size: 163863
+    n_cases: 71967.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
