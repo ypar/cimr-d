@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: G56; Diagnoses - main ICD10: G56 Mononeuropathies of upper limb; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/4qgw3v9os0btkq2/G56.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 864f0466f3248ea86f55972082c96279
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: G56
+    build: b37
+    sample_size: 167020
+    n_cases: 2638.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
