@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: K11_OESULC; Ulcer of oesophagus; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/sctllrt8dbadgvu/K11_OESULC.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 46975656c88a6f3638cf699249974156
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: K11_OESULC
+    build: b37
+    sample_size: 167020
+    n_cases: 1998.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
