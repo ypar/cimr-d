@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22126; Doctor diagnosed hayfever or allergic rhinitis; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/d9abufm8pajk79d/22126.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 96530bc3fe31c217833bbbf20bb4992f
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22126
+    build: b37
+    sample_size: 91787
+    n_cases: 20904.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
