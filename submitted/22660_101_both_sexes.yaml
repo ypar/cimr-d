@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22660_101; Gap coding: Paid work for less than 15 hours per week on average or lasting less than 6 months; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/0c5lgxe5k08j16v/22660_101.gwas.imputed_v3.both_sexes.v2.tsv.bgz?dl=0
+        md5: ecd1b033a72c2e7693d6b73e5f59529b
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22660_101
+    build: b37
+    sample_size: 68751
+    n_cases: 15086.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
