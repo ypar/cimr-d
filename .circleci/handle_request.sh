@@ -25,8 +25,23 @@ if [ -z "$PR_NUMBER" ] || [ $PR_NUMBER == 'null' ]; then
     exit 0
 fi
 
-GH_PR_API="https://api.github.com/repos/greenelab/cimr-d/pulls/${PR_NUMBER}/files?per_page=100"
-PR_FILES=$(curl -s ${GH_PR_API} | jq -r '.[].filename')
+GH_PR_API="https://api.github.com/repos/greenelab/cimr-d/pulls/${PR_NUMBER}"
+PR_FILE_NUM=$(curl -s "${GH_PR_API}" | jq '.changed_files')
+
+# Report error if the PR includes more than 100 files.
+# TODO: If this error shows up frequently, we can write a loop to get PR filenames
+# page by page using:
+#   "https://api.github.com/.../${PR_NUMBER}/files?per_page=100&page=<n>"
+# and save the output as an external file, then process yaml files in "submitted/"
+# directory one by one.
+#
+if [ ${PR_FILE_NUM} -gt 100 ]; then
+  echo "Error: ${PR_FILE_NUM} files found in this PR (at most 100 is allowed)."
+  exit 1
+fi
+
+GH_PR_FILES_API="${GH_PR_API}/files?per_page=100"
+PR_FILES=$(curl -s "${GH_PR_FILES_API}" | jq -r '.[].filename')
 
 ###########################################################
 # Disable "-x" option in shell here
