@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: C50; Diagnoses - main ICD10: C50 Malignant neoplasm of breast; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/9ws0r86mgv8sn4r/C50.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 14b03a7986e1843cdf5587882be0821b
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: C50
+    build: b37
+    sample_size: 361194
+    n_cases: 8304.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: C44; Diagnoses - main ICD10: C44 Other malignant neoplasms of skin; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/xaz37iezi6ex2ik/C44.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 2c0aa858240af10ee47050914862755c
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: C44
+    build: b37
+    sample_size: 167020
+    n_cases: 4797.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: C43; Diagnoses - main ICD10: C43 Malignant melanoma of skin; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/ouxobe9wdmzekmc/C43.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 1224846f2b9e70c9ae44f43602290e29
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: C43
+    build: b37
+    sample_size: 361194
+    n_cases: 1672.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

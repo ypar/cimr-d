@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: C3_URINARY_TRACT; Malignant neoplasm of urinary organs; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/pfkwpmhw4yozpes/C3_URINARY_TRACT.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 4723cdad27232495bf4b380100ff12d5
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: C3_URINARY_TRACT
+    build: b37
+    sample_size: 361194
+    n_cases: 1841.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: C3_SKIN; Malignant neoplasm of skin; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/7pvxly8rhp6lrml/C3_SKIN.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 783e5f05f098f58cd62249963dd7250d
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: C3_SKIN
+    build: b37
+    sample_size: 361194
+    n_cases: 16531.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
