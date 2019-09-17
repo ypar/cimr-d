@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 1428_3; Spread type: Other type of spread/margarine; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/uwu0d2u7i6pf3h0/1428_3.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 03b4542da3deaf05fc539b1f7228f923
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 1428_3
+    build: b37
+    sample_size: 166541
+    n_cases: 96170.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
