@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: C_MELANOMA_SKIN; Malignant melanoma of skin; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/xowhyiqdoicui8p/C_MELANOMA_SKIN.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: e1195807b527a605bff81039819f7725
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: C_MELANOMA_SKIN
+    build: b37
+    sample_size: 194174
+    n_cases: 1438.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
