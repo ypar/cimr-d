@@ -296,6 +296,7 @@ List of processed files (with links to AWS S3 bucket):
     * [1835.gwas.imputed_v3.both_sexes-PR-464.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/1835.gwas.imputed_v3.both_sexes-PR-464.tsv.gz): 494.3 MiB (updated on *2019-09-17 08:50:45*)
     * [1835.gwas.imputed_v3.female-PR-464.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/1835.gwas.imputed_v3.female-PR-464.tsv.gz): 497.2 MiB (updated on *2019-09-17 08:49:45*)
     * [1835.gwas.imputed_v3.male-PR-464.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/1835.gwas.imputed_v3.male-PR-464.tsv.gz): 497.2 MiB (updated on *2019-09-17 08:50:37*)
+    * [1920.gwas.imputed_v3.both_sexes-PR-464.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/1920.gwas.imputed_v3.both_sexes-PR-464.tsv.gz): 495.3 MiB (updated on *2019-09-17 08:51:06*)
     * [1920.gwas.imputed_v3.female-PR-464.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/1920.gwas.imputed_v3.female-PR-464.tsv.gz): 498.4 MiB (updated on *2019-09-17 08:49:58*)
     * [1920.gwas.imputed_v3.male-PR-464.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/1920.gwas.imputed_v3.male-PR-464.tsv.gz): 498.5 MiB (updated on *2019-09-17 08:49:14*)
     * [1930.gwas.imputed_v3.both_sexes-PR-464.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/1930.gwas.imputed_v3.both_sexes-PR-464.tsv.gz): 495.2 MiB (updated on *2019-09-17 08:50:24*)
