@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: AB1_INTESTINAL_INFECTIONS; Intestinal infectious diseases; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/agt5m7jdxatzjfp/AB1_INTESTINAL_INFECTIONS.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: eafe46945999540825db00e8fd6ac098
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: AB1_INTESTINAL_INFECTIONS
+    build: b37
+    sample_size: 361194
+    n_cases: 4304.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
