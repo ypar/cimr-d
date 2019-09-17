@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: I21; Diagnoses - main ICD10: I21 Acute myocardial infarction; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/8tk8m53ia0lyhs7/I21.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 6afa42db5ce7bb41c9fc5580a9f908f9
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: I21
+    build: b37
+    sample_size: 361194
+    n_cases: 5948.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
