@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6157_4; Why stopped smoking: Financial reasons; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/y6wpvrwjcvy7s8y/6157_4.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 4721de439ea6e0c6336029125bcaa708
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6157_4
+    build: b37
+    sample_size: 48662
+    n_cases: 12773.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
