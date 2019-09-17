@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22615_2; Workplace had a lot of diesel exhaust: Often; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/pvrwq33z6fs1atr/22615_2.gwas.imputed_v3.both_sexes.v2.tsv.bgz?dl=0
+        md5: 0efefe8a2055c43f56001274bed33c32
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22615_2
+    build: b37
+    sample_size: 89104
+    n_cases: 3483.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
