@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 4717; Shortness of breath walking on level ground; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/bxbmlpnktj94a6l/4717.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 0d7a99af4f98b2a691d3ea240d1459b3
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 4717
+    build: b37
+    sample_size: 54909
+    n_cases: 4889.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
