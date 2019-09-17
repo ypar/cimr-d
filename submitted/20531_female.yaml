@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20531; Victim of sexual assault; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/yo61i509jfm7ntc/20531.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 990b4980dcd6393ebcd61e661b015733
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20531
+    build: b37
+    sample_size: 65029
+    n_cases: 13272.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
