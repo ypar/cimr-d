@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: R04; Diagnoses - main ICD10: R04 Haemorrhage from respiratory passages; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/7eah9lqzq7htdi6/R04.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 10e9d879cda349004b1dc0a631ac830a
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: R04
+    build: b37
+    sample_size: 167020
+    n_cases: 1697.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: PULMONARYDG; Other pulmonary diagnosis; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/xnhy5mgdmz3lj1b/PULMONARYDG.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: be85a8ee5542e7efbe211479dd622b2d
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: PULMONARYDG
+    build: b37
+    sample_size: 361194
+    n_cases: 25381.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
