@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 3404; Neck/shoulder pain for 3+ months; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/83i4vgxmh76wxol/3404.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 0d85f0da0595b04b938a88233e5fba2e
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 3404
+    build: b37
+    sample_size: 81276
+    n_cases: 56156.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
