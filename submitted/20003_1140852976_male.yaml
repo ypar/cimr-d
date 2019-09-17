@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20003_1140852976; Treatment/medication code: multivitamins; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/yyx5z3q4bvxlbvj/20003_1140852976.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 5d2ecb9ef12f588e992da11fa88d5081
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20003_1140852976
+    build: b37
+    sample_size: 166988
+    n_cases: 4397.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

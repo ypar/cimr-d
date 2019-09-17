@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20003_1140860806; Treatment/medication code: ramipril; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/j6cvq8yc42puqzd/20003_1140860806.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 74d4d5d059ffc7153d0ad1d449bef4ed
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20003_1140860806
+    build: b37
+    sample_size: 166988
+    n_cases: 10974.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
