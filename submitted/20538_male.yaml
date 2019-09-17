@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20538; Worried most days during period of worst anxiety; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/cqe2fcur50e1d51/20538.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: f239db26e394dd28e4d444dee701a4fa
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20538
+    build: b37
+    sample_size: 12639
+    n_cases: 10792.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
