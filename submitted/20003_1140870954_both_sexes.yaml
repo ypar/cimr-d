@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20003_1140870954; Treatment/medication code: vitamin d product; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/uk8genom40z8j8j/20003_1140870954.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 243e567727c87602b45d1d331820c2d8
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20003_1140870954
+    build: b37
+    sample_size: 361141
+    n_cases: 1014.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

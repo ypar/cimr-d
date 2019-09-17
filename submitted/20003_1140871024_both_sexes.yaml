@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20003_1140871024; Treatment/medication code: vitamin b compound tablet; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/4jd1ok6kra8auew/20003_1140871024.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: ddae78831db3b0370231d3908843344c
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20003_1140871024
+    build: b37
+    sample_size: 361141
+    n_cases: 2619.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
