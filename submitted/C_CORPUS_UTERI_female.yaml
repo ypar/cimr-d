@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: C_CORPUS_UTERI; Malignant neoplasm of corpus uteri; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/zkvi2l4d4a4o2tb/C_CORPUS_UTERI.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: e327ded2c8d8b524596b40b68625b482
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: C_CORPUS_UTERI
+    build: b37
+    sample_size: 194174
+    n_cases: 1222.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
