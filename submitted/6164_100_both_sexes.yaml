@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6164_100; Types of physical activity in last 4 weeks: None of the above; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/wx9z4ea0jzd4tau/6164_100.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 12cabd4e098e55e9ac36adc1571e6e96
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6164_100
+    build: b37
+    sample_size: 359263
+    n_cases: 21255.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
