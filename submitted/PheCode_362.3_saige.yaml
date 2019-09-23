@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Other nondiabetic retinopathy; phenotype category: sense organs; sample size: 385079; number of cases: 161; number of controls: 396859; number of excluded controls: 11941; url for manhattan plots: https://www.dropbox.com/s/iwybd8nvwmhl38y/362.3-Othernondiabeticretinopathy-161cases-396859controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_362.3_SAIGE_MACge20.txt.vcf.gz
+        md5: 5c13d23325255c49699067e7bbfa8d3e
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Other nondiabetic retinopathy
+    context_id: PheCode_362.3
+    build: b38
+    sample_size: 385079
+    n_cases: 161
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
