@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Inflammation of eyelids; phenotype category: sense organs; sample size: 394443; number of cases: 2396; number of controls: 399306; number of excluded controls: 7259; url for manhattan plots: https://www.dropbox.com/s/h43yz3i1hj745ns/371.3-Inflammationofeyelids-2396cases-399306controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_371.3_SAIGE_MACge20.txt.vcf.gz
+        md5: dd3ab255139559f7cad4a91104da6ed8
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Inflammation of eyelids
+    context_id: PheCode_371.3
+    build: b38
+    sample_size: 394443
+    n_cases: 2396
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
