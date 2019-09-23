@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Pneumonia due to fungus (mycoses); phenotype category: respiratory; sample size: 388311; number of cases: 98; number of controls: 398538; number of excluded controls: 10325; url for manhattan plots: https://www.dropbox.com/s/cg2brw9eylwr34y/480.3-Pneumoniaduetofungus-mycoses--98cases-398538controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_480.3_SAIGE_MACge20.txt.vcf.gz
+        md5: 9b9f062006b3377b8235f4b88e4a5bbb
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Pneumonia due to fungus (mycoses)
+    context_id: PheCode_480.3
+    build: b38
+    sample_size: 388311
+    n_cases: 98
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
