@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Diabetes mellitus; phenotype category: endocrine/metabolic; sample size: 408957; number of cases: 20203; number of controls: 388756; number of excluded controls: 2; url for manhattan plots: https://www.dropbox.com/s/668vharei234scm/250-Diabetesmellitus-20203cases-388756controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_250_SAIGE_MACge20.txt.vcf.gz
+        md5: 281f82b94c0355a65f83e501949551f4
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Diabetes mellitus
+    context_id: PheCode_250
+    build: b38
+    sample_size: 408957
+    n_cases: 20203
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

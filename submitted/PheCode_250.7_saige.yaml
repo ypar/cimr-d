@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Diabetic retinopathy; phenotype category: endocrine/metabolic; sample size: 387435; number of cases: 1339; number of controls: 396859; number of excluded controls: 10763; url for manhattan plots: https://www.dropbox.com/s/65a35i9vja3hkyd/250.7-Diabeticretinopathy-1339cases-396859controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_250.7_SAIGE_MACge20.txt.vcf.gz
+        md5: 5779771249cdf6afc0e6e2bf97bd28b0
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Diabetic retinopathy
+    context_id: PheCode_250.7
+    build: b38
+    sample_size: 387435
+    n_cases: 1339
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
