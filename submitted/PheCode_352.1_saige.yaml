@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Trigeminal nerve disorders [CN5]; phenotype category: neurological; sample size: 380103; number of cases: 465; number of controls: 394067; number of excluded controls: 14429; url for manhattan plots: https://www.dropbox.com/s/di4tu0x27ufrcer/352.1-Trigeminalnervedisorders-CN5--465cases-394067controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_352.1_SAIGE_MACge20.txt.vcf.gz
+        md5: fca2e3193e1018e67bc65416d408b1ce
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Trigeminal nerve disorders [CN5]
+    context_id: PheCode_352.1
+    build: b38
+    sample_size: 380103
+    n_cases: 465
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
