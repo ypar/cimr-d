@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: ASCVD; phenotype category: circulatory system; sample size: 345377; number of cases: 66; number of controls: 377103; number of excluded controls: 31792; url for manhattan plots: https://www.dropbox.com/s/sdwa2f0jikxp00z/414.2-ASCVD-66cases-377103controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_414.2_SAIGE_MACge20.txt.vcf.gz
+        md5: a5c9e2c65fd80b0c13c2f14021765e66
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: ASCVD
+    context_id: PheCode_414.2
+    build: b38
+    sample_size: 345377
+    n_cases: 66
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
