@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Myopia; phenotype category: sense organs; sample size: 406613; number of cases: 1257; number of controls: 406530; number of excluded controls: 1174; url for manhattan plots: https://www.dropbox.com/s/ow2h1t963way34a/367.1-Myopia-1257cases-406530controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_367.1_SAIGE_MACge20.txt.vcf.gz
+        md5: 8b0ca1e10a9d47ea2b8031bbb357b317
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Myopia
+    context_id: PheCode_367.1
+    build: b38
+    sample_size: 406613
+    n_cases: 1257
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

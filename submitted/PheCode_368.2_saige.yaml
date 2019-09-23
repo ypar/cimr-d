@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Diplopia and disorders of binocular vision; phenotype category: sense organs; sample size: 403811; number of cases: 732; number of controls: 405654; number of excluded controls: 2575; url for manhattan plots: https://www.dropbox.com/s/40vy5bp5wnfbf90/368.2-Diplopiaanddisordersofbinocularvision-732cases-405654controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_368.2_SAIGE_MACge20.txt.vcf.gz
+        md5: 5ab5369914a491c5c7798e034a86a94b
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Diplopia and disorders of binocular vision
+    context_id: PheCode_368.2
+    build: b38
+    sample_size: 403811
+    n_cases: 732
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
