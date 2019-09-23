@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Malignant neoplasm of retroperitoneum and peritoneum; phenotype category: neoplasms; sample size: 378151; number of cases: 184; number of controls: 393372; number of excluded controls: 15405; url for manhattan plots: https://www.dropbox.com/s/i1bq8f1jdgdki4y/159.4-Malignantneoplasmofretroperitoneumandperitoneum-184cases-393372controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_159.4_SAIGE_MACge20.txt.vcf.gz
+        md5: eeddf1a1c12409932c22903e57a1754b
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Malignant neoplasm of retroperitoneum and peritoneum
+    context_id: PheCode_159.4
+    build: b38
+    sample_size: 378151
+    n_cases: 184
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
