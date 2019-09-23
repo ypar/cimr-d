@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Labyrinthitis; phenotype category: sense organs; sample size: 398227; number of cases: 767; number of controls: 402827; number of excluded controls: 5367; url for manhattan plots: https://www.dropbox.com/s/e9sd25g53pjdak0/386.3-Labyrinthitis-767cases-402827controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_386.3_SAIGE_MACge20.txt.vcf.gz
+        md5: 005805c1b8354cdfd353862d6d61c382
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Labyrinthitis
+    context_id: PheCode_386.3
+    build: b38
+    sample_size: 398227
+    n_cases: 767
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
