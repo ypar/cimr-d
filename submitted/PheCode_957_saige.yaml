@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Injury to other and unspecified nerves; phenotype category: injuries & poisonings; sample size: 408117; number of cases: 271; number of controls: 408268; number of excluded controls: 422; url for manhattan plots: https://www.dropbox.com/s/4t74rfzo2msvjjl/957-Injurytootherandunspecifiednerves-271cases-408268controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_957_SAIGE_MACge20.txt.vcf.gz
+        md5: 0f9e0c361596389741e35c91a75f839b
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Injury to other and unspecified nerves
+    context_id: PheCode_957
+    build: b38
+    sample_size: 408117
+    n_cases: 271
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
