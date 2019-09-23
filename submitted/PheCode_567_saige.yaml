@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Peritonitis and retroperitoneal infections; phenotype category: digestive; sample size: 367489; number of cases: 887; number of controls: 387338; number of excluded controls: 20736; url for manhattan plots: https://www.dropbox.com/s/bboglopkr9p1if7/567-Peritonitisandretroperitonealinfections-887cases-387338controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_567_SAIGE_MACge20.txt.vcf.gz
+        md5: dbfc92c3894a6017ee902773840247d0
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Peritonitis and retroperitoneal infections
+    context_id: PheCode_567
+    build: b38
+    sample_size: 367489
+    n_cases: 887
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
