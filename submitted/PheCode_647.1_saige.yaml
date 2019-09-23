@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Infections of genitourinary tract during pregnancy; phenotype category: pregnancy complications; sample size: 408749; number of cases: 275; number of controls: 408580; number of excluded controls: 106; url for manhattan plots: https://www.dropbox.com/s/61pjg4cx3vngic9/647.1-Infectionsofgenitourinarytractduringpregnancy-275cases-408580controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_647.1_SAIGE_MACge20.txt.vcf.gz
+        md5: ca5863f90256554be396b49ba82b5214
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Infections of genitourinary tract during pregnancy
+    context_id: PheCode_647.1
+    build: b38
+    sample_size: 408749
+    n_cases: 275
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Other conditions or status of the mother complicating pregnancy, childbirth, or the puerperium; phenotype category: pregnancy complications; sample size: 408961; number of cases: 299; number of controls: 408662; number of excluded controls: 0; url for manhattan plots: https://www.dropbox.com/s/pgk77r49p1x57cn/649-Otherconditionsorstatusofthemothercomplicatingpregnancy-childbirth-orthepuerperium-299cases-408662controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_649_SAIGE_MACge20.txt.vcf.gz
+        md5: 794c153b1f7554a33d4b1a29e01e927a
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Other conditions or status of the mother complicating pregnancy, childbirth, or the puerperium
+    context_id: PheCode_649
+    build: b38
+    sample_size: 408961
+    n_cases: 299
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
