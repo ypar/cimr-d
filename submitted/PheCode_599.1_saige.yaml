@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Urinary obstruction; phenotype category: genitourinary; sample size: 361227; number of cases: 164; number of controls: 384930; number of excluded controls: 23867; url for manhattan plots: https://www.dropbox.com/s/no6bq3z64fhw6ln/599.1-Urinaryobstruction-164cases-384930controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_599.1_SAIGE_MACge20.txt.vcf.gz
+        md5: 17d6bd720ff785fef8c00ab738daf7c4
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Urinary obstruction
+    context_id: PheCode_599.1
+    build: b38
+    sample_size: 361227
+    n_cases: 164
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

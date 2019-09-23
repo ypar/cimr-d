@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Retention of urine; phenotype category: genitourinary; sample size: 374409; number of cases: 6755; number of controls: 384930; number of excluded controls: 17276; url for manhattan plots: https://www.dropbox.com/s/gpbhti4ompr9ih7/599.2-Retentionofurine-6755cases-384930controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_599.2_SAIGE_MACge20.txt.vcf.gz
+        md5: 042f89ed373f91898874c242b72d2e21
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Retention of urine
+    context_id: PheCode_599.2
+    build: b38
+    sample_size: 374409
+    n_cases: 6755
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

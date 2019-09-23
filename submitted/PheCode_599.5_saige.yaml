@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Frequency of urination and polyuria; phenotype category: genitourinary; sample size: 368973; number of cases: 4037; number of controls: 384930; number of excluded controls: 19994; url for manhattan plots: https://www.dropbox.com/s/w4vtwebzb1stewo/599.5-Frequencyofurinationandpolyuria-4037cases-384930controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_599.5_SAIGE_MACge20.txt.vcf.gz
+        md5: 9daddecd8401bc30004d76fbb4ca3190
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Frequency of urination and polyuria
+    context_id: PheCode_599.5
+    build: b38
+    sample_size: 368973
+    n_cases: 4037
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
