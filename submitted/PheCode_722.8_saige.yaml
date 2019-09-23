@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Postlaminectomy syndrome; phenotype category: musculoskeletal; sample size: 375011; number of cases: 69; number of controls: 391917; number of excluded controls: 16975; url for manhattan plots: https://www.dropbox.com/s/jvnzs58h7vlt1ks/722.8-Postlaminectomysyndrome-69cases-391917controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_722.8_SAIGE_MACge20.txt.vcf.gz
+        md5: 7a3e653fdee70772dbc07077e9d434bb
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Postlaminectomy syndrome
+    context_id: PheCode_722.8
+    build: b38
+    sample_size: 375011
+    n_cases: 69
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
