@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Traumatic arthropathy; phenotype category: injuries & poisonings; sample size: 375009; number of cases: 528; number of controls: 391457; number of excluded controls: 16976; url for manhattan plots: https://www.dropbox.com/s/rlpgcxtzhh64hhi/836-Traumaticarthropathy-528cases-391457controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_836_SAIGE_MACge20.txt.vcf.gz
+        md5: 21f309a0e19c26657117a7319f9e62ab
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Traumatic arthropathy
+    context_id: PheCode_836
+    build: b38
+    sample_size: 375009
+    n_cases: 528
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

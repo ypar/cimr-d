@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Internal derangement of knee; phenotype category: injuries & poisonings; sample size: 404813; number of cases: 15430; number of controls: 391457; number of excluded controls: 2074; url for manhattan plots: https://www.dropbox.com/s/qvqdvjv20opr7oc/835-Internalderangementofknee-15430cases-391457controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_835_SAIGE_MACge20.txt.vcf.gz
+        md5: 6ee69d4b831b5e5a1f48c0b26e885d69
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Internal derangement of knee
+    context_id: PheCode_835
+    build: b38
+    sample_size: 404813
+    n_cases: 15430
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
