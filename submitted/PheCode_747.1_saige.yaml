@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Cardiac congenital anomalies; phenotype category: congenital anomalies; sample size: 408605; number of cases: 2618; number of controls: 406165; number of excluded controls: 178; url for manhattan plots: https://www.dropbox.com/s/sttuajckujoc2pf/747.1-Cardiaccongenitalanomalies-2618cases-406165controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_747.1_SAIGE_MACge20.txt.vcf.gz
+        md5: f59937c167185cd86607e31b160def66
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Cardiac congenital anomalies
+    context_id: PheCode_747.1
+    build: b38
+    sample_size: 408605
+    n_cases: 2618
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

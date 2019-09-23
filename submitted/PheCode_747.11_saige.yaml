@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Cardiac shunt/ heart septal defect; phenotype category: congenital anomalies; sample size: 404541; number of cases: 586; number of controls: 406165; number of excluded controls: 2210; url for manhattan plots: https://www.dropbox.com/s/9trbz1jxljdy7r4/747.11-Cardiacshuntheartseptaldefect-586cases-406165controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_747.11_SAIGE_MACge20.txt.vcf.gz
+        md5: e9394fa2a7abb9b58bbcbdb22257ce24
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Cardiac shunt/ heart septal defect
+    context_id: PheCode_747.11
+    build: b38
+    sample_size: 404541
+    n_cases: 586
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
