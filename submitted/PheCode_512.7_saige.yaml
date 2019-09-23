@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Shortness of breath; phenotype category: respiratory; sample size: 402473; number of cases: 5884; number of controls: 399833; number of excluded controls: 3244; url for manhattan plots: https://www.dropbox.com/s/g897vaxyg7ac3kr/512.7-Shortnessofbreath-5884cases-399833controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_512.7_SAIGE_MACge20.txt.vcf.gz
+        md5: 1325d0e1d9ace6e09b7ee25e4e5e2d3a
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Shortness of breath
+    context_id: PheCode_512.7
+    build: b38
+    sample_size: 402473
+    n_cases: 5884
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
