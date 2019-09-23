@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Cerebral aneurysm; phenotype category: circulatory system; sample size: 389839; number of cases: 383; number of controls: 399017; number of excluded controls: 9561; url for manhattan plots: https://www.dropbox.com/s/qa1u1f5sgpz8djd/433.5-Cerebralaneurysm-383cases-399017controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_433.5_SAIGE_MACge20.txt.vcf.gz
+        md5: 8fd0e6d25499e531b2c0bb7306836ad4
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Cerebral aneurysm
+    context_id: PheCode_433.5
+    build: b38
+    sample_size: 389839
+    n_cases: 383
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

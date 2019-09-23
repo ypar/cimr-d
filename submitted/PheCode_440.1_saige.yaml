@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Atherosclerosis of renal artery; phenotype category: circulatory system; sample size: 392455; number of cases: 113; number of controls: 400595; number of excluded controls: 8253; url for manhattan plots: https://www.dropbox.com/s/zb46kfyrxw3z8xz/440.1-Atherosclerosisofrenalartery-113cases-400595controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_440.1_SAIGE_MACge20.txt.vcf.gz
+        md5: 31b6a6c6db6d752e765e814cfc16040a
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Atherosclerosis of renal artery
+    context_id: PheCode_440.1
+    build: b38
+    sample_size: 392455
+    n_cases: 113
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
