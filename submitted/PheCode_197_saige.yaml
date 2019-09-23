@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Chemotherapy; phenotype category: neoplasms; sample size: 375843; number of cases: 21798; number of controls: 370604; number of excluded controls: 16559; url for manhattan plots: https://www.dropbox.com/s/u7r16b2ml0x4sjo/197-Chemotherapy-21798cases-370604controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_197_SAIGE_MACge20.txt.vcf.gz
+        md5: 9e523fae0bb452eccbc3378cc1f8c969
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Chemotherapy
+    context_id: PheCode_197
+    build: b38
+    sample_size: 375843
+    n_cases: 21798
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
