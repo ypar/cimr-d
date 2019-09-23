@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Benign neoplasm of parathyroid gland; phenotype category: neoplasms; sample size: 406579; number of cases: 371; number of controls: 407399; number of excluded controls: 1191; url for manhattan plots: https://www.dropbox.com/s/6eaca52g23s2k8u/227.2-Benignneoplasmofparathyroidgland-371cases-407399controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_227.2_SAIGE_MACge20.txt.vcf.gz
+        md5: 7b486b3a74bbf7737f5f05fd88eea80b
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Benign neoplasm of parathyroid gland
+    context_id: PheCode_227.2
+    build: b38
+    sample_size: 406579
+    n_cases: 371
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
