@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Other local infections of skin and subcutaneous tissue; phenotype category: dermatologic; sample size: 395349; number of cases: 4520; number of controls: 397635; number of excluded controls: 6806; url for manhattan plots: https://www.dropbox.com/s/5dqg30vo27oiijh/686-Otherlocalinfectionsofskinandsubcutaneoustissue-4520cases-397635controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_686_SAIGE_MACge20.txt.vcf.gz
+        md5: bf2311dfc40144ab14e22e96f8d8dce9
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Other local infections of skin and subcutaneous tissue
+    context_id: PheCode_686
+    build: b38
+    sample_size: 395349
+    n_cases: 4520
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
