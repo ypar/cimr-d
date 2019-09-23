@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Dermatitis due to solar radiation; phenotype category: injuries & poisonings; sample size: 401453; number of cases: 390; number of controls: 404817; number of excluded controls: 3754; url for manhattan plots: https://www.dropbox.com/s/xkg6097vxf3hv8o/938-Dermatitisduetosolarradiation-390cases-404817controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_938_SAIGE_MACge20.txt.vcf.gz
+        md5: 9e106f424cbb8bce146baddacc64d385
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Dermatitis due to solar radiation
+    context_id: PheCode_938
+    build: b38
+    sample_size: 401453
+    n_cases: 390
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
