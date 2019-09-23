@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Alzheimer's disease; phenotype category: mental disorders; sample size: 396613; number of cases: 404; number of controls: 402383; number of excluded controls: 6174; url for manhattan plots: https://www.dropbox.com/s/nlewtwqtlplnkly/290.11-Alzheimersdisease-404cases-402383controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_290.11_SAIGE_MACge20.txt.vcf.gz
+        md5: bcf843a8966ed7f58a932fe722a09a3b
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Alzheimer's disease
+    context_id: PheCode_290.11
+    build: b38
+    sample_size: 396613
+    n_cases: 404
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
