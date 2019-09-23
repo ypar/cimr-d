@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Osteitis deformans [Paget's disease of bone]; phenotype category: musculoskeletal; sample size: 373651; number of cases: 265; number of controls: 391041; number of excluded controls: 17655; url for manhattan plots: https://www.dropbox.com/s/48hzlktjfwmt88o/731.1-Osteitisdeformans-Pagetsdiseaseofbone--265cases-391041controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_731.1_SAIGE_MACge20.txt.vcf.gz
+        md5: c25b9f2930c4f7ed8314fc460da17849
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Osteitis deformans [Paget's disease of bone]
+    context_id: PheCode_731.1
+    build: b38
+    sample_size: 373651
+    n_cases: 265
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
