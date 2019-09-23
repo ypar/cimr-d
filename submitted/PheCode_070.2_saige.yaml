@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Viral hepatitis B; phenotype category: infectious diseases; sample size: 397935; number of cases: 132; number of controls: 403316; number of excluded controls: 5513; url for manhattan plots: https://www.dropbox.com/s/pvy5zhq0awc96gc/070.2-ViralhepatitisB-132cases-403316controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_070.2_SAIGE_MACge20.txt.vcf.gz
+        md5: 46911994de7b80c9bfdc7c521ce35503
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Viral hepatitis B
+    context_id: PheCode_070.2
+    build: b38
+    sample_size: 397935
+    n_cases: 132
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
