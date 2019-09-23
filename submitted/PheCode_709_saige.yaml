@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Diffuse diseases of connective tissue; phenotype category: dermatologic; sample size: 396773; number of cases: 3463; number of controls: 399404; number of excluded controls: 6094; url for manhattan plots: https://www.dropbox.com/s/5pkqhcm853pdx5f/709-Diffusediseasesofconnectivetissue-3463cases-399404controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_709_SAIGE_MACge20.txt.vcf.gz
+        md5: c3d54fdc60647c741627501e4c5c9c48
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Diffuse diseases of connective tissue
+    context_id: PheCode_709
+    build: b38
+    sample_size: 396773
+    n_cases: 3463
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

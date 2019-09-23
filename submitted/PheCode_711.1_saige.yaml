@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Pyogenic arthritis; phenotype category: musculoskeletal; sample size: 323333; number of cases: 328; number of controls: 365819; number of excluded controls: 42814; url for manhattan plots: https://www.dropbox.com/s/a7pr9b4a88x287v/711.1-Pyogenicarthritis-328cases-365819controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_711.1_SAIGE_MACge20.txt.vcf.gz
+        md5: 6c9574046a5fe59405377cebff4bd42c
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Pyogenic arthritis
+    context_id: PheCode_711.1
+    build: b38
+    sample_size: 323333
+    n_cases: 328
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
