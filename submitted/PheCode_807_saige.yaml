@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Fracture of ribs; phenotype category: injuries & poisonings; sample size: 368119; number of cases: 775; number of controls: 387765; number of excluded controls: 20421; url for manhattan plots: https://www.dropbox.com/s/1dt11s8qxp5b4vt/807-Fractureofribs-775cases-387765controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_807_SAIGE_MACge20.txt.vcf.gz
+        md5: c7e8d0c2ace433969099fe0fa1009a9e
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Fracture of ribs
+    context_id: PheCode_807
+    build: b38
+    sample_size: 368119
+    n_cases: 775
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
