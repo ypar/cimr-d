@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Seborrheic dermatitis; phenotype category: dermatologic; sample size: 396489; number of cases: 53; number of controls: 402672; number of excluded controls: 6236; url for manhattan plots: https://www.dropbox.com/s/weuy9uwkn3qp43s/690.1-Seborrheicdermatitis-53cases-402672controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_690.1_SAIGE_MACge20.txt.vcf.gz
+        md5: 078460ca57557a8af5f15d58dfc71a59
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Seborrheic dermatitis
+    context_id: PheCode_690.1
+    build: b38
+    sample_size: 396489
+    n_cases: 53
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

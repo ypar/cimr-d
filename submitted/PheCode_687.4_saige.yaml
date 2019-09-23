@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Disturbance of skin sensation; phenotype category: dermatologic; sample size: 403653; number of cases: 2900; number of controls: 403407; number of excluded controls: 2654; url for manhattan plots: https://www.dropbox.com/s/m6i6m99ryz8455p/687.4-Disturbanceofskinsensation-2900cases-403407controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_687.4_SAIGE_MACge20.txt.vcf.gz
+        md5: 178d8431998f147d80821eb9bf031478
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Disturbance of skin sensation
+    context_id: PheCode_687.4
+    build: b38
+    sample_size: 403653
+    n_cases: 2900
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
