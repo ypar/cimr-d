@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Scar conditions and fibrosis of skin; phenotype category: dermatologic; sample size: 403501; number of cases: 2356; number of controls: 403875; number of excluded controls: 2730; url for manhattan plots: https://www.dropbox.com/s/fkmsgdbnl8grtuu/701.2-Scarconditionsandfibrosisofskin-2356cases-403875controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_701.2_SAIGE_MACge20.txt.vcf.gz
+        md5: 71f227b38f3ada5ff76c64fcea3165e6
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Scar conditions and fibrosis of skin
+    context_id: PheCode_701.2
+    build: b38
+    sample_size: 403501
+    n_cases: 2356
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
