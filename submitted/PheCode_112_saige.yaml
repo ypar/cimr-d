@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Candidiasis; phenotype category: infectious diseases; sample size: 407909; number of cases: 2134; number of controls: 406301; number of excluded controls: 526; url for manhattan plots: https://www.dropbox.com/s/i2vpl5qmy43edr2/112-Candidiasis-2134cases-406301controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_112_SAIGE_MACge20.txt.vcf.gz
+        md5: 1d24026acd67ca6c3d12a05906b44ea3
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Candidiasis
+    context_id: PheCode_112
+    build: b38
+    sample_size: 407909
+    n_cases: 2134
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
