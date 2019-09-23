@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Bundle branch block; phenotype category: circulatory system; sample size: 359583; number of cases: 3353; number of controls: 380919; number of excluded controls: 24689; url for manhattan plots: https://www.dropbox.com/s/ylyy8fyq5p1zfms/426.3-Bundlebranchblock-3353cases-380919controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_426.3_SAIGE_MACge20.txt.vcf.gz
+        md5: d93d00dec984e07e5c3649fd476f30f1
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Bundle branch block
+    context_id: PheCode_426.3
+    build: b38
+    sample_size: 359583
+    n_cases: 3353
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
