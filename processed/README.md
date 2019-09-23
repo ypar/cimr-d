@@ -4459,6 +4459,7 @@ List of processed files (with links to AWS S3 bucket):
     * [PheCode_726.1_SAIGE_MACge20.txt.vcf.gz-PR-806.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/PheCode_726.1_SAIGE_MACge20.txt.vcf.gz-PR-806.tsv.gz): 1020.2 MiB (updated on *2019-09-23 21:40:38*)
     * [PheCode_726.2_SAIGE_MACge20.txt.vcf.gz-PR-806.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/PheCode_726.2_SAIGE_MACge20.txt.vcf.gz-PR-806.tsv.gz): 989.9 MiB (updated on *2019-09-23 21:40:46*)
     * [PheCode_726.3_SAIGE_MACge20.txt.vcf.gz-PR-806.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/PheCode_726.3_SAIGE_MACge20.txt.vcf.gz-PR-806.tsv.gz): 1002.9 MiB (updated on *2019-09-23 21:41:13*)
+    * [PheCode_726_SAIGE_MACge20.txt.vcf.gz-PR-806.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/PheCode_726_SAIGE_MACge20.txt.vcf.gz-PR-806.tsv.gz): 1.0 GiB (updated on *2019-09-23 21:41:27*)
     * [PheCode_728.2_SAIGE_MACge20.txt.vcf.gz-PR-804.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/PheCode_728.2_SAIGE_MACge20.txt.vcf.gz-PR-804.tsv.gz): 991.6 MiB (updated on *2019-09-23 21:40:04*)
     * [PheCode_728.71_SAIGE_MACge20.txt.vcf.gz-PR-804.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/PheCode_728.71_SAIGE_MACge20.txt.vcf.gz-PR-804.tsv.gz): 1012.4 MiB (updated on *2019-09-23 21:39:57*)
     * [PheCode_728.7_SAIGE_MACge20.txt.vcf.gz-PR-804.tsv.gz](https://cimr-d.s3.amazonaws.com/gwas/PheCode_728.7_SAIGE_MACge20.txt.vcf.gz-PR-804.tsv.gz): 1013.0 MiB (updated on *2019-09-23 21:39:22*)
