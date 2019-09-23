@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Cancer of mouth; phenotype category: neoplasms; sample size: 405967; number of cases: 643; number of controls: 406821; number of excluded controls: 1497; url for manhattan plots: https://www.dropbox.com/s/ucr17cpa38ait8c/145-Cancerofmouth-643cases-406821controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_145_SAIGE_MACge20.txt.vcf.gz
+        md5: 01112b13951fe2747a954a1b2f3b5671
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Cancer of mouth
+    context_id: PheCode_145
+    build: b38
+    sample_size: 405967
+    n_cases: 643
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
