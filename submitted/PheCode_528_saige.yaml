@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Diseases of the oral soft tissues, excluding lesions specific for gingiva and tongue; phenotype category: digestive; sample size: 405563; number of cases: 3939; number of controls: 403323; number of excluded controls: 1699; url for manhattan plots: https://www.dropbox.com/s/e4nf1tks24lj3n8/528-Diseasesoftheoralsofttissues-excludinglesionsspecificforgingivaandtongue-3939cases-403323controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_528_SAIGE_MACge20.txt.vcf.gz
+        md5: 1163bf9c0c2a87744c45dba0aaf00d4f
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Diseases of the oral soft tissues, excluding lesions specific for gingiva and tongue
+    context_id: PheCode_528
+    build: b38
+    sample_size: 405563
+    n_cases: 3939
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
