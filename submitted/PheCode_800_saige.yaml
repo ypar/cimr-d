@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Fracture of lower limb; phenotype category: injuries & poisonings; sample size: 381071; number of cases: 7251; number of controls: 387765; number of excluded controls: 13945; url for manhattan plots: https://www.dropbox.com/s/bgi2ea1bxk9yt06/800-Fractureoflowerlimb-7251cases-387765controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_800_SAIGE_MACge20.txt.vcf.gz
+        md5: 99e53e55d1e35faa7c2d0312742890c8
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Fracture of lower limb
+    context_id: PheCode_800
+    build: b38
+    sample_size: 381071
+    n_cases: 7251
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
