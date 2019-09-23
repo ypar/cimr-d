@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Epistaxis or throat hemorrhage; phenotype category: respiratory; sample size: 376041; number of cases: 2456; number of controls: 390045; number of excluded controls: 16460; url for manhattan plots: https://www.dropbox.com/s/j0x5bfiriy9joxg/477-Epistaxisorthroathemorrhage-2456cases-390045controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_477_SAIGE_MACge20.txt.vcf.gz
+        md5: 60a55adf3eae8b87db648d7429c1015e
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Epistaxis or throat hemorrhage
+    context_id: PheCode_477
+    build: b38
+    sample_size: 376041
+    n_cases: 2456
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
