@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Hereditary hemolytic anemias; phenotype category: hematopoietic; sample size: 371403; number of cases: 156; number of controls: 390026; number of excluded controls: 18779; url for manhattan plots: https://www.dropbox.com/s/rwgqc7l06nmlwea/282-Hereditaryhemolyticanemias-156cases-390026controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_282_SAIGE_MACge20.txt.vcf.gz
+        md5: adc94ca57e46baba39c37ce93b164786
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Hereditary hemolytic anemias
+    context_id: PheCode_282
+    build: b38
+    sample_size: 371403
+    n_cases: 156
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
