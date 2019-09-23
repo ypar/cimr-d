@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Occlusion and stenosis of precerebral arteries; phenotype category: circulatory system; sample size: 391443; number of cases: 1185; number of controls: 399017; number of excluded controls: 8759; url for manhattan plots: https://www.dropbox.com/s/kgvedcrf2bhgshx/433.1-Occlusionandstenosisofprecerebralarteries-1185cases-399017controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_433.1_SAIGE_MACge20.txt.vcf.gz
+        md5: 93fa4a21cb39abfe9c44e2088aa19386
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Occlusion and stenosis of precerebral arteries
+    context_id: PheCode_433.1
+    build: b38
+    sample_size: 391443
+    n_cases: 1185
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
