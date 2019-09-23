@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Nodular lymphoma; phenotype category: neoplasms; sample size: 400713; number of cases: 371; number of controls: 404466; number of excluded controls: 4124; url for manhattan plots: https://www.dropbox.com/s/cv8xdyb4qere4rx/202.21-Nodularlymphoma-371cases-404466controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_202.21_SAIGE_MACge20.txt.vcf.gz
+        md5: a7ade9ce6d6623f777fae5409a9926c5
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Nodular lymphoma
+    context_id: PheCode_202.21
+    build: b38
+    sample_size: 400713
+    n_cases: 371
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

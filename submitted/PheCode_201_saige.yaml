@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Hodgkin's disease; phenotype category: neoplasms; sample size: 400487; number of cases: 258; number of controls: 404466; number of excluded controls: 4237; url for manhattan plots: https://www.dropbox.com/s/f0e2h4hdiie28n4/201-Hodgkinsdisease-258cases-404466controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_201_SAIGE_MACge20.txt.vcf.gz
+        md5: 36f1073c7347e7759605143c34aa1843
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Hodgkin's disease
+    context_id: PheCode_201
+    build: b38
+    sample_size: 400487
+    n_cases: 258
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
