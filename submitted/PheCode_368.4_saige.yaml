@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Visual field defects; phenotype category: sense organs; sample size: 403015; number of cases: 334; number of controls: 405654; number of excluded controls: 2973; url for manhattan plots: https://www.dropbox.com/s/ny9cqftaad75vif/368.4-Visualfielddefects-334cases-405654controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_368.4_SAIGE_MACge20.txt.vcf.gz
+        md5: adf6e670193ab9a587d1612c9b99a678
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Visual field defects
+    context_id: PheCode_368.4
+    build: b38
+    sample_size: 403015
+    n_cases: 334
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
