@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Chronic lymphocytic thyroiditis; phenotype category: endocrine/metabolic; sample size: 374317; number of cases: 210; number of controls: 391429; number of excluded controls: 17322; url for manhattan plots: https://www.dropbox.com/s/54hc9i7wrpdi5fo/245.21-Chroniclymphocyticthyroiditis-210cases-391429controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_245.21_SAIGE_MACge20.txt.vcf.gz
+        md5: 6511d0be1e9da24f1aacb19fe05f69b6
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Chronic lymphocytic thyroiditis
+    context_id: PheCode_245.21
+    build: b38
+    sample_size: 374317
+    n_cases: 210
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
