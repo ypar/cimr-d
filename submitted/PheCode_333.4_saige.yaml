@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Torsion dystonia; phenotype category: neurological; sample size: 381963; number of cases: 253; number of controls: 395209; number of excluded controls: 13499; url for manhattan plots: https://www.dropbox.com/s/ouccj1qp5vwzwax/333.4-Torsiondystonia-253cases-395209controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_333.4_SAIGE_MACge20.txt.vcf.gz
+        md5: 675db417d9607e4cdb3f303f38199236
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Torsion dystonia
+    context_id: PheCode_333.4
+    build: b38
+    sample_size: 381963
+    n_cases: 253
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
