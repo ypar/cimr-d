@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Organic or persistent insomnia; phenotype category: neurological; sample size: 398763; number of cases: 139; number of controls: 403723; number of excluded controls: 5099; url for manhattan plots: https://www.dropbox.com/s/0dky4tzf3byq85r/327.41-Organicorpersistentinsomnia-139cases-403723controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_327.41_SAIGE_MACge20.txt.vcf.gz
+        md5: d4f86719953b2320b1ac31798c85ef22
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Organic or persistent insomnia
+    context_id: PheCode_327.41
+    build: b38
+    sample_size: 398763
+    n_cases: 139
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
