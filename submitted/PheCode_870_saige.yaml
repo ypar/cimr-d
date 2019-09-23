@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Open wounds of head; neck; and trunk; phenotype category: injuries & poisonings; sample size: 399565; number of cases: 3837; number of controls: 400426; number of excluded controls: 4698; url for manhattan plots: https://www.dropbox.com/s/eg7ll5rd953ayki/870-Openwoundsofhead-neck-andtrunk-3837cases-400426controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_870_SAIGE_MACge20.txt.vcf.gz
+        md5: 943b7229e2b25cfd5e2a32615ea96801
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Open wounds of head; neck; and trunk
+    context_id: PheCode_870
+    build: b38
+    sample_size: 399565
+    n_cases: 3837
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
