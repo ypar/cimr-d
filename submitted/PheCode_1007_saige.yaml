@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Injury to blood vessels; phenotype category: injuries & poisonings; sample size: 408961; number of cases: 249; number of controls: 408712; number of excluded controls: 0; url for manhattan plots: https://www.dropbox.com/s/xl0iqecuh9oably/1007-Injurytobloodvessels-249cases-408712controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_1007_SAIGE_MACge20.txt.vcf.gz
+        md5: 995d6659d8dddd3ce0f56d916832a0d4
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Injury to blood vessels
+    context_id: PheCode_1007
+    build: b38
+    sample_size: 408961
+    n_cases: 249
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

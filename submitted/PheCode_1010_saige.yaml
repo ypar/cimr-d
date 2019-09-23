@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Other tests; phenotype category: symptoms; sample size: 408961; number of cases: 5972; number of controls: 402989; number of excluded controls: 0; url for manhattan plots: https://www.dropbox.com/s/l0e4a4rct2guyex/1010-Othertests-5972cases-402989controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_1010_SAIGE_MACge20.txt.vcf.gz
+        md5: e976b58de3d3e20745b34c3def0e5645
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Other tests
+    context_id: PheCode_1010
+    build: b38
+    sample_size: 408961
+    n_cases: 5972
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
