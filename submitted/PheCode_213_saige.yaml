@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Benign neoplasm of bone and articular cartilage; phenotype category: neoplasms; sample size: 334021; number of cases: 320; number of controls: 371171; number of excluded controls: 37470; url for manhattan plots: https://www.dropbox.com/s/5wli8gb5qf9ahql/213-Benignneoplasmofboneandarticularcartilage-320cases-371171controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_213_SAIGE_MACge20.txt.vcf.gz
+        md5: 970bff5273b8868ba8f9df7103d73aa8
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Benign neoplasm of bone and articular cartilage
+    context_id: PheCode_213
+    build: b38
+    sample_size: 334021
+    n_cases: 320
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
