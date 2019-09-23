@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Other acute and subacute forms of ischemic heart disease; phenotype category: circulatory system; sample size: 347583; number of cases: 1169; number of controls: 377103; number of excluded controls: 30689; url for manhattan plots: https://www.dropbox.com/s/tht9toi9zyqkx56/411.9-Otheracuteandsubacuteformsofischemicheartdisease-1169cases-377103controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_411.9_SAIGE_MACge20.txt.vcf.gz
+        md5: 7d57c0952437e7f2df93aca5221e98c2
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Other acute and subacute forms of ischemic heart disease
+    context_id: PheCode_411.9
+    build: b38
+    sample_size: 347583
+    n_cases: 1169
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
