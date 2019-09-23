@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Toxic effect of carbon monoxide; phenotype category: injuries & poisonings; sample size: 407907; number of cases: 67; number of controls: 408367; number of excluded controls: 527; url for manhattan plots: https://www.dropbox.com/s/h3p7jv0qjd8sgqy/986-.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_986_SAIGE_MACge20.txt.vcf.gz
+        md5: 4eb23b61f8e341c006d041af50b8f158
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Toxic effect of carbon monoxide
+    context_id: PheCode_986
+    build: b38
+    sample_size: 407907
+    n_cases: 67
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
