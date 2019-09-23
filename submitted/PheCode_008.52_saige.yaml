@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Intestinal infection due to C. difficile; phenotype category: infectious diseases; sample size: 392279; number of cases: 650; number of controls: 399970; number of excluded controls: 8341; url for manhattan plots: https://www.dropbox.com/s/7uefns29a0l44fy/008.52-IntestinalinfectionduetoC.difficile-650cases-399970controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_008.52_SAIGE_MACge20.txt.vcf.gz
+        md5: 72d9a9d513d492505b53f97c4ae3265a
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Intestinal infection due to C. difficile
+    context_id: PheCode_008.52
+    build: b38
+    sample_size: 392279
+    n_cases: 650
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
