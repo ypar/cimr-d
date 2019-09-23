@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Supraventricular premature beats; phenotype category: circulatory system; sample size: 353111; number of cases: 117; number of controls: 380919; number of excluded controls: 27925; url for manhattan plots: https://www.dropbox.com/s/48aoih8pgen477r/427.61-Supraventricularprematurebeats-117cases-380919controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_427.61_SAIGE_MACge20.txt.vcf.gz
+        md5: c181f9c2684b1d1d1a164a0a9d783ba0
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Supraventricular premature beats
+    context_id: PheCode_427.61
+    build: b38
+    sample_size: 353111
+    n_cases: 117
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

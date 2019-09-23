@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Sinoatrial node dysfunction (Bradycardia); phenotype category: circulatory system; sample size: 353683; number of cases: 403; number of controls: 380919; number of excluded controls: 27639; url for manhattan plots: https://www.dropbox.com/s/nsti8gxde7580ml/427.8-Sinoatrialnodedysfunction-Bradycardia--403cases-380919controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_427.8_SAIGE_MACge20.txt.vcf.gz
+        md5: 32088708ccc9a739b85fdc68bcf7953a
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Sinoatrial node dysfunction (Bradycardia)
+    context_id: PheCode_427.8
+    build: b38
+    sample_size: 353683
+    n_cases: 403
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
