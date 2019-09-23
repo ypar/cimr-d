@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Peripheral angiopathy in diseases classified elsewhere; phenotype category: circulatory system; sample size: 392999; number of cases: 385; number of controls: 400595; number of excluded controls: 7981; url for manhattan plots: https://www.dropbox.com/s/0il00iq3dujw813/443.7-Peripheralangiopathyindiseasesclassifiedelsewhere-385cases-400595controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_443.7_SAIGE_MACge20.txt.vcf.gz
+        md5: d27440e91022e91191bc87b355dd6817
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Peripheral angiopathy in diseases classified elsewhere
+    context_id: PheCode_443.7
+    build: b38
+    sample_size: 392999
+    n_cases: 385
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
