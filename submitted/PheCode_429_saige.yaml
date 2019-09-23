@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Ill-defined descriptions and complications of heart disease; phenotype category: circulatory system; sample size: 398299; number of cases: 796; number of controls: 402834; number of excluded controls: 5331; url for manhattan plots: https://www.dropbox.com/s/s7pmvto02hu966q/429-Ill-defineddescriptionsandcomplicationsofheartdisease-796cases-402834controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_429_SAIGE_MACge20.txt.vcf.gz
+        md5: 92165ad5f4c4d1fb5e4b15c72a9600b0
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Ill-defined descriptions and complications of heart disease
+    context_id: PheCode_429
+    build: b38
+    sample_size: 398299
+    n_cases: 796
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

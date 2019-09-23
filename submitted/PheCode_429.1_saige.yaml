@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Heart transplant/surgery; phenotype category: circulatory system; sample size: 396835; number of cases: 64; number of controls: 402834; number of excluded controls: 6063; url for manhattan plots: https://www.dropbox.com/s/p0jf7qwrif45r3z/429.1-Hearttransplantsurgery-64cases-402834controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_429.1_SAIGE_MACge20.txt.vcf.gz
+        md5: 38c996a8b4b0ee0221b7ad25f4ad03c4
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Heart transplant/surgery
+    context_id: PheCode_429.1
+    build: b38
+    sample_size: 396835
+    n_cases: 64
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
