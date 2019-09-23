@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Allergic purpura; phenotype category: hematopoietic; sample size: 403703; number of cases: 51; number of controls: 406281; number of excluded controls: 2629; url for manhattan plots: https://www.dropbox.com/s/ohmeym88ne5gpo4/287.2-Allergicpurpura-51cases-406281controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_287.2_SAIGE_MACge20.txt.vcf.gz
+        md5: 0638a051909e3e866adc7f8688be00f7
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Allergic purpura
+    context_id: PheCode_287.2
+    build: b38
+    sample_size: 403703
+    n_cases: 51
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
