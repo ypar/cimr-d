@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Laxity of ligament or hypermobility syndrome; phenotype category: musculoskeletal; sample size: 349293; number of cases: 416; number of controls: 378711; number of excluded controls: 29834; url for manhattan plots: https://www.dropbox.com/s/h48yl5irum8sd4r/728.2-Laxityofligamentorhypermobilitysyndrome-416cases-378711controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_728.2_SAIGE_MACge20.txt.vcf.gz
+        md5: be43f7c63c3af33f27f6c5ca768d90c8
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Laxity of ligament or hypermobility syndrome
+    context_id: PheCode_728.2
+    build: b38
+    sample_size: 349293
+    n_cases: 416
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

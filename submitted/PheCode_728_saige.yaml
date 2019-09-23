@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Disorders of muscle, ligament, and fascia; phenotype category: musculoskeletal; sample size: 357437; number of cases: 4488; number of controls: 378711; number of excluded controls: 25762; url for manhattan plots: https://www.dropbox.com/s/66n2nmhevahsr9w/728-Disordersofmuscle-ligament-andfascia-4488cases-378711controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_728_SAIGE_MACge20.txt.vcf.gz
+        md5: cc5fb33cf50ee5db960663613012bbde
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Disorders of muscle, ligament, and fascia
+    context_id: PheCode_728
+    build: b38
+    sample_size: 357437
+    n_cases: 4488
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
