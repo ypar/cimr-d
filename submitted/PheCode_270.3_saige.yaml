@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Disorders of plasma protein metabolism; phenotype category: endocrine/metabolic; sample size: 408227; number of cases: 364; number of controls: 408230; number of excluded controls: 367; url for manhattan plots: https://www.dropbox.com/s/64qwy8twazmhm1h/270.3-Disordersofplasmaproteinmetabolism-364cases-408230controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_270.3_SAIGE_MACge20.txt.vcf.gz
+        md5: f7631b85f546b5f5d62c7d5304fc6176
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Disorders of plasma protein metabolism
+    context_id: PheCode_270.3
+    build: b38
+    sample_size: 408227
+    n_cases: 364
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
