@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Stricture/obstruction of ureter; phenotype category: genitourinary; sample size: 388069; number of cases: 913; number of controls: 397602; number of excluded controls: 10446; url for manhattan plots: https://www.dropbox.com/s/qqnbrpidq19nos3/586.4-Strictureobstructionofureter-913cases-397602controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_586.4_SAIGE_MACge20.txt.vcf.gz
+        md5: 0998c1156aeb9e4556da58ac39c7318b
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Stricture/obstruction of ureter
+    context_id: PheCode_586.4
+    build: b38
+    sample_size: 388069
+    n_cases: 913
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
