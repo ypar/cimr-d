@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Burns; phenotype category: injuries & poisonings; sample size: 408961; number of cases: 579; number of controls: 408382; number of excluded controls: 0; url for manhattan plots: https://www.dropbox.com/s/s2kx78mcwwisll2/1000-Burns-579cases-408382controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_1000_SAIGE_MACge20.txt.vcf.gz
+        md5: 7ea6b2953d48de90729b8b6d3fc5e608
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Burns
+    context_id: PheCode_1000
+    build: b38
+    sample_size: 408961
+    n_cases: 579
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
