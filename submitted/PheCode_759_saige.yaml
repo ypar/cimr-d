@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Other and unspecified congenital anomalies; phenotype category: congenital anomalies; sample size: 407379; number of cases: 233; number of controls: 407937; number of excluded controls: 791; url for manhattan plots: https://www.dropbox.com/s/8lvljn4lwos7dah/759-Otherandunspecifiedcongenitalanomalies-233cases-407937controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_759_SAIGE_MACge20.txt.vcf.gz
+        md5: a6066f39fbb7ae9cf38e83566bc46446
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Other and unspecified congenital anomalies
+    context_id: PheCode_759
+    build: b38
+    sample_size: 407379
+    n_cases: 233
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

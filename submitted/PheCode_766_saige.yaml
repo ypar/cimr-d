@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Neuralgia, neuritis, and radiculitis NOS; phenotype category: symptoms; sample size: 404363; number of cases: 1181; number of controls: 405481; number of excluded controls: 2299; url for manhattan plots: https://www.dropbox.com/s/fisxrt7yqexecqt/766-Neuralgia-neuritis-andradiculitisNOS-1181cases-405481controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_766_SAIGE_MACge20.txt.vcf.gz
+        md5: d5955ecd43aa7a9b74f82ec115e7f84c
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Neuralgia, neuritis, and radiculitis NOS
+    context_id: PheCode_766
+    build: b38
+    sample_size: 404363
+    n_cases: 1181
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
