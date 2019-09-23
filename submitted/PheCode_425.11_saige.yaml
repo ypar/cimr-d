@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Hypertrophic obstructive cardiomyopathy; phenotype category: circulatory system; sample size: 402859; number of cases: 131; number of controls: 405779; number of excluded controls: 3051; url for manhattan plots: https://www.dropbox.com/s/ai2veibmkb3gpg5/425.11-Hypertrophicobstructivecardiomyopathy-131cases-405779controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_425.11_SAIGE_MACge20.txt.vcf.gz
+        md5: 42976cdbebd6e1a85a4cdaf608c913eb
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Hypertrophic obstructive cardiomyopathy
+    context_id: PheCode_425.11
+    build: b38
+    sample_size: 402859
+    n_cases: 131
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
