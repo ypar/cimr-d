@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Poisoning/allergy of sulfonamides; phenotype category: injuries & poisonings; sample size: 356381; number of cases: 874; number of controls: 381797; number of excluded controls: 26290; url for manhattan plots: https://www.dropbox.com/s/34gqgei518off9l/961.1-Poisoningallergyofsulfonamides-874cases-381797controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_961.1_SAIGE_MACge20.txt.vcf.gz
+        md5: acc6644b689caeb4e9a4e71dd555f062
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Poisoning/allergy of sulfonamides
+    context_id: PheCode_961.1
+    build: b38
+    sample_size: 356381
+    n_cases: 874
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
