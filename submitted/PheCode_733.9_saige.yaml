@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Chondromalacia; phenotype category: musculoskeletal; sample size: 373363; number of cases: 121; number of controls: 391041; number of excluded controls: 17799; url for manhattan plots: https://www.dropbox.com/s/q1t41s8cqqgiu21/733.9-Chondromalacia-121cases-391041controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_733.9_SAIGE_MACge20.txt.vcf.gz
+        md5: e274f118c5fc45bca1f54063f2b832b5
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Chondromalacia
+    context_id: PheCode_733.9
+    build: b38
+    sample_size: 373363
+    n_cases: 121
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
