@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Irritable Bowel Syndrome; phenotype category: digestive; sample size: 271701; number of cases: 5548; number of controls: 334783; number of excluded controls: 68630; url for manhattan plots: https://www.dropbox.com/s/gdqyuvnwyf870tr/564.1-IrritableBowelSyndrome-5548cases-334783controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_564.1_SAIGE_MACge20.txt.vcf.gz
+        md5: b7662f74f309c47730597912020a85c1
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Irritable Bowel Syndrome
+    context_id: PheCode_564.1
+    build: b38
+    sample_size: 271701
+    n_cases: 5548
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
