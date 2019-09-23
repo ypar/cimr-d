@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Iatrogenic hypotension; phenotype category: circulatory system; sample size: 367319; number of cases: 235; number of controls: 387905; number of excluded controls: 20821; url for manhattan plots: https://www.dropbox.com/s/7q7v3y0gub7ee4t/458.2-Iatrogenichypotension-235cases-387905controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_458.2_SAIGE_MACge20.txt.vcf.gz
+        md5: 6623e2d5c58dfad7265508ea385813ee
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Iatrogenic hypotension
+    context_id: PheCode_458.2
+    build: b38
+    sample_size: 367319
+    n_cases: 235
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

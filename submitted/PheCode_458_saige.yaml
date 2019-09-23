@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Hypotension; phenotype category: circulatory system; sample size: 378503; number of cases: 5827; number of controls: 387905; number of excluded controls: 15229; url for manhattan plots: https://www.dropbox.com/s/lk2rf1dqwj14s2v/458-Hypotension-5827cases-387905controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_458_SAIGE_MACge20.txt.vcf.gz
+        md5: 6cde24b6716f9d5631facaf15f291635
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Hypotension
+    context_id: PheCode_458
+    build: b38
+    sample_size: 378503
+    n_cases: 5827
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

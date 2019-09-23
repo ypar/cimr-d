@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Acute sinusitis; phenotype category: respiratory; sample size: 404325; number of cases: 196; number of controls: 406447; number of excluded controls: 2318; url for manhattan plots: https://www.dropbox.com/s/04cs6slp5t18o4j/464-Acutesinusitis-196cases-406447controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_464_SAIGE_MACge20.txt.vcf.gz
+        md5: 267d30200f5bb6b9f1be480a021c421b
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Acute sinusitis
+    context_id: PheCode_464
+    build: b38
+    sample_size: 404325
+    n_cases: 196
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
