@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Empyema and pneumothorax; phenotype category: respiratory; sample size: 388209; number of cases: 1174; number of controls: 397411; number of excluded controls: 10376; url for manhattan plots: https://www.dropbox.com/s/2y7lu16lwmcwa4y/506-Empyemaandpneumothorax-1174cases-397411controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_506_SAIGE_MACge20.txt.vcf.gz
+        md5: 6ed8a8c8e20fd4a1cbd548e6f0f7b94b
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Empyema and pneumothorax
+    context_id: PheCode_506
+    build: b38
+    sample_size: 388209
+    n_cases: 1174
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
