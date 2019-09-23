@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Hypovolemia; phenotype category: endocrine/metabolic; sample size: 399719; number of cases: 2834; number of controls: 401506; number of excluded controls: 4621; url for manhattan plots: https://www.dropbox.com/s/0jmbr3lgkcv5vnd/276.5-Hypovolemia-2834cases-401506controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_276.5_SAIGE_MACge20.txt.vcf.gz
+        md5: e2b5621b7039710c103ea24eb0d28b18
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Hypovolemia
+    context_id: PheCode_276.5
+    build: b38
+    sample_size: 399719
+    n_cases: 2834
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
