@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Stomatitis and mucositis (ulcerative); phenotype category: digestive; sample size: 398469; number of cases: 392; number of controls: 403323; number of excluded controls: 5246; url for manhattan plots: https://www.dropbox.com/s/nvh1d593rlfima3/528.11-Stomatitisandmucositis-ulcerative--392cases-403323controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_528.11_SAIGE_MACge20.txt.vcf.gz
+        md5: a91a4b1ec9f949859b530ce47b8c3ace
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Stomatitis and mucositis (ulcerative)
+    context_id: PheCode_528.11
+    build: b38
+    sample_size: 398469
+    n_cases: 392
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

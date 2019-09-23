@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Disturbance of salivary secretion; phenotype category: digestive; sample size: 397811; number of cases: 63; number of controls: 403323; number of excluded controls: 5575; url for manhattan plots: https://www.dropbox.com/s/kc16qpnwijx8y1r/527.7-Disturbanceofsalivarysecretion-63cases-403323controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_527.7_SAIGE_MACge20.txt.vcf.gz
+        md5: 134a0e3b02375469086b30c08c0c27c0
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Disturbance of salivary secretion
+    context_id: PheCode_527.7
+    build: b38
+    sample_size: 397811
+    n_cases: 63
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
