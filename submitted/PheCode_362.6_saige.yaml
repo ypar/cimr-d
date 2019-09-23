@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Peripheral retinal degenerations; phenotype category: sense organs; sample size: 385123; number of cases: 183; number of controls: 396859; number of excluded controls: 11919; url for manhattan plots: https://www.dropbox.com/s/ag9e4k5npa98g6w/362.6-Peripheralretinaldegenerations-183cases-396859controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_362.6_SAIGE_MACge20.txt.vcf.gz
+        md5: 13f56131c35c8f1f740f782cd7d973f1
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Peripheral retinal degenerations
+    context_id: PheCode_362.6
+    build: b38
+    sample_size: 385123
+    n_cases: 183
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
