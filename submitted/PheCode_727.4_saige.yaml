@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Ganglion and cyst of synovium, tendon, and bursa; phenotype category: musculoskeletal; sample size: 354831; number of cases: 3185; number of controls: 378711; number of excluded controls: 27065; url for manhattan plots: https://www.dropbox.com/s/h7s431kezrafqdf/727.4-Ganglionandcystofsynovium-tendon-andbursa-3185cases-378711controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_727.4_SAIGE_MACge20.txt.vcf.gz
+        md5: 26bb79a5fefb4f2067acfe029e0cc751
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Ganglion and cyst of synovium, tendon, and bursa
+    context_id: PheCode_727.4
+    build: b38
+    sample_size: 354831
+    n_cases: 3185
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
