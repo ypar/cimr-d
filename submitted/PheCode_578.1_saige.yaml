@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Hematemesis; phenotype category: digestive; sample size: 365275; number of cases: 1961; number of controls: 385157; number of excluded controls: 21843; url for manhattan plots: https://www.dropbox.com/s/lt8h1dncz3b20ur/578.1-Hematemesis-1961cases-385157controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_578.1_SAIGE_MACge20.txt.vcf.gz
+        md5: 133cd725141207ca4385b7fb346ad9fd
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Hematemesis
+    context_id: PheCode_578.1
+    build: b38
+    sample_size: 365275
+    n_cases: 1961
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
