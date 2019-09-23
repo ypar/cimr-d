@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Other and unspecified disorders of back; phenotype category: musculoskeletal; sample size: 379027; number of cases: 2077; number of controls: 391917; number of excluded controls: 14967; url for manhattan plots: https://www.dropbox.com/s/8mr1yp45ip8sphi/724-Otherandunspecifieddisordersofback-2077cases-391917controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_724_SAIGE_MACge20.txt.vcf.gz
+        md5: b6b200245c64d5738188fc875d0b58a5
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Other and unspecified disorders of back
+    context_id: PheCode_724
+    build: b38
+    sample_size: 379027
+    n_cases: 2077
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
