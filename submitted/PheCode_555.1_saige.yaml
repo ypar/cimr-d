@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Regional enteritis; phenotype category: digestive; sample size: 264091; number of cases: 1743; number of controls: 334783; number of excluded controls: 72435; url for manhattan plots: https://www.dropbox.com/s/z39posdlviu674n/555.1-Regionalenteritis-1743cases-334783controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_555.1_SAIGE_MACge20.txt.vcf.gz
+        md5: 48e6865a5d17ba002e8fb0ccb279c1ce
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Regional enteritis
+    context_id: PheCode_555.1
+    build: b38
+    sample_size: 264091
+    n_cases: 1743
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
