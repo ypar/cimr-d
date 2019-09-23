@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Disorders of tooth development; phenotype category: digestive; sample size: 392209; number of cases: 2449; number of controls: 398136; number of excluded controls: 8376; url for manhattan plots: https://www.dropbox.com/s/m1m875emgu2yz19/520-Disordersoftoothdevelopment-2449cases-398136controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_520_SAIGE_MACge20.txt.vcf.gz
+        md5: ac2062c89b21a315455b206e3df93c99
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Disorders of tooth development
+    context_id: PheCode_520
+    build: b38
+    sample_size: 392209
+    n_cases: 2449
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

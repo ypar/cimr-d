@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Gingivitis; phenotype category: digestive; sample size: 387539; number of cases: 114; number of controls: 398136; number of excluded controls: 10711; url for manhattan plots: https://www.dropbox.com/s/t4ha0d3tyi0k87k/523.1-Gingivitis-114cases-398136controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_523.1_SAIGE_MACge20.txt.vcf.gz
+        md5: 10040597bcc28ef6e9da3c89af7603be
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Gingivitis
+    context_id: PheCode_523.1
+    build: b38
+    sample_size: 387539
+    n_cases: 114
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
