@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Autism; phenotype category: mental disorders; sample size: 407903; number of cases: 54; number of controls: 408378; number of excluded controls: 529; url for manhattan plots: https://www.dropbox.com/s/kqrwyzytw3fgr2r/313.3-Autism-54cases-408378controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_313.3_SAIGE_MACge20.txt.vcf.gz
+        md5: 17fdcaa815e8630ef35b160719b51cae
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Autism
+    context_id: PheCode_313.3
+    build: b38
+    sample_size: 407903
+    n_cases: 54
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Other mental disorder; phenotype category: mental disorders; sample size: 379573; number of cases: 28791; number of controls: 365476; number of excluded controls: 14694; url for manhattan plots: https://www.dropbox.com/s/a36xmr47f454u4a/306-Othermentaldisorder-28791cases-365476controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_306_SAIGE_MACge20.txt.vcf.gz
+        md5: a0e72e79192be28eff7f9cc4dd873e34
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Other mental disorder
+    context_id: PheCode_306
+    build: b38
+    sample_size: 379573
+    n_cases: 28791
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
