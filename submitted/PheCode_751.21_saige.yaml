@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Cystic kidney disease; phenotype category: congenital anomalies; sample size: 405361; number of cases: 431; number of controls: 406730; number of excluded controls: 1800; url for manhattan plots: https://www.dropbox.com/s/i5xpz8b3la7v24a/751.21-Cystickidneydisease-431cases-406730controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_751.21_SAIGE_MACge20.txt.vcf.gz
+        md5: d87a80d416798e4a91d6c2aeb1f4b914
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Cystic kidney disease
+    context_id: PheCode_751.21
+    build: b38
+    sample_size: 405361
+    n_cases: 431
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

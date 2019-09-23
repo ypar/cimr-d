@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Congenital anomalies of genital organs; phenotype category: congenital anomalies; sample size: 405963; number of cases: 732; number of controls: 406730; number of excluded controls: 1499; url for manhattan plots: https://www.dropbox.com/s/x8wvekdd59y2dlv/751.1-Congenitalanomaliesofgenitalorgans-732cases-406730controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_751.1_SAIGE_MACge20.txt.vcf.gz
+        md5: b3027adee7e54f8c03e4bb48b27444fc
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Congenital anomalies of genital organs
+    context_id: PheCode_751.1
+    build: b38
+    sample_size: 405963
+    n_cases: 732
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
