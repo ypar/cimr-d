@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Aortic valve disease; phenotype category: circulatory system; sample size: 398401; number of cases: 1260; number of controls: 402421; number of excluded controls: 5280; url for manhattan plots: https://www.dropbox.com/s/w1y0yms21r9s1j7/394.3-Aorticvalvedisease-1260cases-402421controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_394.3_SAIGE_MACge20.txt.vcf.gz
+        md5: 450f3139c9edbed2b861334610b1eebc
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Aortic valve disease
+    context_id: PheCode_394.3
+    build: b38
+    sample_size: 398401
+    n_cases: 1260
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
