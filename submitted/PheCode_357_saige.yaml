@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Inflammatory and toxic neuropathy; phenotype category: neurological; sample size: 407479; number of cases: 1368; number of controls: 406852; number of excluded controls: 741; url for manhattan plots: https://www.dropbox.com/s/7806b1lq81gflfj/357-Inflammatoryandtoxicneuropathy-1368cases-406852controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_357_SAIGE_MACge20.txt.vcf.gz
+        md5: 7dda8bd93f73e466da330678e000459d
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Inflammatory and toxic neuropathy
+    context_id: PheCode_357
+    build: b38
+    sample_size: 407479
+    n_cases: 1368
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
