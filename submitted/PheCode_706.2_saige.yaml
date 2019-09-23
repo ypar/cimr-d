@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Sebaceous cyst; phenotype category: dermatologic; sample size: 407301; number of cases: 8876; number of controls: 399255; number of excluded controls: 830; url for manhattan plots: https://www.dropbox.com/s/p9nw0aoftlraryc/706.2-Sebaceouscyst-8876cases-399255controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_706.2_SAIGE_MACge20.txt.vcf.gz
+        md5: 675552455c2f6b4192f53dba20a31ab7
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Sebaceous cyst
+    context_id: PheCode_706.2
+    build: b38
+    sample_size: 407301
+    n_cases: 8876
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
