@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Diseases of hair and hair follicles; phenotype category: dermatologic; sample size: 406441; number of cases: 5344; number of controls: 402357; number of excluded controls: 1260; url for manhattan plots: https://www.dropbox.com/s/pbis2d31gtzcbng/704-Diseasesofhairandhairfollicles-5344cases-402357controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_704_SAIGE_MACge20.txt.vcf.gz
+        md5: baab36b448eeddc8fdd78baac88b3014
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Diseases of hair and hair follicles
+    context_id: PheCode_704
+    build: b38
+    sample_size: 406441
+    n_cases: 5344
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
