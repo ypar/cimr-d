@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Chronic tonsillitis and adenoiditis; phenotype category: respiratory; sample size: 373381; number of cases: 1126; number of controls: 390045; number of excluded controls: 17790; url for manhattan plots: https://www.dropbox.com/s/4quwykg9q9rax1q/474.2-Chronictonsillitisandadenoiditis-1126cases-390045controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_474.2_SAIGE_MACge20.txt.vcf.gz
+        md5: adce6c640343ee632bb177d86809e4e4
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Chronic tonsillitis and adenoiditis
+    context_id: PheCode_474.2
+    build: b38
+    sample_size: 373381
+    n_cases: 1126
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
