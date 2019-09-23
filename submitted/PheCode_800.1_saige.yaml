@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Fracture of neck of femur; phenotype category: injuries & poisonings; sample size: 370197; number of cases: 1814; number of controls: 387765; number of excluded controls: 19382; url for manhattan plots: https://www.dropbox.com/s/hjq8ictl5go79aw/800.1-Fractureofneckoffemur-1814cases-387765controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_800.1_SAIGE_MACge20.txt.vcf.gz
+        md5: 6da517249272faf20b8fc5dfc063b426
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Fracture of neck of femur
+    context_id: PheCode_800.1
+    build: b38
+    sample_size: 370197
+    n_cases: 1814
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
