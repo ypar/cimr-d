@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Dentofacial anomalies, including malocclusion; phenotype category: digestive; sample size: 388001; number of cases: 345; number of controls: 398136; number of excluded controls: 10480; url for manhattan plots: https://www.dropbox.com/s/xepqaq3ppf0bzsc/524-Dentofacialanomalies-includingmalocclusion-345cases-398136controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_524_SAIGE_MACge20.txt.vcf.gz
+        md5: 4fa070913a08983d641e2d99f0d90d85
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Dentofacial anomalies, including malocclusion
+    context_id: PheCode_524
+    build: b38
+    sample_size: 388001
+    n_cases: 345
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

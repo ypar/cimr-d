@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Chronic periodontitis; phenotype category: digestive; sample size: 388433; number of cases: 561; number of controls: 398136; number of excluded controls: 10264; url for manhattan plots: https://www.dropbox.com/s/kvyirj7sqzhplcf/523.32-Chronicperiodontitis-561cases-398136controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_523.32_SAIGE_MACge20.txt.vcf.gz
+        md5: b4765c6f03d182ab474cc2cfc2cd0a1c
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Chronic periodontitis
+    context_id: PheCode_523.32
+    build: b38
+    sample_size: 388433
+    n_cases: 561
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
