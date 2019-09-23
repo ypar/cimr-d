@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Calculus of kidney; phenotype category: genitourinary; sample size: 399431; number of cases: 3191; number of controls: 401005; number of excluded controls: 4765; url for manhattan plots: https://www.dropbox.com/s/kfr852cd75494c7/594.1-Calculusofkidney-3191cases-401005controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_594.1_SAIGE_MACge20.txt.vcf.gz
+        md5: a4a8867af52b55d4d6c8a2f7ba2d0072
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Calculus of kidney
+    context_id: PheCode_594.1
+    build: b38
+    sample_size: 399431
+    n_cases: 3191
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

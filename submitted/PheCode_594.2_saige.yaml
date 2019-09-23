@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Calculus of lower urinary tract; phenotype category: genitourinary; sample size: 394605; number of cases: 778; number of controls: 401005; number of excluded controls: 7178; url for manhattan plots: https://www.dropbox.com/s/nzrfhua2tqpbx9y/594.2-Calculusoflowerurinarytract-778cases-401005controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_594.2_SAIGE_MACge20.txt.vcf.gz
+        md5: a8b1d20ccade0ea6aae62a71a5c2215a
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Calculus of lower urinary tract
+    context_id: PheCode_594.2
+    build: b38
+    sample_size: 394605
+    n_cases: 778
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
