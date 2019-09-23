@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Tobacco use disorder; phenotype category: mental disorders; sample size: 389309; number of cases: 19780; number of controls: 379355; number of excluded controls: 9826; url for manhattan plots: https://www.dropbox.com/s/xgo2rqtml4sqzfe/318-Tobaccousedisorder-19780cases-379355controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_318_SAIGE_MACge20.txt.vcf.gz
+        md5: 4376f9654ab0816ae89ad9b08b267515
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Tobacco use disorder
+    context_id: PheCode_318
+    build: b38
+    sample_size: 389309
+    n_cases: 19780
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

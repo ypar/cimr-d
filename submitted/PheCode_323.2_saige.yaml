@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Acute (transverse) myelitis; phenotype category: neurological; sample size: 406963; number of cases: 74; number of controls: 407888; number of excluded controls: 999; url for manhattan plots: https://www.dropbox.com/s/r5rcqh7tskv9g0i/323.2-Acute-transverse-myelitis-74cases-407888controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_323.2_SAIGE_MACge20.txt.vcf.gz
+        md5: dda8854f18bdcc3faf9284044260bb7c
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Acute (transverse) myelitis
+    context_id: PheCode_323.2
+    build: b38
+    sample_size: 406963
+    n_cases: 74
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

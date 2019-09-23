@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Sleep apnea; phenotype category: neurological; sample size: 407427; number of cases: 4471; number of controls: 403723; number of excluded controls: 767; url for manhattan plots: https://www.dropbox.com/s/a7wm479xd7p9cs0/327.3-Sleepapnea-4471cases-403723controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_327.3_SAIGE_MACge20.txt.vcf.gz
+        md5: e6e288a3ae985bdf6d82b5488c4537d5
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Sleep apnea
+    context_id: PheCode_327.3
+    build: b38
+    sample_size: 407427
+    n_cases: 4471
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
