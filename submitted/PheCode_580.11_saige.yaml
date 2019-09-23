@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Proliferative glomerulonephritis; phenotype category: genitourinary; sample size: 386401; number of cases: 79; number of controls: 397602; number of excluded controls: 11280; url for manhattan plots: https://www.dropbox.com/s/9edbml3u5ydyf5d/580.11-Proliferativeglomerulonephritis-79cases-397602controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_580.11_SAIGE_MACge20.txt.vcf.gz
+        md5: a8b1fffab6459be179b23cf93e92e8d0
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Proliferative glomerulonephritis
+    context_id: PheCode_580.11
+    build: b38
+    sample_size: 386401
+    n_cases: 79
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
