@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Cardiomegaly; phenotype category: circulatory system; sample size: 400935; number of cases: 2573; number of controls: 402375; number of excluded controls: 4013; url for manhattan plots: https://www.dropbox.com/s/a435pmvlhf5ingr/416-Cardiomegaly-2573cases-402375controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_416_SAIGE_MACge20.txt.vcf.gz
+        md5: a5dfd03aacfab4002616287292d2b64a
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Cardiomegaly
+    context_id: PheCode_416
+    build: b38
+    sample_size: 400935
+    n_cases: 2573
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
