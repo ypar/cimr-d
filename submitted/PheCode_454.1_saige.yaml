@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Varicose veins of lower extremity; phenotype category: circulatory system; sample size: 353617; number of cases: 11697; number of controls: 369592; number of excluded controls: 27672; url for manhattan plots: https://www.dropbox.com/s/641noqi7emud2vd/454.1-Varicoseveinsoflowerextremity-11697cases-369592controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_454.1_SAIGE_MACge20.txt.vcf.gz
+        md5: 56d6c066025b057cb3f22495ba385a61
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Varicose veins of lower extremity
+    context_id: PheCode_454.1
+    build: b38
+    sample_size: 353617
+    n_cases: 11697
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
