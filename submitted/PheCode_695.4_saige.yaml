@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Lupus (localized and systemic); phenotype category: dermatologic; sample size: 394605; number of cases: 418; number of controls: 401365; number of excluded controls: 7178; url for manhattan plots: https://www.dropbox.com/s/zfd3ra6ivwpjnmc/695.4-Lupus-localizedandsystemic--418cases-401365controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_695.4_SAIGE_MACge20.txt.vcf.gz
+        md5: dbe30af9db7b88b8e0dd579c924718e7
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Lupus (localized and systemic)
+    context_id: PheCode_695.4
+    build: b38
+    sample_size: 394605
+    n_cases: 418
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
