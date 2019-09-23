@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Esophageal bleeding (varices/hemorrhage); phenotype category: digestive; sample size: 332933; number of cases: 1672; number of controls: 369275; number of excluded controls: 38014; url for manhattan plots: https://www.dropbox.com/s/ouyuzwz3dvmyaob/530.2-Esophagealbleeding-variceshemorrhage--1672cases-369275controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_530.2_SAIGE_MACge20.txt.vcf.gz
+        md5: 5c50c37749eedefa814731b4cf45de6b
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Esophageal bleeding (varices/hemorrhage)
+    context_id: PheCode_530.2
+    build: b38
+    sample_size: 332933
+    n_cases: 1672
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

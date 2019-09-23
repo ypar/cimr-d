@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Stricture and stenosis of esophagus; phenotype category: digestive; sample size: 333337; number of cases: 1874; number of controls: 369275; number of excluded controls: 37812; url for manhattan plots: https://www.dropbox.com/s/1z0ql8ab27ea3co/530.3-Strictureandstenosisofesophagus-1874cases-369275controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_530.3_SAIGE_MACge20.txt.vcf.gz
+        md5: 85d356a5f05107ec40e3bc887f4478d0
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Stricture and stenosis of esophagus
+    context_id: PheCode_530.3
+    build: b38
+    sample_size: 333337
+    n_cases: 1874
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

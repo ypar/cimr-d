@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Esophagitis, GERD and related diseases; phenotype category: digestive; sample size: 393805; number of cases: 32108; number of controls: 369275; number of excluded controls: 7578; url for manhattan plots: https://www.dropbox.com/s/oewcr8lx8h539o6/530.1-Esophagitis-GERDandrelateddiseases-32108cases-369275controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_530.1_SAIGE_MACge20.txt.vcf.gz
+        md5: 68476d724b09835a819e22de02c287ed
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Esophagitis, GERD and related diseases
+    context_id: PheCode_530.1
+    build: b38
+    sample_size: 393805
+    n_cases: 32108
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
