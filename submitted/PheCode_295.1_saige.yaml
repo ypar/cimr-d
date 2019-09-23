@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Schizophrenia; phenotype category: mental disorders; sample size: 323133; number of cases: 571; number of controls: 365476; number of excluded controls: 42914; url for manhattan plots: https://www.dropbox.com/s/9t2dvin0rgh5s63/295.1-Schizophrenia-571cases-365476controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_295.1_SAIGE_MACge20.txt.vcf.gz
+        md5: 29d3dcfbdb6bf3e13f0d28c5b8b63575
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Schizophrenia
+    context_id: PheCode_295.1
+    build: b38
+    sample_size: 323133
+    n_cases: 571
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
