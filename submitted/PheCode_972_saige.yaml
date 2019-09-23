@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Poisoning by agents primarily affecting the cardiovascular system; phenotype category: injuries & poisonings; sample size: 355193; number of cases: 280; number of controls: 381797; number of excluded controls: 26884; url for manhattan plots: https://www.dropbox.com/s/5cbv72gok0ywtx4/972-.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_972_SAIGE_MACge20.txt.vcf.gz
+        md5: 7b71440a98fa07208631316633c7d6ad
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Poisoning by agents primarily affecting the cardiovascular system
+    context_id: PheCode_972
+    build: b38
+    sample_size: 355193
+    n_cases: 280
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
