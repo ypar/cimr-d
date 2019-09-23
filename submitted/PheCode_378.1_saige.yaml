@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Strabismus (not specified as paralytic); phenotype category: sense organs; sample size: 395365; number of cases: 918; number of controls: 401245; number of excluded controls: 6798; url for manhattan plots: https://www.dropbox.com/s/r3x73hnu465w9vf/378.1-Strabismus-notspecifiedasparalytic--918cases-401245controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_378.1_SAIGE_MACge20.txt.vcf.gz
+        md5: 6a23768545de1a4f9adc4a051a885d4c
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Strabismus (not specified as paralytic)
+    context_id: PheCode_378.1
+    build: b38
+    sample_size: 395365
+    n_cases: 918
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
