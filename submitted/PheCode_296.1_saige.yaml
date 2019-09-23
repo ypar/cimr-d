@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Bipolar; phenotype category: mental disorders; sample size: 324119; number of cases: 1064; number of controls: 365476; number of excluded controls: 42421; url for manhattan plots: https://www.dropbox.com/s/m9td49dfv2m5k8l/296.1-Bipolar-1064cases-365476controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_296.1_SAIGE_MACge20.txt.vcf.gz
+        md5: 704d79ce4d173ceae9b82d1a19f5a580
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Bipolar
+    context_id: PheCode_296.1
+    build: b38
+    sample_size: 324119
+    n_cases: 1064
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
