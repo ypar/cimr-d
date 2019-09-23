@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Hyperpotassemia; phenotype category: endocrine/metabolic; sample size: 396001; number of cases: 975; number of controls: 401506; number of excluded controls: 6480; url for manhattan plots: https://www.dropbox.com/s/9c1t8u1hlclc9s3/276.13-Hyperpotassemia-975cases-401506controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_276.13_SAIGE_MACge20.txt.vcf.gz
+        md5: d05f79471ecf87f1fa49165788a4a20a
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Hyperpotassemia
+    context_id: PheCode_276.13
+    build: b38
+    sample_size: 396001
+    n_cases: 975
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
