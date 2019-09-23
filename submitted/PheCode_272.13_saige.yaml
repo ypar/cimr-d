@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Mixed hyperlipidemia; phenotype category: endocrine/metabolic; sample size: 337435; number of cases: 164; number of controls: 373034; number of excluded controls: 35763; url for manhattan plots: https://www.dropbox.com/s/yeyiuns841ecsgh/272.13-Mixedhyperlipidemia-164cases-373034controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_272.13_SAIGE_MACge20.txt.vcf.gz
+        md5: 8b9c1f44cf69e03ac82e7d4dc31bba3b
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Mixed hyperlipidemia
+    context_id: PheCode_272.13
+    build: b38
+    sample_size: 337435
+    n_cases: 164
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
