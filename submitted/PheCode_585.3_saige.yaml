@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Chronic renal failure [CKD]; phenotype category: genitourinary; sample size: 391501; number of cases: 2629; number of controls: 397602; number of excluded controls: 8730; url for manhattan plots: https://www.dropbox.com/s/0adno7jlj2c5bdq/585.3-Chronicrenalfailure-CKD--2629cases-397602controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_585.3_SAIGE_MACge20.txt.vcf.gz
+        md5: 0ab71230ed828a8cb8100fe17c1c553c
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Chronic renal failure [CKD]
+    context_id: PheCode_585.3
+    build: b38
+    sample_size: 391501
+    n_cases: 2629
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

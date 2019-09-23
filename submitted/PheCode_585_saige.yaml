@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Renal failure; phenotype category: genitourinary; sample size: 400213; number of cases: 6985; number of controls: 397602; number of excluded controls: 4374; url for manhattan plots: https://www.dropbox.com/s/o0m6xm3tigxbw7f/585-Renalfailure-6985cases-397602controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_585_SAIGE_MACge20.txt.vcf.gz
+        md5: a2f1d004fd0bf469baa5c868b98d6923
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Renal failure
+    context_id: PheCode_585
+    build: b38
+    sample_size: 400213
+    n_cases: 6985
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
