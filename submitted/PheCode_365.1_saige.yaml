@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Open-angle glaucoma; phenotype category: sense organs; sample size: 388647; number of cases: 1043; number of controls: 397761; number of excluded controls: 10157; url for manhattan plots: https://www.dropbox.com/s/uxt8m5t2rym3ayu/365.1-Open-angleglaucoma-1043cases-397761controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_365.1_SAIGE_MACge20.txt.vcf.gz
+        md5: f0c5ba909cb83dac71f3d701de593bb9
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Open-angle glaucoma
+    context_id: PheCode_365.1
+    build: b38
+    sample_size: 388647
+    n_cases: 1043
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
