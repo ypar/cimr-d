@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Other signs and symptoms in breast; phenotype category: genitourinary; sample size: 406403; number of cases: 704; number of controls: 406978; number of excluded controls: 1279; url for manhattan plots: https://www.dropbox.com/s/r84dsyeyrf70ta7/613.7-Othersignsandsymptomsinbreast-704cases-406978controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_613.7_SAIGE_MACge20.txt.vcf.gz
+        md5: 4d0ac37c0cfbdc665dd7bd00f43b571f
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Other signs and symptoms in breast
+    context_id: PheCode_613.7
+    build: b38
+    sample_size: 406403
+    n_cases: 704
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
