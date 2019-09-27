@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Noninflammatory female genital disorders; phenotype category: genitourinary; sample size: 408961; number of cases: 9332; number of controls: 399629; number of excluded controls: 0; url for manhattan plots: https://www.dropbox.com/s/itanjzr9u3elkpe/619-Noninflammatoryfemalegenitaldisorders-9332cases-399629controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_619_SAIGE_MACge20.txt.vcf.gz
+        md5: f3b1b4053a1c70db2f69d9863f99def3
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Noninflammatory female genital disorders
+    context_id: PheCode_619
+    build: b38
+    sample_size: 408961
+    n_cases: 9332
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
