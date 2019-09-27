@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Benign neoplasm of breast; phenotype category: genitourinary; sample size: 397637; number of cases: 1553; number of controls: 401746; number of excluded controls: 5662; url for manhattan plots: https://www.dropbox.com/s/ls4wxaeh887tsqz/610.4-Benignneoplasmofbreast-1553cases-401746controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_610.4_SAIGE_MACge20.txt.vcf.gz
+        md5: 08a49fd98725f6dd892cbd41695e5360
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Benign neoplasm of breast
+    context_id: PheCode_610.4
+    build: b38
+    sample_size: 397637
+    n_cases: 1553
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
