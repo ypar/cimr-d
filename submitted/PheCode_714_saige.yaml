@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Rheumatoid arthritis and other inflammatory polyarthropathies; phenotype category: musculoskeletal; sample size: 330967; number of cases: 4879; number of controls: 365085; number of excluded controls: 38997; url for manhattan plots: https://www.dropbox.com/s/46ai5u3c8lcge41/714-Rheumatoidarthritisandotherinflammatorypolyarthropathies-4879cases-365085controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_714_SAIGE_MACge20.txt.vcf.gz
+        md5: 8447ccdfafeeba029e412d1f50bdd143
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Rheumatoid arthritis and other inflammatory polyarthropathies
+    context_id: PheCode_714
+    build: b38
+    sample_size: 330967
+    n_cases: 4879
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
