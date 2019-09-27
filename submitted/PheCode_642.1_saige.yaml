@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Preeclampsia and eclampsia; phenotype category: pregnancy complications; sample size: 407347; number of cases: 307; number of controls: 407847; number of excluded controls: 807; url for manhattan plots: https://www.dropbox.com/s/spngokil9zykm0l/642.1-Preeclampsiaandeclampsia-307cases-407847controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_642.1_SAIGE_MACge20.txt.vcf.gz
+        md5: 5fba6d06192f46a56864e23528db9c80
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Preeclampsia and eclampsia
+    context_id: PheCode_642.1
+    build: b38
+    sample_size: 407347
+    n_cases: 307
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
