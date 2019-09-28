@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Inflammatory diseases of female pelvic organs; phenotype category: genitourinary; sample size: 402961; number of cases: 6204; number of controls: 399757; number of excluded controls: 3000; url for manhattan plots: https://www.dropbox.com/s/50ehurwksi3qe7g/614-Inflammatorydiseasesoffemalepelvicorgans-6204cases-399757controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_614_SAIGE_MACge20.txt.vcf.gz
+        md5: 7c4f21d13bb00385dbc6b3f3dfdac80e
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Inflammatory diseases of female pelvic organs
+    context_id: PheCode_614
+    build: b38
+    sample_size: 402961
+    n_cases: 6204
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
