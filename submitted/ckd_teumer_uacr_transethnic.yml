@@ -1,0 +1,35 @@
+data_file:
+    description: >-
+        Analyses of UACR and Microalbuminuria;
+        overall and Diabetes-mellitus, amongst individuals of African
+        American and European American ancestry; and trans-ethnic
+        Microalbuminuria; n=348,954 (51,861 cases, 297,093 controls)
+    location:
+        url: http://ckdgen.imbi.uni-freiburg.de/files/Teumer2019/formatted_20170711-UACR_overall-ALL-nstud_27-sumMac_400.tbl.rsid.gz
+        md5: ca04ebfa55fdfc18ab28b744c55cb4d3
+    columns:
+        variant_chrom: Chr
+        variant_pos: Pos_b37
+        rsnum: RSID
+        effect_allele: Allele1
+        non_effect_allele: Allele2
+        effect_size: Effect
+        inc_afrq: Freq1
+        standard_error: StdErr
+        pvalue: P-value
+        sample_size: N_total_sum
+
+data_info:
+    citation: http://ckdgen.imbi.uni-freiburg.de/
+    data_source: http://ckdgen.imbi.uni-freiburg.de/
+    data_type: gwas
+    context: urinary albumin-to-creatinine ratio (UACR)
+    build: b37
+    sample_size: 348954
+    n_cases: 51861
+    can_be_public: true
+
+method:
+    name: na
+    tool: na
+    website: na
