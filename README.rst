@@ -29,6 +29,8 @@ local copy of the catalog::
 Frequent pulling is recommended as cimr-d may be updated with new or
 improved information.
 
+    cd cimr-d
+    git pull
 
 
 While data processing can be streamlined, any data used in research
