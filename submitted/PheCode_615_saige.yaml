@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Endometriosis; phenotype category: genitourinary; sample size: 398659; number of cases: 4053; number of controls: 399757; number of excluded controls: 5151; url for manhattan plots: https://www.dropbox.com/s/qydfcx24emotue0/615-Endometriosis-4053cases-399757controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_615_SAIGE_MACge20.txt.vcf.gz
+        md5: f20464b26036bc8c53a258b87cb34a91
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Endometriosis
+    context_id: PheCode_615
+    build: b38
+    sample_size: 398659
+    n_cases: 4053
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
