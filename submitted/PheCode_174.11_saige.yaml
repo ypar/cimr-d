@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Malignant neoplasm of female breast; phenotype category: neoplasms; sample size: 391885; number of cases: 11874; number of controls: 388549; number of excluded controls: 8538; url for manhattan plots: https://www.dropbox.com/s/j2qpc7058vcsmk9/174.11-Malignantneoplasmoffemalebreast-11874cases-388549controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_174.11_SAIGE_MACge20.txt.vcf.gz
+        md5: a554978ac30e851949bf44d47b94f3c9
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Malignant neoplasm of female breast
+    context_id: PheCode_174.11
+    build: b38
+    sample_size: 391885
+    n_cases: 11874
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
