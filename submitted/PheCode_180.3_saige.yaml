@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Cervical intraepithelial neoplasia [CIN] [Cervical dysplasia]; phenotype category: neoplasms; sample size: 359023; number of cases: 2090; number of controls: 381902; number of excluded controls: 24969; url for manhattan plots: https://www.dropbox.com/s/9x843yuv0f00v0i/180.3-Cervicalintraepithelialneoplasia-CIN--Cervicaldysplasia--2090cases-381902controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_180.3_SAIGE_MACge20.txt.vcf.gz
+        md5: 20100a2106851fbf3f5baa5e98889097
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Cervical intraepithelial neoplasia [CIN] [Cervical dysplasia]
+    context_id: PheCode_180.3
+    build: b38
+    sample_size: 359023
+    n_cases: 2090
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
