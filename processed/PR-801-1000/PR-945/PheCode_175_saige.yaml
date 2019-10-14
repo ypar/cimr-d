@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Acquired absence of breast; phenotype category: neoplasms; sample size: 371001; number of cases: 2415; number of controls: 387566; number of excluded controls: 18980; url for manhattan plots: https://www.dropbox.com/s/4p1j1ea22ba44xq/175-Acquiredabsenceofbreast-2415cases-387566controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_175_SAIGE_MACge20.txt.vcf.gz
+        md5: 07260bb608417fd3a8699fb1c3a55735
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Acquired absence of breast
+    context_id: PheCode_175
+    build: b38
+    sample_size: 371001
+    n_cases: 2415
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

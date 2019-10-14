@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Cyst or abscess of Bartholin's gland; phenotype category: genitourinary; sample size: 392069; number of cases: 758; number of controls: 399757; number of excluded controls: 8446; url for manhattan plots: https://www.dropbox.com/s/8mpq1pgxygroa1w/614.53-CystorabscessofBartholinsgland-758cases-399757controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_614.53_SAIGE_MACge20.txt.vcf.gz
+        md5: 64d93df6419b06a1d76e7788d3bd3c4a
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Cyst or abscess of Bartholin's gland
+    context_id: PheCode_614.53
+    build: b38
+    sample_size: 392069
+    n_cases: 758
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Missed abortion/Hydatidiform mole; phenotype category: pregnancy complications; sample size: 395433; number of cases: 1251; number of controls: 400946; number of excluded controls: 6764; url for manhattan plots: https://www.dropbox.com/s/s31ubp3hxq8nq6a/634.1-MissedabortionHydatidiformmole-1251cases-400946controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_634.1_SAIGE_MACge20.txt.vcf.gz
+        md5: a7d3a60f7ca25fa37ab1aecaa40c5051
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Missed abortion/Hydatidiform mole
+    context_id: PheCode_634.1
+    build: b38
+    sample_size: 395433
+    n_cases: 1251
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

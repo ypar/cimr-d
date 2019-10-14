@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Early or threatened labor; hemorrhage in early pregnancy; phenotype category: pregnancy complications; sample size: 398047; number of cases: 2558; number of controls: 400946; number of excluded controls: 5457; url for manhattan plots: https://www.dropbox.com/s/0jf7g4zciyemnr2/636-Earlyorthreatenedlabor-hemorrhageinearlypregnancy-2558cases-400946controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_636_SAIGE_MACge20.txt.vcf.gz
+        md5: 6c42f8cc24664c9e4d2078d89f3887b3
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Early or threatened labor; hemorrhage in early pregnancy
+    context_id: PheCode_636
+    build: b38
+    sample_size: 398047
+    n_cases: 2558
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

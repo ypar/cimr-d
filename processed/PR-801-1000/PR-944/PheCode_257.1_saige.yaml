@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Testicular hypofunction; phenotype category: endocrine/metabolic; sample size: 402127; number of cases: 158; number of controls: 405386; number of excluded controls: 3417; url for manhattan plots: https://www.dropbox.com/s/iv3qzgaw7lyj9wb/257.1-Testicularhypofunction-158cases-405386controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_257.1_SAIGE_MACge20.txt.vcf.gz
+        md5: fa8732d9b69e3716500a41866f67ba9c
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Testicular hypofunction
+    context_id: PheCode_257.1
+    build: b38
+    sample_size: 402127
+    n_cases: 158
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+
