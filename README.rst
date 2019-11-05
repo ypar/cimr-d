@@ -3,6 +3,10 @@
 cimr-d: client and database for continuously integrated metaresource
 ********************************************************************
 
+**********************************************************************************
+cimr-d is not yet ready for public use! check back for updates and public releases
+**********************************************************************************
+
 YoSon Park <cimrroot at gmail dot com>
 
 
