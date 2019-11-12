@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Hallux valgus (Bunion); phenotype category: musculoskeletal; sample size: 394265; number of cases: 6699; number of controls: 394914; number of excluded controls: 7348; url for manhattan plots: https://www.dropbox.com/s/ryb0xms8kz0oges/735.3-Halluxvalgus-Bunion--6699cases-394914controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_735.3_SAIGE_MACge20.txt.vcf.gz
+        md5: 0b0a5d2beccad135a1d3d40e4dbbfdfd
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Hallux valgus (Bunion)
+    context_id: PheCode_735.3
+    build: b38
+    sample_size: 394265
+    n_cases: 6699
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

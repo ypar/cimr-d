@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: J22; Diagnoses - main ICD10: J22 Unspecified acute lower respiratory infection; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/iv41mvhd5de5bl9/J22.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: d7cbd4f511c2d1e76c77550acd9f5c48
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: J22
+    build: b37
+    sample_size: 167020
+    n_cases: 1638.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

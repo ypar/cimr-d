@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Dysthymic disorder; phenotype category: mental disorders; sample size: 322097; number of cases: 53; number of controls: 365476; number of excluded controls: 43432; url for manhattan plots: https://www.dropbox.com/s/99ushbufi3dj637/300.4-Dysthymicdisorder-53cases-365476controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_300.4_SAIGE_MACge20.txt.vcf.gz
+        md5: f7fe3ff2523734870e89bb380bfe3fdd
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Dysthymic disorder
+    context_id: PheCode_300.4
+    build: b38
+    sample_size: 322097
+    n_cases: 53
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

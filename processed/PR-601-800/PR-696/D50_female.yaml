@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: D50; Diagnoses - main ICD10: D50 Iron deficiency anaemia; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/21wtqi7oor97bp6/D50.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 161a417207d303cc56cb1740c4f94f24
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: D50
+    build: b37
+    sample_size: 194174
+    n_cases: 2046.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

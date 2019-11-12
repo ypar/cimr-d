@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20110_6; Illnesses of mother: Chronic bronchitis/emphysema; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/q67eh6b1akj526u/20110_6.gwas.imputed_v3.both_sexes.v2.tsv.bgz?dl=0
+        md5: c0823c2496d8ffa1b7939d327c0a085c
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20110_6
+    build: b37
+    sample_size: 331008
+    n_cases: 19637.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

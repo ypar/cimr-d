@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6179_4; Mineral and other dietary supplements: Zinc; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/8rte4mik81sstsn/6179_4.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: bdd6310927a93c81b66602fa8d81eb3b
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6179_4
+    build: b37
+    sample_size: 360016
+    n_cases: 14402.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

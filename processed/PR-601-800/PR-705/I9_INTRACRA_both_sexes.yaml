@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: I9_INTRACRA; Nontraumatic intracranial haemmorrhage; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/0gaagb9khg0ddyu/I9_INTRACRA.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: e5638b4f54c230e626a3acbcdf52d1d1
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: I9_INTRACRA
+    build: b37
+    sample_size: 361194
+    n_cases: 1253.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

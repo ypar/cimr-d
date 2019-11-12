@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Other specified gastritis; phenotype category: digestive; sample size: 363581; number of cases: 8147; number of controls: 378124; number of excluded controls: 22690; url for manhattan plots: https://www.dropbox.com/s/9efrf5mm926y5o4/535.8-Otherspecifiedgastritis-8147cases-378124controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_535.8_SAIGE_MACge20.txt.vcf.gz
+        md5: eeeaef2b332ca514edac2d68e8e41655
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Other specified gastritis
+    context_id: PheCode_535.8
+    build: b38
+    sample_size: 363581
+    n_cases: 8147
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

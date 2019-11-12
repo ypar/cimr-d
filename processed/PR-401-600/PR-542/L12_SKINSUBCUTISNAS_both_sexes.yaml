@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: L12_SKINSUBCUTISNAS; Other and unspecified disorders of skin and subcutaneous tissue; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/a2773608v25eeal/L12_SKINSUBCUTISNAS.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 7a663a5d7dd8c1bd1300e11641e9e864
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: L12_SKINSUBCUTISNAS
+    build: b37
+    sample_size: 361194
+    n_cases: 3801.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

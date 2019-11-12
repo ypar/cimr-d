@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Vitamin D deficiency; phenotype category: endocrine/metabolic; sample size: 404919; number of cases: 448; number of controls: 406492; number of excluded controls: 2021; url for manhattan plots: https://www.dropbox.com/s/4d3hkyacfbwikdg/261.4-VitaminDdeficiency-448cases-406492controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_261.4_SAIGE_MACge20.txt.vcf.gz
+        md5: 8a1009cffa525729107773ee0f185c89
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Vitamin D deficiency
+    context_id: PheCode_261.4
+    build: b38
+    sample_size: 404919
+    n_cases: 448
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

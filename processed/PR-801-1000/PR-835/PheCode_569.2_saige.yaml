@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Gastrointestinal complications; phenotype category: digestive; sample size: 366687; number of cases: 486; number of controls: 387338; number of excluded controls: 21137; url for manhattan plots: https://www.dropbox.com/s/qxoyy9k3yl3txjs/569.2-Gastrointestinalcomplications-486cases-387338controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_569.2_SAIGE_MACge20.txt.vcf.gz
+        md5: 76adda9defdbf924c74f20d7b7d3dd6b
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Gastrointestinal complications
+    context_id: PheCode_569.2
+    build: b38
+    sample_size: 366687
+    n_cases: 486
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

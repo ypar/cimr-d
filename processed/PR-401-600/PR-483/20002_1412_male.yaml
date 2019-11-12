@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20002_1412; Non-cancer illness code, self-reported: bronchitis; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/xi7nx0m1bsl8hyc/20002_1412.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 61dad52d562e9c7d52743a87e42056f3
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20002_1412
+    build: b37
+    sample_size: 166988
+    n_cases: 1195.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

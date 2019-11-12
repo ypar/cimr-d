@@ -1,0 +1,41 @@
+
+data_file:
+    description: >-
+        The Allelic Landscape of Human Blood Cell Trait Variation and Links to Common Complex Disease; 170,721 European ancestry individuals
+    location:
+        url: ftp://ftp.ebi.ac.uk:21/pub/databases/gwas/summary_statistics/AstleWJ_27863252_GCST004625/harmonised/27863252-GCST004625-EFO_0005091.h.tsv.gz
+        md5: e6be2a4695cf653b127d6b4e5f153c5e
+    columns:
+        variant_id: hm_variant_id
+        original_variant_id: variant_id
+        rsnum: hm_rsid
+        variant_chrom: hm_chrom
+        variant_pos: hm_pos
+        non_effect_allele: hm_other_allele
+        effect_allele: hm_effect_allele
+        effect_size: hm_beta
+        effect_allele: original_effect_allele
+        standard_error: standard_error
+        pvalue: p_value
+
+data_info:
+    citation: 10.1016/j.cell.2016.10.042
+    data_source: https://www.ebi.ac.uk/gwas/
+    data_type: gwas
+    context: monocyte count
+    context_id: EFO_0005091
+    build: b38
+    sample_size: 170721.0
+    n_cases: NA
+    can_be_public: true
+
+method:
+    name: NA
+    tool: NA
+    website: www.ncbi.nlm.nih.gov/pubmed/27863252
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com
+

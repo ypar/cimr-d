@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20002_1440; Non-cancer illness code, self-reported: tuberculosis (tb); variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/k47dr8czi0iicw3/20002_1440.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 0101af4d6e9fda0f8ad6316b8b8e623f
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20002_1440
+    build: b37
+    sample_size: 361141
+    n_cases: 1768.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

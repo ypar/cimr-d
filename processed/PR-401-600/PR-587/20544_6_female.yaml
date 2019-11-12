@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20544_6; Mental health problems ever diagnosed by a professional: Panic attacks; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/2wcts6qly2adn01/20544_6.gwas.imputed_v3.female.v2.tsv.bgz?dl=0
+        md5: f566623a8d80e9c2bdbd8fb59ad10751
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20544_6
+    build: b37
+    sample_size: 65905
+    n_cases: 4465.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

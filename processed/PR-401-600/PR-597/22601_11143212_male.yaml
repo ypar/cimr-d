@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22601_11143212; Job coding: senior official of special interest organisation including general manager or director or executive or general secretary of charity, or trade union/association or religious organisation; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/d4d88qubgqr238f/22601_11143212.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 8d6688d5704dae6cb2be427222191b1e
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22601_11143212
+    build: b37
+    sample_size: 40155
+    n_cases: 1161.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

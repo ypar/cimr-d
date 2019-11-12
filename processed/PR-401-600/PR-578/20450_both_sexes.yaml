@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20450; Feelings of worthlessness during worst period of depression; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/kvevwj6i2c05vaw/20450.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: f20591de6f1c3884c55ab3a0e5100094
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20450
+    build: b37
+    sample_size: 62128
+    n_cases: 31593.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

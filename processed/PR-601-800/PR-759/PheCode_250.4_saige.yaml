@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Abnormal glucose; phenotype category: endocrine/metabolic; sample size: 369921; number of cases: 685; number of controls: 388756; number of excluded controls: 19520; url for manhattan plots: https://www.dropbox.com/s/jcrmogr7pfbpdue/250.4-Abnormalglucose-685cases-388756controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_250.4_SAIGE_MACge20.txt.vcf.gz
+        md5: adeda6ca9826c9fe1669d4c109e34149
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Abnormal glucose
+    context_id: PheCode_250.4
+    build: b38
+    sample_size: 369921
+    n_cases: 685
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

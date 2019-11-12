@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6160_4; Leisure/social activities: Adult education class; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/kxeov03p98ol9gt/6160_4.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: ae484fcc6269e5c64ff9727e4b877614
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6160_4
+    build: b37
+    sample_size: 166509
+    n_cases: 7334.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

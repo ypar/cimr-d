@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Congenital musculoskeletal deformities of spine; phenotype category: congenital anomalies; sample size: 406921; number of cases: 110; number of controls: 407831; number of excluded controls: 1020; url for manhattan plots: https://www.dropbox.com/s/6k532m7bc2teuu9/754-Congenitalmusculoskeletaldeformitiesofspine-110cases-407831controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_754_SAIGE_MACge20.txt.vcf.gz
+        md5: e0bdd203a443e1f2d96a1b7fb2f2a674
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Congenital musculoskeletal deformities of spine
+    context_id: PheCode_754
+    build: b38
+    sample_size: 406921
+    n_cases: 110
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

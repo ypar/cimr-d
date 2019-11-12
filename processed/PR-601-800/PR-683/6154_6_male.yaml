@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6154_6; Medication for pain relief, constipation, heartburn: Laxatives (e.g. Dulcolax, Senokot); variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/bn47uinysp3225g/6154_6.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 1832308f65a3d833940e4c05f35b31e3
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6154_6
+    build: b37
+    sample_size: 164870
+    n_cases: 2234.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

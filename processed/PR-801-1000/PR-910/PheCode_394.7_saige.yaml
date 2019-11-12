@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Disease of tricuspid valve; phenotype category: circulatory system; sample size: 397997; number of cases: 1058; number of controls: 402421; number of excluded controls: 5482; url for manhattan plots: https://www.dropbox.com/s/p5fenni6baeeahg/394.7-Diseaseoftricuspidvalve-1058cases-402421controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_394.7_SAIGE_MACge20.txt.vcf.gz
+        md5: 379701c20fce8e61769bcfc08b9b0c4f
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Disease of tricuspid valve
+    context_id: PheCode_394.7
+    build: b38
+    sample_size: 397997
+    n_cases: 1058
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

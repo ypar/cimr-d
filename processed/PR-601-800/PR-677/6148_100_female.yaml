@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6148_100; Eye problems/disorders: None of the above; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/s03eg7io71bsc3e/6148_100.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 3003377f8797d02e5d4eea3f834f32bb
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6148_100
+    build: b37
+    sample_size: 63329
+    n_cases: 49742.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

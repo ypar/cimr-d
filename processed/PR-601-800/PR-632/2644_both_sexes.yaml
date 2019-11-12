@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 2644; Light smokers, at least 100 smokes in lifetime; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/ovypyt85biqyncj/2644.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 02d1db7db24490079e1aee3b39b48357
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 2644
+    build: b37
+    sample_size: 97021
+    n_cases: 44253.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

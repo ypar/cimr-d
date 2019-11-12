@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: I9_STR; Stroke, excluding SAH; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/cd2jl1iey0d1nkq/I9_STR.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: b57e7849d25929e8ccb4d773c9050c94
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: I9_STR
+    build: b37
+    sample_size: 194174
+    n_cases: 1316.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

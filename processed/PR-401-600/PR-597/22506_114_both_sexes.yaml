@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22506_114; Tobacco smoking: Never smoked; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/6ns3c7qnok99shu/22506_114.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: d311638fb1b900f9ea753de7bb6d1e94
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22506_114
+    build: b37
+    sample_size: 91353
+    n_cases: 54520.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

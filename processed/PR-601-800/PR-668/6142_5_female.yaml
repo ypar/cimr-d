@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6142_5; Current employment status: Unemployed; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/p3o177w1f3nmypo/6142_5.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 25d97034deacf94c2a21452a411844b4
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6142_5
+    build: b37
+    sample_size: 193538
+    n_cases: 1845.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

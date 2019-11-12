@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 3591; Ever had hysterectomy (womb removed); variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/bnycw8i2kzferrw/3591.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: db9147b95fa8d2310a700effea9cc646
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 3591
+    build: b37
+    sample_size: 171413
+    n_cases: 13973.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

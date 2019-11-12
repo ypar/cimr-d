@@ -1,0 +1,41 @@
+
+data_file:
+    description: >-
+        Shared genetic origin of asthma, hay fever and eczema elucidates allergic disease biology; 180,129 European ancestry cases, 180,709 European ancestry controls
+    location:
+        url: ftp://ftp.ebi.ac.uk:21/pub/databases/gwas/summary_statistics/FerreiraMA_29083406_GCST005038/harmonised/29083406-GCST005038-EFO_0003785.h.tsv.gz
+        md5: 36523951adfed664aa0f85bb08d74a26
+    columns:
+        variant_id: hm_variant_id
+        original_variant_id: variant_id
+        rsnum: hm_rsid
+        variant_chrom: hm_chrom
+        variant_pos: hm_pos
+        non_effect_allele: hm_other_allele
+        effect_allele: hm_effect_allele
+        effect_size: hm_beta
+        effect_allele: original_effect_allele
+        standard_error: standard_error
+        pvalue: p_value
+
+data_info:
+    citation: 10.1038/ng.3985
+    data_source: https://www.ebi.ac.uk/gwas/
+    data_type: gwas
+    context: allergy
+    context_id: EFO_0003785
+    build: b38
+    sample_size: 360838.0
+    n_cases: NA
+    can_be_public: true
+
+method:
+    name: NA
+    tool: NA
+    website: www.ncbi.nlm.nih.gov/pubmed/29083406
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com
+

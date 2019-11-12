@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20110_5; Illnesses of mother: Breast cancer; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/82qxdp0g2gokha0/20110_5.gwas.imputed_v3.female.v2.tsv.bgz?dl=0
+        md5: 8ac3ce7539ae84f1bf5d28967e5252b7
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20110_5
+    build: b37
+    sample_size: 181961
+    n_cases: 15446.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

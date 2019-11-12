@@ -1,0 +1,41 @@
+
+data_file:
+    description: >-
+        Fifteen Genetic Loci Associated With the Electrocardiographic P Wave; 33,955 European ancestry individuals, 6,778 African individuals
+    location:
+        url: ftp://ftp.ebi.ac.uk:21/pub/databases/gwas/summary_statistics/ChristophersenIE_28794112_GCST004824/harmonised/28794112-GCST004824-EFO_0008379.h.tsv.gz
+        md5: 935a767340f6ca21451b7a323bc54996
+    columns:
+        variant_id: hm_variant_id
+        original_variant_id: variant_id
+        rsnum: hm_rsid
+        variant_chrom: hm_chrom
+        variant_pos: hm_pos
+        non_effect_allele: hm_other_allele
+        effect_allele: hm_effect_allele
+        effect_size: hm_beta
+        effect_allele: original_effect_allele
+        standard_error: standard_error
+        pvalue: p_value
+
+data_info:
+    citation: 10.1161/CIRCGENETICS.116.001667
+    data_source: https://www.ebi.ac.uk/gwas/
+    data_type: gwas
+    context: P wave terminal force measurement
+    context_id: EFO_0008379
+    build: b38
+    sample_size: 40733.0
+    n_cases: NA
+    can_be_public: true
+
+method:
+    name: NA
+    tool: NA
+    website: www.ncbi.nlm.nih.gov/pubmed/28794112
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com
+

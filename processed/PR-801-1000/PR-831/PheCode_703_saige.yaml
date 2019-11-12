@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Diseases of nail, NOS; phenotype category: dermatologic; sample size: 398327; number of cases: 1287; number of controls: 402357; number of excluded controls: 5317; url for manhattan plots: https://www.dropbox.com/s/cp40y79f16eccs9/703-Diseasesofnail-NOS-1287cases-402357controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_703_SAIGE_MACge20.txt.vcf.gz
+        md5: e52a5e39747be5bdd6dd90c01596b122
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Diseases of nail, NOS
+    context_id: PheCode_703
+    build: b38
+    sample_size: 398327
+    n_cases: 1287
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

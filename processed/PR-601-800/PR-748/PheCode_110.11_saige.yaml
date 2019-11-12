@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Dermatophytosis of nail; phenotype category: infectious diseases; sample size: 403793; number of cases: 76; number of controls: 406301; number of excluded controls: 2584; url for manhattan plots: https://www.dropbox.com/s/5uiboec3ge7yotm/110.11-Dermatophytosisofnail-76cases-406301controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_110.11_SAIGE_MACge20.txt.vcf.gz
+        md5: f3fecfe97398ae3956c7fc064d37e3c9
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Dermatophytosis of nail
+    context_id: PheCode_110.11
+    build: b38
+    sample_size: 403793
+    n_cases: 76
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

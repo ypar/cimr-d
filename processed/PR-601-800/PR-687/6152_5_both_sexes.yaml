@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6152_5; Blood clot, DVT, bronchitis, emphysema, asthma, rhinitis, eczema, allergy diagnosed by doctor: Blood clot in the leg (DVT); variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/ohya7qbs9z69l1m/6152_5.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: fec6f3e99664240380b3c500d3d432cf
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6152_5
+    build: b37
+    sample_size: 360527
+    n_cases: 7386.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

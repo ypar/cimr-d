@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Noninflammatory disorders of ovary, fallopian tube, and broad ligament; phenotype category: genitourinary; sample size: 391757; number of cases: 730; number of controls: 399629; number of excluded controls: 8602; url for manhattan plots: https://www.dropbox.com/s/ozqkdzccbr8nm1t/619.1-Noninflammatorydisordersofovary-fallopiantube-andbroadligament-730cases-399629controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_619.1_SAIGE_MACge20.txt.vcf.gz
+        md5: d463106b3983ec3a1e1ce5f58773ecc7
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Noninflammatory disorders of ovary, fallopian tube, and broad ligament
+    context_id: PheCode_619.1
+    build: b38
+    sample_size: 391757
+    n_cases: 730
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

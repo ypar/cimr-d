@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20544_11; Mental health problems ever diagnosed by a professional: Depression; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/aucan0b5hagewuh/20544_11.gwas.imputed_v3.female.v2.tsv.bgz?dl=0
+        md5: 734f19a4b1292b2d0763980b3f6e6bc5
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20544_11
+    build: b37
+    sample_size: 65941
+    n_cases: 16921.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: G6_NERPLEX; Nerve, nerve root and plexus disorders; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/b2o53b95rp84lj1/G6_NERPLEX.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 58b4159c4b56e4dec82a514d8f1d9f3f
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: G6_NERPLEX
+    build: b37
+    sample_size: 361194
+    n_cases: 10898.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

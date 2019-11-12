@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Disorders of sweat glands; phenotype category: dermatologic; sample size: 391183; number of cases: 817; number of controls: 399255; number of excluded controls: 8889; url for manhattan plots: https://www.dropbox.com/s/i0abfnbotg22sz9/705-Disordersofsweatglands-817cases-399255controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_705_SAIGE_MACge20.txt.vcf.gz
+        md5: 09adea553b3bc21ec307d7d61c5faeec
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Disorders of sweat glands
+    context_id: PheCode_705
+    build: b38
+    sample_size: 391183
+    n_cases: 817
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

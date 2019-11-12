@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 2395_4; Hair/balding pattern: Pattern 4; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/kzg4hhttihva95d/2395_4.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 5bac634e3fe1a2071c81f5fd4d979f66
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 2395_4
+    build: b37
+    sample_size: 165649
+    n_cases: 30225.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: M13_POLYARTHROPATHIES; #Polyarthropathies; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/0mvfuehbq9824fo/M13_POLYARTHROPATHIES.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 12a4e800e8a06bd1d0669161cadb9845
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: M13_POLYARTHROPATHIES
+    build: b37
+    sample_size: 361194
+    n_cases: 3275.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

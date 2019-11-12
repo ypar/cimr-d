@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Obsessive-compulsive disorders; phenotype category: mental disorders; sample size: 322273; number of cases: 141; number of controls: 365476; number of excluded controls: 43344; url for manhattan plots: https://www.dropbox.com/s/k6gb4li9d9w6z2r/300.3-Obsessive-compulsivedisorders-141cases-365476controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_300.3_SAIGE_MACge20.txt.vcf.gz
+        md5: 7f2f71405df55422d91019af686625ca
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Obsessive-compulsive disorders
+    context_id: PheCode_300.3
+    build: b38
+    sample_size: 322273
+    n_cases: 141
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

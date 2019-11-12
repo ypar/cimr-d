@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22601_23193405; Job coding: other teaching professional including private tutor, tefl (teaching english as a foreign language) teacher; tutor at adult education centre, etc.; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/4o1ftl1x0bwux8g/22601_23193405.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: e8ba8923c806a1bbd7576668d30db0d8
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22601_23193405
+    build: b37
+    sample_size: 89866
+    n_cases: 1389.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

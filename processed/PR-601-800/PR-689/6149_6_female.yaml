@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6149_6; Mouth/teeth dental problems: Dentures; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/3zvgjqff35wk1oi/6149_6.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 125910f0a08f3de4dc63711d2c04cbfb
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6149_6
+    build: b37
+    sample_size: 193456
+    n_cases: 31146.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Genital prolapse; phenotype category: genitourinary; sample size: 408431; number of cases: 11966; number of controls: 396730; number of excluded controls: 265; url for manhattan plots: https://www.dropbox.com/s/3g81pmu4kzcoqkh/618-Genitalprolapse-11966cases-396730controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_618_SAIGE_MACge20.txt.vcf.gz
+        md5: 1996cfa7ceb64c4a0efdaa62643f5c6d
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Genital prolapse
+    context_id: PheCode_618
+    build: b38
+    sample_size: 408431
+    n_cases: 11966
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

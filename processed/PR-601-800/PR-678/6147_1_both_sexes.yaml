@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6147_1; Reason for glasses/contact lenses: For short-sightedness, i.e. only or mainly for distance viewing such as driving, cinema etc (called 'myopia'); variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/gmh9g65q5iw93ee/6147_1.gwas.imputed_v3.both_sexes.v2.tsv.bgz?dl=0
+        md5: a683e5fa28ad9720564312de4d9719e2
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6147_1
+    build: b37
+    sample_size: 360677
+    n_cases: 29318.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

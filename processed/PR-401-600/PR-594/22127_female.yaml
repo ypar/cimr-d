@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22127; Doctor diagnosed asthma; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/cy31u5elzag01nf/22127.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 222ec761f206a5287252d4aaf5422c5c
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22127
+    build: b37
+    sample_size: 50553
+    n_cases: 6715.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

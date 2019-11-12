@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 41248_2000; Destinations on discharge from hospital (recoded): Temporary place of residence; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/hjlel5tgbmxlbn0/41248_2000.gwas.imputed_v3.both_sexes.v2.tsv.bgz?dl=0
+        md5: 40991af3d74f5e4467b6969ddcbb4a6a
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 41248_2000
+    build: b37
+    sample_size: 359468
+    n_cases: 1137.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

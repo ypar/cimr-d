@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Substance addiction and disorders; phenotype category: mental disorders; sample size: 350533; number of cases: 392; number of controls: 379355; number of excluded controls: 29214; url for manhattan plots: https://www.dropbox.com/s/n28ty8f5bbmqjp1/316-Substanceaddictionanddisorders-392cases-379355controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_316_SAIGE_MACge20.txt.vcf.gz
+        md5: b2906e87a4c6b0ed4d279879476d41d9
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Substance addiction and disorders
+    context_id: PheCode_316
+    build: b38
+    sample_size: 350533
+    n_cases: 392
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

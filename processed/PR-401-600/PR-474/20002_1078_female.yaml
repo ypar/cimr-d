@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20002_1078; Non-cancer illness code, self-reported: heart valve problem/heart murmur; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/stsb13p1y5oyh7g/20002_1078.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 2dec73b7af8b2fbd1cf8bfae193b719d
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20002_1078
+    build: b37
+    sample_size: 194153
+    n_cases: 1498.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

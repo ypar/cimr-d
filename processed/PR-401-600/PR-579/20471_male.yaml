@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20471; Ever seen an un-real vision; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/s4dhxlc7azz15g7/20471.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: c64667de51c2e6ec4e55ca70a12d803f
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20471
+    build: b37
+    sample_size: 51392
+    n_cases: 1397.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 24014; Close to major road; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/i58487nyzqkys28/24014.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 9333ab1deef4e68080749941d1735680
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 24014
+    build: b37
+    sample_size: 191505
+    n_cases: 12994.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

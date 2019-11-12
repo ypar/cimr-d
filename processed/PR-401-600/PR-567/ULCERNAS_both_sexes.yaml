@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: ULCERNAS; Ulcerative colitis, NAS; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/c8oep3j7kd0douc/ULCERNAS.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: a73e0bfea6b873266622e93872682071
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: ULCERNAS
+    build: b37
+    sample_size: 361194
+    n_cases: 1903.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

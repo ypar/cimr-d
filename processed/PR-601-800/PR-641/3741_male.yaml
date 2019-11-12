@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 3741; Stomach/abdominal pain for 3+ months; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/t8priairy2x9ago/3741.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: b8949731cdbae71eef297f246531c3e7
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 3741
+    build: b37
+    sample_size: 11765
+    n_cases: 6304.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

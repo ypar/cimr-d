@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: C3_MALE_GENITAL; malignant neoplasm of male genital organs; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/kl9u0glmgkiypk6/C3_MALE_GENITAL.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 0668204b06c15969e88d91601d0883f5
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: C3_MALE_GENITAL
+    build: b37
+    sample_size: 167020
+    n_cases: 6795.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

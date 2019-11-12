@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20549_3; Substances taken for anxiety: Medication prescribed to you (for at least two weeks); variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/blrf2qppo1p4x7g/20549_3.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 5e9bd36d1f7490bc9e471289747f0253
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20549_3
+    build: b37
+    sample_size: 44206
+    n_cases: 4481.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

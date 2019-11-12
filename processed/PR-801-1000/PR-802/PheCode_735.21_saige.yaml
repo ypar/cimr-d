@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Hammer toe (acquired); phenotype category: musculoskeletal; sample size: 384745; number of cases: 1939; number of controls: 394914; number of excluded controls: 12108; url for manhattan plots: https://www.dropbox.com/s/9gdhpvlr0rzu5mf/735.21-Hammertoe-acquired--1939cases-394914controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_735.21_SAIGE_MACge20.txt.vcf.gz
+        md5: 3c1244729478d35a121e4fe7c4f3fb3e
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Hammer toe (acquired)
+    context_id: PheCode_735.21
+    build: b38
+    sample_size: 384745
+    n_cases: 1939
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

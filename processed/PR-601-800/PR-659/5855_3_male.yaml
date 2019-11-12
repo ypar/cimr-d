@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 5855_3; Which eye(s) affected by astigmatism: Both eyes; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/5qbnzo73asu45c0/5855_3.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 24bf8a2f5f4b3daabadf29ca6f0ab127
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 5855_3
+    build: b37
+    sample_size: 3873
+    n_cases: 2722.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22601_35393271; Job coding: management information officer, conference/events co-ordinator/organiser, exhibition officer, work study engineer/officer/analyst, contract adviser/agent, election agent, business system analyst; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/019u36dycc7jvqx/22601_35393271.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 4358361ca411062c7db305b75d29049d
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22601_35393271
+    build: b37
+    sample_size: 89866
+    n_cases: 1857.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

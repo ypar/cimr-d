@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Intracranial hemorrhage (injury); phenotype category: injuries & poisonings; sample size: 403163; number of cases: 508; number of controls: 405554; number of excluded controls: 2899; url for manhattan plots: https://www.dropbox.com/s/vzy1h49m12m6zea/818-Intracranialhemorrhage-injury--508cases-405554controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_818_SAIGE_MACge20.txt.vcf.gz
+        md5: d6f8628cb17cd2fe32ce302e21e1cab1
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Intracranial hemorrhage (injury)
+    context_id: PheCode_818
+    build: b38
+    sample_size: 403163
+    n_cases: 508
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

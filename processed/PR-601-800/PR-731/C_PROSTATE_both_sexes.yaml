@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: C_PROSTATE; Malignant neoplasm of prostate; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/q3kfrshxb376gwi/C_PROSTATE.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 2b16e609aac6afdd3b73c7f40d5c590f
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: C_PROSTATE
+    build: b37
+    sample_size: 361194
+    n_cases: 6321.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

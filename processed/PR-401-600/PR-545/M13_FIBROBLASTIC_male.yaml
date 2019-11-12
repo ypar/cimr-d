@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: M13_FIBROBLASTIC; Fibroblastic disorders; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/w3815f4ztxalysg/M13_FIBROBLASTIC.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: e90875f23345e713296fc89cf4f6f914
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: M13_FIBROBLASTIC
+    build: b37
+    sample_size: 167020
+    n_cases: 2385.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

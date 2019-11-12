@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: S52; Diagnoses - main ICD10: S52 Fracture of forearm; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/azziugb24nbkbww/S52.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: ae279d64e568e44cd08e105f284a9cdb
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: S52
+    build: b37
+    sample_size: 194174
+    n_cases: 3796.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

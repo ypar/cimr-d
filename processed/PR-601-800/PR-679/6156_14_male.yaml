@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6156_14; Manic/hyper symptoms: I was more creative or had more ideas than usual; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/tsnjh0kyh2lu8su/6156_14.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: c2606d29c81dff0d66e45f3dcdbf35f8
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6156_14
+    build: b37
+    sample_size: 10981
+    n_cases: 1612.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

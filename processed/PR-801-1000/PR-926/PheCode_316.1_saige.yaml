@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Polyneuropathy due to drugs; phenotype category: mental disorders; sample size: 349869; number of cases: 60; number of controls: 379355; number of excluded controls: 29546; url for manhattan plots: https://www.dropbox.com/s/kbpabwgoj3d8cn6/316.1-Polyneuropathyduetodrugs-60cases-379355controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_316.1_SAIGE_MACge20.txt.vcf.gz
+        md5: b0431c38471981d5aebb41d9f3ba04b1
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Polyneuropathy due to drugs
+    context_id: PheCode_316.1
+    build: b38
+    sample_size: 349869
+    n_cases: 60
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

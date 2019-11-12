@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: M13_SHOULDER; Shoulder lesions; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/j4w8bsvijdhcmjt/M13_SHOULDER.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: ed7e545825724bee59f918bf4781ebe7
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: M13_SHOULDER
+    build: b37
+    sample_size: 167020
+    n_cases: 3359.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

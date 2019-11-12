@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20110_11; Illnesses of mother: Parkinson's disease; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/zapaycolr4n4ols/20110_11.gwas.imputed_v3.male.v2.tsv.bgz?dl=0
+        md5: 7815579a71c90fe8f2a8cbf8c6e8e2ea
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20110_11
+    build: b37
+    sample_size: 148412
+    n_cases: 2346.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

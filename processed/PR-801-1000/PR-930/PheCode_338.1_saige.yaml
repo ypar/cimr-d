@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Acute pain; phenotype category: neurological; sample size: 408209; number of cases: 395; number of controls: 408190; number of excluded controls: 376; url for manhattan plots: https://www.dropbox.com/s/ivcfbsscmr31olm/338.1-Acutepain-395cases-408190controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_338.1_SAIGE_MACge20.txt.vcf.gz
+        md5: c1d15027a7a56e70eb2de44c031eb333
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Acute pain
+    context_id: PheCode_338.1
+    build: b38
+    sample_size: 408209
+    n_cases: 395
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

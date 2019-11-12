@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20003_1141192410; Treatment/medication code: rosuvastatin; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/dbzv6ipu3py2718/20003_1141192410.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 5b6c8a580ac015cb8b1e5c9478c29385
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20003_1141192410
+    build: b37
+    sample_size: 166988
+    n_cases: 1340.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

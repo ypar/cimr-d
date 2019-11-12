@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Disorders resulting from impaired renal function; phenotype category: genitourinary; sample size: 386439; number of cases: 98; number of controls: 397602; number of excluded controls: 11261; url for manhattan plots: https://www.dropbox.com/s/tgold3oze4fp64s/588-Disordersresultingfromimpairedrenalfunction-98cases-397602controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_588_SAIGE_MACge20.txt.vcf.gz
+        md5: ad1ef28be33c99002ab3b386219419ce
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Disorders resulting from impaired renal function
+    context_id: PheCode_588
+    build: b38
+    sample_size: 386439
+    n_cases: 98
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

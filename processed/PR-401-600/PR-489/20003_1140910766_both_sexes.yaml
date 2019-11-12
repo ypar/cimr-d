@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20003_1140910766; Treatment/medication code: nicorandil; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/zvq8a9ti3rtus0i/20003_1140910766.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 28d2bc4d8e1d045227b3f3df72a295c1
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20003_1140910766
+    build: b37
+    sample_size: 361141
+    n_cases: 1152.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

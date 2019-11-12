@@ -1,0 +1,40 @@
+data_file:
+    description: >-
+        Meta-analysis of genome-wide association studies for
+        body fat distribution in 694,649 individuals of European
+        ancestry. The study combined GIANT consortium data with
+        UK Biobank data.
+    location:
+        url: https://zenodo.org/record/1251813/files/whr.giant-ukbb.meta-analysis.combined.23May2018.txt.gz?download=1
+        md5: efd3615fcd7f8a30371168ea27c2d7b1
+    columns:
+        rsnum: SNP
+        variant_chrom: CHR
+        variant_pos: POS
+        effect_allele: Tested_Allele
+        non_effect_allele: Other_Allele
+        frequency: Freq_Tested_Allele
+        effect_size: BETA
+        standard_error: SE
+        pvalue: P
+        sample_size: N
+
+data_info:
+    citation: 10.1093/hmg/ddy327
+    data_source: https://portals.broadinstitute.org/collaboration/giant/index.php/GIANT_consortium_data_files
+    data_type: gwas
+    context: waist to height ratio
+    build: b37
+    sample_size: 694649
+    n_cases: na
+    can_be_public: true
+
+method:
+    name: meta-analysis
+    tool: METAL
+    website: https://genome.sph.umich.edu/wiki/METAL_Documentation
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com

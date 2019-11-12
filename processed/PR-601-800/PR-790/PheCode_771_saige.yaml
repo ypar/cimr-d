@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Musculoskeletal symptoms referable to limbs; phenotype category: symptoms; sample size: 408961; number of cases: 5493; number of controls: 403468; number of excluded controls: 0; url for manhattan plots: https://www.dropbox.com/s/ulll4nc96e2l2am/771-Musculoskeletalsymptomsreferabletolimbs-5493cases-403468controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_771_SAIGE_MACge20.txt.vcf.gz
+        md5: 6b10b1f6091cd0ae8034a2a0d65df67a
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Musculoskeletal symptoms referable to limbs
+    context_id: PheCode_771
+    build: b38
+    sample_size: 408961
+    n_cases: 5493
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

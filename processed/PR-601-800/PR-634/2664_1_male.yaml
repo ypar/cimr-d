@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 2664_1; Reason for reducing amount of alcohol drunk: Illness or ill health; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/4a08vf8ccgwy6j2/2664_1.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: ce92b39c58deb710831fe70d5dc8e624
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 2664_1
+    build: b37
+    sample_size: 70435
+    n_cases: 4930.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

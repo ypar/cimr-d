@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: D25; Diagnoses - main ICD10: D25 Leiomyoma of uterus; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/av5uu5kv3eu1fae/D25.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: f21035b64cc567eaff5a6af886d32f14
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: D25
+    build: b37
+    sample_size: 361194
+    n_cases: 5507.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

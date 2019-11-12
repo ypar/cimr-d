@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: I9_DISVEINLYMPH; Diseases of veins, lymphatic vessels and lymph nodes, not elsewhere classified; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/h2s4spy7pe4roa1/I9_DISVEINLYMPH.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: ffcf28d4bad61c3980a39f685758f602
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: I9_DISVEINLYMPH
+    build: b37
+    sample_size: 167020
+    n_cases: 4615.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

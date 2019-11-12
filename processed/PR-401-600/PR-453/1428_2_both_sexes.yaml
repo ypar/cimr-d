@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 1428_2; Spread type: Flora Pro-Active/Benecol; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/yji07ovyboqm1lr/1428_2.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: f11332fab7a0c2f90434199668aa73f1
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 1428_2
+    build: b37
+    sample_size: 360291
+    n_cases: 1929.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

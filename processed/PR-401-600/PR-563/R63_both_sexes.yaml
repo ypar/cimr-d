@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: R63; Diagnoses - main ICD10: R63 Symptoms and signs concerning food and fluid intake; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/4k9ou9ihnndzqiq/R63.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 4607e39c11dcdd350f38e7060198219a
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: R63
+    build: b37
+    sample_size: 361194
+    n_cases: 1279.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

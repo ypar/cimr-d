@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: K43; Diagnoses - main ICD10: K43 Ventral hernia; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/pdlr0m4mwk76hz4/K43.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 2e62a3e1c6e5b51b76abfcaf58157d3f
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: K43
+    build: b37
+    sample_size: 194174
+    n_cases: 1133.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

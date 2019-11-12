@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Aphasia/speech disturbance; phenotype category: mental disorders; sample size: 398833; number of cases: 1514; number of controls: 402383; number of excluded controls: 5064; url for manhattan plots: https://www.dropbox.com/s/i20z2m70dan02m6/292.1-Aphasiaspeechdisturbance-1514cases-402383controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_292.1_SAIGE_MACge20.txt.vcf.gz
+        md5: c658cba6f3604f2321245216a94d1a51
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Aphasia/speech disturbance
+    context_id: PheCode_292.1
+    build: b38
+    sample_size: 398833
+    n_cases: 1514
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Toxic effect of other substances, chiefly nonmedicinal as to source; phenotype category: injuries & poisonings; sample size: 407889; number of cases: 58; number of controls: 408367; number of excluded controls: 536; url for manhattan plots: https://www.dropbox.com/s/lbzte0cijpvuqos/989-.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_989_SAIGE_MACge20.txt.vcf.gz
+        md5: 6587f10e345f62f50c1cade2b90a5451
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Toxic effect of other substances, chiefly nonmedicinal as to source
+    context_id: PheCode_989
+    build: b38
+    sample_size: 407889
+    n_cases: 58
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

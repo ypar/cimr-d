@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20001_1003; Cancer code, self-reported: skin cancer; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/av1gwjpwcq8plfo/20001_1003.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: c6c0b197891b72b9382a54698f79f3c0
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20001_1003
+    build: b37
+    sample_size: 361141
+    n_cases: 1125.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Arthropathy associated with infections; phenotype category: musculoskeletal; sample size: 323531; number of cases: 427; number of controls: 365819; number of excluded controls: 42715; url for manhattan plots: https://www.dropbox.com/s/0opwatri9djvbm1/711-Arthropathyassociatedwithinfections-427cases-365819controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_711_SAIGE_MACge20.txt.vcf.gz
+        md5: 98bf84db3b3d98dbd2da471cda0c78be
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Arthropathy associated with infections
+    context_id: PheCode_711
+    build: b38
+    sample_size: 323531
+    n_cases: 427
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: H7_RETINALDISOTH; Other retinal disorders; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/2ip9te5nck3by0t/H7_RETINALDISOTH.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 8324301b1a2542694d41012c282f73dd
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: H7_RETINALDISOTH
+    build: b37
+    sample_size: 361194
+    n_cases: 1692.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

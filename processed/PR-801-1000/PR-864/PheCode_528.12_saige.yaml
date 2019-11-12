@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Oral aphthae; phenotype category: digestive; sample size: 397855; number of cases: 85; number of controls: 403323; number of excluded controls: 5553; url for manhattan plots: https://www.dropbox.com/s/fm4bykhvu437o9n/528.12-Oralaphthae-85cases-403323controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_528.12_SAIGE_MACge20.txt.vcf.gz
+        md5: f22f3b1eb208072aa51af2c611e7cfdb
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Oral aphthae
+    context_id: PheCode_528.12
+    build: b38
+    sample_size: 397855
+    n_cases: 85
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

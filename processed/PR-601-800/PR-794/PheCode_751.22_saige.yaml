@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Other specified congenital anomalies of kidney; phenotype category: congenital anomalies; sample size: 405177; number of cases: 339; number of controls: 406730; number of excluded controls: 1892; url for manhattan plots: https://www.dropbox.com/s/4op4jsq39mbv2b6/751.22-Otherspecifiedcongenitalanomaliesofkidney-339cases-406730controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_751.22_SAIGE_MACge20.txt.vcf.gz
+        md5: 3d6379665918d3f4773afdc220c269f5
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Other specified congenital anomalies of kidney
+    context_id: PheCode_751.22
+    build: b38
+    sample_size: 405177
+    n_cases: 339
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Lower gastrointestinal congenital anomalies; phenotype category: congenital anomalies; sample size: 405227; number of cases: 364; number of controls: 406730; number of excluded controls: 1867; url for manhattan plots: https://www.dropbox.com/s/uw8xj45vraubpmi/750.2-Lowergastrointestinalcongenitalanomalies-364cases-406730controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_750.2_SAIGE_MACge20.txt.vcf.gz
+        md5: 4535bde9981e587eb8a6f3ac2be5a419
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Lower gastrointestinal congenital anomalies
+    context_id: PheCode_750.2
+    build: b38
+    sample_size: 405227
+    n_cases: 364
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

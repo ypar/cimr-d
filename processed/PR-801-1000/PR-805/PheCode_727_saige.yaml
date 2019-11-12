@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Other disorders of synovium, tendon, and bursa; phenotype category: musculoskeletal; sample size: 363719; number of cases: 7629; number of controls: 378711; number of excluded controls: 22621; url for manhattan plots: https://www.dropbox.com/s/3aa7oervb1rx4d0/727-Otherdisordersofsynovium-tendon-andbursa-7629cases-378711controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_727_SAIGE_MACge20.txt.vcf.gz
+        md5: c28ad05c77efc39c0bde543772987982
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Other disorders of synovium, tendon, and bursa
+    context_id: PheCode_727
+    build: b38
+    sample_size: 363719
+    n_cases: 7629
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

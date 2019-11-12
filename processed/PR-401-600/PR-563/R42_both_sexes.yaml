@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: R42; Diagnoses - main ICD10: R42 Dizziness and giddiness; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/2n611yggdjp3bsn/R42.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 72f7e26af0f2999df82fe6cf04222d9d
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: R42
+    build: b37
+    sample_size: 361194
+    n_cases: 1680.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

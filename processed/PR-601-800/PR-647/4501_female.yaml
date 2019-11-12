@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 4501; Non-accidental death in close genetic family; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/bn6jtm7a9us6hrt/4501.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 72af51e7a36a2c8d81397f562e14165c
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 4501
+    build: b37
+    sample_size: 61234
+    n_cases: 15579.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

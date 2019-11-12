@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 3571; Back pain for 3+ months; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/itvul51rdv2s2zw/3571.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 2a8bfe66f3d05f58d8f4af0df39c1842
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 3571
+    build: b37
+    sample_size: 46984
+    n_cases: 33783.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

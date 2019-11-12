@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Osteoporosis NOS; phenotype category: musculoskeletal; sample size: 404841; number of cases: 5622; number of controls: 401279; number of excluded controls: 2060; url for manhattan plots: https://www.dropbox.com/s/66pq76e037692wd/743.11-OsteoporosisNOS-5622cases-401279controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_743.11_SAIGE_MACge20.txt.vcf.gz
+        md5: 0430152346c573ec4afef94cc292c5f8
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Osteoporosis NOS
+    context_id: PheCode_743.11
+    build: b38
+    sample_size: 404841
+    n_cases: 5622
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

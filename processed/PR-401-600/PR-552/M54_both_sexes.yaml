@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: M54; Diagnoses - main ICD10: M54 Dorsalgia; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/pyu86mw8engney3/M54.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 0be6db218fe49b2759f41258e67f214c
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: M54
+    build: b37
+    sample_size: 361194
+    n_cases: 8361.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

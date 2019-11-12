@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Benign neoplasm of other female genital organs; phenotype category: neoplasms; sample size: 351511; number of cases: 220; number of controls: 380016; number of excluded controls: 28725; url for manhattan plots: https://www.dropbox.com/s/38nivjjinoc62ui/221-Benignneoplasmofotherfemalegenitalorgans-220cases-380016controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_221_SAIGE_MACge20.txt.vcf.gz
+        md5: 17d3be3f7f183745734bb552b493694c
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Benign neoplasm of other female genital organs
+    context_id: PheCode_221
+    build: b38
+    sample_size: 351511
+    n_cases: 220
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

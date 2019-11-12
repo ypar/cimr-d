@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Other diseases of respiratory system, NEC; phenotype category: respiratory; sample size: 407777; number of cases: 8844; number of controls: 399525; number of excluded controls: 592; url for manhattan plots: https://www.dropbox.com/s/9kdpnmf7451ubbq/519.8-Otherdiseasesofrespiratorysystem-NEC-8844cases-399525controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_519.8_SAIGE_MACge20.txt.vcf.gz
+        md5: 1194f10e1545b2413e4a676cdf4df9ec
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Other diseases of respiratory system, NEC
+    context_id: PheCode_519.8
+    build: b38
+    sample_size: 407777
+    n_cases: 8844
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Other diseases of blood and blood-forming organs; phenotype category: hematopoietic; sample size: 402143; number of cases: 4177; number of controls: 401375; number of excluded controls: 3409; url for manhattan plots: https://www.dropbox.com/s/hkb9hel5a3kf5ll/289-Otherdiseasesofbloodandblood-formingorgans-4177cases-401375controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_289_SAIGE_MACge20.txt.vcf.gz
+        md5: c469b58672f780a80481163d02469661
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Other diseases of blood and blood-forming organs
+    context_id: PheCode_289
+    build: b38
+    sample_size: 402143
+    n_cases: 4177
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

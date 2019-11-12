@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Septal Deviations/Turbinate Hypertrophy; phenotype category: respiratory; sample size: 381007; number of cases: 4939; number of controls: 390045; number of excluded controls: 13977; url for manhattan plots: https://www.dropbox.com/s/xlothvqc5ct7k3n/470-SeptalDeviationsTurbinateHypertrophy-4939cases-390045controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_470_SAIGE_MACge20.txt.vcf.gz
+        md5: f82bdf8d13f902c3560b4e8428ec130e
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Septal Deviations/Turbinate Hypertrophy
+    context_id: PheCode_470
+    build: b38
+    sample_size: 381007
+    n_cases: 4939
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

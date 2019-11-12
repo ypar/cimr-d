@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6154_100; Medication for pain relief, constipation, heartburn: None of the above; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/3b7d4n5fnxlb962/6154_100.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 45c2bea553a8c634f2c9380e764673d6
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6154_100
+    build: b37
+    sample_size: 192214
+    n_cases: 102357.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

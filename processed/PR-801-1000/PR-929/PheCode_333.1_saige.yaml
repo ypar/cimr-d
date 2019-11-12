@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Essential tremor; phenotype category: neurological; sample size: 381889; number of cases: 216; number of controls: 395209; number of excluded controls: 13536; url for manhattan plots: https://www.dropbox.com/s/gntrdjg3xzxamio/333.1-Essentialtremor-216cases-395209controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_333.1_SAIGE_MACge20.txt.vcf.gz
+        md5: 24109117a64ca305167d735264033ae4
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Essential tremor
+    context_id: PheCode_333.1
+    build: b38
+    sample_size: 381889
+    n_cases: 216
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

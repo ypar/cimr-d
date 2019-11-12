@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: J90; Diagnoses - main ICD10: J90 Pleural effusion, not elsewhere classified; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/bf68ex0jxso8uva/J90.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 7d600cb890640e61d3b101dfb4c6404b
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: J90
+    build: b37
+    sample_size: 361194
+    n_cases: 1033.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Acute vascular insufficiency of intestine; phenotype category: circulatory system; sample size: 392757; number of cases: 264; number of controls: 400595; number of excluded controls: 8102; url for manhattan plots: https://www.dropbox.com/s/gcai6t3wgy0zauj/441.1-Acutevascularinsufficiencyofintestine-264cases-400595controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_441.1_SAIGE_MACge20.txt.vcf.gz
+        md5: 32c76e0d40db94ea1957cd5d15541d40
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Acute vascular insufficiency of intestine
+    context_id: PheCode_441.1
+    build: b38
+    sample_size: 392757
+    n_cases: 264
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

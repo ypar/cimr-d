@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Ulcerative colitis; phenotype category: digestive; sample size: 266995; number of cases: 3195; number of controls: 334783; number of excluded controls: 70983; url for manhattan plots: https://www.dropbox.com/s/aghzuvmw6hju2yb/555.2-Ulcerativecolitis-3195cases-334783controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_555.2_SAIGE_MACge20.txt.vcf.gz
+        md5: 07f6a2e37ff9a20c001d59fb333aac64
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Ulcerative colitis
+    context_id: PheCode_555.2
+    build: b38
+    sample_size: 266995
+    n_cases: 3195
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

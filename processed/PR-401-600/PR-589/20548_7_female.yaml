@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20548_7; Manifestations of mania or irritability: I was easily distracted; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/2w9h0l1fm30hues/20548_7.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 4ac0b0b3923ed49dcf00e1b97ae891a3
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20548_7
+    build: b37
+    sample_size: 63899
+    n_cases: 5154.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

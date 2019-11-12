@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6148_4; Eye problems/disorders: Cataract; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/2c1fzm6mr156tl5/6148_4.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: d5e8a6c7e5270724d4eb594160374fba
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6148_4
+    build: b37
+    sample_size: 117890
+    n_cases: 11194.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

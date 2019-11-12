@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22601_23143401; Job coding: secondary school teacher or teaching professional (including head teacher); variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/oxp930cynfmrohs/22601_23143401.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: c721b3444990c15e22f139c91cab124c
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22601_23143401
+    build: b37
+    sample_size: 89866
+    n_cases: 7556.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

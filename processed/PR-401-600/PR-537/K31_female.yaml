@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: K31; Diagnoses - main ICD10: K31 Other diseases of stomach and duodenum; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/uccqpdqoar32s1p/K31.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 41173eaf79558ddd356ef20aab78e79a
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: K31
+    build: b37
+    sample_size: 194174
+    n_cases: 1439.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

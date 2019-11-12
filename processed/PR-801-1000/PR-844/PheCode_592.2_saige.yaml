@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Urethritis and urethral syndrome; phenotype category: genitourinary; sample size: 351245; number of cases: 167; number of controls: 379936; number of excluded controls: 28858; url for manhattan plots: https://www.dropbox.com/s/lf9qhzdgsfclu3g/592.2-Urethritisandurethralsyndrome-167cases-379936controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_592.2_SAIGE_MACge20.txt.vcf.gz
+        md5: 00b535819d620369f7a4a877a6495edb
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Urethritis and urethral syndrome
+    context_id: PheCode_592.2
+    build: b38
+    sample_size: 351245
+    n_cases: 167
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

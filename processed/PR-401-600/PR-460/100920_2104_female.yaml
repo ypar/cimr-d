@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 100920_2104; Type milk consumed: wholemilk; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/82db2cx49kxaz1d/100920_2104.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 7c1aa3179a741b5aa8cf9fc548bc37a6
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 100920_2104
+    build: b37
+    sample_size: 27958
+    n_cases: 1100.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

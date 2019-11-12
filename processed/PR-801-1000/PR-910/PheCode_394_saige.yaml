@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Rheumatic disease of the heart valves; phenotype category: circulatory system; sample size: 405671; number of cases: 4895; number of controls: 402421; number of excluded controls: 1645; url for manhattan plots: https://www.dropbox.com/s/gj7n0lnroug40cd/394-Rheumaticdiseaseoftheheartvalves-4895cases-402421controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_394_SAIGE_MACge20.txt.vcf.gz
+        md5: 11dc077fe60ba2455a7bbe49dbf21862
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Rheumatic disease of the heart valves
+    context_id: PheCode_394
+    build: b38
+    sample_size: 405671
+    n_cases: 4895
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Ulceration of intestine; phenotype category: digestive; sample size: 261953; number of cases: 674; number of controls: 334783; number of excluded controls: 73504; url for manhattan plots: https://www.dropbox.com/s/hx3crb7u7wtat24/556.1-Ulcerationofintestine-674cases-334783controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_556.1_SAIGE_MACge20.txt.vcf.gz
+        md5: 3c0358fdb2113ae177f96ce1df650247
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Ulceration of intestine
+    context_id: PheCode_556.1
+    build: b38
+    sample_size: 261953
+    n_cases: 674
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

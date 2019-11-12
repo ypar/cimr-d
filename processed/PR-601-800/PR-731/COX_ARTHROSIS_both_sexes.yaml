@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: COX_ARTHROSIS; Coxarthrosis [arthrosis of hip](FG); variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/0aat5ie7lmzcn4z/COX_ARTHROSIS.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: f68a02a70c978363fe1d1b9e51b01b32
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: COX_ARTHROSIS
+    build: b37
+    sample_size: 361194
+    n_cases: 9410.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

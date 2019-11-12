@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Atrophy of edentulous alveolar ridge; phenotype category: digestive; sample size: 387457; number of cases: 73; number of controls: 398136; number of excluded controls: 10752; url for manhattan plots: https://www.dropbox.com/s/g2bwtgh2ys5y8f8/525.2-Atrophyofedentulousalveolarridge-73cases-398136controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_525.2_SAIGE_MACge20.txt.vcf.gz
+        md5: e38c7d67d873ee669c8448266c1359d2
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Atrophy of edentulous alveolar ridge
+    context_id: PheCode_525.2
+    build: b38
+    sample_size: 387457
+    n_cases: 73
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

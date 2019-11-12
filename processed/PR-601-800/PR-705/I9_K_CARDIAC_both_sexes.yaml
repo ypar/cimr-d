@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: I9_K_CARDIAC; Death due to cardiac causes; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/68eunh0o9kyzsgt/I9_K_CARDIAC.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: f694310fa70fb976a862a1fc27cf1bb9
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: I9_K_CARDIAC
+    build: b37
+    sample_size: 361194
+    n_cases: 1597.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

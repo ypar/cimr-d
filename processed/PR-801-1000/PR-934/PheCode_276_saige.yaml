@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Disorders of fluid, electrolyte, and acid-base balance; phenotype category: endocrine/metabolic; sample size: 408961; number of cases: 7455; number of controls: 401506; number of excluded controls: 0; url for manhattan plots: https://www.dropbox.com/s/nw9b4kwmplqju46/276-Disordersoffluid-electrolyte-andacid-basebalance-7455cases-401506controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_276_SAIGE_MACge20.txt.vcf.gz
+        md5: a71dba749063e423a54a49ea6d863d11
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Disorders of fluid, electrolyte, and acid-base balance
+    context_id: PheCode_276
+    build: b38
+    sample_size: 408961
+    n_cases: 7455
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Poisoning by primarily systemic agents; phenotype category: injuries & poisonings; sample size: 355071; number of cases: 219; number of controls: 381797; number of excluded controls: 26945; url for manhattan plots: https://www.dropbox.com/s/6jg0xkh1xy69s4q/963-Poisoningbyprimarilysystemicagents-219cases-381797controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_963_SAIGE_MACge20.txt.vcf.gz
+        md5: 936da1ba68b85149db27610b49ad2b89
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Poisoning by primarily systemic agents
+    context_id: PheCode_963
+    build: b38
+    sample_size: 355071
+    n_cases: 219
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6164_1; Types of physical activity in last 4 weeks: Walking for pleasure (not as a means of transport); variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/1h5jtua3f8476r7/6164_1.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 18b1d74f0560c8b3b4889946c946782e
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6164_1
+    build: b37
+    sample_size: 193096
+    n_cases: 143421.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

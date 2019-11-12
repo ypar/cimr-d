@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 5699; FI10 : arithmetic sequence recognition; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/u6k0ngugw2axmg2/5699.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: a768a207aab6184f8599eb6abf21a519
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 5699
+    build: b37
+    sample_size: 10076
+    n_cases: 7492.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

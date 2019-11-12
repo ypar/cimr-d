@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: M13_RHEUMA; Rheumatoid arthritis; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/noet38sdvvzwokb/M13_RHEUMA.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 9c0c094e44d904d9576c6c2ed9ce892a
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: M13_RHEUMA
+    build: b37
+    sample_size: 194174
+    n_cases: 1154.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

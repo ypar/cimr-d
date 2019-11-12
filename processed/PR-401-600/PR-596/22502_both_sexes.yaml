@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22502; Cough on most days; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/ul9b6gux9v34238/22502.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 2d91b16255e321a87ee4306901836c49
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22502
+    build: b37
+    sample_size: 91787
+    n_cases: 12593.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

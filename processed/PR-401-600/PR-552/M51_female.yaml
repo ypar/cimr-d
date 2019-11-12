@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: M51; Diagnoses - main ICD10: M51 Other intervertebral disk disorders; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/34ahhd28kvvbx49/M51.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: f95942b3d942d85b6cdb94173080ae1a
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: M51
+    build: b37
+    sample_size: 194174
+    n_cases: 2609.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

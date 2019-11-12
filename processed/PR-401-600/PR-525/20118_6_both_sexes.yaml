@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20118_6; Home area population density - urban or rural: England/Wales - Town and Fringe - less sparse; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/ptw6tydqsla80w8/20118_6.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 7de183fd1403f41ee7571d93adf8cd00
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20118_6
+    build: b37
+    sample_size: 357712
+    n_cases: 25328.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

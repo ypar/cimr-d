@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Nephritis and nephropathy without mention of glomerulonephritis; phenotype category: genitourinary; sample size: 386747; number of cases: 252; number of controls: 397602; number of excluded controls: 11107; url for manhattan plots: https://www.dropbox.com/s/lh4pmfadgr77h16/580.3-Nephritisandnephropathywithoutmentionofglomerulonephritis-252cases-397602controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_580.3_SAIGE_MACge20.txt.vcf.gz
+        md5: 5203f74ea6e9f950fec516ce9463d6e0
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Nephritis and nephropathy without mention of glomerulonephritis
+    context_id: PheCode_580.3
+    build: b38
+    sample_size: 386747
+    n_cases: 252
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

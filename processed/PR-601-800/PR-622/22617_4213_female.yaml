@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22617_4213; Job SOC coding: School secretaries; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/eamud6w1cdkfx4i/22617_4213.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 9574c4c3abc7ade5c49bd155d39de1e1
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22617_4213
+    build: b37
+    sample_size: 50213
+    n_cases: 1206.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

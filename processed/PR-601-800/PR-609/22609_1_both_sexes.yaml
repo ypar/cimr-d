@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22609_1; Workplace very dusty: Sometimes; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/cofwsmts5t6w6it/22609_1.gwas.imputed_v3.both_sexes.v2.tsv.bgz?dl=0
+        md5: 7e2f40a5fa4121549069c5e4bd46f426
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22609_1
+    build: b37
+    sample_size: 89965
+    n_cases: 31586.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

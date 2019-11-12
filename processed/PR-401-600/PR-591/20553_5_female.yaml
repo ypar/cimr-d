@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20553_5; Methods of self-harm used: Self-injury such as self-cutting, scratching or hitting, etc.; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/rboq3jh746r4fix/20553_5.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 6b995eebcae387e1c95529e61d4ac5fa
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20553_5
+    build: b37
+    sample_size: 65877
+    n_cases: 1732.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

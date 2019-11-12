@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 3773; Knee pain for 3+ months; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/fhyhycw0b107fmj/3773.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 8a6e9e9a50cb021d885f9dff263f2749
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 3773
+    build: b37
+    sample_size: 39354
+    n_cases: 31558.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Cushing's syndrome; phenotype category: endocrine/metabolic; sample size: 402017; number of cases: 103; number of controls: 405386; number of excluded controls: 3472; url for manhattan plots: https://www.dropbox.com/s/fznq36qmztzfld7/255.11-Cushingssyndrome-103cases-405386controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_255.11_SAIGE_MACge20.txt.vcf.gz
+        md5: 138d9349cd5eb41ffd283bd962b1d3f1
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Cushing's syndrome
+    context_id: PheCode_255.11
+    build: b38
+    sample_size: 402017
+    n_cases: 103
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

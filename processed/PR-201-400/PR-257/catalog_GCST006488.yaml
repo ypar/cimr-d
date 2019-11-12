@@ -1,0 +1,41 @@
+
+data_file:
+    description: >-
+        Genome-wide association analysis of insomnia complaints identifies risk genes and genetic overlap with psychiatric and metabolic traits; 12,863 European ancestry male cases, 40,776 European ancestry male controls;1,983 Icelandic ancestry male cases, 1,791 Icelandic ancestry female cases, 2,064 Icelandic ancestry male controls, 1,727 Icelandic ancestry female controls
+    location:
+        url: ftp://ftp.ebi.ac.uk:21/pub/databases/gwas/summary_statistics/HammerschlagAR_28604731_GCST006488/harmonised/28604731-GCST006488-EFO_0004698.h.tsv.gz
+        md5: e1a32f5f94ad9f3442445823da10b095
+    columns:
+        variant_id: hm_variant_id
+        original_variant_id: variant_id
+        rsnum: hm_rsid
+        variant_chrom: hm_chrom
+        variant_pos: hm_pos
+        non_effect_allele: hm_other_allele
+        effect_allele: hm_effect_allele
+        effect_size: hm_beta
+        effect_allele: original_effect_allele
+        standard_error: standard_error
+        pvalue: p_value
+
+data_info:
+    citation: 10.1038/ng.3888
+    data_source: https://www.ebi.ac.uk/gwas/
+    data_type: gwas
+    context: insomnia
+    context_id: EFO_0004698
+    build: b38
+    sample_size: 61204.0
+    n_cases: NA
+    can_be_public: true
+
+method:
+    name: NA
+    tool: NA
+    website: www.ncbi.nlm.nih.gov/pubmed/28604731
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com
+

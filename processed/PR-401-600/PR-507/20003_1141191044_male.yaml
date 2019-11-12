@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20003_1141191044; Treatment/medication code: levothyroxine sodium; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/pau9wj3k1cjyhab/20003_1141191044.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: f354f93611116a04db051419666ce384
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20003_1141191044
+    build: b37
+    sample_size: 166988
+    n_cases: 2505.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

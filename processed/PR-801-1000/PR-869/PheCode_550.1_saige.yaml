@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Inguinal hernia; phenotype category: digestive; sample size: 346263; number of cases: 15995; number of controls: 361617; number of excluded controls: 31349; url for manhattan plots: https://www.dropbox.com/s/a5relqq60q0qug5/550.1-Inguinalhernia-15995cases-361617controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_550.1_SAIGE_MACge20.txt.vcf.gz
+        md5: 1e1b0f1f247e7aca6312e7efd35c168d
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Inguinal hernia
+    context_id: PheCode_550.1
+    build: b38
+    sample_size: 346263
+    n_cases: 15995
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

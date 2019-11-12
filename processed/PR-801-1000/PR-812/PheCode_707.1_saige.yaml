@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Decubitus ulcer; phenotype category: dermatologic; sample size: 406811; number of cases: 913; number of controls: 406973; number of excluded controls: 1075; url for manhattan plots: https://www.dropbox.com/s/yav73kifs3yzil4/707.1-Decubitusulcer-913cases-406973controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_707.1_SAIGE_MACge20.txt.vcf.gz
+        md5: 810bf72e2ab760d784c7c1757a5154ea
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Decubitus ulcer
+    context_id: PheCode_707.1
+    build: b38
+    sample_size: 406811
+    n_cases: 913
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

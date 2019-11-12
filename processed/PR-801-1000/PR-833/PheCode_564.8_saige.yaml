@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Abnormal findings on exam of gastrointestinal tract/ abdominal area; phenotype category: digestive; sample size: 263905; number of cases: 1650; number of controls: 334783; number of excluded controls: 72528; url for manhattan plots: https://www.dropbox.com/s/k0po049f46ccacx/564.8-Abnormalfindingsonexamofgastrointestinaltractabdominalarea-1650cases-334783controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_564.8_SAIGE_MACge20.txt.vcf.gz
+        md5: 73c96d0ff5be48dd44f8f773d9133026
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Abnormal findings on exam of gastrointestinal tract/ abdominal area
+    context_id: PheCode_564.8
+    build: b38
+    sample_size: 263905
+    n_cases: 1650
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

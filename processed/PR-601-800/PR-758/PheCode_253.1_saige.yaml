@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Pituitary hyperfunction; phenotype category: endocrine/metabolic; sample size: 402189; number of cases: 189; number of controls: 405386; number of excluded controls: 3386; url for manhattan plots: https://www.dropbox.com/s/z6e3snnz00vxcgm/253.1-Pituitaryhyperfunction-189cases-405386controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_253.1_SAIGE_MACge20.txt.vcf.gz
+        md5: 02aad5b87e7d688651a2aae999f5080b
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Pituitary hyperfunction
+    context_id: PheCode_253.1
+    build: b38
+    sample_size: 402189
+    n_cases: 189
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

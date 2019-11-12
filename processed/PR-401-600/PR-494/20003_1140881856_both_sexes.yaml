@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20003_1140881856; Treatment/medication code: salbutamol; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/rvamrzowu5b8ufh/20003_1140881856.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 5aa8c3b16cc16a100d39a03060c27ec8
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20003_1140881856
+    build: b37
+    sample_size: 361141
+    n_cases: 4305.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

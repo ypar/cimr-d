@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: L90; Diagnoses - main ICD10: L90 Atrophic disorders of skin; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/ecfjlv6suljm4c3/L90.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 634492ca254433713ad343d50d47b742
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: L90
+    build: b37
+    sample_size: 361194
+    n_cases: 1683.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

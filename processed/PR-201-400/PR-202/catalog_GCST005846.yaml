@@ -1,0 +1,41 @@
+
+data_file:
+    description: >-
+        Genetic study links components of the autonomous nervous system to heart-rate profile during exercise; 5,4137 European ancestry individuals, 1,744 Asian individuals, 1,445 African individuals, 468 admixed individuals, 1,024 individuals
+    location:
+        url: ftp://ftp.ebi.ac.uk:21/pub/databases/gwas/summary_statistics/VerweijN_29497042_GCST005846/harmonised/29497042-GCST005846-EFO_0009185.h.tsv.gz
+        md5: a963b0e78cdd8d0185af14428b8432dc
+    columns:
+        variant_id: hm_variant_id
+        original_variant_id: variant_id
+        rsnum: hm_rsid
+        variant_chrom: hm_chrom
+        variant_pos: hm_pos
+        non_effect_allele: hm_other_allele
+        effect_allele: hm_effect_allele
+        effect_size: hm_beta
+        effect_allele: original_effect_allele
+        standard_error: standard_error
+        pvalue: p_value
+
+data_info:
+    citation: 10.1038/s41467-018-03395-6
+    data_source: https://www.ebi.ac.uk/gwas/
+    data_type: gwas
+    context: heart rate response to recovery post exercise
+    context_id: EFO_0009185
+    build: b38
+    sample_size: 58818.0
+    n_cases: NA
+    can_be_public: true
+
+method:
+    name: NA
+    tool: NA
+    website: www.ncbi.nlm.nih.gov/pubmed/29497042
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Acromegaly and gigantism; phenotype category: endocrine/metabolic; sample size: 402001; number of cases: 95; number of controls: 405386; number of excluded controls: 3480; url for manhattan plots: https://www.dropbox.com/s/uyc2jm2zixzvlv3/253.11-Acromegalyandgigantism-95cases-405386controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_253.11_SAIGE_MACge20.txt.vcf.gz
+        md5: 3c62b4d059f8b3c57b285385a3bb3012
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Acromegaly and gigantism
+    context_id: PheCode_253.11
+    build: b38
+    sample_size: 402001
+    n_cases: 95
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

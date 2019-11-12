@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: GERD; phenotype category: digestive; sample size: 358035; number of cases: 14223; number of controls: 369275; number of excluded controls: 25463; url for manhattan plots: https://www.dropbox.com/s/ut88wdkulpiusu1/530.11-GERD-14223cases-369275controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_530.11_SAIGE_MACge20.txt.vcf.gz
+        md5: c8317b5bd60e3dd44278721aed5bb0a3
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: GERD
+    context_id: PheCode_530.11
+    build: b38
+    sample_size: 358035
+    n_cases: 14223
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

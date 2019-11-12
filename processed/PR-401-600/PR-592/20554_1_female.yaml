@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20554_1; Actions taken following self-harm: See anyone from psychiatric or mental health services, including liaison services; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/o5wcr3tkqahme4g/20554_1.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 0808aa9e499ca0bb27fcf7b3423d448f
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20554_1
+    build: b37
+    sample_size: 65877
+    n_cases: 1155.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

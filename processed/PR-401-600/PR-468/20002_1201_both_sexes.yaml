@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20002_1201; Non-cancer illness code, self-reported: bladder problem (not cancer); variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/6zp4kzjwk9qsm5g/20002_1201.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: ef9ffc4e971e5fbef39ab37c6c76d819
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20002_1201
+    build: b37
+    sample_size: 361141
+    n_cases: 2140.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

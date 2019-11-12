@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Intestinal infection due to protozoa; phenotype category: infectious diseases; sample size: 391089; number of cases: 55; number of controls: 399970; number of excluded controls: 8936; url for manhattan plots: https://www.dropbox.com/s/gm6wxym4tiamqpm/008.7-Intestinalinfectionduetoprotozoa-55cases-399970controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_008.7_SAIGE_MACge20.txt.vcf.gz
+        md5: 711f4e12495d8cb222fa77e05b816c97
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Intestinal infection due to protozoa
+    context_id: PheCode_008.7
+    build: b38
+    sample_size: 391089
+    n_cases: 55
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

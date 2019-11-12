@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 2724; Had menopause; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/u8mrzzitzauof3x/2724.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 4a71d61bc6a7f32874d47a764ca260ae
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 2724
+    build: b37
+    sample_size: 163184
+    n_cases: 119355.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

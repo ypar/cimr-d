@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20550_3; Activities undertaken to treat anxiety: Other therapeutic activities such as mindfulness, yoga or art classes; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/s65pe3gs0tycd89/20550_3.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 28991f02d876c26242b071a2fc4f24d2
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20550_3
+    build: b37
+    sample_size: 54784
+    n_cases: 4400.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

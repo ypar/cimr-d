@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Nonspecific abnormal findings on radiological and other examination of other intrathoracic organs (echocardiogram, etc); phenotype category: circulatory system; sample size: 408699; number of cases: 567; number of controls: 408263; number of excluded controls: 131; url for manhattan plots: https://www.dropbox.com/s/69t3aqtuho9y0i3/793.2-Nonspecificabnormalfindingsonradiologicalandotherexaminationofotherintrathoracicorgans-echocardiogram-etc--567cases-408263controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_793.2_SAIGE_MACge20.txt.vcf.gz
+        md5: 33978c24d0b3f4cea7a9334d6702580a
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Nonspecific abnormal findings on radiological and other examination of other intrathoracic organs (echocardiogram, etc)
+    context_id: PheCode_793.2
+    build: b38
+    sample_size: 408699
+    n_cases: 567
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20126_0; Bipolar and major depression status: No Bipolar or Depression; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/er6b4jrqp7gcpc3/20126_0.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 0eb4381c67016537edb674ed46b4ebba
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20126_0
+    build: b37
+    sample_size: 45708
+    n_cases: 30574.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,26 +1,59 @@
-version: 2
+version: 2.1
 jobs:
-  build:
+  crunch:
     docker:
       - image: circleci/python:3.6.8
-
     working_directory: ~/cimr-d
-
+    resource_class: xlarge
     steps:
       - checkout
-
+      - add_ssh_keys:
+          fingerprints:
+            - "2e:fb:e9:d5:94:c6:f4:75:2c:cb:66:71:a9:af:93:8a"
       - run:
-          name: install dependencies
+          name: Install cimr and its dependencies
           command: |
-            .travis/install_cimr.sh
-      
+            bash .circleci/install_cimr.sh
       - run:
-          name: process new pr
-          command: | 
-            python3 .travis/process_submitted_data.py
-            
-      - run:
-          name: push output
+          name: Handle user request
           command: |
-            .travis/push_processed_data.sh
+            bash .circleci/handle_request.sh
+          no_output_timeout: 2h
+      - persist_to_workspace:
+          root: ~/cimr-d
+          paths:
+            - .git
+            - .circleci
+            - submitted
+            - processed
+            - submitted_data
+            - processed_data
+            - catalog.txt
+            - PR_catalog.txt
 
+  deploy:
+    docker:
+      - image: circleci/python:3.6.8
+    working_directory: ~/cimr-d
+    steps:
+      - attach_workspace:
+          at: ~/cimr-d
+      - add_ssh_keys:
+          fingerprints:
+            - "60:6d:08:51:d2:1b:3d:5c:af:f8:e1:b5:41:d0:7e:20"
+      - run:
+          name: Save submitted and processed data
+          command: |
+            bash .circleci/deploy.sh
+
+workflows:
+  version: 2
+  build-deploy:
+    jobs:
+      - crunch
+      - deploy:
+          requires:
+            - crunch
+          filters:
+            branches:
+              only: master

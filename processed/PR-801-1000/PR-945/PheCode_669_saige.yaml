@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Complications of labor and delivery NEC; phenotype category: pregnancy complications; sample size: 398231; number of cases: 2559; number of controls: 401037; number of excluded controls: 5365; url for manhattan plots: https://www.dropbox.com/s/7rjx3jxiv98b12u/669-ComplicationsoflaboranddeliveryNEC-2559cases-401037controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_669_SAIGE_MACge20.txt.vcf.gz
+        md5: 9dbf956721dcf8f13dc003ffde11fa7b
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Complications of labor and delivery NEC
+    context_id: PheCode_669
+    build: b38
+    sample_size: 398231
+    n_cases: 2559
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

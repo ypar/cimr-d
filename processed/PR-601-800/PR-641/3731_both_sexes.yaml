@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 3731; Former alcohol drinker; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/t71srnn9q0527sb/3731.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 4890b4c775a8e6f492d15d43f98e626b
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 3731
+    build: b37
+    sample_size: 23745
+    n_cases: 12564.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

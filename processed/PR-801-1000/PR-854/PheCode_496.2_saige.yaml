@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Chronic bronchitis; phenotype category: respiratory; sample size: 347917; number of cases: 2934; number of controls: 375505; number of excluded controls: 30522; url for manhattan plots: https://www.dropbox.com/s/vdb18t0o34u0cks/496.2-Chronicbronchitis-2934cases-375505controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_496.2_SAIGE_MACge20.txt.vcf.gz
+        md5: 82fe8c6343801094ec50b47d9aa3305f
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Chronic bronchitis
+    context_id: PheCode_496.2
+    build: b38
+    sample_size: 347917
+    n_cases: 2934
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

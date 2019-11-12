@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 1418_3; Milk type used: Skimmed; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/g8dn77k7ym9p4ah/1418_3.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 053ef07141d63879d45a9a5db4f3d9ef
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 1418_3
+    build: b37
+    sample_size: 360806
+    n_cases: 74087.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

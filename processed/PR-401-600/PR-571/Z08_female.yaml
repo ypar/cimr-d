@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: Z08; Diagnoses - main ICD10: Z08 Follow-up examination after treatment for malignant neoplasm; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/te1dwhghdvm89d4/Z08.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 9ac400a70a5a18c85e813f63ca15fbbd
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: Z08
+    build: b37
+    sample_size: 194174
+    n_cases: 1562.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

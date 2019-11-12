@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Anticoagulants causing adverse effects; phenotype category: injuries & poisonings; sample size: 355145; number of cases: 256; number of controls: 381797; number of excluded controls: 26908; url for manhattan plots: https://www.dropbox.com/s/bsbsv6fiwo238e1/964.1-Anticoagulantscausingadverseeffects-256cases-381797controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_964.1_SAIGE_MACge20.txt.vcf.gz
+        md5: ec2a12c3755a14783b2d555842881188
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Anticoagulants causing adverse effects
+    context_id: PheCode_964.1
+    build: b38
+    sample_size: 355145
+    n_cases: 256
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

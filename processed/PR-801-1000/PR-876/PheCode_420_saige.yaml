@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Carditis; phenotype category: circulatory system; sample size: 406637; number of cases: 2020; number of controls: 405779; number of excluded controls: 1162; url for manhattan plots: https://www.dropbox.com/s/tus8yk3z3w0sqxp/420-Carditis-2020cases-405779controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_420_SAIGE_MACge20.txt.vcf.gz
+        md5: a4e7350548fa330c60e274a9e988f7e2
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Carditis
+    context_id: PheCode_420
+    build: b38
+    sample_size: 406637
+    n_cases: 2020
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

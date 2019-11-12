@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20546_1; Substances taken for depression: Unprescribed medication (more than once); variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/hok0a420f5dauwd/20546_1.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: da0bae76e86fd7d4a7dfe03282f2af20
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20546_1
+    build: b37
+    sample_size: 65924
+    n_cases: 3014.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

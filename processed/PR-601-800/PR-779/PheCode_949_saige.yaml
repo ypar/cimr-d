@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Allergies, other; phenotype category: injuries & poisonings; sample size: 401473; number of cases: 400; number of controls: 404817; number of excluded controls: 3744; url for manhattan plots: https://www.dropbox.com/s/yl73lb4y93jtyhv/949-Allergies-other-400cases-404817controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_949_SAIGE_MACge20.txt.vcf.gz
+        md5: 8d32d835b96336440c9464fb01370a1e
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Allergies, other
+    context_id: PheCode_949
+    build: b38
+    sample_size: 401473
+    n_cases: 400
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

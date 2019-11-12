@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: I9_IHD; Ischaemic heart disease, wide definition; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/xscebdmxj4j787b/I9_IHD.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 63e4541ba288892ae54558ac8ee3ecda
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: I9_IHD
+    build: b37
+    sample_size: 194174
+    n_cases: 5801.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

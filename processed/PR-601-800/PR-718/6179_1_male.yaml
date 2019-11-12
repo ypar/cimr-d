@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6179_1; Mineral and other dietary supplements: Fish oil (including cod liver oil); variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/88jucdc60zf4sp6/6179_1.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 29fed380873d3e5eb3e41d595d4e3ac6
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6179_1
+    build: b37
+    sample_size: 166411
+    n_cases: 50206.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

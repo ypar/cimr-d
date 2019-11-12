@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Other anemias; phenotype category: hematopoietic; sample size: 395603; number of cases: 12256; number of controls: 390026; number of excluded controls: 6679; url for manhattan plots: https://www.dropbox.com/s/01c62e4dyilkl2v/285-Otheranemias-12256cases-390026controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_285_SAIGE_MACge20.txt.vcf.gz
+        md5: 20ec5e9c1c21297427f76a814f9a2e69
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Other anemias
+    context_id: PheCode_285
+    build: b38
+    sample_size: 395603
+    n_cases: 12256
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

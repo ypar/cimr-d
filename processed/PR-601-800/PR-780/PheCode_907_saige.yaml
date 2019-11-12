@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Injuries to the nervous system; phenotype category: injuries & poisonings; sample size: 408661; number of cases: 1315; number of controls: 407496; number of excluded controls: 150; url for manhattan plots: https://www.dropbox.com/s/b2t3659rrlgocye/907-Injuriestothenervoussystem-1315cases-407496controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_907_SAIGE_MACge20.txt.vcf.gz
+        md5: a925bbefe31fad197333c11a45d6e979
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Injuries to the nervous system
+    context_id: PheCode_907
+    build: b38
+    sample_size: 408661
+    n_cases: 1315
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6151_5; Fractured bone site(s): Wrist; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/ze8ernwjdvflln4/6151_5.gwas.imputed_v3.both_sexes.v2.tsv.bgz?dl=0
+        md5: a5e9cdc5da458de2b9d9ee7c539f61b2
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6151_5
+    build: b37
+    sample_size: 359241
+    n_cases: 7200.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

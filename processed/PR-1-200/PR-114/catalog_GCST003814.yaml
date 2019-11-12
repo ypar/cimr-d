@@ -1,0 +1,41 @@
+
+data_file:
+    description: >-
+        Common variants at PVT1, ATG13–AMBRA1, AHI1 and CLEC16A are associated with selective IgA deficiency; 1,635 European ancestry cases, 4,852 European ancestry controls
+    location:
+        url: ftp://ftp.ebi.ac.uk:21/pub/databases/gwas/summary_statistics/BronsonPG_27723758_GCST003814/harmonised/27723758-GCST003814-EFO_1001929.h.tsv.gz
+        md5: 012251dab894a68f46b8f9b83b459009
+    columns:
+        variant_id: hm_variant_id
+        original_variant_id: variant_id
+        rsnum: hm_rsid
+        variant_chrom: hm_chrom
+        variant_pos: hm_pos
+        non_effect_allele: hm_other_allele
+        effect_allele: hm_effect_allele
+        effect_size: hm_beta
+        effect_allele: original_effect_allele
+        standard_error: standard_error
+        pvalue: p_value
+
+data_info:
+    citation: 10.1038/ng.3675
+    data_source: https://www.ebi.ac.uk/gwas/
+    data_type: gwas
+    context: selective IgA deficiency disease
+    context_id: EFO_1001929
+    build: b38
+    sample_size: 6487.0
+    n_cases: NA
+    can_be_public: true
+
+method:
+    name: NA
+    tool: NA
+    website: www.ncbi.nlm.nih.gov/pubmed/27723758
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com
+

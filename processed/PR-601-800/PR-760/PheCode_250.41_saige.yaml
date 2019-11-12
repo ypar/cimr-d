@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Impaired fasting glucose; phenotype category: endocrine/metabolic; sample size: 369081; number of cases: 265; number of controls: 388756; number of excluded controls: 19940; url for manhattan plots: https://www.dropbox.com/s/97kslqgylkzmsw8/250.41-Impairedfastingglucose-265cases-388756controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_250.41_SAIGE_MACge20.txt.vcf.gz
+        md5: eb56e1b936019f4daaf76ebb00824cf0
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Impaired fasting glucose
+    context_id: PheCode_250.41
+    build: b38
+    sample_size: 369081
+    n_cases: 265
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

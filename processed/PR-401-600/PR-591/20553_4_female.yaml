@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20553_4; Methods of self-harm used: Ingesting a medication in excess of the normal dose; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/1o2mo8l7jtzbbb4/20553_4.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 6dd2f93dd0a83a8419235834f983e2c9
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20553_4
+    build: b37
+    sample_size: 65877
+    n_cases: 2147.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

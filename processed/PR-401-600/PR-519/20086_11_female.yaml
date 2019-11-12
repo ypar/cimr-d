@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20086_11; Type of special diet followed: Vegetarian; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/ltwso7m600ajpr6/20086_11.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 64a6cb9e7bb3701052d672b954430b1a
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20086_11
+    build: b37
+    sample_size: 27958
+    n_cases: 1194.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

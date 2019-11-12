@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 2492; Taking other prescription medications; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/zxl7ofpey6feqpd/2492.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 7502144cb3dcdd4eee482181c1157fb7
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 2492
+    build: b37
+    sample_size: 193645
+    n_cases: 94550.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

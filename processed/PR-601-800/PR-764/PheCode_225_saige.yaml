@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Benign neoplasm of brain and other parts of nervous system; phenotype category: neoplasms; sample size: 407173; number of cases: 828; number of controls: 407239; number of excluded controls: 894; url for manhattan plots: https://www.dropbox.com/s/ngnurt60l8ivyfg/225-Benignneoplasmofbrainandotherpartsofnervoussystem-828cases-407239controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_225_SAIGE_MACge20.txt.vcf.gz
+        md5: 7b563842f175a01fb9fdf5ff380d1dea
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Benign neoplasm of brain and other parts of nervous system
+    context_id: PheCode_225
+    build: b38
+    sample_size: 407173
+    n_cases: 828
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

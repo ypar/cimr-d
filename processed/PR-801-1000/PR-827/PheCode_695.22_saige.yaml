@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Pemphigus and pemphigoid; phenotype category: dermatologic; sample size: 396533; number of cases: 75; number of controls: 402672; number of excluded controls: 6214; url for manhattan plots: https://www.dropbox.com/s/hp6scmrj6dsp4aa/695.22-Pemphigusandpemphigoid-75cases-402672controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_695.22_SAIGE_MACge20.txt.vcf.gz
+        md5: 46b36ef3a7e896b6cc55d25a2a7a7219
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Pemphigus and pemphigoid
+    context_id: PheCode_695.22
+    build: b38
+    sample_size: 396533
+    n_cases: 75
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

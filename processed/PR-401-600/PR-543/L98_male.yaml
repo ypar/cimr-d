@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: L98; Diagnoses - main ICD10: L98 Other disorders of skin and subcutaneous tissue, not elsewhere classified; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/witcclbyetcl93t/L98.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 2856be6bae24920b4815e2533984d130
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: L98
+    build: b37
+    sample_size: 167020
+    n_cases: 1789.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

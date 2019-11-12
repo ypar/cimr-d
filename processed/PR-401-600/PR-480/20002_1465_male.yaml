@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20002_1465; Non-cancer illness code, self-reported: osteoarthritis; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/u1medy4iqdq7ti9/20002_1465.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: fdd7f192549ae6eb2b8e2f697e48166a
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20002_1465
+    build: b37
+    sample_size: 166988
+    n_cases: 10649.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

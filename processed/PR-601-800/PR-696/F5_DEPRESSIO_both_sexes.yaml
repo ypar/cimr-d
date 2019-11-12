@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: F5_DEPRESSIO; Depression; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/zi4nv0yig9qru9v/F5_DEPRESSIO.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: f5c9d6415fdf6c608436f5d15ea10af0
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: F5_DEPRESSIO
+    build: b37
+    sample_size: 361194
+    n_cases: 1145.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

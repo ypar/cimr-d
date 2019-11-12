@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Disorders of parathyroid gland; phenotype category: endocrine/metabolic; sample size: 403565; number of cases: 877; number of controls: 405386; number of excluded controls: 2698; url for manhattan plots: https://www.dropbox.com/s/0kpzvdifeqbpnjk/252-Disordersofparathyroidgland-877cases-405386controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_252_SAIGE_MACge20.txt.vcf.gz
+        md5: ea03b0bca9561ed4f4eee3fef7d3d577
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Disorders of parathyroid gland
+    context_id: PheCode_252
+    build: b38
+    sample_size: 403565
+    n_cases: 877
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Neoplasm of unspecified nature of digestive system; phenotype category: neoplasms; sample size: 379895; number of cases: 1056; number of controls: 393372; number of excluded controls: 14533; url for manhattan plots: https://www.dropbox.com/s/df2argp3qlfzrq9/158-Neoplasmofunspecifiednatureofdigestivesystem-1056cases-393372controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_158_SAIGE_MACge20.txt.vcf.gz
+        md5: 5d81e92a61efdd39c74453f5718d168f
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Neoplasm of unspecified nature of digestive system
+    context_id: PheCode_158
+    build: b38
+    sample_size: 379895
+    n_cases: 1056
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

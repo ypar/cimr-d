@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20002_1264; Non-cancer illness code, self-reported: epilepsy; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/pc5507jfn9vop4q/20002_1264.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: c526902a45e0ee9143cd0614aa4f841e
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20002_1264
+    build: b37
+    sample_size: 166988
+    n_cases: 1498.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

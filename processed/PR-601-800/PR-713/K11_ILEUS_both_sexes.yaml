@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: K11_ILEUS; Paralytic ileus and intestinal obstruction; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/dey7j7ykocyk1b6/K11_ILEUS.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 49559cdde4252eddb3beb08f92383ce1
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: K11_ILEUS
+    build: b37
+    sample_size: 361194
+    n_cases: 2102.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

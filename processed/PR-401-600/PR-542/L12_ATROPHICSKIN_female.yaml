@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: L12_ATROPHICSKIN; Atrophic disorders of skin; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/jq3g16whur7lc4v/L12_ATROPHICSKIN.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 8f2805d953c90e245e05db5b33a5807a
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: L12_ATROPHICSKIN
+    build: b37
+    sample_size: 194174
+    n_cases: 1219.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

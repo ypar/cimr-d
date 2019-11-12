@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20002_1225; Non-cancer illness code, self-reported: hyperthyroidism/thyrotoxicosis; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/osbgtd0eys99yjm/20002_1225.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: f0bfe95dd9b6a6ed87b65530b24a2433
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20002_1225
+    build: b37
+    sample_size: 194153
+    n_cases: 2227.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

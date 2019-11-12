@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 2335; Chest pain or discomfort; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/l9opoapd4n4or07/2335.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 3b463530dcc97ea69b18c3f3bfc5c3e6
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 2335
+    build: b37
+    sample_size: 192247
+    n_cases: 27181.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

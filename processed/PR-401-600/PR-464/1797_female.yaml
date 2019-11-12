@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 1797; Father still alive; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/blbbb28z9zfiqrt/1797.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: fe6a927f535ec7f84fdbd216adde850a
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 1797
+    build: b37
+    sample_size: 189038
+    n_cases: 44589.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

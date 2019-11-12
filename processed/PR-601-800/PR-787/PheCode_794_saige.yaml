@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Abnormal results of other function studies (bladder, pancreas, placenta, spleen, etc); phenotype category: symptoms; sample size: 408961; number of cases: 120; number of controls: 408841; number of excluded controls: 0; url for manhattan plots: https://www.dropbox.com/s/jgn0dltrqjar9n8/794-Abnormalresultsofotherfunctionstudies-bladder-pancreas-placenta-spleen-etc--120cases-408841controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_794_SAIGE_MACge20.txt.vcf.gz
+        md5: 15244c1848bcfa107608f0ed0bbb41c2
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Abnormal results of other function studies (bladder, pancreas, placenta, spleen, etc)
+    context_id: PheCode_794
+    build: b38
+    sample_size: 408961
+    n_cases: 120
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

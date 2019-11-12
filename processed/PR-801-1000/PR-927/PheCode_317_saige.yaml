@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Alcohol-related disorders; phenotype category: mental disorders; sample size: 375593; number of cases: 12922; number of controls: 379355; number of excluded controls: 16684; url for manhattan plots: https://www.dropbox.com/s/kmo1cca9zczswak/317-Alcohol-relateddisorders-12922cases-379355controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_317_SAIGE_MACge20.txt.vcf.gz
+        md5: 6c793a9258b8677a066a988ffe877830
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Alcohol-related disorders
+    context_id: PheCode_317
+    build: b38
+    sample_size: 375593
+    n_cases: 12922
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

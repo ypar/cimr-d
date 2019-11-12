@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Mechanical complication of unspecified genitourinary device, implant, and graft; phenotype category: injuries & poisonings; sample size: 383379; number of cases: 1241; number of controls: 394929; number of excluded controls: 12791; url for manhattan plots: https://www.dropbox.com/s/oy67bl474c3p4cr/857-Mechanicalcomplicationofunspecifiedgenitourinarydevice-implant-andgraft-1241cases-394929controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_857_SAIGE_MACge20.txt.vcf.gz
+        md5: f0265e1fb3d94cdf1cdc6a7b23d2b1f2
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Mechanical complication of unspecified genitourinary device, implant, and graft
+    context_id: PheCode_857
+    build: b38
+    sample_size: 383379
+    n_cases: 1241
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 2443; Diabetes diagnosed by doctor; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/1i26ho0uycr5dcw/2443.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 325c7a4fab5b21e825c87ef52f84f11a
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 2443
+    build: b37
+    sample_size: 360192
+    n_cases: 17275.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

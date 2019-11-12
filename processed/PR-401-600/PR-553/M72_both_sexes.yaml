@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: M72; Diagnoses - main ICD10: M72 Fibroblastic disorders; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/k8mmailk8yf2rmd/M72.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 0f4a1731c813f72caff1346734880451
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: M72
+    build: b37
+    sample_size: 361194
+    n_cases: 3193.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

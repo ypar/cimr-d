@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 100260; Added milk to instant coffee; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/ph2k1mx1dpwocyh/100260.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 9622c87a267c6b89db176afb10aa2385
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 100260
+    build: b37
+    sample_size: 27958
+    n_cases: 16720.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

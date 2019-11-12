@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6155_1; Vitamin and mineral supplements: Vitamin A; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/ldlda7pxemy5yz0/6155_1.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 24790dfcc7baeecb8a50d5587da08c8a
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6155_1
+    build: b37
+    sample_size: 165854
+    n_cases: 3179.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

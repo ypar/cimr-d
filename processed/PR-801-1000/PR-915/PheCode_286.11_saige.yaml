@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Von willebrand's disease; phenotype category: hematopoietic; sample size: 403797; number of cases: 98; number of controls: 406281; number of excluded controls: 2582; url for manhattan plots: https://www.dropbox.com/s/oa2f6xzndvus3su/286.11-Vonwillebrandsdisease-98cases-406281controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_286.11_SAIGE_MACge20.txt.vcf.gz
+        md5: 272ebbe417e117a0c6df3fd1fcde8217
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Von willebrand's disease
+    context_id: PheCode_286.11
+    build: b38
+    sample_size: 403797
+    n_cases: 98
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

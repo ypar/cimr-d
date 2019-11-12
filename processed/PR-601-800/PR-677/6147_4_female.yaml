@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6147_4; Reason for glasses/contact lenses: For 'astigmatism'; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/ol2cfxijomyism4/6147_4.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 899f4497da9d7d3014981339d91c4bc4
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6147_4
+    build: b37
+    sample_size: 193912
+    n_cases: 5877.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: II_NEOPLASM; Neoplasms; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/cvpq5zdb1lrajjq/II_NEOPLASM.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 93945549384bec438e574b5c37811662
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: II_NEOPLASM
+    build: b37
+    sample_size: 194174
+    n_cases: 40654.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

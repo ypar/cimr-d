@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20550_1; Activities undertaken to treat anxiety: Talking therapies, such as psychotherapy, counselling, group therapy or CBT; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/1vbd1fuqcmnuf13/20550_1.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 0cd69d43eb9413ee67a680a3d2f2bb84
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20550_1
+    build: b37
+    sample_size: 98990
+    n_cases: 12858.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

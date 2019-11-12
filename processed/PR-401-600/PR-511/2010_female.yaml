@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 2010; Suffer from 'nerves'; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/ido2njbozgnkrw9/2010.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 2e0fb444a52f960f4374046aee9dd48f
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 2010
+    build: b37
+    sample_size: 186332
+    n_cases: 39046.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

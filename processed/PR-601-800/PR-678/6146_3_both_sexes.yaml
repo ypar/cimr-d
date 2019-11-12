@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6146_3; Attendance/disability/mobility allowance: Blue badge; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/rmizwi7wx7rjfzb/6146_3.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 5c4e39707e0449ac78588fb129bf0156
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6146_3
+    build: b37
+    sample_size: 358597
+    n_cases: 12733.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

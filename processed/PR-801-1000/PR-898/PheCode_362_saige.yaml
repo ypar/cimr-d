@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Other retinal disorders; phenotype category: sense organs; sample size: 392491; number of cases: 3867; number of controls: 396859; number of excluded controls: 8235; url for manhattan plots: https://www.dropbox.com/s/r8xy1h0bi15cxqy/362-Otherretinaldisorders-3867cases-396859controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_362_SAIGE_MACge20.txt.vcf.gz
+        md5: 6433c864a7c1b264042eb65a8f2325c7
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Other retinal disorders
+    context_id: PheCode_362
+    build: b38
+    sample_size: 392491
+    n_cases: 3867
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

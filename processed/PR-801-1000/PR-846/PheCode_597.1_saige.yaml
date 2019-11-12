@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Urethral stricture (not specified as infectious); phenotype category: genitourinary; sample size: 387099; number of cases: 3331; number of controls: 394699; number of excluded controls: 10931; url for manhattan plots: https://www.dropbox.com/s/8b5p8rdw3jc0u5y/597.1-Urethralstricture-notspecifiedasinfectious--3331cases-394699controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_597.1_SAIGE_MACge20.txt.vcf.gz
+        md5: 76bb4cbd51c4f0960dee4bec2c8c13a4
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Urethral stricture (not specified as infectious)
+    context_id: PheCode_597.1
+    build: b38
+    sample_size: 387099
+    n_cases: 3331
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

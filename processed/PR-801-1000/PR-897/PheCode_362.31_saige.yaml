@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Separation of retinal layers; phenotype category: sense organs; sample size: 384955; number of cases: 99; number of controls: 396859; number of excluded controls: 12003; url for manhattan plots: https://www.dropbox.com/s/xq8lx5zbijb4dex/362.31-Separationofretinallayers-99cases-396859controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_362.31_SAIGE_MACge20.txt.vcf.gz
+        md5: 38450cbf77b0abda3ffce5d1d42aad81
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Separation of retinal layers
+    context_id: PheCode_362.31
+    build: b38
+    sample_size: 384955
+    n_cases: 99
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

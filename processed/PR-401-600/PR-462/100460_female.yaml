@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 100460; Added milk to standard tea; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/lrjdqjxf551er3b/100460.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 3b4149c5f8a1eb6df9c4e450d999962a
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 100460
+    build: b37
+    sample_size: 27958
+    n_cases: 10107.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

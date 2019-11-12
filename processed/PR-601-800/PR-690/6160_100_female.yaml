@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6160_100; Leisure/social activities: None of the above; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/qu2jqpugkt0gifj/6160_100.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: f75f4a8d8fc5d3d46b49840b49771387
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6160_100
+    build: b37
+    sample_size: 193554
+    n_cases: 58855.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

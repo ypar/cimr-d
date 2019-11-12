@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Corneal ulcer; phenotype category: sense organs; sample size: 389933; number of cases: 141; number of controls: 399306; number of excluded controls: 9514; url for manhattan plots: https://www.dropbox.com/s/u10y9c57li8jq1y/370.1-Cornealulcer-141cases-399306controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_370.1_SAIGE_MACge20.txt.vcf.gz
+        md5: 069719cb42975e6c87b5e05823a53802
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Corneal ulcer
+    context_id: PheCode_370.1
+    build: b38
+    sample_size: 389933
+    n_cases: 141
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

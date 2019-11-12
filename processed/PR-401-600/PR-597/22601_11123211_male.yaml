@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22601_11123211; Job coding: director or chief executive of private organisation/company, company chairman or president, general manager; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/s0u18hubnno9743/22601_11123211.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: ba8ef9f0186388ecc4a29d32d3b3b801
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22601_11123211
+    build: b37
+    sample_size: 40155
+    n_cases: 1799.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

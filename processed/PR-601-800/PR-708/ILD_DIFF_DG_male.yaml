@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: ILD_DIFF_DG; ILD differential diagnosis; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/imozsxekn25tmo0/ILD_DIFF_DG.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: d6bf5c7af3a51307345d6c0965e2e577
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: ILD_DIFF_DG
+    build: b37
+    sample_size: 167020
+    n_cases: 14270.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

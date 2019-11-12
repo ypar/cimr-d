@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Alkalosis; phenotype category: endocrine/metabolic; sample size: 394279; number of cases: 114; number of controls: 401506; number of excluded controls: 7341; url for manhattan plots: https://www.dropbox.com/s/u6lf5gk6j8jrwp4/276.42-Alkalosis-114cases-401506controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_276.42_SAIGE_MACge20.txt.vcf.gz
+        md5: b5e9b4a31c11387891f82b70a5770d9d
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Alkalosis
+    context_id: PheCode_276.42
+    build: b38
+    sample_size: 394279
+    n_cases: 114
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

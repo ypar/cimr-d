@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Symptoms involving respiratory system and other chest symptoms; phenotype category: respiratory; sample size: 390705; number of cases: 308; number of controls: 399525; number of excluded controls: 9128; url for manhattan plots: https://www.dropbox.com/s/vs7lzckv77hjf07/519.9-Symptomsinvolvingrespiratorysystemandotherchestsymptoms-308cases-399525controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_519.9_SAIGE_MACge20.txt.vcf.gz
+        md5: ca67989f16d69f4565e3d53bc25f41c3
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Symptoms involving respiratory system and other chest symptoms
+    context_id: PheCode_519.9
+    build: b38
+    sample_size: 390705
+    n_cases: 308
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

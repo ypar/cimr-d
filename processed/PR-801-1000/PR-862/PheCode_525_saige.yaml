@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Other diseases of the teeth and supporting structures; phenotype category: digestive; sample size: 392689; number of cases: 2689; number of controls: 398136; number of excluded controls: 8136; url for manhattan plots: https://www.dropbox.com/s/d9a2m2s306d5w3a/525-Otherdiseasesoftheteethandsupportingstructures-2689cases-398136controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_525_SAIGE_MACge20.txt.vcf.gz
+        md5: c786b5862f6e9dfb8b72cd82e9cb04fd
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Other diseases of the teeth and supporting structures
+    context_id: PheCode_525
+    build: b38
+    sample_size: 392689
+    n_cases: 2689
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

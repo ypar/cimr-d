@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Pervasive developmental disorders; phenotype category: mental disorders; sample size: 407949; number of cases: 77; number of controls: 408378; number of excluded controls: 506; url for manhattan plots: https://www.dropbox.com/s/lqwv7y2471hbxp2/313-Pervasivedevelopmentaldisorders-77cases-408378controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_313_SAIGE_MACge20.txt.vcf.gz
+        md5: 790ad7191cacd758b01cbd5ceeb80d2f
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Pervasive developmental disorders
+    context_id: PheCode_313
+    build: b38
+    sample_size: 407949
+    n_cases: 77
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20419; Difficulty concentrating during worst period of anxiety; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/y35jpmqgv1rlomu/20419.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: eb846dfd2fe9ddc62dd4ba86929d333e
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20419
+    build: b37
+    sample_size: 22230
+    n_cases: 16972.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

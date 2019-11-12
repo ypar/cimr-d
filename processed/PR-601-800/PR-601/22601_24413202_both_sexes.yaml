@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22601_24413202; Job coding: civil service senior manager outside the senior civil service (former grades 6 and 7); variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/3dlfpk2l2a1n1rb/22601_24413202.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 9f3e9c4037385e881e62c6aeca535763
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22601_24413202
+    build: b37
+    sample_size: 89866
+    n_cases: 1324.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

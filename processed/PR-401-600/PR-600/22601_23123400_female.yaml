@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22601_23123400; Job coding: further education teaching professional, college lecturer/professor; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/j4ghoaozf5x25sd/22601_23123400.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 2a4dd15ef0a71aa140b01480765b96c4
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22601_23123400
+    build: b37
+    sample_size: 49711
+    n_cases: 1614.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

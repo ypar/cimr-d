@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20002_1406; Non-cancer illness code, self-reported: muscle or soft tissue injuries; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/5vba8tk6vgyx0z0/20002_1406.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 433484ad2053bb555772c71793497c88
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20002_1406
+    build: b37
+    sample_size: 361141
+    n_cases: 2653.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

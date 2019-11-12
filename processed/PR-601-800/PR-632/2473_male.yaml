@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 2473; Other serious medical condition/disability diagnosed by doctor; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/gskmaw9109emd9r/2473.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 10401e526dee309160f001db277924f5
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 2473
+    build: b37
+    sample_size: 164482
+    n_cases: 34822.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

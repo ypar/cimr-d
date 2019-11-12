@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: XIV_GENITOURINARY; Diseases of the genitourinary system; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/cpa1oc6c3bb7ffk/XIV_GENITOURINARY.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 8334ace1e1975985666e22375afc7d7d
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: XIV_GENITOURINARY
+    build: b37
+    sample_size: 361194
+    n_cases: 71620.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

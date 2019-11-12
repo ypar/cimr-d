@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20417; Tense, sore, or aching muscles during worst period of anxiety; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/nvalhy0n3n4qo0p/20417.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: cab1ed7b88754209ace08fb15839041f
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20417
+    build: b37
+    sample_size: 21263
+    n_cases: 9276.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

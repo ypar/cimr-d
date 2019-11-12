@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: I80; Diagnoses - main ICD10: I80 Phlebitis and thrombophlebitis; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/3dpobrivnshwpx4/I80.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 61300f653652a074f0ca1d09cdbe0e05
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: I80
+    build: b37
+    sample_size: 361194
+    n_cases: 2289.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

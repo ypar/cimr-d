@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 1428_1; Spread type: Butter/spreadable butter; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/dw5slm6hh0xxzuy/1428_1.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 0009f9dd4dd8df4bfa32967f90e677e7
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 1428_1
+    build: b37
+    sample_size: 360291
+    n_cases: 131190.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

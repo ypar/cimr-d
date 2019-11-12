@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20002_1405; Non-cancer illness code, self-reported: other renal/kidney problem; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/hkwayg0xws52dsr/20002_1405.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: f16ee121dd6f7ed5dfc4bd81eac13890
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20002_1405
+    build: b37
+    sample_size: 361141
+    n_cases: 1504.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

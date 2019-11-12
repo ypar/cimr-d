@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Circumscribed scleroderma; phenotype category: dermatologic; sample size: 398911; number of cases: 61; number of controls: 403875; number of excluded controls: 5025; url for manhattan plots: https://www.dropbox.com/s/eortek3ge11gjsy/701.3-Circumscribedscleroderma-61cases-403875controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_701.3_SAIGE_MACge20.txt.vcf.gz
+        md5: b414fc68d8e90ae6526412db23522fca
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Circumscribed scleroderma
+    context_id: PheCode_701.3
+    build: b38
+    sample_size: 398911
+    n_cases: 61
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

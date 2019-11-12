@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20529; Victim of physically violent crime; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/g4r9huc5gvzl45e/20529.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 2c8f954afdfb9139462889221480a9d3
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20529
+    build: b37
+    sample_size: 51887
+    n_cases: 12683.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

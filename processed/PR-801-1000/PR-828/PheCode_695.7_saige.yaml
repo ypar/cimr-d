@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Prurigo and Lichen; phenotype category: dermatologic; sample size: 397941; number of cases: 779; number of controls: 402672; number of excluded controls: 5510; url for manhattan plots: https://www.dropbox.com/s/fr4puycj248v6rn/695.7-PrurigoandLichen-779cases-402672controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_695.7_SAIGE_MACge20.txt.vcf.gz
+        md5: facec99c69dccb6d9c2f6f66b311440b
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Prurigo and Lichen
+    context_id: PheCode_695.7
+    build: b38
+    sample_size: 397941
+    n_cases: 779
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

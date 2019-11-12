@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 3090; Used an inhaler for chest within last hour; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/vim3e6f0rx38arw/3090.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: df0db4d2dbb96b1c45296a770357084f
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 3090
+    build: b37
+    sample_size: 331625
+    n_cases: 2424.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

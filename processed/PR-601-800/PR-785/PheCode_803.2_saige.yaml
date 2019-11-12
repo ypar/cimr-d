@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Fracture of radius and ulna; phenotype category: injuries & poisonings; sample size: 377061; number of cases: 5246; number of controls: 387765; number of excluded controls: 15950; url for manhattan plots: https://www.dropbox.com/s/91egd4x4z21lqrh/803.2-Fractureofradiusandulna-5246cases-387765controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_803.2_SAIGE_MACge20.txt.vcf.gz
+        md5: 39b2983fac7037dc7fe152911e60330a
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Fracture of radius and ulna
+    context_id: PheCode_803.2
+    build: b38
+    sample_size: 377061
+    n_cases: 5246
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

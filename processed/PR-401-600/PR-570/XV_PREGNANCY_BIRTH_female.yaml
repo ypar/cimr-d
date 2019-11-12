@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: XV_PREGNANCY_BIRTH; Pregnancy, childbirth and the puerperium; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/682gxhdn71x9nmf/XV_PREGNANCY_BIRTH.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: cc14c7d2dc87a9726ad0a67d81ceaf0d
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: XV_PREGNANCY_BIRTH
+    build: b37
+    sample_size: 194174
+    n_cases: 11958.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

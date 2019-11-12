@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: F5_MOOD; Mood [affective] disorders; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/ocawpuqzhu7htgn/F5_MOOD.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: d901edf0c62e8f39018db164bda6e70c
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: F5_MOOD
+    build: b37
+    sample_size: 361194
+    n_cases: 1546.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

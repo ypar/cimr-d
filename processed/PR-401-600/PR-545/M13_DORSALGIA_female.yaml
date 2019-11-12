@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: M13_DORSALGIA; Dorsalgia; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/n2lgg48wwazmt66/M13_DORSALGIA.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 6903f8aa24944bed894005193ae3cb75
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: M13_DORSALGIA
+    build: b37
+    sample_size: 194174
+    n_cases: 5173.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

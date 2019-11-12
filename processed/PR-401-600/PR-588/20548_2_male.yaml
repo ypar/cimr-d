@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20548_2; Manifestations of mania or irritability: I was more restless than usual; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/u3snrb47dlja7l2/20548_2.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 54d8b4a1990949685f0eadc3b3c33481
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20548_2
+    build: b37
+    sample_size: 50523
+    n_cases: 5884.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

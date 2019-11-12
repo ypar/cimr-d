@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 3079; Pace-maker; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/w54ncb84ajzcl31/3079.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 7c4cb9e6237137a4ebdcfb7a0af65100
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 3079
+    build: b37
+    sample_size: 360866
+    n_cases: 1139.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

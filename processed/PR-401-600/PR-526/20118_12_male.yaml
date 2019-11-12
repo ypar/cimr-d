@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20118_12; Home area population density - urban or rural: Scotland - Other Urban Area; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/pue0v4n61hn2y6w/20118_12.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 89f252282a4a5a84043d3e19e085230a
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20118_12
+    build: b37
+    sample_size: 165239
+    n_cases: 1850.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

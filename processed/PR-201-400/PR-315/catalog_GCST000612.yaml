@@ -1,0 +1,41 @@
+
+data_file:
+    description: >-
+        Multiple common variants for celiac disease influencing immune gene expression; 4,533 European ancestry cases, 10,750 European ancestry controls;4,918 European ancestry cases, 5,684 European ancestry controls
+    location:
+        url: ftp://ftp.ebi.ac.uk:21/pub/databases/gwas/summary_statistics/DuboisPC_20190752_GCST000612/harmonised/20190752-GCST000612-EFO_0001060.h.tsv.gz
+        md5: 39ced5240a87b8bedf5807fb5e970fb7
+    columns:
+        variant_id: hm_variant_id
+        original_variant_id: variant_id
+        rsnum: hm_rsid
+        variant_chrom: hm_chrom
+        variant_pos: hm_pos
+        non_effect_allele: hm_other_allele
+        effect_allele: hm_effect_allele
+        effect_size: hm_beta
+        effect_allele: original_effect_allele
+        standard_error: standard_error
+        pvalue: p_value
+
+data_info:
+    citation: 10.1038/ng.543
+    data_source: https://www.ebi.ac.uk/gwas/
+    data_type: gwas
+    context: celiac disease
+    context_id: EFO_0001060
+    build: b38
+    sample_size: 25885.0
+    n_cases: NA
+    can_be_public: true
+
+method:
+    name: NA
+    tool: NA
+    website: www.ncbi.nlm.nih.gov/pubmed/20190752
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com
+

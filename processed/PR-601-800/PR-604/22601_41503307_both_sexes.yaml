@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22601_41503307; Job coding: general office assistant/clerk, clerical officer, clerk-typist, office supervisor, press/newspaper corrector/reader; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/oss1vb2fmesd3ey/22601_41503307.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: fbd06a269502d65fdde4d87b161e13cd
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22601_41503307
+    build: b37
+    sample_size: 89866
+    n_cases: 3957.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

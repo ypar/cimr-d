@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: C_STROKE; STROKE; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/r4ehzyivxj07k7w/C_STROKE.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: c9ec5423c3051872a059f3ca8ae42f68
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: C_STROKE
+    build: b37
+    sample_size: 167020
+    n_cases: 3787.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

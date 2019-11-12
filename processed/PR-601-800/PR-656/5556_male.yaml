@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 5556; FI9 : concept interpolation; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/yzniv1l7blspaje/5556.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 4388c8152efd0ac81aa57d9de34d4cbf
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 5556
+    build: b37
+    sample_size: 16813
+    n_cases: 10109.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

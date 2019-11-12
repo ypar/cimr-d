@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: M75; Diagnoses - main ICD10: M75 Shoulder lesions; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/8kk6e6ls5dmwxp5/M75.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 0c7d072434c863c9f57a6704a3d933cb
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: M75
+    build: b37
+    sample_size: 361194
+    n_cases: 7040.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

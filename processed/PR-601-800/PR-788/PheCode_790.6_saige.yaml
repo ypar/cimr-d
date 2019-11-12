@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Other abnormal blood chemistry; phenotype category: symptoms; sample size: 408549; number of cases: 6413; number of controls: 402342; number of excluded controls: 206; url for manhattan plots: https://www.dropbox.com/s/8zoxtjzs5zu25wa/790.6-Otherabnormalbloodchemistry-6413cases-402342controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_790.6_SAIGE_MACge20.txt.vcf.gz
+        md5: 0faf778812967f3fc8601c4a02a65909
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Other abnormal blood chemistry
+    context_id: PheCode_790.6
+    build: b38
+    sample_size: 408549
+    n_cases: 6413
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

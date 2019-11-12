@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: K11_BARRET; Barret oesophagus; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/6wts5xdzfj0bthh/K11_BARRET.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: d808f2390f0ee46353f057c73859eb21
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: K11_BARRET
+    build: b37
+    sample_size: 167020
+    n_cases: 1186.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

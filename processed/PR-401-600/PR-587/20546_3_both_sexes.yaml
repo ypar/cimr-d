@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20546_3; Substances taken for depression: Medication prescribed to you (for at least two weeks); variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/bn8knee77bkgt5j/20546_3.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: fdfb5c37a7efcdb40eb8b7dcc5579cbc
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20546_3
+    build: b37
+    sample_size: 117763
+    n_cases: 28351.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

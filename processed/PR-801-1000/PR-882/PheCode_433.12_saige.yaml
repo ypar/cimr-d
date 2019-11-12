@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Cerebral atherosclerosis; phenotype category: circulatory system; sample size: 389521; number of cases: 224; number of controls: 399017; number of excluded controls: 9720; url for manhattan plots: https://www.dropbox.com/s/80iz230e3l7o48v/433.12-Cerebralatherosclerosis-224cases-399017controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_433.12_SAIGE_MACge20.txt.vcf.gz
+        md5: b454c269f9981e859f031ac63a83034f
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Cerebral atherosclerosis
+    context_id: PheCode_433.12
+    build: b38
+    sample_size: 389521
+    n_cases: 224
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

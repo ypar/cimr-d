@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Atrioventricular [AV] block; phenotype category: circulatory system; sample size: 357127; number of cases: 2125; number of controls: 380919; number of excluded controls: 25917; url for manhattan plots: https://www.dropbox.com/s/5ir1zo72209bclf/426.2-Atrioventricular-AV-block-2125cases-380919controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_426.2_SAIGE_MACge20.txt.vcf.gz
+        md5: 51c533b69080bf494ab2b3a64f573d0d
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Atrioventricular [AV] block
+    context_id: PheCode_426.2
+    build: b38
+    sample_size: 357127
+    n_cases: 2125
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

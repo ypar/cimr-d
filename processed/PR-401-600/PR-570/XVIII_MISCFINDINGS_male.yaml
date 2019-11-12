@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: XVIII_MISCFINDINGS; Symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/i53ofalry9jst2s/XVIII_MISCFINDINGS.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 3ddf947fe75cba7ad2914c6e7c828532
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: XVIII_MISCFINDINGS
+    build: b37
+    sample_size: 167020
+    n_cases: 46221.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

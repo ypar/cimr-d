@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20002_1309; Non-cancer illness code, self-reported: osteoporosis; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/clpynpwifv8re8k/20002_1309.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 2cc86e4b2d467fe64f3e23c150e2e76e
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20002_1309
+    build: b37
+    sample_size: 361141
+    n_cases: 5736.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22660_106; Gap coding: Unable to work due to sickness or disability; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/pxlssiym0s1gkmh/22660_106.gwas.imputed_v3.female.v2.tsv.bgz?dl=0
+        md5: 77a1cb3ba084029f45ac62f433cee2df
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22660_106
+    build: b37
+    sample_size: 39503
+    n_cases: 1347.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

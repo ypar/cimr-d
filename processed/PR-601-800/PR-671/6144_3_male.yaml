@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6144_3; Never eat eggs, dairy, wheat, sugar: Wheat products; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/l32jm3isbun1s7f/6144_3.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 8e78b401044f4dd1362b53f3deec4008
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6144_3
+    build: b37
+    sample_size: 166392
+    n_cases: 3708.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

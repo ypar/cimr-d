@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22608_2; Workplace very hot: Often; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/1aevpjmfn2ben1w/22608_2.gwas.imputed_v3.both_sexes.v2.tsv.bgz?dl=0
+        md5: c22aeeb64e9a53421f8a7e8ebf36196a
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22608_2
+    build: b37
+    sample_size: 90165
+    n_cases: 10169.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

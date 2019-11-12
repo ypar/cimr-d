@@ -1,0 +1,41 @@
+
+data_file:
+    description: >-
+        NA; up to 72,390 Japanese ancestry women, up to 85,894 Japanese ancestry men;up to 10,048 Japanese ancestry women, up to 5,098 Japanese ancestry men, up to 181,999 European ancestry women, up to 140,155 European ancestry controls
+    location:
+        url: ftp://ftp.ebi.ac.uk:21/pub/databases/gwas/summary_statistics/AkiyamaM_28892062_GCST004904/harmonised/28892062-GCST004904-EFO_0004340.h.tsv.gz
+        md5: 04153aea3fa19685bab9bbf5794608ee
+    columns:
+        variant_id: hm_variant_id
+        original_variant_id: variant_id
+        rsnum: hm_rsid
+        variant_chrom: hm_chrom
+        variant_pos: hm_pos
+        non_effect_allele: hm_other_allele
+        effect_allele: hm_effect_allele
+        effect_size: hm_beta
+        effect_allele: original_effect_allele
+        standard_error: standard_error
+        pvalue: p_value
+
+data_info:
+    citation: nan
+    data_source: https://www.ebi.ac.uk/gwas/
+    data_type: gwas
+    context: body mass index
+    context_id: EFO_0004340
+    build: b38
+    sample_size: 495584.0
+    n_cases: NA
+    can_be_public: true
+
+method:
+    name: NA
+    tool: NA
+    website: www.ncbi.nlm.nih.gov/pubmed/28892062
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com
+

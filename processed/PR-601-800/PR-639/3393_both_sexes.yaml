@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 3393; Hearing aid user; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/bn12kkqdk9xvag5/3393.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: c64d232965672a361f085481bee532ea
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 3393
+    build: b37
+    sample_size: 219358
+    n_cases: 10942.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

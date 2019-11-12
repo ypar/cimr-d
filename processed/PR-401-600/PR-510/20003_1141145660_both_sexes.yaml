@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20003_1141145660; Treatment/medication code: valsartan; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/7pgqpnmykdd80lz/20003_1141145660.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: cfbf6dbeb638f7258c84ab3e8aa87d1d
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20003_1141145660
+    build: b37
+    sample_size: 361141
+    n_cases: 1707.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

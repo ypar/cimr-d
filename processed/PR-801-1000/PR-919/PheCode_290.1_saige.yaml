@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Dementias; phenotype category: mental disorders; sample size: 397717; number of cases: 956; number of controls: 402383; number of excluded controls: 5622; url for manhattan plots: https://www.dropbox.com/s/3anlvxvzl3o7xhx/290.1-Dementias-956cases-402383controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_290.1_SAIGE_MACge20.txt.vcf.gz
+        md5: 430da986ffae9edf0e2756d19c976537
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Dementias
+    context_id: PheCode_290.1
+    build: b38
+    sample_size: 397717
+    n_cases: 956
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

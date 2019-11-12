@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 41248_5001; Destinations on discharge from hospital (recoded): Transfer to other NHS provider: General ward, young physically disabled, A&E; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/0sx0pt5lguskm8o/41248_5001.gwas.imputed_v3.female.v2.tsv.bgz?dl=0
+        md5: 5a265cc385e319a9b3668c8ecd932f71
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 41248_5001
+    build: b37
+    sample_size: 193471
+    n_cases: 1918.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

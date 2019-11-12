@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Hearing loss; phenotype category: sense organs; sample size: 408675; number of cases: 4256; number of controls: 404562; number of excluded controls: 143; url for manhattan plots: https://www.dropbox.com/s/vuoeizwmzaiczpz/389-Hearingloss-4256cases-404562controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_389_SAIGE_MACge20.txt.vcf.gz
+        md5: a0cfa518e8b75d76890b2cd43833622b
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Hearing loss
+    context_id: PheCode_389
+    build: b38
+    sample_size: 408675
+    n_cases: 4256
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

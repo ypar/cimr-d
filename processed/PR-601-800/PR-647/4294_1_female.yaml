@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 4294_1; Final attempt correct: yes; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/yfks24v7u4jzzue/4294_1.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 05b4cbb7c9c6958dcdd3794c8932f20c
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 4294_1
+    build: b37
+    sample_size: 64129
+    n_cases: 61967.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: LUNG_CANCER_MESOT; Lung cancer and mesothelioma; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/qk8gnbi9qmvo4w4/LUNG_CANCER_MESOT.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: c316c3976b5fbdec8a34cc34adacd482
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: LUNG_CANCER_MESOT
+    build: b37
+    sample_size: 361194
+    n_cases: 2007.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

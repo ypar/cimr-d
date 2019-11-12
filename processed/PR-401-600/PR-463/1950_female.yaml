@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 1950; Sensitivity / hurt feelings; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/n57zmifm7hgzldw/1950.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: fe223bf7b520dc16a594b2ff76383d47
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 1950
+    build: b37
+    sample_size: 188917
+    n_cases: 121689.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

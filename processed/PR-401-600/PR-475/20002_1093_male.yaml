@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20002_1093; Non-cancer illness code, self-reported: pulmonary embolism +/- dvt; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/fptqo0zkwk210m0/20002_1093.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 1c68d0b6b27fe48a3fea60012ac84cca
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20002_1093
+    build: b37
+    sample_size: 166988
+    n_cases: 1383.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22606_2; Workplace very noisy: Often; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/pjl0u8n8uvex5bg/22606_2.gwas.imputed_v3.both_sexes.v2.tsv.bgz?dl=0
+        md5: 5cbdf88cb5b817ef166b4a963547bc78
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22606_2
+    build: b37
+    sample_size: 90653
+    n_cases: 17469.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

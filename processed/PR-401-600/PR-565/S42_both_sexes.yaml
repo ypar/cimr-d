@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: S42; Diagnoses - main ICD10: S42 Fracture of shoulder and upper arm; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/79kv5hbwvncs9mm/S42.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 319f55ad65b1d1bec84ac8053e9b601c
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: S42
+    build: b37
+    sample_size: 361194
+    n_cases: 1791.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

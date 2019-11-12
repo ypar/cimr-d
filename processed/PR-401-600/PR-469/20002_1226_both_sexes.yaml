@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20002_1226; Non-cancer illness code, self-reported: hypothyroidism/myxoedema; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/spaa8rvjpo0fmbe/20002_1226.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 1bd4e7f6df2b74a20c20d61cea4236f7
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20002_1226
+    build: b37
+    sample_size: 361141
+    n_cases: 17574.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6142_7; Current employment status: Full or part-time student; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/8ep4ax9r4iuyitm/6142_7.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: c63ebfdd4ea439c5dbdba5ea944d5ad2
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6142_7
+    build: b37
+    sample_size: 359931
+    n_cases: 2818.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

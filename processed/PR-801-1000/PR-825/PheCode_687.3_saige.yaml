@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Changes in skin texture; phenotype category: dermatologic; sample size: 398069; number of cases: 108; number of controls: 403407; number of excluded controls: 5446; url for manhattan plots: https://www.dropbox.com/s/nesok89p4yxv7gp/687.3-Changesinskintexture-108cases-403407controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_687.3_SAIGE_MACge20.txt.vcf.gz
+        md5: 22afffc349ddef60d646fbc9dbeb1763
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Changes in skin texture
+    context_id: PheCode_687.3
+    build: b38
+    sample_size: 398069
+    n_cases: 108
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

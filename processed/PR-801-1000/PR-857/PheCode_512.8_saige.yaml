@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Cough; phenotype category: respiratory; sample size: 396473; number of cases: 2884; number of controls: 399833; number of excluded controls: 6244; url for manhattan plots: https://www.dropbox.com/s/6ld67saqhu9eyt1/512.8-Cough-2884cases-399833controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_512.8_SAIGE_MACge20.txt.vcf.gz
+        md5: dcb74fe986b430be9398434aa160b1c8
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Cough
+    context_id: PheCode_512.8
+    build: b38
+    sample_size: 396473
+    n_cases: 2884
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

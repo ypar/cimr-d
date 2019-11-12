@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 1210; Snoring; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/saedrm5ypc02tv9/1210.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: c4482b6291e6e96ccce3086c895db2c6
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 1210
+    build: b37
+    sample_size: 178728
+    n_cases: 50457.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

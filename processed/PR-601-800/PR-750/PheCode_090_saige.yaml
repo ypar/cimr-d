@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Sexually transmitted infections (not HIV or hepatitis); phenotype category: infectious diseases; sample size: 408961; number of cases: 73; number of controls: 408888; number of excluded controls: 0; url for manhattan plots: https://www.dropbox.com/s/74sou5vug0dmls8/090-Sexuallytransmittedinfections-notHIVorhepatitis--73cases-408888controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_090_SAIGE_MACge20.txt.vcf.gz
+        md5: aa3ebed4dce45e4b612ff7b2eb21775b
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Sexually transmitted infections (not HIV or hepatitis)
+    context_id: PheCode_090
+    build: b38
+    sample_size: 408961
+    n_cases: 73
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Disorders of coccyx; phenotype category: musculoskeletal; sample size: 375687; number of cases: 407; number of controls: 391917; number of excluded controls: 16637; url for manhattan plots: https://www.dropbox.com/s/hv4hk6ailena6ai/724.2-Disordersofcoccyx-407cases-391917controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_724.2_SAIGE_MACge20.txt.vcf.gz
+        md5: fbac5536df0a0608bda7b3057b7c602f
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Disorders of coccyx
+    context_id: PheCode_724.2
+    build: b38
+    sample_size: 375687
+    n_cases: 407
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

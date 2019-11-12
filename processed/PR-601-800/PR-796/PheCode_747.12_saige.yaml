@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Valvular heart disease/ heart chambers; phenotype category: congenital anomalies; sample size: 403835; number of cases: 233; number of controls: 406165; number of excluded controls: 2563; url for manhattan plots: https://www.dropbox.com/s/6jvcsm5j3bu4nin/747.12-Valvularheartdiseaseheartchambers-233cases-406165controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_747.12_SAIGE_MACge20.txt.vcf.gz
+        md5: 138f5858bc24df9b9d4a7afa704426f3
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Valvular heart disease/ heart chambers
+    context_id: PheCode_747.12
+    build: b38
+    sample_size: 403835
+    n_cases: 233
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

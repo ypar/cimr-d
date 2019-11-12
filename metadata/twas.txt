@@ -1,0 +1,1 @@
+file_name   pubmed_paper_link   source_file download_link   phenotype_1   sample_size_1 cases_1   phenotype_full_1  phenotype_category_1  is_binary_phenotype_1   phenotype_2	sample_size_2	cases_2	phenotype_full_2	phenotype_category_2	is_binary_phenotype_2	method	method_detail	genome_build_reference

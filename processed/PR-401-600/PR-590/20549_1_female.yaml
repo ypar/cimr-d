@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20549_1; Substances taken for anxiety: Unprescribed medication (more than once); variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/dshuvxdshqtvtkx/20549_1.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 68a169404c8bb17b43eb5ece99d53b29
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20549_1
+    build: b37
+    sample_size: 54784
+    n_cases: 1858.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

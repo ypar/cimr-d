@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22612_2; Worked with materials containing asbestos: Often; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/j4i79nw72l6klna/22612_2.gwas.imputed_v3.male.v2.tsv.bgz?dl=0
+        md5: f604ab2854bedfd2685c22de49cf44bc
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22612_2
+    build: b37
+    sample_size: 35136
+    n_cases: 1100.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

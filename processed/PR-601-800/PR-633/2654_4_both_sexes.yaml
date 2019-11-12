@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 2654_4; Non-butter spread type details: Soft (tub) margarine; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/vasf8mbc94vuxpa/2654_4.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: f11d6bdcf8e35e7cbbe1d9b071ed2452
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 2654_4
+    build: b37
+    sample_size: 190094
+    n_cases: 23625.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

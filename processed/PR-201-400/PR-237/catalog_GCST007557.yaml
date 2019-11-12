@@ -1,0 +1,41 @@
+
+data_file:
+    description: >-
+        Genome-wide associations for birth weight and correlations with adult disease; 133,903 European ancestry individuals;9,799 European ancestry individuals
+    location:
+        url: ftp://ftp.ebi.ac.uk:21/pub/databases/gwas/summary_statistics/HorikoshiM_27680694_GCST007557/harmonised/23202124-GCST007557-EFO_0004344.h.tsv.gz
+        md5: c0701129f54ca5d3501a3b02363ce26e
+    columns:
+        variant_id: hm_variant_id
+        original_variant_id: variant_id
+        rsnum: hm_rsid
+        variant_chrom: hm_chrom
+        variant_pos: hm_pos
+        non_effect_allele: hm_other_allele
+        effect_allele: hm_effect_allele
+        effect_size: hm_beta
+        effect_allele: original_effect_allele
+        standard_error: standard_error
+        pvalue: p_value
+
+data_info:
+    citation: 10.1038/nature19806
+    data_source: https://www.ebi.ac.uk/gwas/
+    data_type: gwas
+    context: birth weight
+    context_id: EFO_0004344
+    build: b38
+    sample_size: 143702.0
+    n_cases: NA
+    can_be_public: true
+
+method:
+    name: NA
+    tool: NA
+    website: www.ncbi.nlm.nih.gov/pubmed/27680694
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com
+

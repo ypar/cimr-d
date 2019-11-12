@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20003_1141176832; Treatment/medication code: seretide 50 evohaler; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/lr8z8844fhdgv62/20003_1141176832.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: abc789e6db996a8bed792de09359ac6f
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20003_1141176832
+    build: b37
+    sample_size: 166988
+    n_cases: 1861.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

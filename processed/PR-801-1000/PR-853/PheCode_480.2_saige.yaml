@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Viral pneumonia; phenotype category: respiratory; sample size: 388257; number of cases: 71; number of controls: 398538; number of excluded controls: 10352; url for manhattan plots: https://www.dropbox.com/s/3zqkq7uqb65l2ag/480.2-Viralpneumonia-71cases-398538controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_480.2_SAIGE_MACge20.txt.vcf.gz
+        md5: 77019fceea17c75e274ccb7de2802dfe
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Viral pneumonia
+    context_id: PheCode_480.2
+    build: b38
+    sample_size: 388257
+    n_cases: 71
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

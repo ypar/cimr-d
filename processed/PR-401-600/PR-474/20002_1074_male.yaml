@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20002_1074; Non-cancer illness code, self-reported: angina; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/8gdm7865bu9xas4/20002_1074.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: af8c45f2dc23aa378fba2bab44ced439
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20002_1074
+    build: b37
+    sample_size: 166988
+    n_cases: 7773.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

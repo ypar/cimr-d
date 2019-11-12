@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6145_3; Illness, injury, bereavement, stress in last 2 years: Death of a close relative; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/xl20lwtj9af156u/6145_3.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 6a6a9eae1304aaa2ef6d60a2475a3311
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6145_3
+    build: b37
+    sample_size: 358836
+    n_cases: 75305.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

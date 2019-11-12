@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22601_23213026; Job coding: scientific researcher, scientific officer, medical research associate, experimental officer; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/arevx6q79gof24f/22601_23213026.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 0b5074a8892745c52c750bb4e7d5dad7
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22601_23213026
+    build: b37
+    sample_size: 89866
+    n_cases: 1165.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

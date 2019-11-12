@@ -1,0 +1,38 @@
+data_file:
+    description: >-
+        European-only meta-analysis of offspring birth weight in up
+        to 210,267 individuals
+    location:
+        url: http://mccarthy.well.ox.ac.uk/publications/2019/EggBirthWeight_NatureGenetics/Maternal_BW_European_meta.NG2019.txt.gz
+        md5: 227f1a4a8f9408191acbe3a79fedf82d
+    columns:
+        variant_chrom: chr
+        variant_pos: pos
+        effect_allele: ea
+        non_effect_allele: nea
+        inc_afrq: eaf
+        effect_size: beta
+        standard_error: se
+        pvalue: p
+        sample_size: n
+        rsnum: SNP
+
+data_info:
+    citation: 10.1038/s41588-019-0403-1
+    data_source: https://www.egg-consortium.org/birth-weight-2019.html
+    data_type: gwas
+    context: offspring birth weight
+    build: b37
+    sample_size: 210267
+    n_cases: na
+    can_be_public: true
+
+method:
+    name: meta-analysis
+    tool: gwama
+    website: http://www.well.ox.ac.uk/GWAMA
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com

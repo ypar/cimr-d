@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Cyst of bone; phenotype category: musculoskeletal; sample size: 373759; number of cases: 319; number of controls: 391041; number of excluded controls: 17601; url for manhattan plots: https://www.dropbox.com/s/885xi7zshans20v/733.2-Cystofbone-319cases-391041controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_733.2_SAIGE_MACge20.txt.vcf.gz
+        md5: 1981a98ba3984f7a1b4ceb4765df4732
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Cyst of bone
+    context_id: PheCode_733.2
+    build: b38
+    sample_size: 373759
+    n_cases: 319
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

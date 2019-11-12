@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: Z13; Diagnoses - main ICD10: Z13 Special screening examination for other diseases and disorders; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/k1tpwc2jjb8yug0/Z13.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 2d00f2e14ee2f569ce7f8862432a4d6c
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: Z13
+    build: b37
+    sample_size: 167020
+    n_cases: 1053.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22617_9219; Job SOC coding: Elementary office occupations n.e.c.; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/481n4t1mm9aqykp/22617_9219.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: d147bd95704c82cf9def5bd087cb9809
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22617_9219
+    build: b37
+    sample_size: 91149
+    n_cases: 3340.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

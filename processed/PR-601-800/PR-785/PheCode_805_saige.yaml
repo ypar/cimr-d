@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Fracture of vertebral column without mention of spinal cord injury; phenotype category: injuries & poisonings; sample size: 369273; number of cases: 1352; number of controls: 387765; number of excluded controls: 19844; url for manhattan plots: https://www.dropbox.com/s/ds5d3mlm9wh6p87/805-Fractureofvertebralcolumnwithoutmentionofspinalcordinjury-1352cases-387765controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_805_SAIGE_MACge20.txt.vcf.gz
+        md5: 4e608c06ba507917910708c1e1f9d6e4
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Fracture of vertebral column without mention of spinal cord injury
+    context_id: PheCode_805
+    build: b38
+    sample_size: 369273
+    n_cases: 1352
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

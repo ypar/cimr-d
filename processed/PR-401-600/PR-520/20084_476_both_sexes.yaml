@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20084_476; Vitamin and/or mineral supplement use: Vitamin B6; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/97kx7wx2qq9s9pv/20084_476.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 1831d49953817258d3a2f439a5ee3b85
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20084_476
+    build: b37
+    sample_size: 51427
+    n_cases: 1154.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

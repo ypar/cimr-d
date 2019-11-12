@@ -1,0 +1,41 @@
+
+data_file:
+    description: >-
+        Meta-analysis of Genome-wide Association Studies for Neuroticism, and the Polygenic Association With Major Depressive Disorder; Up to 627 Cilento (founder/genetic isolate) individuals, up to 2,296 Erasmus Rucphen (founder/genetic isolate) individuals, up to 1,650 Orcadian (founder/genetic isolate) individuals, up to 909 Vis (founder/genetic isolate) individuals, up to 58,179 European ancestry individuals;Up to 9,786 European ancestry individuals
+    location:
+        url: ftp://ftp.ebi.ac.uk:21/pub/databases/gwas/summary_statistics/deMoorMH_25993607_GCST002920/harmonised/25993607-GCST002920-EFO_0007660.h.tsv.gz
+        md5: 91fe2f15d61c57bb1934c5af928937f9
+    columns:
+        variant_id: hm_variant_id
+        original_variant_id: variant_id
+        rsnum: hm_rsid
+        variant_chrom: hm_chrom
+        variant_pos: hm_pos
+        non_effect_allele: hm_other_allele
+        effect_allele: hm_effect_allele
+        effect_size: hm_beta
+        effect_allele: original_effect_allele
+        standard_error: standard_error
+        pvalue: p_value
+
+data_info:
+    citation: 10.1001/jamapsychiatry.2015.0554
+    data_source: https://www.ebi.ac.uk/gwas/
+    data_type: gwas
+    context: neuroticism measurement
+    context_id: EFO_0007660
+    build: b38
+    sample_size: 73447.0
+    n_cases: NA
+    can_be_public: true
+
+method:
+    name: NA
+    tool: NA
+    website: www.ncbi.nlm.nih.gov/pubmed/25993607
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20002_1396; Non-cancer illness code, self-reported: enlarged prostate; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/w1p8lyjnixzo80f/20002_1396.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: b9e826fc4a88b4558b574f6f8a4852f4
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20002_1396
+    build: b37
+    sample_size: 166988
+    n_cases: 4896.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

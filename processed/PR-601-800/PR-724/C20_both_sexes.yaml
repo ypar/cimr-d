@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: C20; Diagnoses - main ICD10: C20 Malignant neoplasm of rectum; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/wdut0i5yl2nnvha/C20.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 75d39f8f4f760a8ed40e497d33f0dd2c
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: C20
+    build: b37
+    sample_size: 361194
+    n_cases: 1118.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

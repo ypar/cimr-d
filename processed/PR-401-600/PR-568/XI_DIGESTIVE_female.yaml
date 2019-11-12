@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: XI_DIGESTIVE; Diseases of the digestive system; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/lm4ja5v5vuw49ou/XI_DIGESTIVE.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: bd0630d8445ea42b9fb8eba6f147e336
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: XI_DIGESTIVE
+    build: b37
+    sample_size: 194174
+    n_cases: 59284.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

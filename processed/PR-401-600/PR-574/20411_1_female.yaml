@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20411_1; Ever been injured or injured someone else through drinking alcohol: Yes, but not in the last year; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/755zzn5a0vjeyp7/20411_1.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 54373752099460774fc7e6ad09fa76c7
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20411_1
+    build: b37
+    sample_size: 66084
+    n_cases: 1665.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

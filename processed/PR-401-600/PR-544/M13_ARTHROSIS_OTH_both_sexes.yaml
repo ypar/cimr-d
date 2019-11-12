@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: M13_ARTHROSIS_OTH; Other arthrosis; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/k51eyp2qeloq2bc/M13_ARTHROSIS_OTH.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 16890a53967d59a79713d058d4c2fc7e
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: M13_ARTHROSIS_OTH
+    build: b37
+    sample_size: 361194
+    n_cases: 5168.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

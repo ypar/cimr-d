@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Erythema nodosum; phenotype category: dermatologic; sample size: 396535; number of cases: 76; number of controls: 402672; number of excluded controls: 6213; url for manhattan plots: https://www.dropbox.com/s/q3rkndt1pif6six/695.81-Erythemanodosum-76cases-402672controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_695.81_SAIGE_MACge20.txt.vcf.gz
+        md5: ee691363df5421f6c6a34dd454427b96
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Erythema nodosum
+    context_id: PheCode_695.81
+    build: b38
+    sample_size: 396535
+    n_cases: 76
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

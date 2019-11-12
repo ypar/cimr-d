@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22601_41233254; Job coding: counter clerk, bank clerk, cashier, post office clerk; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/xqfanmxm4yjpkmx/22601_41233254.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 6dc65e5017eb6f771a42a9bbba9ca73c
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22601_41233254
+    build: b37
+    sample_size: 49711
+    n_cases: 2306.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

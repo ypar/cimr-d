@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20160; Ever smoked; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/od8ng7t9reve57z/20160.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 18ac24b2efcc23e5b311130d812a6fb2
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20160
+    build: b37
+    sample_size: 193408
+    n_cases: 108939.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

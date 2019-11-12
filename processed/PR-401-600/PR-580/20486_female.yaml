@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20486; Contemplated self-harm in past year; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/c5m3zkayzvypj1i/20486.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 7d4b30ea64e42d2cc8f52816408ee87d
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20486
+    build: b37
+    sample_size: 11260
+    n_cases: 2069.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

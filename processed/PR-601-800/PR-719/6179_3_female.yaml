@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6179_3; Mineral and other dietary supplements: Calcium; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/wflmzt4taq8kqls/6179_3.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 0415e5a01b64126c9fd6c5ae21ae9c96
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6179_3
+    build: b37
+    sample_size: 193605
+    n_cases: 19879.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

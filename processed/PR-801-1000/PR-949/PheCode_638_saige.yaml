@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Other high-risk pregnancy; phenotype category: pregnancy complications; sample size: 393003; number of cases: 70; number of controls: 400912; number of excluded controls: 7979; url for manhattan plots: https://www.dropbox.com/s/1xo5f1aq9g63h6c/638-Otherhigh-riskpregnancy-70cases-400912controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_638_SAIGE_MACge20.txt.vcf.gz
+        md5: 69b8075fb08096526430a5051e5b9af4
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Other high-risk pregnancy
+    context_id: PheCode_638
+    build: b38
+    sample_size: 393003
+    n_cases: 70
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

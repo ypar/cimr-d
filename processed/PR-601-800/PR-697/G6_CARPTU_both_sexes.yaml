@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: G6_CARPTU; Carpal tunnel syndrome; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/rj2p8qksstqrahy/G6_CARPTU.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: bc646c660f55e5ecbb8926f947ed4e7a
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: G6_CARPTU
+    build: b37
+    sample_size: 361194
+    n_cases: 7973.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

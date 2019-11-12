@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Breast cancer; phenotype category: neoplasms; sample size: 393933; number of cases: 12898; number of controls: 388549; number of excluded controls: 7514; url for manhattan plots: https://www.dropbox.com/s/hpd08l0wabd9cc6/174-Breastcancer-12898cases-388549controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_174_SAIGE_MACge20.txt.vcf.gz
+        md5: dc647c14c07132dbeb0f13ae11abf2a2
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Breast cancer
+    context_id: PheCode_174
+    build: b38
+    sample_size: 393933
+    n_cases: 12898
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

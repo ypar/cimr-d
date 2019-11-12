@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Proteinuria; phenotype category: endocrine/metabolic; sample size: 408177; number of cases: 339; number of controls: 408230; number of excluded controls: 392; url for manhattan plots: https://www.dropbox.com/s/k1dbvj43p9vdjns/269-Proteinuria-339cases-408230controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_269_SAIGE_MACge20.txt.vcf.gz
+        md5: 407ee97e20c8c41a73e05a19003bee16
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Proteinuria
+    context_id: PheCode_269
+    build: b38
+    sample_size: 408177
+    n_cases: 339
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

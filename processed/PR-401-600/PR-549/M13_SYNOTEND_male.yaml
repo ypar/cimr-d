@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: M13_SYNOTEND; Disorders of synovium and tendon; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/jp8e10hnf4x45e5/M13_SYNOTEND.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 929bc6e8e245b3cb5ad658cd95513558
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: M13_SYNOTEND
+    build: b37
+    sample_size: 167020
+    n_cases: 2286.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

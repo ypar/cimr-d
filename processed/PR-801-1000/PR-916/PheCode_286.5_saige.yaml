@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Hemorrhagic disorder due to intrinsic circulating anticoagulants; phenotype category: hematopoietic; sample size: 403773; number of cases: 86; number of controls: 406281; number of excluded controls: 2594; url for manhattan plots: https://www.dropbox.com/s/mj8dj7e8mpsjlcr/286.5-Hemorrhagicdisorderduetointrinsiccirculatinganticoagulants-86cases-406281controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_286.5_SAIGE_MACge20.txt.vcf.gz
+        md5: 8e1c9a3d504bbceb61022735fdb6e63a
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Hemorrhagic disorder due to intrinsic circulating anticoagulants
+    context_id: PheCode_286.5
+    build: b38
+    sample_size: 403773
+    n_cases: 86
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

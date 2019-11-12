@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22601_42173304; Job coding: typist, shorthand typist, transcriber, stenographer; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/op8p2gw6oqn2lr2/22601_42173304.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 8b3cd486f039005d2cabca36f4a4ef70
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22601_42173304
+    build: b37
+    sample_size: 49711
+    n_cases: 2960.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

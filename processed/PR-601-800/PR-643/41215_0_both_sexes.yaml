@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 41215_0; Detention categories: Informal, not formally detained; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/78i6gso619dw8r8/41215_0.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 64904d43555b4f2010b9e89aeffb14be
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 41215_0
+    build: b37
+    sample_size: 361194
+    n_cases: 28228.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

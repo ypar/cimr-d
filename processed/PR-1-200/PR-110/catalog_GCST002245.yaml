@@ -1,0 +1,41 @@
+
+data_file:
+    description: >-
+        Meta-analysis of 74,046 individuals identifies 11 new susceptibility loci for Alzheimer's disease; 17,008 European ancestry cases, 37,154 European ancestry controls;8,572 European ancestry cases, 11,312 European ancestry controls
+    location:
+        url: ftp://ftp.ebi.ac.uk:21/pub/databases/gwas/summary_statistics/LambertJC_24162737_GCST002245/harmonised/24162737-GCST002245-EFO_0000249.h.tsv.gz
+        md5: 072ba2215228c46c8d66f93866099ced
+    columns:
+        variant_id: hm_variant_id
+        original_variant_id: variant_id
+        rsnum: hm_rsid
+        variant_chrom: hm_chrom
+        variant_pos: hm_pos
+        non_effect_allele: hm_other_allele
+        effect_allele: hm_effect_allele
+        effect_size: hm_beta
+        effect_allele: original_effect_allele
+        standard_error: standard_error
+        pvalue: p_value
+
+data_info:
+    citation: 10.1038/ng.2802
+    data_source: https://www.ebi.ac.uk/gwas/
+    data_type: gwas
+    context: Alzheimer's disease
+    context_id: EFO_0000249
+    build: b38
+    sample_size: 74046.0
+    n_cases: NA
+    can_be_public: true
+
+method:
+    name: NA
+    tool: NA
+    website: www.ncbi.nlm.nih.gov/pubmed/24162737
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com
+

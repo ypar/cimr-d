@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20423; Keyed up or on edge during worst period of anxiety; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/q47fsq764xtmttw/20423.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 54bae2c9f146d99f42e985a6793b87bd
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20423
+    build: b37
+    sample_size: 22248
+    n_cases: 17963.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

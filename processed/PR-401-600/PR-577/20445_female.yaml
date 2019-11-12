@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20445; Depression possibly related to childbirth; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/3i88kwcx7rln611/20445.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 0cd61767f777450ed5fb9ad07c259ed1
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20445
+    build: b37
+    sample_size: 38007
+    n_cases: 4834.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

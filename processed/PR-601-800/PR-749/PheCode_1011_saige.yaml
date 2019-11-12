@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Complications of surgical and medical procedures; phenotype category: injuries & poisonings; sample size: 408961; number of cases: 9140; number of controls: 399821; number of excluded controls: 0; url for manhattan plots: https://www.dropbox.com/s/2jhq9c7v4d1435v/1011-Complicationsofsurgicalandmedicalprocedures-9140cases-399821controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_1011_SAIGE_MACge20.txt.vcf.gz
+        md5: 5e4d28c3f150065810763d8ad671539a
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Complications of surgical and medical procedures
+    context_id: PheCode_1011
+    build: b38
+    sample_size: 408961
+    n_cases: 9140
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

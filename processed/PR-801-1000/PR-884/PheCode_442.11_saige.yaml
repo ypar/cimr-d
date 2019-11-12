@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Abdominal aortic aneurysm; phenotype category: circulatory system; sample size: 394035; number of cases: 903; number of controls: 400595; number of excluded controls: 7463; url for manhattan plots: https://www.dropbox.com/s/3n2yy3i79wlk1c8/442.11-Abdominalaorticaneurysm-903cases-400595controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_442.11_SAIGE_MACge20.txt.vcf.gz
+        md5: 585af88220c99d245b0ab3df54f1d384
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Abdominal aortic aneurysm
+    context_id: PheCode_442.11
+    build: b38
+    sample_size: 394035
+    n_cases: 903
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

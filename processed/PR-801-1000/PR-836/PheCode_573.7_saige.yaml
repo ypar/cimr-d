@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Abnormal results of function study of liver; phenotype category: digestive; sample size: 398107; number of cases: 3479; number of controls: 400055; number of excluded controls: 5427; url for manhattan plots: https://www.dropbox.com/s/2rutao7xsyqkgb5/573.7-Abnormalresultsoffunctionstudyofliver-3479cases-400055controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_573.7_SAIGE_MACge20.txt.vcf.gz
+        md5: 3b18ad31af945b83b2c926dc46b86bdf
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Abnormal results of function study of liver
+    context_id: PheCode_573.7
+    build: b38
+    sample_size: 398107
+    n_cases: 3479
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

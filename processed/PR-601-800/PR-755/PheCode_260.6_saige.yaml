@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Anorexia; phenotype category: endocrine/metabolic; sample size: 405693; number of cases: 835; number of controls: 406492; number of excluded controls: 1634; url for manhattan plots: https://www.dropbox.com/s/y01n2ym3yg0uh9l/260.6-Anorexia-835cases-406492controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_260.6_SAIGE_MACge20.txt.vcf.gz
+        md5: 0c84d046238807cd5654d38ae2a50b8b
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Anorexia
+    context_id: PheCode_260.6
+    build: b38
+    sample_size: 405693
+    n_cases: 835
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

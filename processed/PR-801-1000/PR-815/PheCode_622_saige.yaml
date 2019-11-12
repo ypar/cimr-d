@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Polyp of female genital organs; phenotype category: genitourinary; sample size: 405569; number of cases: 10881; number of controls: 396384; number of excluded controls: 1696; url for manhattan plots: https://www.dropbox.com/s/8x1a4l0irtdffcu/622-Polypoffemalegenitalorgans-10881cases-396384controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_622_SAIGE_MACge20.txt.vcf.gz
+        md5: df6a9a244feb6fbc9c5988357ec44501
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Polyp of female genital organs
+    context_id: PheCode_622
+    build: b38
+    sample_size: 405569
+    n_cases: 10881
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

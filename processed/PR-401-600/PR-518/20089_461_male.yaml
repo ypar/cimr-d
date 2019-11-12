@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20089_461; Type of meals eaten: Takeaway meals; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/2nwudhc1dcs3giv/20089_461.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 5d7acf4e91dbe232dce1e6952a592f0a
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20089_461
+    build: b37
+    sample_size: 23469
+    n_cases: 1123.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

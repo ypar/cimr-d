@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Phlebitis and thrombophlebitis; phenotype category: circulatory system; sample size: 338023; number of cases: 3900; number of controls: 369592; number of excluded controls: 35469; url for manhattan plots: https://www.dropbox.com/s/1beywl35c0ovsn7/451-Phlebitisandthrombophlebitis-3900cases-369592controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_451_SAIGE_MACge20.txt.vcf.gz
+        md5: 2452b61c83b6e4278aa7fdfcffe558bb
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Phlebitis and thrombophlebitis
+    context_id: PheCode_451
+    build: b38
+    sample_size: 338023
+    n_cases: 3900
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

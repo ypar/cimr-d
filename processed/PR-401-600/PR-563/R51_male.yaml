@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: R51; Diagnoses - main ICD10: R51 Headache; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/k585otuhw90sey9/R51.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: fbf646bc69b5b6418986cfcbf1d6640a
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: R51
+    build: b37
+    sample_size: 167020
+    n_cases: 1603.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Other alveolar and parietoalveolar pneumonopathy; phenotype category: respiratory; sample size: 386461; number of cases: 300; number of controls: 397411; number of excluded controls: 11250; url for manhattan plots: https://www.dropbox.com/s/tcvx58ojop7rvuy/504-Otheralveolarandparietoalveolarpneumonopathy-300cases-397411controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_504_SAIGE_MACge20.txt.vcf.gz
+        md5: 036d83c75837c35dd93ccf3965150d87
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Other alveolar and parietoalveolar pneumonopathy
+    context_id: PheCode_504
+    build: b38
+    sample_size: 386461
+    n_cases: 300
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

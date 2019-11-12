@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Heart valve replaced; phenotype category: circulatory system; sample size: 398879; number of cases: 1499; number of controls: 402421; number of excluded controls: 5041; url for manhattan plots: https://www.dropbox.com/s/74s8avfsqupxi19/395.6-Heartvalvereplaced-1499cases-402421controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_395.6_SAIGE_MACge20.txt.vcf.gz
+        md5: 76292b6d356a7aa1341b8ebfefcfc2a9
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Heart valve replaced
+    context_id: PheCode_395.6
+    build: b38
+    sample_size: 398879
+    n_cases: 1499
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

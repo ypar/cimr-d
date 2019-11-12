@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 5992; ECG, phase duration; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/mfme1wn2fd5de0k/5992.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 6fa814c0d00af5c8a3cbfcc33e426d9f
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 5992
+    build: b37
+    sample_size: 53998
+    n_cases: 42709.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

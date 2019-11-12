@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: J18; Diagnoses - main ICD10: J18 Pneumonia, organism unspecified; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/ha4w8hlpb58o57o/J18.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 2d6f65a6b13daa238671214b8523716e
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: J18
+    build: b37
+    sample_size: 194174
+    n_cases: 2095.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

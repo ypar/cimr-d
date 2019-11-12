@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Retinal detachments and defects; phenotype category: sense organs; sample size: 393087; number of cases: 3263; number of controls: 397761; number of excluded controls: 7937; url for manhattan plots: https://www.dropbox.com/s/0g1w8ex59ab5t8a/361-Retinaldetachmentsanddefects-3263cases-397761controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_361_SAIGE_MACge20.txt.vcf.gz
+        md5: e1ddb08ffaf45cd9fc81107442161a3b
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Retinal detachments and defects
+    context_id: PheCode_361
+    build: b38
+    sample_size: 393087
+    n_cases: 3263
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

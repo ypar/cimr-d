@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 3159; Smoked cigarette or pipe within last hour; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/97coexgq0egrozu/3159.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 2bc593c7c9838923832828e23c41a657
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 3159
+    build: b37
+    sample_size: 17914
+    n_cases: 2424.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

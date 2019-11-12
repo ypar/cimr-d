@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20446; Ever had prolonged feelings of sadness or depression; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/d12ywph2pkvp9z5/20446.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: f64731c483074f5ecc8434706c454f26
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20446
+    build: b37
+    sample_size: 65924
+    n_cases: 41535.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

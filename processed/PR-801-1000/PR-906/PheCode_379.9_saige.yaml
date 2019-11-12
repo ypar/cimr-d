@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Pain, swelling or discharge of eye; phenotype category: sense organs; sample size: 393869; number of cases: 170; number of controls: 401245; number of excluded controls: 7546; url for manhattan plots: https://www.dropbox.com/s/30zem4lws7z4ct8/379.9-Pain-swellingordischargeofeye-170cases-401245controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_379.9_SAIGE_MACge20.txt.vcf.gz
+        md5: 0b967f23f39b1a0279e88f16d361a096
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Pain, swelling or discharge of eye
+    context_id: PheCode_379.9
+    build: b38
+    sample_size: 393869
+    n_cases: 170
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

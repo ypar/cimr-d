@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22617_4132; Job SOC coding: Pensions and insurance clerks; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/jlyt4nw0y43ct4d/22617_4132.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 9494ad3c7e12d9b32a47b107d2617f63
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22617_4132
+    build: b37
+    sample_size: 91149
+    n_cases: 1270.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

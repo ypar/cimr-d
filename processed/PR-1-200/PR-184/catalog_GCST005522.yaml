@@ -1,0 +1,41 @@
+
+data_file:
+    description: >-
+        ImmunoChip Study Implicates Antigen Presentation to T Cells in Narcolepsy; 1,886 European ancestry cases, 10,421 European ancestry controls
+    location:
+        url: ftp://ftp.ebi.ac.uk:21/pub/databases/gwas/summary_statistics/FaracoJ_23459209_GCST005522/harmonised/23459209-GCST005522-EFO_0000614.h.tsv.gz
+        md5: ee9f77782ec7a8800cd71050844ea3d2
+    columns:
+        variant_id: hm_variant_id
+        original_variant_id: variant_id
+        rsnum: hm_rsid
+        variant_chrom: hm_chrom
+        variant_pos: hm_pos
+        non_effect_allele: hm_other_allele
+        effect_allele: hm_effect_allele
+        effect_size: hm_beta
+        effect_allele: original_effect_allele
+        standard_error: standard_error
+        pvalue: p_value
+
+data_info:
+    citation: 10.1371/journal.pgen.1003270
+    data_source: https://www.ebi.ac.uk/gwas/
+    data_type: gwas
+    context: narcolepsy with cataplexy
+    context_id: EFO_0000614
+    build: b38
+    sample_size: 12307.0
+    n_cases: NA
+    can_be_public: true
+
+method:
+    name: NA
+    tool: NA
+    website: www.ncbi.nlm.nih.gov/pubmed/23459209
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com
+

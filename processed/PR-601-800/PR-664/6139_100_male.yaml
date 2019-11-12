@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6139_100; Gas or solid-fuel cooking/heating: None of the above; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/z5lelxrzha4jl6g/6139_100.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: aa4d7900e70e842d18e432c3ee599c29
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6139_100
+    build: b37
+    sample_size: 166427
+    n_cases: 29740.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

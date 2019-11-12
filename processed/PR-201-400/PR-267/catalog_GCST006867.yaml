@@ -1,0 +1,41 @@
+
+data_file:
+    description: >-
+        Genome-wide association analyses identify 143 risk variants and putative regulatory mechanisms for type 2 diabetes; 61,714 European ancestry cases, 1,178 Pakistani ancestry cases, 593,952 European ancestry controls, 2,472 Pakistani ancestry controls
+    location:
+        url: ftp://ftp.ebi.ac.uk:21/pub/databases/gwas/summary_statistics/XueA_30054458_GCST006867/harmonised/30054458-GCST006867-EFO_0001360.h.tsv.gz
+        md5: 61ccd81011b14519d2436010e57aeb21
+    columns:
+        variant_id: hm_variant_id
+        original_variant_id: variant_id
+        rsnum: hm_rsid
+        variant_chrom: hm_chrom
+        variant_pos: hm_pos
+        non_effect_allele: hm_other_allele
+        effect_allele: hm_effect_allele
+        effect_size: hm_beta
+        effect_allele: original_effect_allele
+        standard_error: standard_error
+        pvalue: p_value
+
+data_info:
+    citation: 10.1038/s41467-018-04951-w
+    data_source: https://www.ebi.ac.uk/gwas/
+    data_type: gwas
+    context: type II diabetes mellitus
+    context_id: EFO_0001360
+    build: b38
+    sample_size: 659316.0
+    n_cases: NA
+    can_be_public: true
+
+method:
+    name: NA
+    tool: NA
+    website: www.ncbi.nlm.nih.gov/pubmed/30054458
+
+contributor:
+    name: YoSon Park
+    github: ypar
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: Z47; Diagnoses - main ICD10: Z47 Other orthopaedic follow-up care; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/f7151pxjhnnl072/Z47.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 203a8e9a2324c47f4c2df5a620dacea4
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: Z47
+    build: b37
+    sample_size: 361194
+    n_cases: 2774.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

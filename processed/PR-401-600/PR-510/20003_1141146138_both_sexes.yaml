@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20003_1141146138; Treatment/medication code: lipitor 10mg tablet; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/dq123hn2die3189/20003_1141146138.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 5b593f1bbccb4e4a959562177466ed10
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20003_1141146138
+    build: b37
+    sample_size: 361141
+    n_cases: 2584.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

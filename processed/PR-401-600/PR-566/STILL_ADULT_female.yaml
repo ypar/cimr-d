@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: finngen; reported phenotype: STILL_ADULT; Adult-onset Still disease; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/gmdzvetoxlr7hxm/STILL_ADULT.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 082760a7e5a08d94681ae006363ef7f6
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: STILL_ADULT
+    build: b37
+    sample_size: 194174
+    n_cases: 1075.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

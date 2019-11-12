@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 22617_2311; Job SOC coding: Higher education teaching professionals; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/xe2zwb766pgn2nn/22617_2311.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 025edd09a6649548f48c10dc4dfd0377
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 22617_2311
+    build: b37
+    sample_size: 40936
+    n_cases: 1634.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

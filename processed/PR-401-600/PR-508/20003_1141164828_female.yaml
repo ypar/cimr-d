@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20003_1141164828; Treatment/medication code: adcal-d3 1.5g/10micrograms chewable tablet; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/kkjctmasxcq9aov/20003_1141164828.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: d8869a80a8c8e640af4399104c694f6e
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20003_1141164828
+    build: b37
+    sample_size: 194153
+    n_cases: 2100.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

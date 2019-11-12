@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20111_8; Illnesses of siblings: High blood pressure; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/qgo2c70ggcbz1zd/20111_8.gwas.imputed_v3.both_sexes.v2.tsv.bgz?dl=0
+        md5: 0a5c0d248ec0ba5d210e2a3dbf5c8c26
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20111_8
+    build: b37
+    sample_size: 281619
+    n_cases: 58495.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

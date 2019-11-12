@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20541; Difficulty stopping worrying during worst period of anxiety; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/mvpjyywab0i0twx/20541.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: a9cdf51017b7723d8ab217d34ef880f3
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20541
+    build: b37
+    sample_size: 12728
+    n_cases: 11798.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

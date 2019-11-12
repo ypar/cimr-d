@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Cystitis; phenotype category: genitourinary; sample size: 356807; number of cases: 2948; number of controls: 379936; number of excluded controls: 26077; url for manhattan plots: https://www.dropbox.com/s/u5agcigfwgp9ruz/592.1-Cystitis-2948cases-379936controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_592.1_SAIGE_MACge20.txt.vcf.gz
+        md5: 88d63dacbf9c6b7cf3bbbbba2a8ebc99
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Cystitis
+    context_id: PheCode_592.1
+    build: b38
+    sample_size: 356807
+    n_cases: 2948
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

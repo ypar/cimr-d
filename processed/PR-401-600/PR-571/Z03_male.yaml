@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: Z03; Diagnoses - main ICD10: Z03 Medical observation and evaluation for suspected diseases and conditions; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/1ovzzvlgnk5cbr8/Z03.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: e8448c80542bd322199d1945a835d9cc
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: Z03
+    build: b37
+    sample_size: 167020
+    n_cases: 2441.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

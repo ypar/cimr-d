@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6177_2; Medication for cholesterol, blood pressure or diabetes: Blood pressure medication; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/t37sk9w2m5pagyp/6177_2.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 44c4d7d9eff5567300cb090a753f4f95
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6177_2
+    build: b37
+    sample_size: 165340
+    n_cases: 40987.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

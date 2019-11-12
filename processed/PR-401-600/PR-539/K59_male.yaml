@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: K59; Diagnoses - main ICD10: K59 Other functional intestinal disorders; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/0bvg7yeh9bqezer/K59.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 61d93fe64b72b9c117b975f925357422
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: K59
+    build: b37
+    sample_size: 167020
+    n_cases: 1248.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

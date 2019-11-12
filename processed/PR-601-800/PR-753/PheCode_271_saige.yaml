@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Disorders of carbohydrate transport and metabolism; phenotype category: endocrine/metabolic; sample size: 408961; number of cases: 163; number of controls: 408798; number of excluded controls: 0; url for manhattan plots: https://www.dropbox.com/s/j28yqomif1r3yvx/271-Disordersofcarbohydratetransportandmetabolism-163cases-408798controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_271_SAIGE_MACge20.txt.vcf.gz
+        md5: bc0b3fcf0b7ccf50c88b502c73fcca92
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Disorders of carbohydrate transport and metabolism
+    context_id: PheCode_271
+    build: b38
+    sample_size: 408961
+    n_cases: 163
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

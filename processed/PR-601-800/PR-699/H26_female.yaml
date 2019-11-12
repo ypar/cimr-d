@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: H26; Diagnoses - main ICD10: H26 Other cataract; variable type: binary; dataset: female
+    location:
+        url: https://www.dropbox.com/s/osbz70k4pek3ldj/H26.gwas.imputed_v3.female.tsv.bgz?dl=0
+        md5: 8d8445b30cc93e11282b4115c5b69305
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: H26
+    build: b37
+    sample_size: 194174
+    n_cases: 6194.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

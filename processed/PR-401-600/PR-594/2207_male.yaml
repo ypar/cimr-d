@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 2207; Wears glasses or contact lenses; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/712yw3jfx08x4zp/2207.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 8cbc2006e52d4e67c23ce6af234fd9df
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 2207
+    build: b37
+    sample_size: 166765
+    n_cases: 145682.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

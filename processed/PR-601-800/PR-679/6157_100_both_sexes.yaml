@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6157_100; Why stopped smoking: None of the above; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/g08uh8k1ek3o4hp/6157_100.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: ff7fd4cad429719d888d8ee54010346c
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6157_100
+    build: b37
+    sample_size: 88516
+    n_cases: 17748.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

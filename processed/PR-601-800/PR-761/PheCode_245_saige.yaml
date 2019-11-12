@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Thyroiditis; phenotype category: endocrine/metabolic; sample size: 374483; number of cases: 293; number of controls: 391429; number of excluded controls: 17239; url for manhattan plots: https://www.dropbox.com/s/6u7prmkdsv40l6o/245-Thyroiditis-293cases-391429controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_245_SAIGE_MACge20.txt.vcf.gz
+        md5: f37e0b47fe853eb4858334e27d26bff8
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Thyroiditis
+    context_id: PheCode_245
+    build: b38
+    sample_size: 374483
+    n_cases: 293
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

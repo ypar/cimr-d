@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Giant cell arteritis; phenotype category: circulatory system; sample size: 393005; number of cases: 388; number of controls: 400595; number of excluded controls: 7978; url for manhattan plots: https://www.dropbox.com/s/bj11t7aorls43p1/446.5-Giantcellarteritis-388cases-400595controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_446.5_SAIGE_MACge20.txt.vcf.gz
+        md5: 7b017b4171647620fe30ff5a281f1836
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Giant cell arteritis
+    context_id: PheCode_446.5
+    build: b38
+    sample_size: 393005
+    n_cases: 388
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

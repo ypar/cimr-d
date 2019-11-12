@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: K30; Diagnoses - main ICD10: K30 Dyspepsia; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/ban594643f4y1ga/K30.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: a987ff94102bcb29891fa631a98bbb46
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: K30
+    build: b37
+    sample_size: 167020
+    n_cases: 2762.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

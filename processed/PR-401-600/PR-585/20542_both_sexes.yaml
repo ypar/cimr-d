@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 20542; Stronger worrying (than other people) during period of worst anxiety; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/f3xluri6i57i4ox/20542.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: d91e6fea8ec75c1431e05800c6d174da
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 20542
+    build: b37
+    sample_size: 25107
+    n_cases: 20719.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

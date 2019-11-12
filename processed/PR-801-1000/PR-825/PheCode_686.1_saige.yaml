@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Carbuncle and furuncle; phenotype category: dermatologic; sample size: 390913; number of cases: 2302; number of controls: 397635; number of excluded controls: 9024; url for manhattan plots: https://www.dropbox.com/s/gv2bottunminode/686.1-Carbuncleandfuruncle-2302cases-397635controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_686.1_SAIGE_MACge20.txt.vcf.gz
+        md5: 277f1bac146c079e340f2e3c6fab7e26
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Carbuncle and furuncle
+    context_id: PheCode_686.1
+    build: b38
+    sample_size: 390913
+    n_cases: 2302
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

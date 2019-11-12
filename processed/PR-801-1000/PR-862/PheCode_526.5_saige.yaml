@@ -1,0 +1,40 @@
+
+data_file:
+    description: >-
+        reported phenotype: Inflammatory conditions of jaw; phenotype category: digestive; sample size: 387531; number of cases: 110; number of controls: 398136; number of excluded controls: 10715; url for manhattan plots: https://www.dropbox.com/s/hedw3jthvqbeozf/526.5-Inflammatoryconditionsofjaw-110cases-398136controls.mh.pdf?dl=0
+    location:
+        url: ftp://share.sph.umich.edu/UKBB_SAIGE_HRC/PheCode_526.5_SAIGE_MACge20.txt.vcf.gz
+        md5: 08e994328435f2e134126ae3c24dad68
+
+    columns:
+        variant_chrom: #CHROM
+        variant_pos: POS
+        rsnum: ID
+        ref: REF
+        alt: ALT
+        effect_allele: ALT
+        non_effect_allele: REF
+        inc_afrq: af
+        effect_size: beta
+        standard_error: sebeta
+        pvalue: pval
+
+data_info:
+    citation: 10.1038/s41588-018-0184-y
+    data_source: https://www.leelabsg.org/resources
+    data_type: gwas
+    context: Inflammatory conditions of jaw
+    context_id: PheCode_526.5
+    build: b38
+    sample_size: 387531
+    n_cases: 110
+    can_be_public: true
+
+method:
+    name: Scalable and Accurate Implementation of GEneralized mixed model
+    tool: SAIGE
+    website: https://github.com/weizhouUMICH/SAIGE/
+
+contributor:
+    email: cimrroot@gmail.com
+

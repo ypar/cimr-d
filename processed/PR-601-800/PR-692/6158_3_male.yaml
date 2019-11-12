@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6158_3; Why reduced smoking: Health precaution; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/bteildpp33mu5x2/6158_3.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: 8fcef02b3e452d1cadce566aee53a230
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6158_3
+    build: b37
+    sample_size: 6101
+    n_cases: 2893.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 2986; Started insulin within one year diagnosis of diabetes; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/v5tc7t9n7idrajh/2986.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: 86fb42781b116ed4c93f86f76bb4e115
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 2986
+    build: b37
+    sample_size: 16415
+    n_cases: 1999.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

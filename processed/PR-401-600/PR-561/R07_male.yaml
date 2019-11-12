@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: icd10; reported phenotype: R07; Diagnoses - main ICD10: R07 Pain in throat and chest; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/v4esd5j5fkgge7v/R07.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: ff0b45f64ba4f6bf0000e3c6c5ec220b
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: R07
+    build: b37
+    sample_size: 167020
+    n_cases: 12383.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

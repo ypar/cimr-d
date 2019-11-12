@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 3606; Chest pain or discomfort walking normally; variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/wzqybg0j5xfimib/3606.gwas.imputed_v3.both_sexes.tsv.bgz?dl=0
+        md5: f7757f3b5467e6e7e7245c9289dce382
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 3606
+    build: b37
+    sample_size: 55737
+    n_cases: 9617.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

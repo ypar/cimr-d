@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 6147_6; Reason for glasses/contact lenses: For a 'lazy' eye or an eye with poor vision since childhood (called 'amblyopia'); variable type: binary; dataset: both_sexes
+    location:
+        url: https://www.dropbox.com/s/akw8rkyg2ult6gp/6147_6.gwas.imputed_v3.both_sexes.v2.tsv.bgz?dl=0
+        md5: db1957a4596a1477ae1bdd61a52ed4af
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 6147_6
+    build: b37
+    sample_size: 360677
+    n_cases: 2964.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+

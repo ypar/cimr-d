@@ -1,0 +1,32 @@
+
+data_file:
+    description: >-
+        phenotype source: phesant; reported phenotype: 100580; Alcohol consumed; variable type: binary; dataset: male
+    location:
+        url: https://www.dropbox.com/s/n1ty47n3a00ielo/100580.gwas.imputed_v3.male.tsv.bgz?dl=0
+        md5: c1c1144e892833d2df1308a371cc4a3a
+    columns:
+        variant_id: variant
+        effect_allele: minor_allele
+        effect_size: beta
+        standard_error: se
+        pvalue: pval
+
+data_info:
+    citation: http://www.nealelab.is/uk-biobank
+    data_source: http://www.nealelab.is/uk-biobank
+    data_type: gwas
+    context: 100580
+    build: b37
+    sample_size: 23469
+    n_cases: 13158.0
+    can_be_public: true
+
+method:
+    name: linear regression
+    tool: hail
+    website: https://github.com/hail-is/hail
+
+contributor:
+    email: cimrroot@gmail.com
+
